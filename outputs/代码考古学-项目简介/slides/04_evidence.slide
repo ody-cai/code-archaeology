@@ -1,0 +1,174 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+    {/* A · 标题块（100px） */}
+    <Box style={{ height: 100, justifyContent: 'center' }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', lineHeight: 1.3, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+            实测，以及一次自我证伪
+        </Text>
+        <Text style={{ fontSize: 16, color: '#8892A0', marginTop: 6, letterSpacing: 0.5 }}>
+            Measured results — and one self-falsification
+        </Text>
+    </Box>
+
+    {/* B · 内容区（540px） */}
+    <Box style={{ height: 540 }}>
+
+        {/* 巨型数字带 */}
+        <Box style={{ flexDirection: 'row', gap: 18, height: 168 }}>
+
+            <Box style={{ flex: 1, padding: '14px 22px', background: 'rgba(76,184,166,0.10)', borderRadius: 12, border: '1px solid rgba(76,184,166,0.30)' }}>
+                <Text style={{ fontSize: 76, fontWeight: 'bold', lineHeight: 1, color: '#4CB8A6', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                    165/165
+                </Text>
+                <Text style={{ fontSize: 17, color: '#EDF1F5', marginTop: 8 }}>
+                    单元测试全部通过
+                </Text>
+                <Text style={{ fontSize: 13, color: '#8892A0', marginTop: 2 }}>
+                    Tests passing, 0 failures
+                </Text>
+            </Box>
+
+            <Box style={{ flex: 1, padding: '14px 22px', background: 'rgba(227,163,62,0.10)', borderRadius: 12, border: '1px solid rgba(227,163,62,0.32)' }}>
+                <Text style={{ fontSize: 76, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                    100%
+                </Text>
+                <Text style={{ fontSize: 17, color: '#EDF1F5', marginTop: 8 }}>
+                    证据接地率
+                </Text>
+                <Text style={{ fontSize: 13, color: '#8892A0', marginTop: 2 }}>
+                    Grounding rate
+                </Text>
+            </Box>
+
+            <Box style={{ flex: 1, padding: '14px 22px', background: 'rgba(227,163,62,0.10)', borderRadius: 12, border: '1px solid rgba(227,163,62,0.32)' }}>
+                <Text style={{ fontSize: 76, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                    0
+                </Text>
+                <Text style={{ fontSize: 17, color: '#EDF1F5', marginTop: 8 }}>
+                    编造证据条数
+                </Text>
+                <Text style={{ fontSize: 13, color: '#8892A0', marginTop: 2 }}>
+                    Fabricated citations
+                </Text>
+            </Box>
+
+        </Box>
+
+        {/* 左右分栏 */}
+        <Box style={{ flexDirection: 'row', gap: 20, height: 356, marginTop: 16 }}>
+
+            {/* 左：其他实测数字 */}
+            <Box style={{ width: 420, padding: 22, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#EDF1F5' }}>
+                    全部实测，无一条合成数据
+                </Text>
+                <Text style={{ fontSize: 13, color: '#8892A0', marginTop: 4 }}>
+                    Every number below is reproducible locally
+                </Text>
+
+                <Box style={{ marginTop: 14 }}>
+                    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', height: 40 }}>
+                        <Text style={{ fontSize: 15, color: '#A8B2BE' }}>挖掘 40 条提交（纯计算）</Text>
+                        <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#4CB8A6' }}>5.3 秒</Text>
+                    </Box>
+                    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', height: 40, borderTop: '1px solid #232C38' }}>
+                        <Text style={{ fontSize: 15, color: '#A8B2BE' }}>完整三模型流水线</Text>
+                        <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#4CB8A6' }}>42.7 秒</Text>
+                    </Box>
+                    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', height: 40, borderTop: '1px solid #232C38' }}>
+                        <Text style={{ fontSize: 15, color: '#A8B2BE' }}>信噪比 · axios 仓库</Text>
+                        <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#4CB8A6' }}>50% 机器人</Text>
+                    </Box>
+                    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', height: 40, borderTop: '1px solid #232C38' }}>
+                        <Text style={{ fontSize: 15, color: '#A8B2BE' }}>风险分 · chalk / oa-system</Text>
+                        <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#4CB8A6' }}>55 中 / 75 高</Text>
+                    </Box>
+                </Box>
+
+                <Box style={{ marginTop: 'auto', padding: '12px 16px', background: 'rgba(76,184,166,0.10)', borderRadius: 8 }}>
+                    <Text style={{ fontSize: 14, lineHeight: 1.5, color: '#A8B2BE' }}>
+                        仓库里没有预置任何假数据 —— 全部结论来自 GitHub API 真实拉取，可当场复现。
+                    </Text>
+                </Box>
+            </Box>
+
+            {/* 右：判定校准 —— 护城河的证据 */}
+            <Box style={{ flex: 1, padding: 18, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#EDF1F5' }}>
+                    护城河：先进后出 · 内容级判定校准
+                </Text>
+                <Text style={{ fontSize: 13, color: '#8892A0', marginTop: 4 }}>
+                    Content-overlap rate vs. the 50% threshold measured from real cases
+                </Text>
+
+                <Box style={{ marginTop: 14 }}>
+                    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, height: 28 }}>
+                        <Text style={{ width: 224, fontSize: 14, color: '#4CB8A6' }}>oa-system · Resend 邮件</Text>
+                        <Box style={{ flex: 1, height: 20, background: '#141A22', borderRadius: 4 }}>
+                            <Box style={{ width: '100%', height: 20, background: '#4CB8A6', borderRadius: 4 }} />
+                        </Box>
+                        <Text style={{ width: 56, fontSize: 15, fontWeight: 'bold', color: '#4CB8A6', textAlign: 'right' }}>100%</Text>
+                    </Box>
+
+                    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, height: 28, marginTop: 6 }}>
+                        <Text style={{ width: 224, fontSize: 14, color: '#8892A0' }}>chalk · 测试文件重写</Text>
+                        <Box style={{ flex: 1, height: 20, background: '#141A22', borderRadius: 4 }}>
+                            <Box style={{ width: '31%', height: 20, background: '#5A6270', borderRadius: 4 }} />
+                        </Box>
+                        <Text style={{ width: 56, fontSize: 15, color: '#8892A0', textAlign: 'right' }}>31%</Text>
+                    </Box>
+
+                    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, height: 28, marginTop: 6 }}>
+                        <Text style={{ width: 224, fontSize: 14, color: '#8892A0' }}>oa-system · AGENTS.md</Text>
+                        <Box style={{ flex: 1, height: 20, background: '#141A22', borderRadius: 4 }}>
+                            <Box style={{ width: '28%', height: 20, background: '#5A6270', borderRadius: 4 }} />
+                        </Box>
+                        <Text style={{ width: 56, fontSize: 15, color: '#8892A0', textAlign: 'right' }}>28%</Text>
+                    </Box>
+
+                    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, height: 28, marginTop: 6 }}>
+                        <Text style={{ width: 224, fontSize: 14, color: '#8892A0' }}>chalk · 下划线样式</Text>
+                        <Box style={{ flex: 1, height: 20, background: '#141A22', borderRadius: 4 }}>
+                            <Box style={{ width: '14%', height: 20, background: '#5A6270', borderRadius: 4 }} />
+                        </Box>
+                        <Text style={{ width: 56, fontSize: 15, color: '#8892A0', textAlign: 'right' }}>14%</Text>
+                    </Box>
+                </Box>
+
+                <Text style={{ fontSize: 14, color: '#E3A33E', marginTop: 8 }}>
+                    阈值 50% 取自实测分布：真阳性 100%，假阳性 14 / 28 / 31%，两簇不重叠。
+                </Text>
+
+                <Box style={{ marginTop: 'auto', paddingTop: 10, borderTop: '1px solid #232C38' }}>
+                    <Text style={{ fontSize: 16, lineHeight: 1.5, color: '#EDF1F5' }}>
+                        我们发现自己最核心的指标在 demo 主力仓库上<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>是假阳性</span>，然后把它从「按行数猜」改成了「按内容判」。
+                    </Text>
+                    <Text style={{ fontSize: 14, color: '#8892A0', marginTop: 5 }}>
+                        The underline-style "abandonment" was a performance rewrite — the feature is still in main. We rebuilt the metric.
+                    </Text>
+                </Box>
+            </Box>
+
+        </Box>
+
+    </Box>
+
+    {/* C · 页脚条（40px） */}
+    <Box style={{ height: 40, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
+            <svg width={22} height={22} viewBox='0 0 22 22'>
+                <rect x='0' y='0' width='22' height='5' fill='#232C38' />
+                <rect x='0' y='5' width='22' height='6' fill='#E3A33E' />
+                <rect x='0' y='11' width='22' height='5' fill='#232C38' />
+                <rect x='0' y='16' width='22' height='6' fill='#1D242E' />
+            </svg>
+            <Text style={{ fontSize: 14, color: '#8892A0' }}>
+                代码考古学 / Code Archaeology
+            </Text>
+        </Box>
+        <Text style={{ fontSize: 14, color: '#8892A0' }}>
+            04 / 05
+        </Text>
+    </Box>
+
+</Slide>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>代码考古学 · Code Archaeology</title>
+<meta name="description" content="从提交历史重建代码的决策史：先做信噪分离，再挖人类决策痕迹。">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-top">
+      <div>
+        <p class="kicker">Code Archaeology</p>
+        <h1>代码考古学</h1>
+        <p class="lede">
+          每个老项目的地下都埋着一层历史。这个工具先剥离自动化产生的沉积物，
+          再从剩下的人类决策痕迹里，重建「这块代码为什么长成现在这样」。
+        </p>
+      </div>
+      <div class="masthead-badge">
+        <span class="badge-dot" id="modelDot"></span>
+        <div>
+          <p class="badge-label">分析引擎</p>
+          <p class="badge-value" id="modelInfo">检测中…</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="dig-form" id="digForm" autocomplete="off">
+      <div class="field field-repo">
+        <label for="repo">仓库地址</label>
+        <input id="repo" name="repo" type="text" spellcheck="false"
+               placeholder="owner/name，例如 chalk/chalk" required>
+      </div>
+      <div class="field field-limit">
+        <label for="limit">分析范围</label>
+        <select id="limit" name="limit">
+          <option value="30">最近 30 次提交</option>
+          <option value="40" selected>最近 40 次提交</option>
+          <option value="60">最近 60 次提交</option>
+          <option value="100">最近 100 次提交</option>
+        </select>
+      </div>
+      <button type="submit" class="dig-btn" id="digBtn">开始考古</button>
+    </form>
+
+    <div class="samples">
+      <span class="samples-label">试试：</span>
+      <button type="button" class="sample" data-repo="chalk/chalk">chalk/chalk</button>
+      <button type="button" class="sample" data-repo="axios/axios">axios/axios</button>
+      <button type="button" class="sample" data-repo="vuejs/vue">vuejs/vue</button>
+      <button type="button" class="sample" data-repo="expressjs/express">expressjs/express</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+
+  <section class="progress" id="progress" hidden aria-live="polite">
+    <div class="progress-head">
+      <span class="spinner" aria-hidden="true"></span>
+      <div class="progress-head-text">
+        <p class="progress-title" id="progressTitle">正在展开地层…</p>
+        <p class="progress-sub" id="progressSub">连接 GitHub API</p>
+      </div>
+      <span class="progress-timer" id="progressTimer">0.0s</span>
+    </div>
+    <ol class="progress-steps" id="progressSteps"></ol>
+  </section>
+
+  <section class="error-box" id="errorBox" hidden>
+    <h3 id="errorTitle">出了点问题</h3>
+    <p id="errorMsg"></p>
+    <p class="error-hint" id="errorHint"></p>
+  </section>
+
+  <div id="report" hidden></div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-title">每一句结论都必须引用真实存在的提交</p>
+      <p class="footer-note">
+        模型产出的所有推断，都会经过程序对 commit SHA 的集合校验。
+        引用了不存在的提交，就是可证明的编造 —— 这一步不依赖任何模型判断。
+      </p>
+    </div>
+    <p class="footer-meta">BAYTECH 2026 · AI 应用与工程赛道</p>
+  </div>
+</footer>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>

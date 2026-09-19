@@ -1,0 +1,17 @@
+# Workspace metadata and local secrets
+.workbuddy/
+.DS_Store
+
+# Dependencies and generated output
+**/node_modules/
+**/.wrangler/
+**/.dev.vars
+**/.dev.vars.*
+**/.env
+**/.env.*
+**/dist/
+**/release/
+
+# Local OS/editor files
+*.log
+*.tmp

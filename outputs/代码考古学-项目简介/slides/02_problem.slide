@@ -1,0 +1,121 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+    {/* A · 标题块（100px） */}
+    <Box style={{ height: 100, justifyContent: 'center' }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', lineHeight: 1.3, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+            有一类信息，读代码永远看不到
+        </Text>
+        <Text style={{ fontSize: 16, color: '#8892A0', marginTop: 6, letterSpacing: 0.5 }}>
+            Some information never shows up in the code itself
+        </Text>
+    </Box>
+
+    {/* B · 内容区（540px） */}
+    <Box style={{ height: 540 }}>
+
+        {/* 引导句 */}
+        <Box style={{ height: 90, padding: '14px 22px', background: '#1D242E', borderLeft: '3px solid #E3A33E', borderRadius: 10, justifyContent: 'center' }}>
+            <Text style={{ fontSize: 20, lineHeight: 1.5, color: '#EDF1F5' }}>
+                技术尽调评估复杂度、覆盖率与维护成本，却从不评估更致命的一项：知识还能否被交接。
+            </Text>
+            <Text style={{ fontSize: 15, color: '#8892A0', marginTop: 6 }}>
+                Due diligence measures complexity, coverage and cost — never knowledge inheritability.
+            </Text>
+        </Box>
+
+        {/* 三类证据 */}
+        <Box style={{ flexDirection: 'row', gap: 20, height: 348, marginTop: 14 }}>
+
+            <Box style={{ flex: 1, padding: 22, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38' }}>
+                <Text style={{ fontSize: 44, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                    01
+                </Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#EDF1F5', marginTop: 10 }}>
+                    沉积物淹没文物
+                </Text>
+                <Text style={{ fontSize: 14, color: '#8892A0', marginTop: 4, letterSpacing: 0.5 }}>
+                    Signal buried under automation
+                </Text>
+                <Text style={{ fontSize: 16, lineHeight: 1.55, color: '#A8B2BE', marginTop: 12 }}>
+                    axios 最近 40 次提交里，20 次来自 dependabot，占 50%。不剥离自动化噪音的考古，挖出来的全是依赖升级和锁文件 diff。信噪分离必须先于一切分析 —— 报告的第一个数字是信噪比，而不是结论。
+                </Text>
+                <Box style={{ marginTop: 'auto', paddingTop: 12, borderTop: '1px solid #232C38' }}>
+                    <Text style={{ fontSize: 14, color: '#4CB8A6' }}>
+                        实测 axios：20 / 40 = 50% 机器人提交
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flex: 1, padding: 22, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38' }}>
+                <Text style={{ fontSize: 44, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                    02
+                </Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#EDF1F5', marginTop: 10 }}>
+                    意图随提交信息蒸发
+                </Text>
+                <Text style={{ fontSize: 14, color: '#8892A0', marginTop: 4, letterSpacing: 0.5 }}>
+                    Intent evaporates with the commit message
+                </Text>
+                <Text style={{ fontSize: 16, lineHeight: 1.55, color: '#A8B2BE', marginTop: 12 }}>
+                    "fix"、"update"、"修改" —— 这类提交信息让后来者无法还原改动原因。追溯到人、靠人解释的成本极高，于是被无限推迟，直到那个人离开。含糊提交率可直接测量，我们把它列进风险分的第一个因子。
+                </Text>
+                <Box style={{ marginTop: 'auto', paddingTop: 12, borderTop: '1px solid #232C38' }}>
+                    <Text style={{ fontSize: 14, color: '#4CB8A6' }}>
+                        风险因子权重 25 / 100 · 可量化
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flex: 1, padding: 22, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38' }}>
+                <Text style={{ fontSize: 44, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                    03
+                </Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#EDF1F5', marginTop: 10 }}>
+                    先进后出，零痕迹
+                </Text>
+                <Text style={{ fontSize: 14, color: '#8892A0', marginTop: 4, letterSpacing: 0.5 }}>
+                    Added, then removed — no trace left
+                </Text>
+                <Text style={{ fontSize: 16, lineHeight: 1.55, color: '#A8B2BE', marginTop: 12 }}>
+                    7 月 25 日加了下划线样式，次日整体删掉。当前代码库里找不到任何证据证明它存在过 —— 没有 TODO、没有注释、没有残留分支。这类信息只存在于提交历史里，读代码永远读不出来，它是这套系统唯一的护城河。
+                </Text>
+                <Box style={{ marginTop: 'auto', paddingTop: 12, borderTop: '1px solid #232C38' }}>
+                    <Text style={{ fontSize: 14, color: '#4CB8A6' }}>
+                        只能从历史中挖出的信息
+                    </Text>
+                </Box>
+            </Box>
+
+        </Box>
+
+        {/* 收束横条 */}
+        <Box style={{ height: 66, marginTop: 14, padding: '8px 22px', background: 'rgba(227,163,62,0.08)', borderRadius: 10, border: '1px solid rgba(227,163,62,0.28)', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 18, color: '#EDF1F5' }}>
+                于是问题不是「这个项目好不好」，而是<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>「它还能不能被交接」</span>。
+            </Text>
+            <Text style={{ fontSize: 14, color: '#8892A0', marginTop: 4 }}>
+                So the question is not whether the code is good — it is whether it can still be handed over.
+            </Text>
+        </Box>
+
+    </Box>
+
+    {/* C · 页脚条（40px） */}
+    <Box style={{ height: 40, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
+            <svg width={22} height={22} viewBox='0 0 22 22'>
+                <rect x='0' y='0' width='22' height='5' fill='#232C38' />
+                <rect x='0' y='5' width='22' height='6' fill='#E3A33E' />
+                <rect x='0' y='11' width='22' height='5' fill='#232C38' />
+                <rect x='0' y='16' width='22' height='6' fill='#1D242E' />
+            </svg>
+            <Text style={{ fontSize: 14, color: '#8892A0' }}>
+                代码考古学 / Code Archaeology
+            </Text>
+        </Box>
+        <Text style={{ fontSize: 14, color: '#8892A0' }}>
+            02 / 05
+        </Text>
+    </Box>
+
+</Slide>

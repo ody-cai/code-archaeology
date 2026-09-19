@@ -1,0 +1,23 @@
+name = "code-archaeology"
+main = "src/worker.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+# 静态资源由 ASSETS 绑定提供，与 API 同源 —— 一次部署一个链接，没有跨域问题
+[assets]
+directory = "./public"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[vars]
+MAX_COMMITS = "60"
+
+# 模型层配置（非敏感部分）。API Key 走加密存储，不写在这里。
+LLM_PROVIDER = "openai"
+LLM_BASE_URL = "https://api.openai-next.com/v1"
+
+# 多模型分工：三个来自不同供应商的模型各司其职。
+# 叙事者看重语言质感，假设者看重推理，审稿人看重判断力。
+LLM_MODEL = "gpt-4o"
+LLM_MODEL_B = "deepseek-v4-pro"
+LLM_MODEL_C = "gemini-2.5-flash"

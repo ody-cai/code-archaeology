@@ -1,0 +1,112 @@
+<Slide style={{ width: '1280px', height: '720px', padding: 0, position: 'relative', background: 'linear-gradient(160deg, #10141A 0%, #18202A 100%)', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif" }}>
+
+    {/* 01 · 封面 —— 全幅自定义版式（hero）：琥珀光晕 + 青铜绿光晕，不占安全区 */}
+    <Box style={{ position: 'absolute', top: -190, right: -150, width: 580, height: 580, borderRadius: 290, background: 'radial-gradient(circle, rgba(227,163,62,0.16) 0%, rgba(227,163,62,0) 70%)' }} />
+    <Box style={{ position: 'absolute', bottom: -220, left: -140, width: 540, height: 540, borderRadius: 270, background: 'radial-gradient(circle, rgba(76,184,166,0.12) 0%, rgba(76,184,166,0) 70%)' }} />
+
+    {/* 内容层：左文右图 · 非对称双栏 */}
+    <Box style={{ position: 'relative', zIndex: 1, flexDirection: 'row', width: '1280px', height: '720px', padding: '56px 60px', alignItems: 'center', gap: 48 }}>
+
+        {/* 左栏 · 文字 */}
+        <Box style={{ width: 682, height: 608, justifyContent: 'center' }}>
+            <Text style={{ fontSize: 18, fontWeight: 'bold', letterSpacing: 5, color: '#E3A33E' }}>
+                CODE ARCHAEOLOGY
+            </Text>
+
+            <Text style={{ fontSize: 84, fontWeight: 'bold', lineHeight: 1.1, color: '#EDF1F5', letterSpacing: 4, marginTop: 18, fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                代码考古学
+            </Text>
+
+            <Text style={{ fontSize: 24, color: '#8892A0', letterSpacing: 2, marginTop: 12, fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                Reconstructing a codebase's decision history
+            </Text>
+
+            <Box style={{ width: 96, height: 3, background: '#E3A33E', marginTop: 28 }} />
+
+            <Text style={{ fontSize: 23, lineHeight: 1.55, color: '#EDF1F5', marginTop: 26 }}>
+                我们不告诉你「为什么」，
+                <br />
+                只告诉你<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>「哪里已经没人能说清为什么」</span>。
+            </Text>
+
+            <Text style={{ fontSize: 16, lineHeight: 1.5, color: '#8892A0', marginTop: 14 }}>
+                We don't tell you why — we tell you where nobody can explain why anymore.
+            </Text>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 14, marginTop: 40 }}>
+                <Box style={{ width: 34, height: 2, background: '#4CB8A6' }} />
+                <Text style={{ fontSize: 16, color: '#EDF1F5', letterSpacing: 1 }}>
+                    BAYTECH 2026 · AI 应用与工程赛道
+                </Text>
+                <Text style={{ fontSize: 16, color: '#8892A0' }}>
+                    ｜ 蔡奇均 / Cai Qijun
+                </Text>
+            </Box>
+        </Box>
+
+        {/* 右栏 · L1 主视觉：地层剖面 */}
+        <Box style={{ width: 430, height: 608, justifyContent: 'center' }}>
+            <svg width={430} height={380} viewBox='0 0 430 380'>
+                {/* 沉积层 */}
+                <rect x='0' y='0' width='430' height='32' fill='#1D242E' />
+                <rect x='0' y='32' width='430' height='48' fill='#232C38' />
+                <rect x='0' y='80' width='430' height='30' fill='#1D242E' />
+                {/* 决定性层：人类决策信号 */}
+                <rect x='0' y='110' width='430' height='58' fill='#E3A33E' />
+                <rect x='0' y='168' width='430' height='36' fill='#232C38' />
+                <rect x='0' y='204' width='430' height='52' fill='#1D242E' />
+                <rect x='0' y='256' width='430' height='30' fill='#232C38' />
+                <rect x='0' y='286' width='430' height='56' fill='#1D242E' />
+                <rect x='0' y='342' width='430' height='38' fill='#232C38' />
+
+                {/* 层间分界 */}
+                <line x1='0' y1='32' x2='430' y2='32' stroke='#10141A' strokeWidth='2' />
+                <line x1='0' y1='80' x2='430' y2='80' stroke='#10141A' strokeWidth='2' />
+                <line x1='0' y1='168' x2='430' y2='168' stroke='#10141A' strokeWidth='2' />
+                <line x1='0' y1='204' x2='430' y2='204' stroke='#10141A' strokeWidth='2' />
+                <line x1='0' y1='256' x2='430' y2='256' stroke='#10141A' strokeWidth='2' />
+                <line x1='0' y1='286' x2='430' y2='286' stroke='#10141A' strokeWidth='2' />
+                <line x1='0' y1='342' x2='430' y2='342' stroke='#10141A' strokeWidth='2' />
+
+                {/* 沉积层里的自动化噪音刻痕 */}
+                <rect x='58' y='14' width='52' height='4' fill='#3A4553' />
+                <rect x='196' y='50' width='88' height='5' fill='#3A4553' />
+                <rect x='92' y='92' width='40' height='4' fill='#3A4553' />
+                <rect x='300' y='182' width='64' height='4' fill='#3A4553' />
+                <rect x='70' y='224' width='96' height='5' fill='#3A4553' />
+                <rect x='248' y='268' width='52' height='4' fill='#3A4553' />
+                <rect x='110' y='308' width='74' height='5' fill='#3A4553' />
+                <rect x='286' y='358' width='58' height='4' fill='#3A4553' />
+
+                {/* 高亮层中的「文物」：被放弃的尝试 */}
+                <rect x='54' y='126' width='34' height='7' fill='#10141A' opacity='0.55' />
+                <rect x='104' y='142' width='58' height='7' fill='#10141A' opacity='0.55' />
+                <rect x='178' y='126' width='44' height='7' fill='#10141A' opacity='0.55' />
+                <rect x='238' y='146' width='70' height='7' fill='#10141A' opacity='0.55' />
+                <rect x='324' y='128' width='48' height='7' fill='#10141A' opacity='0.55' />
+
+                {/* 右侧标注：指向高亮层 */}
+                <line x1='430' y1='139' x2='416' y2='139' stroke='#E3A33E' strokeWidth='3' />
+                <circle cx='416' cy='139' r='5' fill='#10141A' />
+            </svg>
+
+            {/* 图例 */}
+            <Box style={{ flexDirection: 'row', gap: 26, marginTop: 20, alignItems: 'center' }}>
+                <Box style={{ flexDirection: 'row', gap: 9, alignItems: 'center' }}>
+                    <Box style={{ width: 22, height: 12, background: '#E3A33E', borderRadius: 2 }} />
+                    <Text style={{ fontSize: 15, color: '#EDF1F5' }}>人类决策痕迹</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 9, alignItems: 'center' }}>
+                    <Box style={{ width: 22, height: 12, background: '#232C38', border: '1px solid #3A4553', borderRadius: 2 }} />
+                    <Text style={{ fontSize: 15, color: '#8892A0' }}>机器人沉积物</Text>
+                </Box>
+            </Box>
+        </Box>
+
+    </Box>
+
+    {/* 封面页码锚点（与内页位置一致） */}
+    <Text style={{ position: 'absolute', right: 60, bottom: 30, fontSize: 14, color: '#8892A0', zIndex: 2 }}>
+        01 / 05
+    </Text>
+</Slide>

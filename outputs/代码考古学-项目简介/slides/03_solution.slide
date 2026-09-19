@@ -1,0 +1,177 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+    {/* A · 标题块（100px） */}
+    <Box style={{ height: 100, justifyContent: 'center' }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', lineHeight: 1.3, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+            先筛地层，再挖文物，最后自己查自己
+        </Text>
+        <Text style={{ fontSize: 16, color: '#8892A0', marginTop: 6, letterSpacing: 0.5 }}>
+            Sift the strata, excavate the artifacts, then audit ourselves
+        </Text>
+    </Box>
+
+    {/* B · 内容区（540px） */}
+    <Box style={{ height: 540 }}>
+
+        {/* L1 主视觉：三段流水线 */}
+        <Box style={{ flexDirection: 'row', alignItems: 'stretch', height: 180, gap: 0 }}>
+
+            <Box style={{ flex: 1, padding: 16, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38', borderTop: '3px solid #E3A33E' }}>
+                <Text style={{ fontSize: 13, fontWeight: 'bold', letterSpacing: 3, color: '#E3A33E' }}>
+                    STAGE 01
+                </Text>
+                <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>
+                    信噪分离
+                </Text>
+                <Text style={{ fontSize: 13, color: '#8892A0', marginTop: 2 }}>
+                    Signal / noise separation
+                </Text>
+                <Text style={{ fontSize: 15, lineHeight: 1.5, color: '#A8B2BE', marginTop: 8 }}>
+                    剔除机器人提交与生成物，只保留人类决策痕迹。
+                </Text>
+                <Box style={{ marginTop: 'auto', flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                    <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#E3A33E' }} />
+                    <Text style={{ fontSize: 13, color: '#8892A0' }}>
+                        纯计算 · 不调用任何模型
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ width: 44, justifyContent: 'center', alignItems: 'center' }}>
+                <FAIcon name='arrow-right' style={{ fill: '#E3A33E', width: 26, height: 26 }} />
+            </Box>
+
+            <Box style={{ flex: 1, padding: 16, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38', borderTop: '3px solid #4CB8A6' }}>
+                <Text style={{ fontSize: 13, fontWeight: 'bold', letterSpacing: 3, color: '#4CB8A6' }}>
+                    STAGE 02
+                </Text>
+                <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>
+                    多模型分工
+                </Text>
+                <Text style={{ fontSize: 13, color: '#8892A0', marginTop: 2 }}>
+                    Multi-model workflow
+                </Text>
+                <Text style={{ fontSize: 15, lineHeight: 1.5, color: '#A8B2BE', marginTop: 8 }}>
+                    叙事 ‖ 假设 并行，审稿人拿到结果后复核。
+                </Text>
+                <Box style={{ marginTop: 'auto', flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                    <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#4CB8A6' }} />
+                    <Text style={{ fontSize: 13, color: '#8892A0' }}>
+                        3 家供应商 · 有依赖的流水线
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ width: 44, justifyContent: 'center', alignItems: 'center' }}>
+                <FAIcon name='arrow-right' style={{ fill: '#4CB8A6', width: 26, height: 26 }} />
+            </Box>
+
+            <Box style={{ flex: 1, padding: 16, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38', borderTop: '3px solid #E3A33E' }}>
+                <Text style={{ fontSize: 13, fontWeight: 'bold', letterSpacing: 3, color: '#E3A33E' }}>
+                    STAGE 03
+                </Text>
+                <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>
+                    证据接地校验
+                </Text>
+                <Text style={{ fontSize: 13, color: '#8892A0', marginTop: 2 }}>
+                    Evidence grounding audit
+                </Text>
+                <Text style={{ fontSize: 15, lineHeight: 1.5, color: '#A8B2BE', marginTop: 8 }}>
+                    对模型引用的每个 SHA 做真实性校验。
+                </Text>
+                <Box style={{ marginTop: 'auto', flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                    <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#E3A33E' }} />
+                    <Text style={{ fontSize: 13, color: '#8892A0' }}>
+                        集合运算 · 不依赖模型自评
+                    </Text>
+                </Box>
+            </Box>
+
+        </Box>
+
+        {/* 三条关键设计 */}
+        <Box style={{ flexDirection: 'row', gap: 20, height: 340, marginTop: 16 }}>
+
+            <Box style={{ flex: 1, padding: 22, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38' }}>
+                <Text style={{ fontSize: 44, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                    01
+                </Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#EDF1F5', marginTop: 10 }}>
+                    引擎不需要模型
+                </Text>
+                <Text style={{ fontSize: 14, color: '#8892A0', marginTop: 4, letterSpacing: 0.5 }}>
+                    The engine never needs a model
+                </Text>
+                <Text style={{ fontSize: 16, lineHeight: 1.5, color: '#A8B2BE', marginTop: 10 }}>
+                    挖掘层只依赖 GitHub REST API，产出全部是硬指标。模型层整体不可用时，客观报告照常完整交付，而不是整个系统失败 —— 容错是分层的前提，也是赛道加分项点名的那一条。
+                </Text>
+                <Box style={{ marginTop: 'auto', paddingTop: 12, borderTop: '1px solid #232C38' }}>
+                    <Text style={{ fontSize: 14, color: '#4CB8A6' }}>
+                        模型层挂掉 · 报告照出
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flex: 1, padding: 22, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38' }}>
+                <Text style={{ fontSize: 44, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                    02
+                </Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#EDF1F5', marginTop: 10 }}>
+                    真分工，不是换 prompt
+                </Text>
+                <Text style={{ fontSize: 14, color: '#8892A0', marginTop: 4, letterSpacing: 0.5 }}>
+                    Real division of labour
+                </Text>
+                <Text style={{ fontSize: 16, lineHeight: 1.5, color: '#A8B2BE', marginTop: 10 }}>
+                    叙事者与假设者互不依赖，并行执行；审稿人拿到代码层校验结果后才复核前两者。三个模型来自三家不同供应商，后一步依赖前一步的产出 —— 这才是工作流。
+                </Text>
+                <Box style={{ marginTop: 'auto', paddingTop: 12, borderTop: '1px solid #232C38' }}>
+                    <Text style={{ fontSize: 14, color: '#4CB8A6' }}>
+                        gpt-4o ‖ deepseek-v4-pro → gemini-2.5-flash
+                    </Text>
+                </Box>
+            </Box>
+
+            <Box style={{ flex: 1, padding: 22, background: '#1D242E', borderRadius: 12, border: '1px solid #232C38' }}>
+                <Text style={{ fontSize: 44, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>
+                    03
+                </Text>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#EDF1F5', marginTop: 10 }}>
+                    幻觉检测靠代码
+                </Text>
+                <Text style={{ fontSize: 14, color: '#8892A0', marginTop: 4, letterSpacing: 0.5 }}>
+                    Detection by code, not by a judge model
+                </Text>
+                <Text style={{ fontSize: 16, lineHeight: 1.5, color: '#A8B2BE', marginTop: 10 }}>
+                    每条结论都必须引用真实存在的 commit SHA。拿模型引用的 SHA 与真实拉取的 SHA 做集合运算 —— 「引用了不存在的提交」是可证明的编造，不需要另一个模型来评判，这一步 100% 由程序完成。
+                </Text>
+                <Box style={{ marginTop: 'auto', paddingTop: 12, borderTop: '1px solid #232C38' }}>
+                    <Text style={{ fontSize: 14, color: '#4CB8A6' }}>
+                        SHA 集合运算 · 无判官模型
+                    </Text>
+                </Box>
+            </Box>
+
+        </Box>
+
+    </Box>
+
+    {/* C · 页脚条（40px） */}
+    <Box style={{ height: 40, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
+            <svg width={22} height={22} viewBox='0 0 22 22'>
+                <rect x='0' y='0' width='22' height='5' fill='#232C38' />
+                <rect x='0' y='5' width='22' height='6' fill='#E3A33E' />
+                <rect x='0' y='11' width='22' height='5' fill='#232C38' />
+                <rect x='0' y='16' width='22' height='6' fill='#1D242E' />
+            </svg>
+            <Text style={{ fontSize: 14, color: '#8892A0' }}>
+                代码考古学 / Code Archaeology
+            </Text>
+        </Box>
+        <Text style={{ fontSize: 14, color: '#8892A0' }}>
+            03 / 05
+        </Text>
+    </Box>
+
+</Slide>
