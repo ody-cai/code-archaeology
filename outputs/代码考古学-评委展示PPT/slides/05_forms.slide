@@ -1,0 +1,107 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+  <Box style={{ height: 96, justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', lineHeight: 1.22, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>一次实现，三种形态</Text>
+        <Text style={{ fontSize: 14.5, color: '#8892A0', marginTop: 7, letterSpacing: 0.3 }}>One engine, three forms</Text>
+      </Box>
+      
+    </Box>
+  </Box>
+    <Box style={{ height: 500 }}>
+      <Box style={{ height: 62, padding: '10px 18px', background: '#1D242E', borderLeft: '3px solid #E3A33E', borderRadius: 10, justifyContent: 'center' }}>
+        
+    <Text style={{ fontSize: 13, lineHeight: 1.5, color: '#EDF1F5' }}>引擎只有一套，可被三种方式调用。核心用途：量化代码库的<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>知识可继承性</span>，并指出风险集中在哪几个文件。</Text>
+    <Text style={{ fontSize: 10.5, lineHeight: 1.45, color: '#8892A0', marginTop: 5 }}>One engine, three entry points — quantifying knowledge inheritability and naming the riskiest files.</Text>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 270, marginTop: 14 }}>
+
+        <Box style={{ flex: 1, padding: '15px 17px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 9.5, fontWeight: 'bold', color: '#4CB8A6', letterSpacing: 1.2 }}>WEB · 同源前端</Text>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>网页端</Text>
+          <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 3 }}>Zero-build front-end, same origin as the API</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 9 }}>原生 JS + CSS，无构建、无框架、无跨域。输入 owner/name 即可看到信噪比、风险因子拆解、提交时间轴、文件热度、被放弃的尝试清单与原地打转分析。左上角实时显示模型层状态与所用模型数量。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 4 }}>Vanilla JS, no build step, no cross-origin. Paste an owner/name and read the whole report.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 9, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#4CB8A6' }}>线上地址 https://code-archaeology.odycai.workers.dev（Worker 版本 ad70fdf1）</Text>
+          </Box>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '15px 17px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 9.5, fontWeight: 'bold', color: '#E3A33E', letterSpacing: 1.2 }}>CLI · 可接 CI</Text>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>命令行</Text>
+          <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 3 }}>A CLI that can gate a pull request</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 9 }}>同一条流水线可在终端运行，并支持 --fail-on-risk 指定阈值：风险分超过阈值时以<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>退出码 2</span> 结束，可直接用于卡住合并请求。这让它从一次性报告变成流水线里的一道闸门。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 4 }}>Runs the same pipeline in a terminal; exits with code 2 when the risk score exceeds a threshold.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 9, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#E3A33E' }}>实测 181 个单元测试 181/181 通过、0 失败</Text>
+          </Box>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '15px 17px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 9.5, fontWeight: 'bold', color: '#4CB8A6', letterSpacing: 1.2 }}>API · 8 端点</Text>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>HTTP 接口</Text>
+          <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 3 }}>Eight endpoints, four of them reusable alone</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 9 }}>健康检查、能力清单、纯计算挖掘、完整考古，以及可单独复用的叙事 / 假设 / 评估 / 安全重构四层。调用方无需外部文档即可发现接口。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 4 }}>Health, capabilities, mining, full excavation, plus narrative / hypothesis / appraisal / refactor layers usable on their own.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 9, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#4CB8A6' }}>能力清单端点返回 8 个可用接口</Text>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 130, marginTop: 14 }}>
+        <Box style={{ flex: 1.35, padding: '14px 18px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>自有代码构成 / Own source code</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 3 }}>共 9,395 行 / 51 个文件（零依赖框架）</Text>
+          <Box style={{ flexDirection: 'row', gap: 10, marginTop: 12 }}>
+            
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#4CB8A6' }}>2,737</Text>
+              <Text style={{ fontSize: 10, color: '#EDF1F5', marginTop: 2 }}>src</Text>
+              <Text style={{ fontSize: 9.5, color: '#8892A0' }}>26 files</Text>
+            </Box>
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#E3A33E' }}>2,459</Text>
+              <Text style={{ fontSize: 10, color: '#EDF1F5', marginTop: 2 }}>public</Text>
+              <Text style={{ fontSize: 9.5, color: '#8892A0' }}>5 files</Text>
+            </Box>
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#4CB8A6' }}>2,820</Text>
+              <Text style={{ fontSize: 10, color: '#EDF1F5', marginTop: 2 }}>tests</Text>
+              <Text style={{ fontSize: 9.5, color: '#8892A0' }}>13 files</Text>
+            </Box>
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#8892A0' }}>709</Text>
+              <Text style={{ fontSize: 10, color: '#EDF1F5', marginTop: 2 }}>bin</Text>
+              <Text style={{ fontSize: 9.5, color: '#8892A0' }}>2 files</Text>
+            </Box>
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#8892A0' }}>670</Text>
+              <Text style={{ fontSize: 10, color: '#EDF1F5', marginTop: 2 }}>scripts</Text>
+              <Text style={{ fontSize: 9.5, color: '#8892A0' }}>5 files</Text>
+            </Box>
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, padding: '14px 18px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>技术栈与部署 / Stack & deployment</Text>
+          <Text style={{ fontSize: 11, lineHeight: 1.6, color: '#A8B2BE', marginTop: 8 }}>
+            Node.js ESM · Cloudflare Workers + Assets 绑定（前端与 API 同源）· 零构建原生前端
+          </Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.5, color: '#8892A0', marginTop: 5 }}>
+            同一套路由层也能跑在本地 Node HTTP 容器里 —— 云端不可用时行为一致，不是备份方案而是容错设计。
+          </Text>
+        </Box>
+      </Box>
+    </Box>
+
+  <Box style={{ height: 32, justifyContent: 'center' }}>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>本页代码规模与测试数来自本机实测（2026-09-20T02:28:13Z）；部署版本来自 Cloudflare Workers deployments list。</Text>
+  </Box>
+  <Box style={{ height: 36, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>代码考古学 / Code Archaeology · BAYTECH 2026 · AI 应用与工程赛道</Text>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>05 / 12</Text>
+  </Box>
+</Slide>

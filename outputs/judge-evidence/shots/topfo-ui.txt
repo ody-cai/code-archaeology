@@ -1,0 +1,247 @@
+ody-cai/topfo
+
+加拿大大学升学规划数据平台 - 录取要求对照表、排名、策略分析
+
+HTML
+2 stars
+0 forks
+建库 0 年
+主分支 main
+许可 MIT
+53/100
+风险 中
+
+仅基于客观指标
+
+分析窗口 2026-07-09 → 2026-09-20
+GitHub 调用 25 次
+剩余配额 4,351
+已鉴权 5000/时
+信噪比
+SIGNAL TO NOISE
+报告的第一个数字
+人类决策 100%
+包含人类决策痕迹
+23
+次
+机器人提交
+0
+次
+仅改动生成物
+0
+次
+
+分析了 23 次提交，其中 0 次来自机器人（0%）。 剥离自动化噪音后，真正承载人类决策的只有 23 次。
+
+机器人来源：无
+
+提交演化时间轴
+COMMIT TIMELINE
+23 条提交 · 柱高＝改动量（平方根压缩）
+2026-07
+2026-09
+人类决策 23
+机器人 & 生成物 0
+回滚 0
+悬停任意柱子看提交信息
+风险因子拆解
+RISK FACTORS
+每项都可独立验证
+提交信息质量
+0 / 25
+
+0 / 23 条无信息量 · 含糊的提交信息让后来者无法还原改动意图
+
+原地打转的文件
+25 / 25
+
+9 个文件反复推翻 · 改动总量很大但净变化很小，说明方案被反复推翻
+
+被放弃的尝试
+20 / 20
+
+7 处已核实（另否定 0 处） · 短期加入又短期拆除，且拆除内容与当初新增内容重合 —— 确属方向摇摆
+
+显式回滚
+0 / 15
+
+0 次回滚提交 · 明确的回滚是决策失败的直接证据
+
+最长沉寂期
+8 / 15
+
+62 天无人提交 · 长期停摆后重启，往往伴随架构转向
+
+文件改动热度
+CHURN HOTSPOTS
+仅统计人类对源码的改动
+topfo-app/app/src/main/res/raw/schools.json
+6,462·2×
+review_results.json
+5,766·2×
+public/pages/tracker.html
+1,946·4×
+加拿大大学录取要求对照表_2026.html
+1,560·10×
+public/js/auth.js
+1,216·7×
+public/pages/community.html
+1,137·5×
+加拿大大学录取要求完整对照表_2026.md
+1,087·10×
+public/index.html
+919·7×
+public/pages/admission.html
+822·14×
+
+其中 10 个文件在窗口内只有一个人改过 —— 这些人一旦离开，该处即无人可问。改动量最大的单点归属： topfo-app/app/src/main/res/raw/schools.json → ody-cai
+
+地层里的证据
+EXCAVATED EVIDENCE
+纯计算 · 不涉及模型推断
+被放弃的尝试 短时间加入又拆除 · 已通过内容核实
+
+public/functions/api/rankings.js
+存在 1 小时
+
++63 行
+2026-07-09
+1 小时后被拆除
+−54 行
+2026-07-09
+
+加入：6cc0b93 🎉 初始化: topfo 加拿大大学升学规划数据平台
+
+拆除：fda81ef 🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台
+
+内容核实：拆除的 39 行中有 39 行来自新增侧（重合 100%，阈值 50%）
+
+public/functions/api/schools.js
+存在 1 小时
+
++66 行
+2026-07-09
+1 小时后被拆除
+−57 行
+2026-07-09
+
+加入：6cc0b93 🎉 初始化: topfo 加拿大大学升学规划数据平台
+
+拆除：fda81ef 🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台
+
+内容核实：拆除的 41 行中有 41 行来自新增侧（重合 100%，阈值 50%）
+
+public/functions/api/ai/recommend.js
+存在 1 小时
+
++143 行
+2026-07-09
+1 小时后被拆除
+−105 行
+2026-07-09
+
+加入：fda81ef 🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台
+
+拆除：674486b 🤖 AI 选校接入真实 Cloudflare Workers AI（原为静态规则引擎）
+
+内容核实：拆除的 92 行中有 92 行来自新增侧（重合 100%，阈值 50%）
+
+public/functions/api/applications.js
+存在 3 小时
+
++107 行
+2026-07-09
+3 小时后被拆除
+−107 行
+2026-07-09
+
+加入：fda81ef 🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台
+
+拆除：ed18ec5 fix zh.json JSON syntax error
+
+内容核实：拆除的 74 行中有 74 行来自新增侧（重合 100%，阈值 50%）
+
+public/functions/api/applications/[id].js
+存在 3 小时
+
++76 行
+2026-07-09
+3 小时后被拆除
+−76 行
+2026-07-09
+
+加入：fda81ef 🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台
+
+拆除：ed18ec5 fix zh.json JSON syntax error
+
+内容核实：拆除的 49 行中有 49 行来自新增侧（重合 100%，阈值 50%）
+
+public/js/i18n/fr.json
+存在 3 小时
+
++95 行
+2026-07-09
+3 小时后被拆除
+−96 行
+2026-07-09
+
+加入：fda81ef 🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台
+
+拆除：ed18ec5 fix zh.json JSON syntax error
+
+内容核实：拆除的 94 行中有 93 行来自新增侧（重合 99%，阈值 50%）
+
+原地打转 改动量大但净变化小
+
+public/pages/tracker.html
+打转 1946×
+
+被改了 4 次，累计改动 1,946 行， 但净变化只有 0 行 —— 改了又改回，说明方案被反复推翻。
+
+ody-cai
+
+topfo-app/app/src/main/java/com/topfo/app/MainActivity.kt
+打转 248×
+
+被改了 3 次，累计改动 248 行， 但净变化只有 0 行 —— 改了又改回，说明方案被反复推翻。
+
+ody-cai
+
+topfo-app/app/src/main/java/com/topfo/app/ui/admission/AdmissionScreen.kt
+打转 200×
+
+被改了 3 次，累计改动 200 行， 但净变化只有 0 行 —— 改了又改回，说明方案被反复推翻。
+
+ody-cai
+
+public/js/i18n/fr.json
+打转 194×
+
+被改了 3 次，累计改动 194 行， 但净变化只有 0 行 —— 改了又改回，说明方案被反复推翻。
+
+ody-cai
+
+topfo-app/app/src/main/java/com/topfo/app/ui/theme/GlassComponents.kt
+打转 192×
+
+被改了 3 次，累计改动 192 行， 但净变化只有 0 行 —— 改了又改回，说明方案被反复推翻。
+
+ody-cai
+
+topfo-app/app/src/main/java/com/topfo/app/ui/profile/ProfileScreen.kt
+打转 140×
+
+被改了 3 次，累计改动 140 行， 但净变化只有 0 行 —— 改了又改回，说明方案被反复推翻。
+
+ody-cai
+安全重构入口
+SAFE REFACTOR · 只创建独立分支与草稿 PR
+
+模型会基于提交历史生成补丁「候选」，但历史只能证明「改了什么」，不能证明「改得对」。请人工审阅 diff，并确认只创建独立分支和草稿 PR。
+
+GITHUB TOKEN（仅本次会话内存，不保存）
+生成补丁
+已审阅本补丁，确认只创建独立分支和草稿 PR
+输入可选 Token 后点击「生成补丁」。
+下载 .diff
+创建草稿 PR

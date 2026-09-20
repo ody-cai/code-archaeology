@@ -118,11 +118,29 @@ test('resolveBase 上游 500 -> 静态 upstream_error（不复述 message）', a
   assert.ok(!err.message.includes('SECRET'));
 });
 
-test('resolveBase 跳转 -> unsafe_redirect', async () => {
-  const fetchImpl = async () => { throw new TypeError('redirect mode is set to error'); };
-  const gh = createGitHub({ token: TOKEN, fetchImpl });
-  const err = await expectReject(() => gh.resolveBase('owner/repo'));
-  assert.strictEqual(err.code, 'unsafe_redirect');
+for (const status of [301, 302, 303, 307, 308]) {
+  test(`resolveBase 使用 manual 拒绝 ${status}，不跟随也不读响应体`, async () => {
+    let calls = 0;
+    let reads = 0;
+    const gh = createGitHub({ token: TOKEN, fetchImpl: async (_url, opts) => {
+      calls++;
+      assert.equal(opts.redirect, 'manual');
+      return { ok: false, status, json: async () => { reads++; return {}; } };
+    } });
+    const err = await expectReject(() => gh.resolveBase('owner/repo'));
+    assert.equal(err.code, 'unsafe_redirect');
+    assert.equal(calls, 1);
+    assert.equal(reads, 0);
+  });
+}
+
+test('request 在边缘兼容的传输中可成功读取 JSON', async () => {
+  const gh = createGitHub({ fetchImpl: async (_url, opts) => {
+    if (!['manual', 'follow'].includes(opts.redirect)) throw new TypeError('Invalid redirect value');
+    assert.equal(opts.redirect, 'manual');
+    return jsonResponse(200, { success: true });
+  } });
+  assert.deepEqual(await gh.request('/test'), { success: true });
 });
 
 test('resolveBase 超时 -> upstream_timeout', async () => {

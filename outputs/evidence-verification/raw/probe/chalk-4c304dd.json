@@ -1,0 +1,161 @@
+{
+  "sha": "4c304dd72cce5a036c02e5dd8af52996ae98501f",
+  "node_id": "C_kwDOALTlW9oAKDRjMzA0ZGQ3MmNjZTVhMDM2YzAyZTVkZDhhZjUyOTk2YWU5ODUwMWY",
+  "commit": {
+    "author": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "date": "2026-07-25T23:40:10Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-07-25T23:40:10Z"
+    },
+    "message": "Add extended underline styles and underline colors (#689)",
+    "tree": {
+      "sha": "1eaa0501c6a538722ef57c0e45cd652cedc4816e",
+      "url": "https://api.github.com/repos/chalk/chalk/git/trees/1eaa0501c6a538722ef57c0e45cd652cedc4816e"
+    },
+    "url": "https://api.github.com/repos/chalk/chalk/git/commits/4c304dd72cce5a036c02e5dd8af52996ae98501f",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqZUlaCRC1aQ7uu5UhlAAAdGQQAIIRjC+UaBXhb3hUsp4IU2Jo\nuZU3NJQtt5V5NJF0C2j8cCedR20Gf5TRwS2IUr8JLfUS+sw5i58XO8cn2daNRM4O\nSBSZ9+AbOSqiBM2fD0cYLw7qYkkNDdrtVQZeIfw7AyK6e9kz7mhILGjN58ZAurZY\n+fAzhLUABcXS/eLllMRk/Ed0xLq5eZAv1p8sAh+U8wXAwkujWSIUVuF+tpbXdRt1\nPVp1x+SytRImsjxUcrw60XXSQI60c4C3hX1a4VQgqiAL4ZmJzu612AAc0aXwzpLo\n5yTm+A1bZYPQ1ct+ekGtAuoBjxz/sGlJoH1UwN7tlqpyT4SCAX9MAULQFENzT/dW\nbEpavK3lk6Uv0QtnAfS3rL1qd8705blxuunKS2IND/korGfb/PTZU840FQRjclsO\nBPVck5cnWDeKLAbLFYAZz883F9zFyZX/T6DrXgKQW0nCmNL/AL+qMqrXjqaK8tFv\ngWnI84rQ8UFzGPzIAMQuMpn2e2ae2UYU30B0oLPdXX2DMYI/hswgrXx+t/P8BW9n\nq8KLz+ejwHwcZBfhZ6LVA+d8E03dUI5MBO43LGjPHk2Ve2gAKdV/HsJ8gqz9wKIS\npl9e5DUsX7+czXLJeoQaiMCQM24mJtBEzAnaiayt76tt71plRTrQqWc5cNpknmIv\nv5Uk8tIJwvQNtudMmd5x\n=UxYQ\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 1eaa0501c6a538722ef57c0e45cd652cedc4816e\nparent e91293130c7d642c7b91152c3c942743a3b910a7\nauthor Sindre Sorhus <sindresorhus@gmail.com> 1785022810 +0200\ncommitter GitHub <noreply@github.com> 1785022810 +0200\n\nAdd extended underline styles and underline colors (#689)",
+      "verified_at": "2026-07-25T23:40:10Z"
+    }
+  },
+  "url": "https://api.github.com/repos/chalk/chalk/commits/4c304dd72cce5a036c02e5dd8af52996ae98501f",
+  "html_url": "https://github.com/chalk/chalk/commit/4c304dd72cce5a036c02e5dd8af52996ae98501f",
+  "comments_url": "https://api.github.com/repos/chalk/chalk/commits/4c304dd72cce5a036c02e5dd8af52996ae98501f/comments",
+  "author": {
+    "login": "sindresorhus",
+    "id": 170270,
+    "node_id": "MDQ6VXNlcjE3MDI3MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/170270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sindresorhus",
+    "html_url": "https://github.com/sindresorhus",
+    "followers_url": "https://api.github.com/users/sindresorhus/followers",
+    "following_url": "https://api.github.com/users/sindresorhus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sindresorhus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sindresorhus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sindresorhus/subscriptions",
+    "organizations_url": "https://api.github.com/users/sindresorhus/orgs",
+    "repos_url": "https://api.github.com/users/sindresorhus/repos",
+    "events_url": "https://api.github.com/users/sindresorhus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sindresorhus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e91293130c7d642c7b91152c3c942743a3b910a7",
+      "url": "https://api.github.com/repos/chalk/chalk/commits/e91293130c7d642c7b91152c3c942743a3b910a7",
+      "html_url": "https://github.com/chalk/chalk/commit/e91293130c7d642c7b91152c3c942743a3b910a7"
+    }
+  ],
+  "stats": {
+    "total": 369,
+    "additions": 335,
+    "deletions": 34
+  },
+  "files": [
+    {
+      "sha": "ac31b2f072c3e7ae9a57747cf04325ccf81ead9e",
+      "filename": "readme.md",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 3,
+      "changes": 38,
+      "blob_url": "https://github.com/chalk/chalk/blob/4c304dd72cce5a036c02e5dd8af52996ae98501f/readme.md",
+      "raw_url": "https://github.com/chalk/chalk/raw/4c304dd72cce5a036c02e5dd8af52996ae98501f/readme.md",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/readme.md?ref=4c304dd72cce5a036c02e5dd8af52996ae98501f",
+      "patch": "@@ -152,9 +152,9 @@ Explicit 256/Truecolor mode can be enabled using the `--color=256` and `--color=\n \n `chalkStderr` contains a separate instance configured with color support detected for `stderr` stream instead of `stdout`. Override rules from `supportsColor` apply to this too. `supportsColorStderr` is exposed for convenience.\n \n-### modifierNames, foregroundColorNames, backgroundColorNames, and colorNames\n+### modifierNames, foregroundColorNames, backgroundColorNames, underlineColorNames, and colorNames\n \n-All supported style strings are exposed as an array of strings for convenience. `colorNames` is the combination of `foregroundColorNames` and `backgroundColorNames`.\n+All supported style strings are exposed as an array of strings for convenience. `colorNames` is the combination of `foregroundColorNames` and `backgroundColorNames`. Underline color names are kept separate in `underlineColorNames`.\n \n This can be useful if you wrap Chalk and need to validate input:\n \n@@ -177,6 +177,10 @@ console.log(foregroundColorNames.includes('pink'));\n - `dim` - Make the text have lower opacity.\n - `italic` - Make the text italic. *(Not widely supported)*\n - `underline` - Put a horizontal line below the text. *(Not widely supported)*\n+- `underlineDouble` - Put a double horizontal line below the text. *(Not widely supported)*\n+- `underlineCurly` - Put a curly horizontal line below the text. *(Not widely supported)*\n+- `underlineDotted` - Put a dotted horizontal line below the text. *(Not widely supported)*\n+- `underlineDashed` - Put a dashed horizontal line below the text. *(Not widely supported)*\n - `overline` - Put a horizontal line above the text. *(Not widely supported)*\n - `inverse` - Invert background and foreground colors.\n - `hidden` - Print the text but make it invisible.\n@@ -221,6 +225,29 @@ console.log(foregroundColorNames.includes('pink'));\n - `bgCyanBright`\n - `bgWhiteBright`\n \n+### Underline colors\n+\n+The underline color is set independently of the text color, so the color is only visible when an underline style is also applied. For example, `chalk.underlineRed.underlineCurly('typo')` renders a red squiggle below otherwise unstyled text. *(Not widely supported)*\n+\n+Unlike text and background colors, there is no basic 16-color form for underline colors, so they always use the 256-color escape. At level 1 they are downsampled to the first 16 palette entries rather than to a basic color code.\n+\n+- `underlineBlack`\n+- `underlineRed`\n+- `underlineGreen`\n+- `underlineYellow`\n+- `underlineBlue`\n+- `underlineMagenta`\n+- `underlineCyan`\n+- `underlineWhite`\n+- `underlineBlackBright` (alias: `underlineGray`, `underlineGrey`)\n+- `underlineRedBright`\n+- `underlineGreenBright`\n+- `underlineYellowBright`\n+- `underlineBlueBright`\n+- `underlineMagentaBright`\n+- `underlineCyanBright`\n+- `underlineWhiteBright`\n+\n ## 256 and Truecolor color support\n \n Chalk supports 256 colors and [Truecolor](https://github.com/termstandard/colors) (16 million colors) on supported terminal apps.\n@@ -232,11 +259,16 @@ Examples:\n - `chalk.hex('#DEADED').underline('Hello, world!')`\n - `chalk.rgb(15, 100, 204).inverse('Hello!')`\n \n-Background versions of these models are prefixed with `bg` and the first level of the module capitalized (e.g. `hex` for foreground colors and `bgHex` for background colors).\n+Background versions of these models are prefixed with `bg` and the first letter of the model capitalized (e.g. `hex` for foreground colors and `bgHex` for background colors).\n \n - `chalk.bgHex('#DEADED').underline('Hello, world!')`\n - `chalk.bgRgb(15, 100, 204).inverse('Hello!')`\n \n+Underline versions are prefixed with `underline` in the same way (e.g. `hex` for foreground colors and `underlineHex` for underline colors). They only take effect when an underline style is also applied.\n+\n+- `chalk.underlineHex('#DEADED').underlineCurly('Hello, world!')`\n+- `chalk.underlineRgb(15, 100, 204).underline('Hello!')`\n+\n The following color models can be used:\n \n - [`rgb`](https://en.wikipedia.org/wiki/RGB_color_model) - Example: `chalk.rgb(255, 136, 0).bold('Orange!')`"
+    },
+    {
+      "sha": "09e56a508df2c33a12e434d3ab1732ad8368df4d",
+      "filename": "source/index.d.ts",
+      "status": "modified",
+      "additions": 101,
+      "deletions": 5,
+      "changes": 106,
+      "blob_url": "https://github.com/chalk/chalk/blob/4c304dd72cce5a036c02e5dd8af52996ae98501f/source%2Findex.d.ts",
+      "raw_url": "https://github.com/chalk/chalk/raw/4c304dd72cce5a036c02e5dd8af52996ae98501f/source%2Findex.d.ts",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Findex.d.ts?ref=4c304dd72cce5a036c02e5dd8af52996ae98501f",
+      "patch": "@@ -1,4 +1,4 @@\n-// TODO: Make it this when TS suports that.\n+// TODO: Make it this when TS supports that.\n // import {ModifierName, ForegroundColor, BackgroundColor, ColorName} from '#ansi-styles';\n // import {ColorInfo, ColorSupportLevel} from '#supports-color';\n import {\n@@ -125,6 +125,52 @@ export interface ChalkInstance {\n \t*/\n \tbgAnsi256: (index: number) => this;\n \n+\t/**\n+\tUse RGB values to set underline color.\n+\n+\tThe underline color is only visible when an underline style is also applied.\n+\n+\t@example\n+\t```\n+\timport chalk from 'chalk';\n+\n+\tchalk.underlineRgb(222, 173, 237).underlineCurly('Hello, world!');\n+\t```\n+\t*/\n+\tunderlineRgb: (red: number, green: number, blue: number) => this;\n+\n+\t/**\n+\tUse HEX value to set underline color.\n+\n+\tThe underline color is only visible when an underline style is also applied.\n+\n+\t@param color - Hexadecimal value representing the desired color.\n+\n+\t@example\n+\t```\n+\timport chalk from 'chalk';\n+\n+\tchalk.underlineHex('#DEADED').underlineCurly('Hello, world!');\n+\t```\n+\t*/\n+\tunderlineHex: (color: string) => this;\n+\n+\t/**\n+\tUse an [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set underline color.\n+\n+\tThe underline color is only visible when an underline style is also applied.\n+\n+\tThe value is downsampled to the first 16 palette entries on terminals that only support basic colors (level 1), so `chalk.underlineAnsi256(196)` becomes 9 (the palette index for bright red).\n+\n+\t@example\n+\t```\n+\timport chalk from 'chalk';\n+\n+\tchalk.underlineAnsi256(201).underlineCurly('Hello, world!');\n+\t```\n+\t*/\n+\tunderlineAnsi256: (index: number) => this;\n+\n \t/**\n \tModifier: Reset the current style.\n \t*/\n@@ -150,6 +196,26 @@ export interface ChalkInstance {\n \t*/\n \treadonly underline: this;\n \n+\t/**\n+\tModifier: Put a double horizontal line below the text. *(Not widely supported)*\n+\t*/\n+\treadonly underlineDouble: this;\n+\n+\t/**\n+\tModifier: Put a curly horizontal line below the text. *(Not widely supported)*\n+\t*/\n+\treadonly underlineCurly: this;\n+\n+\t/**\n+\tModifier: Put a dotted horizontal line below the text. *(Not widely supported)*\n+\t*/\n+\treadonly underlineDotted: this;\n+\n+\t/**\n+\tModifier: Put a dashed horizontal line below the text. *(Not widely supported)*\n+\t*/\n+\treadonly underlineDashed: this;\n+\n \t/**\n \tModifier: Put a horizontal line above the text. *(Not widely supported)*\n \t*/\n@@ -186,12 +252,12 @@ export interface ChalkInstance {\n \treadonly cyan: this;\n \treadonly white: this;\n \n-\t/*\n+\t/**\n \tAlias for `blackBright`.\n \t*/\n \treadonly gray: this;\n \n-\t/*\n+\t/**\n \tAlias for `blackBright`.\n \t*/\n \treadonly grey: this;\n@@ -214,12 +280,12 @@ export interface ChalkInstance {\n \treadonly bgCyan: this;\n \treadonly bgWhite: this;\n \n-\t/*\n+\t/**\n \tAlias for `bgBlackBright`.\n \t*/\n \treadonly bgGray: this;\n \n-\t/*\n+\t/**\n \tAlias for `bgBlackBright`.\n \t*/\n \treadonly bgGrey: this;\n@@ -232,6 +298,34 @@ export interface ChalkInstance {\n \treadonly bgMagentaBright: this;\n \treadonly bgCyanBright: this;\n \treadonly bgWhiteBright: this;\n+\n+\treadonly underlineBlack: this;\n+\treadonly underlineRed: this;\n+\treadonly underlineGreen: this;\n+\treadonly underlineYellow: this;\n+\treadonly underlineBlue: this;\n+\treadonly underlineMagenta: this;\n+\treadonly underlineCyan: this;\n+\treadonly underlineWhite: this;\n+\n+\t/**\n+\tAlias for `underlineBlackBright`.\n+\t*/\n+\treadonly underlineGray: this;\n+\n+\t/**\n+\tAlias for `underlineBlackBright`.\n+\t*/\n+\treadonly underlineGrey: this;\n+\n+\treadonly underlineBlackBright: this;\n+\treadonly underlineRedBright: this;\n+\treadonly underlineGreenBright: this;\n+\treadonly underlineYellowBright: this;\n+\treadonly underlineBlueBright: this;\n+\treadonly underlineMagentaBright: this;\n+\treadonly underlineCyanBright: this;\n+\treadonly underlineWhiteBright: this;\n }\n \n /**\n@@ -254,10 +348,12 @@ export {\n \tModifierName,\n \tForegroundColorName,\n \tBackgroundColorName,\n+\tUnderlineColorName,\n \tColorName,\n \tmodifierNames,\n \tforegroundColorNames,\n \tbackgroundColorNames,\n+\tunderlineColorNames,\n \tcolorNames,\n // } from '#ansi-styles';\n } from './vendor/ansi-styles/index.js';"
+    },
+    {
+      "sha": "4c79010bc30094d01d306e814d3355f6d7f90d3a",
+      "filename": "source/index.js",
+      "status": "modified",
+      "additions": 19,
+      "deletions": 20,
+      "changes": 39,
+      "blob_url": "https://github.com/chalk/chalk/blob/4c304dd72cce5a036c02e5dd8af52996ae98501f/source%2Findex.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/4c304dd72cce5a036c02e5dd8af52996ae98501f/source%2Findex.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Findex.js?ref=4c304dd72cce5a036c02e5dd8af52996ae98501f",
+      "patch": "@@ -99,26 +99,24 @@ const getModelAnsi = (model, level, type, ...arguments_) => {\n const usedModels = ['rgb', 'hex', 'ansi256'];\n \n for (const model of usedModels) {\n-\tstyles[model] = {\n-\t\tget() {\n-\t\t\tconst {level} = this;\n-\t\t\treturn function (...arguments_) {\n-\t\t\t\tconst styler = createStyler(getModelAnsi(model, levelMapping[level], 'color', ...arguments_), ansiStyles.color.close, this[STYLER]);\n-\t\t\t\treturn createBuilder(this, styler, this[IS_EMPTY]);\n-\t\t\t};\n-\t\t},\n-\t};\n-\n-\tconst bgModel = 'bg' + model[0].toUpperCase() + model.slice(1);\n-\tstyles[bgModel] = {\n-\t\tget() {\n-\t\t\tconst {level} = this;\n-\t\t\treturn function (...arguments_) {\n-\t\t\t\tconst styler = createStyler(getModelAnsi(model, levelMapping[level], 'bgColor', ...arguments_), ansiStyles.bgColor.close, this[STYLER]);\n-\t\t\t\treturn createBuilder(this, styler, this[IS_EMPTY]);\n-\t\t\t};\n-\t\t},\n-\t};\n+\tconst capitalizedModel = model[0].toUpperCase() + model.slice(1);\n+\n+\tfor (const [styleName, type] of [\n+\t\t[model, 'color'],\n+\t\t['bg' + capitalizedModel, 'bgColor'],\n+\t\t['underline' + capitalizedModel, 'underlineColor'],\n+\t]) {\n+\t\tconst {close} = ansiStyles[type];\n+\t\tstyles[styleName] = {\n+\t\t\tget() {\n+\t\t\t\tconst {level} = this;\n+\t\t\t\treturn function (...arguments_) {\n+\t\t\t\t\tconst styler = createStyler(getModelAnsi(model, levelMapping[level], type, ...arguments_), close, this[STYLER]);\n+\t\t\t\t\treturn createBuilder(this, styler, this[IS_EMPTY]);\n+\t\t\t\t};\n+\t\t\t},\n+\t\t};\n+\t}\n }\n \n const proto = Object.defineProperties(\n@@ -229,6 +227,7 @@ export {\n \tmodifierNames,\n \tforegroundColorNames,\n \tbackgroundColorNames,\n+\tunderlineColorNames,\n \tcolorNames,\n \n \t// TODO: Remove these aliases in the next major version"
+    },
+    {
+      "sha": "283ee5b9b8175ed51825145564d674871b85a359",
+      "filename": "source/vendor/ansi-styles/index.d.ts",
+      "status": "modified",
+      "additions": 67,
+      "deletions": 4,
+      "changes": 71,
+      "blob_url": "https://github.com/chalk/chalk/blob/4c304dd72cce5a036c02e5dd8af52996ae98501f/source%2Fvendor%2Fansi-styles%2Findex.d.ts",
+      "raw_url": "https://github.com/chalk/chalk/raw/4c304dd72cce5a036c02e5dd8af52996ae98501f/source%2Fvendor%2Fansi-styles%2Findex.d.ts",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Fvendor%2Fansi-styles%2Findex.d.ts?ref=4c304dd72cce5a036c02e5dd8af52996ae98501f",
+      "patch": "@@ -45,12 +45,32 @@ export interface Modifier {\n \treadonly italic: CSPair;\n \n \t/**\n-\tMake text underline. (Not widely supported)\n+\tPut a horizontal line below the text. (Not widely supported)\n \t*/\n \treadonly underline: CSPair;\n \n \t/**\n-\tMake text overline.\n+\tPut a double horizontal line below the text. (Not widely supported)\n+\t*/\n+\treadonly underlineDouble: CSPair;\n+\n+\t/**\n+\tPut a curly horizontal line below the text. (Not widely supported)\n+\t*/\n+\treadonly underlineCurly: CSPair;\n+\n+\t/**\n+\tPut a dotted horizontal line below the text. (Not widely supported)\n+\t*/\n+\treadonly underlineDotted: CSPair;\n+\n+\t/**\n+\tPut a dashed horizontal line below the text. (Not widely supported)\n+\t*/\n+\treadonly underlineDashed: CSPair;\n+\n+\t/**\n+\tPut a horizontal line above the text.\n \n \tSupported on VTE-based terminals, the GNOME terminal, mintty, and Git Bash.\n \t*/\n@@ -132,6 +152,36 @@ export interface BackgroundColor {\n \treadonly bgWhiteBright: CSPair;\n }\n \n+export interface UnderlineColor {\n+\treadonly underlineBlack: CSPair;\n+\treadonly underlineRed: CSPair;\n+\treadonly underlineGreen: CSPair;\n+\treadonly underlineYellow: CSPair;\n+\treadonly underlineBlue: CSPair;\n+\treadonly underlineCyan: CSPair;\n+\treadonly underlineMagenta: CSPair;\n+\treadonly underlineWhite: CSPair;\n+\n+\t/**\n+\tAlias for `underlineBlackBright`.\n+\t*/\n+\treadonly underlineGray: CSPair;\n+\n+\t/**\n+\tAlias for `underlineBlackBright`.\n+\t*/\n+\treadonly underlineGrey: CSPair;\n+\n+\treadonly underlineBlackBright: CSPair;\n+\treadonly underlineRedBright: CSPair;\n+\treadonly underlineGreenBright: CSPair;\n+\treadonly underlineYellowBright: CSPair;\n+\treadonly underlineBlueBright: CSPair;\n+\treadonly underlineCyanBright: CSPair;\n+\treadonly underlineMagentaBright: CSPair;\n+\treadonly underlineWhiteBright: CSPair;\n+}\n+\n export interface ConvertColor {\n \t/**\n \tConvert from the RGB color space to the ANSI 256 color space.\n@@ -199,6 +249,13 @@ Basic background color names.\n */\n export type BackgroundColorName = keyof BackgroundColor;\n \n+/**\n+Basic underline color names.\n+\n+[More colors here.](https://github.com/chalk/chalk/blob/main/readme.md#256-and-truecolor-color-support)\n+*/\n+export type UnderlineColorName = keyof UnderlineColor;\n+\n /**\n Basic color names. The combination of foreground and background color names.\n \n@@ -221,7 +278,12 @@ Basic background color names.\n */\n export const backgroundColorNames: readonly BackgroundColorName[];\n \n-/*\n+/**\n+Basic underline color names.\n+*/\n+export const underlineColorNames: readonly UnderlineColorName[];\n+\n+/**\n Basic color names. The combination of foreground and background color names.\n */\n export const colorNames: readonly ColorName[];\n@@ -230,7 +292,8 @@ declare const ansiStyles: {\n \treadonly modifier: Modifier;\n \treadonly color: ColorBase & ForegroundColor;\n \treadonly bgColor: ColorBase & BackgroundColor;\n+\treadonly underlineColor: ColorBase & UnderlineColor;\n \treadonly codes: ReadonlyMap<number, number>;\n-} & ForegroundColor & BackgroundColor & Modifier & ConvertColor;\n+} & ForegroundColor & BackgroundColor & UnderlineColor & Modifier & ConvertColor;\n \n export default ansiStyles;"
+    },
+    {
+      "sha": "2b37a2b4448b4307d6441a1fe987ff47455c071d",
+      "filename": "source/vendor/ansi-styles/index.js",
+      "status": "modified",
+      "additions": 39,
+      "deletions": 1,
+      "changes": 40,
+      "blob_url": "https://github.com/chalk/chalk/blob/4c304dd72cce5a036c02e5dd8af52996ae98501f/source%2Fvendor%2Fansi-styles%2Findex.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/4c304dd72cce5a036c02e5dd8af52996ae98501f/source%2Fvendor%2Fansi-styles%2Findex.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Fvendor%2Fansi-styles%2Findex.js?ref=4c304dd72cce5a036c02e5dd8af52996ae98501f",
+      "patch": "@@ -1,11 +1,15 @@\n const ANSI_BACKGROUND_OFFSET = 10;\n+const ANSI_UNDERLINE_OFFSET = 20;\n \n const wrapAnsi16 = (offset = 0) => code => `\\u{1B}[${code + offset}m`;\n \n const wrapAnsi256 = (offset = 0) => code => `\\u{1B}[${38 + offset};5;${code}m`;\n \n const wrapAnsi16m = (offset = 0) => (red, green, blue) => `\\u{1B}[${38 + offset};2;${red};${green};${blue}m`;\n \n+// `SGR 58` has no basic 16-color form, so the basic color code is mapped to its palette index instead.\n+const wrapUnderlineAnsi = code => `\\u{1B}[58;5;${code < 90 ? code - 30 : code - 90 + 8}m`;\n+\n const styles = {\n \tmodifier: {\n \t\treset: [0, 0],\n@@ -14,6 +18,11 @@ const styles = {\n \t\tdim: [2, 22],\n \t\titalic: [3, 23],\n \t\tunderline: [4, 24],\n+\t\t// Extended underline styles (`SGR 4:x` sub-parameters). Not in upstream `ansi-styles`.\n+\t\tunderlineDouble: ['4:2', 24],\n+\t\tunderlineCurly: ['4:3', 24],\n+\t\tunderlineDotted: ['4:4', 24],\n+\t\tunderlineDashed: ['4:5', 24],\n \t\toverline: [53, 55],\n \t\tinverse: [7, 27],\n \t\thidden: [8, 28],\n@@ -63,11 +72,35 @@ const styles = {\n \t\tbgCyanBright: [106, 49],\n \t\tbgWhiteBright: [107, 49],\n \t},\n+\t// Underline color (`SGR 58`/`59`). Not in upstream `ansi-styles`.\n+\tunderlineColor: {\n+\t\tunderlineBlack: ['58;5;0', 59],\n+\t\tunderlineRed: ['58;5;1', 59],\n+\t\tunderlineGreen: ['58;5;2', 59],\n+\t\tunderlineYellow: ['58;5;3', 59],\n+\t\tunderlineBlue: ['58;5;4', 59],\n+\t\tunderlineMagenta: ['58;5;5', 59],\n+\t\tunderlineCyan: ['58;5;6', 59],\n+\t\tunderlineWhite: ['58;5;7', 59],\n+\n+\t\t// Bright color\n+\t\tunderlineBlackBright: ['58;5;8', 59],\n+\t\tunderlineGray: ['58;5;8', 59], // Alias of `underlineBlackBright`\n+\t\tunderlineGrey: ['58;5;8', 59], // Alias of `underlineBlackBright`\n+\t\tunderlineRedBright: ['58;5;9', 59],\n+\t\tunderlineGreenBright: ['58;5;10', 59],\n+\t\tunderlineYellowBright: ['58;5;11', 59],\n+\t\tunderlineBlueBright: ['58;5;12', 59],\n+\t\tunderlineMagentaBright: ['58;5;13', 59],\n+\t\tunderlineCyanBright: ['58;5;14', 59],\n+\t\tunderlineWhiteBright: ['58;5;15', 59],\n+\t},\n };\n \n export const modifierNames = Object.keys(styles.modifier);\n export const foregroundColorNames = Object.keys(styles.color);\n export const backgroundColorNames = Object.keys(styles.bgColor);\n+export const underlineColorNames = Object.keys(styles.underlineColor);\n export const colorNames = [...foregroundColorNames, ...backgroundColorNames];\n \n function assembleStyles() {\n@@ -82,7 +115,8 @@ function assembleStyles() {\n \n \t\t\tgroup[styleName] = styles[styleName];\n \n-\t\t\tcodes.set(style[0], style[1]);\n+\t\t\t// Only the leading SGR parameter identifies a style, so `4:3` and `58;5;1` are keyed as `4` and `58`.\n+\t\t\tcodes.set(Number.parseInt(style[0], 10), style[1]);\n \t\t}\n \n \t\tObject.defineProperty(styles, groupName, {\n@@ -98,13 +132,17 @@ function assembleStyles() {\n \n \tstyles.color.close = '\\u{1B}[39m';\n \tstyles.bgColor.close = '\\u{1B}[49m';\n+\tstyles.underlineColor.close = '\\u{1B}[59m';\n \n \tstyles.color.ansi = wrapAnsi16();\n \tstyles.color.ansi256 = wrapAnsi256();\n \tstyles.color.ansi16m = wrapAnsi16m();\n \tstyles.bgColor.ansi = wrapAnsi16(ANSI_BACKGROUND_OFFSET);\n \tstyles.bgColor.ansi256 = wrapAnsi256(ANSI_BACKGROUND_OFFSET);\n \tstyles.bgColor.ansi16m = wrapAnsi16m(ANSI_BACKGROUND_OFFSET);\n+\tstyles.underlineColor.ansi = wrapUnderlineAnsi;\n+\tstyles.underlineColor.ansi256 = wrapAnsi256(ANSI_UNDERLINE_OFFSET);\n+\tstyles.underlineColor.ansi16m = wrapAnsi16m(ANSI_UNDERLINE_OFFSET);\n \n \t// From https://github.com/Qix-/color-convert/blob/3f0e0d4e92e235796ccb17f6e85c72094a651f49/conversions.js\n \tObject.defineProperties(styles, {"
+    },
+    {
+      "sha": "8a0769b0a6d3196af0f32ab9f92e162ee5662c64",
+      "filename": "test/chalk.js",
+      "status": "modified",
+      "additions": 74,
+      "deletions": 1,
+      "changes": 75,
+      "blob_url": "https://github.com/chalk/chalk/blob/4c304dd72cce5a036c02e5dd8af52996ae98501f/test%2Fchalk.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/4c304dd72cce5a036c02e5dd8af52996ae98501f/test%2Fchalk.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/test%2Fchalk.js?ref=4c304dd72cce5a036c02e5dd8af52996ae98501f",
+      "patch": "@@ -1,6 +1,12 @@\n import process from 'node:process';\n import test from 'ava';\n-import chalk, {Chalk, chalkStderr} from '../source/index.js';\n+import chalk, {\n+\tChalk,\n+\tchalkStderr,\n+\tcolorNames,\n+\tmodifierNames,\n+\tunderlineColorNames,\n+} from '../source/index.js';\n \n chalk.level = 3;\n chalkStderr.level = 3;\n@@ -128,6 +134,73 @@ test('don\\'t emit color codes if level is 0', t => {\n \tt.is(new Chalk({level: 0}).bgHex('#FF0000')('hello'), 'hello');\n \tt.is(new Chalk({level: 0}).ansi256(196)('hello'), 'hello');\n \tt.is(new Chalk({level: 0}).bgAnsi256(196)('hello'), 'hello');\n+\tt.is(new Chalk({level: 0}).underlineHex('#FF0000')('hello'), 'hello');\n+\tt.is(new Chalk({level: 0}).underlineAnsi256(196)('hello'), 'hello');\n+\tt.is(new Chalk({level: 0}).underlineRed('hello'), 'hello');\n+\tt.is(new Chalk({level: 0}).underlineCurly('hello'), 'hello');\n+});\n+\n+test('support extended underline styles', t => {\n+\tt.is(chalk.underlineDouble('foo'), '\\u{1B}[4:2mfoo\\u{1B}[24m');\n+\tt.is(chalk.underlineCurly('foo'), '\\u{1B}[4:3mfoo\\u{1B}[24m');\n+\tt.is(chalk.underlineDotted('foo'), '\\u{1B}[4:4mfoo\\u{1B}[24m');\n+\tt.is(chalk.underlineDashed('foo'), '\\u{1B}[4:5mfoo\\u{1B}[24m');\n+});\n+\n+test('support nesting underline styles', t => {\n+\tt.is(\n+\t\tchalk.underline(chalk.underlineCurly('a') + 'b'),\n+\t\t'\\u{1B}[4m\\u{1B}[4:3ma\\u{1B}[24m\\u{1B}[4mb\\u{1B}[24m',\n+\t);\n+\n+\tt.is(\n+\t\tchalk.underlineCurly(chalk.underline('a') + 'b'),\n+\t\t'\\u{1B}[4:3m\\u{1B}[4ma\\u{1B}[24m\\u{1B}[4:3mb\\u{1B}[24m',\n+\t);\n+});\n+\n+test('support underline colors', t => {\n+\tt.is(chalk.underlineRed('foo'), '\\u{1B}[58;5;1mfoo\\u{1B}[59m');\n+\tt.is(chalk.underlineBlackBright('foo'), '\\u{1B}[58;5;8mfoo\\u{1B}[59m');\n+\tt.is(chalk.underlineGray('foo'), chalk.underlineBlackBright('foo'));\n+\tt.is(chalk.underlineGrey('foo'), chalk.underlineBlackBright('foo'));\n+\tt.is(\n+\t\tchalk.red.underlineRed.underlineCurly('foo'),\n+\t\t'\\u{1B}[31m\\u{1B}[58;5;1m\\u{1B}[4:3mfoo\\u{1B}[24m\\u{1B}[59m\\u{1B}[39m',\n+\t);\n+});\n+\n+test('support nesting underline colors', t => {\n+\tt.is(\n+\t\tchalk.underlineBlue(chalk.underlineRed('a') + 'b'),\n+\t\t'\\u{1B}[58;5;4m\\u{1B}[58;5;1ma\\u{1B}[59m\\u{1B}[58;5;4mb\\u{1B}[59m',\n+\t);\n+});\n+\n+test('properly downsample underline colors', t => {\n+\tt.is(new Chalk({level: 3}).underlineRgb(255, 0, 0)('hello'), '\\u{1B}[58;2;255;0;0mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 2}).underlineRgb(255, 0, 0)('hello'), '\\u{1B}[58;5;196mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 1}).underlineRgb(255, 0, 0)('hello'), '\\u{1B}[58;5;9mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 3}).underlineHex('#FF0000')('hello'), '\\u{1B}[58;2;255;0;0mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 2}).underlineHex('#FF0000')('hello'), '\\u{1B}[58;5;196mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 1}).underlineHex('#FF0000')('hello'), '\\u{1B}[58;5;9mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 3}).underlineAnsi256(196)('hello'), '\\u{1B}[58;5;196mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 2}).underlineAnsi256(196)('hello'), '\\u{1B}[58;5;196mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 1}).underlineAnsi256(196)('hello'), '\\u{1B}[58;5;9mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 1}).underlineAnsi256(2)('hello'), '\\u{1B}[58;5;2mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 1}).underlineAnsi256(232)('hello'), '\\u{1B}[58;5;0mhello\\u{1B}[59m');\n+\n+\t// The named underline colors have no basic 16-color form, so they are the same at every level.\n+\tt.is(new Chalk({level: 1}).underlineRed('hello'), '\\u{1B}[58;5;1mhello\\u{1B}[59m');\n+\tt.is(new Chalk({level: 2}).underlineRed('hello'), '\\u{1B}[58;5;1mhello\\u{1B}[59m');\n+});\n+\n+test('expose the underline style names', t => {\n+\tt.true(modifierNames.includes('underlineCurly'));\n+\tt.true(underlineColorNames.includes('underlineRedBright'));\n+\n+\t// Underline colors are intentionally not part of `colorNames`.\n+\tt.false(colorNames.includes('underlineRed'));\n });\n \n test('supports blackBright color', t => {"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+  <Box style={{ height: 96, justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', lineHeight: 1.22, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>价值：三个真实场景，一台可追踪的仪表</Text>
+        <Text style={{ fontSize: 14.5, color: '#8892A0', marginTop: 7, letterSpacing: 0.3 }}>Value: three real scenarios — and an instrument, not a one-off report</Text>
+      </Box>
+      
+    </Box>
+  </Box>
+    <Box style={{ height: 500 }}>
+      <Box style={{ flexDirection: 'row', gap: 16, height: 302 }}>
+
+        <Box style={{ flex: 1, padding: '14px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 10, fontWeight: 'bold', color: '#4CB8A6', letterSpacing: 1.2 }}>场景 01 · 技术尽调</Text>
+          <Text style={{ fontSize: 15.5, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>并购与投资前的代码尽调</Text>
+          <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 3 }}>Technical due diligence</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 9 }}>公开仓库可直接输入 owner/name，几秒内拿到风险分、五类风险因子拆解、文件热度与被放弃的尝试清单。不需要读完代码，就能定位「哪里已经没人能解释为什么」，并把问题交回给人。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 4 }}>Paste a public owner/name and get a risk score, risk factor breakdown and the list of abandoned attempts in seconds.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 9, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#4CB8A6' }}>对应评分点：风险可量化、结论可复核 / Quantified, reviewable risk finding</Text>
+          </Box>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '14px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 10, fontWeight: 'bold', color: '#4CB8A6', letterSpacing: 1.2 }}>场景 02 · 团队交接</Text>
+          <Text style={{ fontSize: 15.5, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>新人接手前的交接清单</Text>
+          <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 3 }}>Handover checklist</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 9 }}>输出不只是分数，还包括「给接手者的建议」和「该去问原作者的问题清单」。这两项由审稿模型基于客观指标生成，问题直接指向证据不足处，而不是泛泛的注意事项。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 4 }}>Beyond a score, it emits advice for newcomers and a list of questions to ask the original author, each tied to the evidence.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 9, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#4CB8A6' }}>实测 openclaw 产出 3 条待问原作者的问题 / 3 questions emitted</Text>
+          </Box>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '14px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 10, fontWeight: 'bold', color: '#4CB8A6', letterSpacing: 1.2 }}>场景 03 · 架构复盘</Text>
+          <Text style={{ fontSize: 15.5, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>把走过的路摊开看</Text>
+          <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 3 }}>Architecture retro</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 9 }}>把「被放弃的尝试」与「原地打转」两类证据并排摊开：哪些功能加了又删、哪些文件反复推翻但净变化为零。这类信息只存在于历史里，代码终态永远看不到。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 4 }}>Abandoned attempts and thrashing files side by side — information that exists only in history, never in the final code.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 9, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#4CB8A6' }}>实测 topfo：7 处被放弃 · 9 个文件原地打转 / 9 thrashing files</Text>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 186, marginTop: 12 }}>
+        <Box style={{ flex: 1, padding: '13px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, color: '#E3A33E', fontWeight: 'bold' }}>从一次性报告，变成流水线里的一道闸门 / From report to gate</Text>
+          <Text style={{ fontSize: 11.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 8 }}>
+            命令行形态支持 --fail-on-risk 指定阈值：风险分高于阈值时以<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>退出码 2</span> 结束，可直接用于阻断合并请求。三个月后再跑一次同一个仓库，就能看出知识可追溯率有没有变好。
+          </Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.45, color: '#6B7684', marginTop: 6 }}>
+            Exit code 2 above a configurable threshold makes it a merge gate. Re-run the same repo months later and watch knowledge traceability move.
+          </Text>
+        </Box>
+        <Box style={{ flex: 1, padding: '13px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid rgba(227,163,62,0.35)' }}>
+          <Text style={{ fontSize: 12, color: '#E3A33E', fontWeight: 'bold' }}>已知边界（主动写在 PPT 里）/ Known boundaries</Text>
+          <Text style={{ fontSize: 11.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 8 }}>
+            · 当前依赖 GitHub REST API，因此读不到私有仓库的完整历史，单次窗口上限 100 次提交。<br />
+            · 刻意不读 PR 与 issue —— 这是 24 小时内的取舍：优先保住「不幻觉」，而不是扩大证据面。<br />
+            · 下一步：改用本地 git log，零 API 成本、完整历史、且不接触对方任何凭据。
+          </Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.45, color: '#6B7684', marginTop: 6 }}>
+            Public repos only, 100-commit window. PR/issue reading was deliberately deferred to protect accuracy. Next step: local git log.
+          </Text>
+        </Box>
+      </Box>
+    </Box>
+
+  <Box style={{ height: 32, justifyContent: 'center' }}>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>本页场景为产品设计说明；其中引用的数字（问题清单条数、被放弃处数、打转文件数）均为本次两仓库实测。 / Scenarios are by design; the figures quoted are measured on the two repositories tested.</Text>
+  </Box>
+  <Box style={{ height: 36, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>代码考古学 / Code Archaeology · BAYTECH 2026 · AI 应用与工程赛道</Text>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>06 / 12</Text>
+  </Box>
+</Slide>

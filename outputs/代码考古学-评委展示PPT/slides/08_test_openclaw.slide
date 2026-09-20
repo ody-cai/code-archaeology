@@ -1,0 +1,138 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+  <Box style={{ height: 96, justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', lineHeight: 1.22, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>实测 A · openclaw/openclaw</Text>
+        <Text style={{ fontSize: 14.5, color: '#8892A0', marginTop: 7, letterSpacing: 0.3 }}>Measured A · openclaw/openclaw</Text>
+      </Box>
+      <Text style={{ fontSize: 10.5, color: '#8892A0', textAlign: 'right' }}>TypeScript · 390,102 stars · GitHub REST API v3</Text>
+    </Box>
+  </Box>
+    <Box style={{ height: 500 }}>
+      <Box style={{ flexDirection: 'row', gap: 16, height: 268, alignItems: 'flex-start' }}>
+        <Box style={{ width: 468, padding: 8, background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Image src="/Users/odycai/WorkBuddy/BAYTECH26黑客松/outputs/代码考古学-评委展示PPT/assets/openclaw-top.png" style={{ width: 452, height: 223 }} />
+        </Box>
+        <Box style={{ flex: 1, padding: '14px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>本次实测关键数字 / Key measurements</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 3 }}>窗口 2026-09-20T00:07:32Z → 2026-09-20T02:23:19Z（UTC，共 2h 15m 47s）</Text>
+          <Box style={{ flexDirection: 'row', marginTop: 12 }}>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>60</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>次提交已分析</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>commits analysed</Text>
+        </Box>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#4CB8A6', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>98%</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>人类决策占比</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>human signal</Text>
+        </Box>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#4CB8A6', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>0/100</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>风险分（低）</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>risk score</Text>
+        </Box>
+          </Box>
+          <Box style={{ flexDirection: 'row', marginTop: 14 }}>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>1</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>次机器人提交（2%）</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>bot commits</Text>
+        </Box>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>26.5</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>次提交 / 小时</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>commits per hour</Text>
+        </Box>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>8</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>位作者</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>distinct authors</Text>
+        </Box>
+          </Box>
+          <Text style={{ fontSize: 10, lineHeight: 1.5, color: '#6B7684', marginTop: 'auto' }}>
+            机器人来源：clawsweeper[bot] ×1；平均每 2.3 分钟一次提交，活跃天数 1 天。
+            <br />界面示例按钮（chalk / axios 等）仅为快捷输入，本次未对其中任何仓库运行测试。
+          </Text>
+        </Box>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 218, marginTop: 14 }}>
+        <Box style={{ flex: 1, padding: '13px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>风险因子拆解 / Risk factors</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 3 }}>总分 0 / 100 · 低</Text>
+          <Box style={{ marginTop: 12 }}>
+            
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>提交信息质量</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 2, height: 7, background: '#3A4553', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#3A4553', textAlign: 'right', letterSpacing: 0.5 }}>0/25</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>0 / 59 条无信息量</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>原地打转的文件</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 2, height: 7, background: '#3A4553', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#3A4553', textAlign: 'right', letterSpacing: 0.5 }}>0/25</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>0 个文件反复推翻</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>被放弃的尝试</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 2, height: 7, background: '#3A4553', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#3A4553', textAlign: 'right', letterSpacing: 0.5 }}>0/20</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>0 处已核实（另否定 1 处）</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>显式回滚</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 2, height: 7, background: '#3A4553', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#3A4553', textAlign: 'right', letterSpacing: 0.5 }}>0/15</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>0 次回滚提交</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>最长沉寂期</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 2, height: 7, background: '#3A4553', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#3A4553', textAlign: 'right', letterSpacing: 0.5 }}>0/15</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>0 天无人提交</Text>
+    </Box>
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, padding: '13px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>其他可核查指标 / Other verifiable metrics</Text>
+          <Text style={{ fontSize: 11, lineHeight: 1.6, color: '#A8B2BE', marginTop: 8 }}>
+            · 提交信息卫生：59 条提交中 0 条无信息量（含糊率 0%），平均信息长度 66 字符<br />
+            · 显式回滚提交：0 次　·　单点归属文件：8 个<br />
+            · 改动热度最高：src/agents/subagents/registry/subagent-registry-restart-recovery.test.ts<br />
+            　（churn 909，净变化 -787，提交 18f1c11）<br />
+            · 知识集中度：Peter Steinberger 一人 47 次提交（80%）、19,278 行改动、294 个文件
+          </Text>
+          <Text style={{ fontSize: 9.5, lineHeight: 1.45, color: '#6B7684', marginTop: 'auto' }}>
+            All figures above are computed locally from the API response; the UI screenshot is a separate live run on the same day.
+          </Text>
+        </Box>
+      </Box>
+    </Box>
+
+  <Box style={{ height: 32, justifyContent: 'center' }}>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>第三方仓库来源 / Third-party source：openclaw/openclaw（TypeScript · 390,102 stars）· GitHub REST API v3 · 采集窗口 2026-09-20T00:07:32Z → 2026-09-20T02:23:19Z（UTC）</Text>
+  </Box>
+  <Box style={{ height: 36, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>代码考古学 / Code Archaeology · BAYTECH 2026 · AI 应用与工程赛道</Text>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>08 / 12</Text>
+  </Box>
+</Slide>

@@ -1,0 +1,14 @@
+{
+  "tests": { "total": 181, "pass": 181, "fail": 0, "durationMs": 604.748542 },
+  "code": {
+    "srcLines": 2737, "srcFiles": 26,
+    "publicLines": 2459, "publicFiles": 5,
+    "testsLines": 2820, "testsFiles": 13,
+    "binLines": 709, "binFiles": 2,
+    "scriptsLines": 670, "scriptsFiles": 5,
+    "totalLines": 9395,
+    "totalFiles": 51
+  },
+  "apiEndpoints": 8,
+  "measuredAt": "2026-09-20T02:28:13Z"
+}

@@ -1,0 +1,2016 @@
+{
+  "repo": {
+    "owner": "ody-cai",
+    "name": "topfo",
+    "full": "ody-cai/topfo",
+    "url": "https://github.com/ody-cai/topfo",
+    "description": "加拿大大学升学规划数据平台 - 录取要求对照表、排名、策略分析",
+    "stars": 2,
+    "forks": 0,
+    "openIssues": 0,
+    "language": "HTML",
+    "license": "MIT",
+    "createdAt": "2026-07-09T02:38:27Z",
+    "pushedAt": "2026-09-20T01:53:34Z",
+    "branch": "main",
+    "sizeKb": 16614,
+    "archived": false
+  },
+  "scope": {
+    "path": null,
+    "limit": 60,
+    "windowFrom": "2026-07-09T02:38:58Z",
+    "windowTo": "2026-09-20T01:53:29Z",
+    "signalWindowFrom": "2026-07-09T02:38:58Z",
+    "signalWindowTo": "2026-09-20T01:53:29Z"
+  },
+  "signalQuality": {
+    "analyzed": 23,
+    "totalCommits": 23,
+    "botCommits": 0,
+    "botRate": 0,
+    "noiseOnlyCommits": 0,
+    "signalCommits": 23,
+    "signalRate": 100,
+    "botAuthors": [],
+    "noisiestFiles": [
+      {
+        "file": "public/pages/admission.html",
+        "touches": 14,
+        "noise": false
+      },
+      {
+        "file": "public/js/data.js",
+        "touches": 10,
+        "noise": false
+      },
+      {
+        "file": "加拿大大学录取要求完整对照表_2026.md",
+        "touches": 10,
+        "noise": false
+      },
+      {
+        "file": "加拿大大学录取要求对照表_2026.html",
+        "touches": 10,
+        "noise": false
+      },
+      {
+        "file": "public/index.html",
+        "touches": 7,
+        "noise": false
+      },
+      {
+        "file": "public/js/auth.js",
+        "touches": 7,
+        "noise": false
+      },
+      {
+        "file": "public/pages/download-v1.0.0.html",
+        "touches": 6,
+        "noise": false
+      },
+      {
+        "file": "public/pages/download-v1.0.1.html",
+        "touches": 6,
+        "noise": false
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "sha": "6cc0b93",
+      "date": "2026-07-09T02:38:58Z",
+      "author": "ody-cai",
+      "message": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+      "messageScore": 0.7,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 17920,
+      "deletions": 0,
+      "churn": 17920,
+      "files": 101,
+      "failed": null
+    },
+    {
+      "sha": "5b37eed",
+      "date": "2026-07-09T02:45:08Z",
+      "author": "ody-cai",
+      "message": "📝 添加中英双语README (含网站链接 + APK下载)",
+      "messageScore": 0.7,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 128,
+      "deletions": 0,
+      "churn": 128,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "f95dfa6",
+      "date": "2026-07-09T02:48:33Z",
+      "author": "ody-cai",
+      "message": "🔐 新增独立demo体验账号 + 分离个人信息",
+      "messageScore": 0.7,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 51,
+      "deletions": 21,
+      "churn": 72,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "fda81ef",
+      "date": "2026-07-09T03:40:51Z",
+      "author": "ody-cai",
+      "message": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+      "messageScore": 0.7,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 6129,
+      "deletions": 559,
+      "churn": 6688,
+      "files": 52,
+      "failed": null
+    },
+    {
+      "sha": "06eda62",
+      "date": "2026-07-09T03:41:53Z",
+      "author": "ody-cai",
+      "message": "📝 更新 README：新增架构图/API清单/页面权限/数据库迁移说明",
+      "messageScore": 0.7,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 121,
+      "deletions": 32,
+      "churn": 153,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "dcc9a88",
+      "date": "2026-07-09T03:46:44Z",
+      "author": "ody-cai",
+      "message": "🐛 紧急修复：登录回退 + i18n 刷新 + me/data.js SQL 修正",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 160,
+      "deletions": 51,
+      "churn": 211,
+      "files": 7,
+      "failed": null
+    },
+    {
+      "sha": "b80fbf9",
+      "date": "2026-07-09T03:47:12Z",
+      "author": "ody-cai",
+      "message": "🔧 法语翻译补充 common.login 键",
+      "messageScore": 0.7,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 2,
+      "deletions": 1,
+      "churn": 3,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "95e3a03",
+      "date": "2026-07-09T04:00:09Z",
+      "author": "ody-cai",
+      "message": "🐛 修复：登录弹窗不显示 + i18n 时序 + 导航不一致",
+      "messageScore": 0.7,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 268,
+      "deletions": 211,
+      "churn": 479,
+      "files": 16,
+      "failed": null
+    },
+    {
+      "sha": "71a88d0",
+      "date": "2026-07-09T04:38:21Z",
+      "author": "ody-cai",
+      "message": "🐛 修复：登录弹窗硬编码到所有页面 + auth.js 注入保护",
+      "messageScore": 0.7,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 711,
+      "deletions": 0,
+      "churn": 711,
+      "files": 16,
+      "failed": null
+    },
+    {
+      "sha": "b3fe632",
+      "date": "2026-07-09T04:43:54Z",
+      "author": "ody-cai",
+      "message": "🐛 修复：首页卡片不可见（IntersectionObserver 被误删）",
+      "messageScore": 0.7,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 6,
+      "deletions": 0,
+      "churn": 6,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "674486b",
+      "date": "2026-07-09T04:47:00Z",
+      "author": "ody-cai",
+      "message": "🤖 AI 选校接入真实 Cloudflare Workers AI（原为静态规则引擎）",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 212,
+      "deletions": 105,
+      "churn": 317,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "ed18ec5",
+      "date": "2026-07-09T06:10:32Z",
+      "author": "ody-cai",
+      "message": "fix zh.json JSON syntax error",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1750,
+      "deletions": 1980,
+      "churn": 3730,
+      "files": 36,
+      "failed": null
+    },
+    {
+      "sha": "7504543",
+      "date": "2026-07-09T06:11:32Z",
+      "author": "ody-cai",
+      "message": "fix zh.json + admission i18n + highlights fallback",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 0,
+      "deletions": 0,
+      "churn": 0,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "21a0e31",
+      "date": "2026-09-09T01:23:43Z",
+      "author": "ody-cai",
+      "message": "每日更新 2026-09-09: 多大2027官方截止日期入表(工程/音乐1/15,其余2/1,早申11/7);UTSG/UTSC/UTM deadline字段刷新;麦吉尔/UBC 2027节点确认无变化;IRCC 2027学签配额规划15万(待确认)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 265,
+      "deletions": 129,
+      "churn": 394,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "d2bc411",
+      "date": "2026-09-10T04:22:37Z",
+      "author": "ody-cai",
+      "message": "每日更新 2026-09-10: 多大2027截止口径精化(网申统一1/15,推荐早申11/7);阿尔伯塔2027官方时间线(3/1截止)+Year One Foundation工程方向;滑铁卢2027截止公布(工程1/15/其余2/1);渥太华/卡尔加里/康考迪亚/维多利亚/OUAC季节截止;澳洲预科2027学费;约克2027入学奖与护理资格",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 121,
+      "deletions": 72,
+      "churn": 193,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "0363698",
+      "date": "2026-09-11T04:10:27Z",
+      "author": "ody-cai",
+      "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 4547,
+      "deletions": 7370,
+      "churn": 11917,
+      "files": 139,
+      "failed": null
+    },
+    {
+      "sha": "4fa47aa",
+      "date": "2026-09-12T12:42:32Z",
+      "author": "ody-cai",
+      "message": "chore: add MIT License",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 21,
+      "deletions": 0,
+      "churn": 21,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "7369b2a",
+      "date": "2026-09-12T14:11:53Z",
+      "author": "ody-cai",
+      "message": "每日更新 2026-09-12: IRCC学签生活费证明门槛2026-09-01起上调至CAD 23,448(旧22,895);澳洲485工签口径明确(本科/授课硕2年,雅思6.5单项5.5,1年内成绩);澳洲2027学年111门课程学费+3.6%;多大/UBC/滑铁卢/阿尔伯塔/卡尔顿2027官方口径复核与现表一致(不采纳中介'文理2/2材料2/16'口径);9专业方向GPA/雅思门槛零变动",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 86,
+      "deletions": 10,
+      "churn": 96,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "c046b99",
+      "date": "2026-09-13T11:03:54Z",
+      "author": "ody-cai",
+      "message": "data: 2026-09-13 日更 — IRCC 学签规则集中调整(前置课程学签90天/Co-op工签取消/PGWP收紧/LoA核验10天/续签合规调查) + UBC 2027夏季学期开放 + UQ 2027 S1时间线",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 92,
+      "deletions": 8,
+      "churn": 100,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "ce2c46e",
+      "date": "2026-09-14T08:42:51Z",
+      "author": "ody-cai",
+      "message": "data: 2026-09-14 日更 — UTM 自2027-09起新增 IFP 双录取通道(多大国际项目官网确认,覆盖Arts/Science/Business 180+专业,门槛待公布;UTM dual 由 no 改 yes);皇后2026Fall录取实况(64,400申请/+8%/均分92.3%);UNSW Standard Plus A$47,000 复核+国际大一2027取消5月批次(中介口径);约克Fall2027国际生截止3/24(待核实);新增中外合办/1+3/2+2/4+0 专章",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 183,
+      "deletions": 47,
+      "churn": 230,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "c2b0910",
+      "date": "2026-09-15T03:24:35Z",
+      "author": "ody-cai",
+      "message": "数据更新 2026-09-15：多大A&S截止口径冲突披露 + Pearson奖学金节点 + UTM官方节点 + 麦马复核",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 322,
+      "deletions": 15,
+      "churn": 337,
+      "files": 5,
+      "failed": null
+    },
+    {
+      "sha": "5254f7e",
+      "date": "2026-09-16T14:47:26Z",
+      "author": "Ody",
+      "message": "data: 2026-09-16 日更 — 今日无院校录取门槛变化；IRCC 规则细节确认(校外工作24h/周官方口径+2026省份PAL配额明细) + 康考迪亚Grey Nuns/约克Winter11-18/UNSW国际大一取消5月批次 三项升级为多来源一致 + 中外合办按地区增补(深圳/广州/上海/江苏/宁波,南京理工2+2雅思5.0免笔试)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 470,
+      "deletions": 32,
+      "churn": 502,
+      "files": 5,
+      "failed": null
+    },
+    {
+      "sha": "496e982",
+      "date": "2026-09-20T01:53:29Z",
+      "author": "ody-cai",
+      "message": "data: 2026-09-20 日更 — 今日无院校录取GPA/雅思门槛变动；实质新增=英语「认可考试清单」政策变更(SFU新增LanguageCert/滑铁卢口径外新增SFU Duolingo永久认可+TOEFL新制4.5) + 卡尔顿认可考试口径补全 + 韦士敦Ivey AEO细节 + UBC DET口径复核 + IRCC 2026-09-04工签者免学签读≤6个月课程 + 中外合办新线(中国政法大学×渥太华大学4+0双学位,计划内需高考) + UTSG截止口径冲突结案",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 797,
+      "deletions": 31,
+      "churn": 828,
+      "files": 7,
+      "failed": null
+    }
+  ],
+  "hotspots": [
+    {
+      "file": "topfo-app/app/src/main/res/raw/schools.json",
+      "touches": 2,
+      "additions": 3231,
+      "deletions": 3231,
+      "churn": 6462,
+      "net": 0,
+      "authors": [
+        "ody-cai"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-09-11T04:10:27Z",
+      "sequence": [
+        {
+          "sha": "6cc0b93",
+          "date": "2026-07-09T02:38:58Z",
+          "message": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+          "status": "added",
+          "additions": 3231,
+          "deletions": 0
+        },
+        {
+          "sha": "0363698",
+          "date": "2026-09-11T04:10:27Z",
+          "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 3231
+        }
+      ]
+    },
+    {
+      "file": "review_results.json",
+      "touches": 2,
+      "additions": 5223,
+      "deletions": 543,
+      "churn": 5766,
+      "net": 4680,
+      "authors": [
+        "ody-cai"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-07-09T06:10:32Z",
+      "sequence": [
+        {
+          "sha": "6cc0b93",
+          "date": "2026-07-09T02:38:58Z",
+          "message": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+          "status": "added",
+          "additions": 3892,
+          "deletions": 0
+        },
+        {
+          "sha": "ed18ec5",
+          "date": "2026-07-09T06:10:32Z",
+          "message": "fix zh.json JSON syntax error",
+          "status": "modified",
+          "additions": 1331,
+          "deletions": 543
+        }
+      ]
+    },
+    {
+      "file": "public/pages/tracker.html",
+      "touches": 4,
+      "additions": 973,
+      "deletions": 973,
+      "churn": 1946,
+      "net": 0,
+      "authors": [
+        "ody-cai"
+      ],
+      "firstSeen": "2026-07-09T03:40:51Z",
+      "lastSeen": "2026-07-09T06:10:32Z",
+      "sequence": [
+        {
+          "sha": "fda81ef",
+          "date": "2026-07-09T03:40:51Z",
+          "message": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "status": "added",
+          "additions": 907,
+          "deletions": 0
+        },
+        {
+          "sha": "95e3a03",
+          "date": "2026-07-09T04:00:09Z",
+          "message": "🐛 修复：登录弹窗不显示 + i18n 时序 + 导航不一致",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 16
+        },
+        {
+          "sha": "71a88d0",
+          "date": "2026-07-09T04:38:21Z",
+          "message": "🐛 修复：登录弹窗硬编码到所有页面 + auth.js 注入保护",
+          "status": "modified",
+          "additions": 47,
+          "deletions": 0
+        },
+        {
+          "sha": "ed18ec5",
+          "date": "2026-07-09T06:10:32Z",
+          "message": "fix zh.json JSON syntax error",
+          "status": "removed",
+          "additions": 0,
+          "deletions": 957
+        }
+      ]
+    },
+    {
+      "file": "加拿大大学录取要求对照表_2026.html",
+      "touches": 10,
+      "additions": 1290,
+      "deletions": 270,
+      "churn": 1560,
+      "net": 1020,
+      "authors": [
+        "ody-cai",
+        "Ody"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-09-20T01:53:29Z",
+      "sequence": [
+        {
+          "sha": "d2bc411",
+          "date": "2026-09-10T04:22:37Z",
+          "message": "每日更新 2026-09-10: 多大2027截止口径精化(网申统一1/15,推荐早申11/7);阿尔伯塔2027官方时间线(3/1截止)+Year One Foundation工程方向;滑铁卢2027截止公布(工程1/15/其余2/1);渥太华/卡尔加里/康考迪亚/维多利亚/OUAC季节截止;澳洲预科2027学费;约克2027入学奖与护理资格",
+          "status": "modified",
+          "additions": 30,
+          "deletions": 30
+        },
+        {
+          "sha": "0363698",
+          "date": "2026-09-11T04:10:27Z",
+          "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+          "status": "modified",
+          "additions": 264,
+          "deletions": 143
+        },
+        {
+          "sha": "7369b2a",
+          "date": "2026-09-12T14:11:53Z",
+          "message": "每日更新 2026-09-12: IRCC学签生活费证明门槛2026-09-01起上调至CAD 23,448(旧22,895);澳洲485工签口径明确(本科/授课硕2年,雅思6.5单项5.5,1年内成绩);澳洲2027学年111门课程学费+3.6%;多大/UBC/滑铁卢/阿尔伯塔/卡尔顿2027官方口径复核与现表一致(不采纳中介'文理2/2材料2/16'口径);9专业方向GPA/雅思门槛零变动",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "sha": "c046b99",
+          "date": "2026-09-13T11:03:54Z",
+          "message": "data: 2026-09-13 日更 — IRCC 学签规则集中调整(前置课程学签90天/Co-op工签取消/PGWP收紧/LoA核验10天/续签合规调查) + UBC 2027夏季学期开放 + UQ 2027 S1时间线",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "sha": "ce2c46e",
+          "date": "2026-09-14T08:42:51Z",
+          "message": "data: 2026-09-14 日更 — UTM 自2027-09起新增 IFP 双录取通道(多大国际项目官网确认,覆盖Arts/Science/Business 180+专业,门槛待公布;UTM dual 由 no 改 yes);皇后2026Fall录取实况(64,400申请/+8%/均分92.3%);UNSW Standard Plus A$47,000 复核+国际大一2027取消5月批次(中介口径);约克Fall2027国际生截止3/24(待核实);新增中外合办/1+3/2+2/4+0 专章",
+          "status": "modified",
+          "additions": 21,
+          "deletions": 21
+        },
+        {
+          "sha": "c2b0910",
+          "date": "2026-09-15T03:24:35Z",
+          "message": "数据更新 2026-09-15：多大A&S截止口径冲突披露 + Pearson奖学金节点 + UTM官方节点 + 麦马复核",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 4
+        },
+        {
+          "sha": "5254f7e",
+          "date": "2026-09-16T14:47:26Z",
+          "message": "data: 2026-09-16 日更 — 今日无院校录取门槛变化；IRCC 规则细节确认(校外工作24h/周官方口径+2026省份PAL配额明细) + 康考迪亚Grey Nuns/约克Winter11-18/UNSW国际大一取消5月批次 三项升级为多来源一致 + 中外合办按地区增补(深圳/广州/上海/江苏/宁波,南京理工2+2雅思5.0免笔试)",
+          "status": "modified",
+          "additions": 13,
+          "deletions": 13
+        },
+        {
+          "sha": "496e982",
+          "date": "2026-09-20T01:53:29Z",
+          "message": "data: 2026-09-20 日更 — 今日无院校录取GPA/雅思门槛变动；实质新增=英语「认可考试清单」政策变更(SFU新增LanguageCert/滑铁卢口径外新增SFU Duolingo永久认可+TOEFL新制4.5) + 卡尔顿认可考试口径补全 + 韦士敦Ivey AEO细节 + UBC DET口径复核 + IRCC 2026-09-04工签者免学签读≤6个月课程 + 中外合办新线(中国政法大学×渥太华大学4+0双学位,计划内需高考) + UTSG截止口径冲突结案",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 10
+        }
+      ]
+    },
+    {
+      "file": "public/js/auth.js",
+      "touches": 7,
+      "additions": 1147,
+      "deletions": 69,
+      "churn": 1216,
+      "net": 1078,
+      "authors": [
+        "ody-cai"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-09-11T04:10:27Z",
+      "sequence": [
+        {
+          "sha": "6cc0b93",
+          "date": "2026-07-09T02:38:58Z",
+          "message": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+          "status": "added",
+          "additions": 683,
+          "deletions": 0
+        },
+        {
+          "sha": "f95dfa6",
+          "date": "2026-07-09T02:48:33Z",
+          "message": "🔐 新增独立demo体验账号 + 分离个人信息",
+          "status": "modified",
+          "additions": 35,
+          "deletions": 15
+        },
+        {
+          "sha": "fda81ef",
+          "date": "2026-07-09T03:40:51Z",
+          "message": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "status": "modified",
+          "additions": 320,
+          "deletions": 8
+        },
+        {
+          "sha": "dcc9a88",
+          "date": "2026-07-09T03:46:44Z",
+          "message": "🐛 紧急修复：登录回退 + i18n 刷新 + me/data.js SQL 修正",
+          "status": "modified",
+          "additions": 27,
+          "deletions": 23
+        },
+        {
+          "sha": "71a88d0",
+          "date": "2026-07-09T04:38:21Z",
+          "message": "🐛 修复：登录弹窗硬编码到所有页面 + auth.js 注入保护",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 0
+        },
+        {
+          "sha": "ed18ec5",
+          "date": "2026-07-09T06:10:32Z",
+          "message": "fix zh.json JSON syntax error",
+          "status": "modified",
+          "additions": 9,
+          "deletions": 3
+        },
+        {
+          "sha": "0363698",
+          "date": "2026-09-11T04:10:27Z",
+          "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+          "status": "modified",
+          "additions": 67,
+          "deletions": 20
+        }
+      ]
+    },
+    {
+      "file": "public/pages/community.html",
+      "touches": 5,
+      "additions": 1115,
+      "deletions": 22,
+      "churn": 1137,
+      "net": 1093,
+      "authors": [
+        "ody-cai"
+      ],
+      "firstSeen": "2026-07-09T03:40:51Z",
+      "lastSeen": "2026-09-11T04:10:27Z",
+      "sequence": [
+        {
+          "sha": "fda81ef",
+          "date": "2026-07-09T03:40:51Z",
+          "message": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "status": "added",
+          "additions": 986,
+          "deletions": 0
+        },
+        {
+          "sha": "95e3a03",
+          "date": "2026-07-09T04:00:09Z",
+          "message": "🐛 修复：登录弹窗不显示 + i18n 时序 + 导航不一致",
+          "status": "modified",
+          "additions": 19,
+          "deletions": 16
+        },
+        {
+          "sha": "71a88d0",
+          "date": "2026-07-09T04:38:21Z",
+          "message": "🐛 修复：登录弹窗硬编码到所有页面 + auth.js 注入保护",
+          "status": "modified",
+          "additions": 47,
+          "deletions": 0
+        },
+        {
+          "sha": "ed18ec5",
+          "date": "2026-07-09T06:10:32Z",
+          "message": "fix zh.json JSON syntax error",
+          "status": "modified",
+          "additions": 61,
+          "deletions": 6
+        },
+        {
+          "sha": "0363698",
+          "date": "2026-09-11T04:10:27Z",
+          "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 0
+        }
+      ]
+    },
+    {
+      "file": "加拿大大学录取要求完整对照表_2026.md",
+      "touches": 10,
+      "additions": 1046,
+      "deletions": 41,
+      "churn": 1087,
+      "net": 1005,
+      "authors": [
+        "ody-cai",
+        "Ody"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-09-20T01:53:29Z",
+      "sequence": [
+        {
+          "sha": "d2bc411",
+          "date": "2026-09-10T04:22:37Z",
+          "message": "每日更新 2026-09-10: 多大2027截止口径精化(网申统一1/15,推荐早申11/7);阿尔伯塔2027官方时间线(3/1截止)+Year One Foundation工程方向;滑铁卢2027截止公布(工程1/15/其余2/1);渥太华/卡尔加里/康考迪亚/维多利亚/OUAC季节截止;澳洲预科2027学费;约克2027入学奖与护理资格",
+          "status": "modified",
+          "additions": 52,
+          "deletions": 11
+        },
+        {
+          "sha": "0363698",
+          "date": "2026-09-11T04:10:27Z",
+          "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+          "status": "modified",
+          "additions": 37,
+          "deletions": 3
+        },
+        {
+          "sha": "7369b2a",
+          "date": "2026-09-12T14:11:53Z",
+          "message": "每日更新 2026-09-12: IRCC学签生活费证明门槛2026-09-01起上调至CAD 23,448(旧22,895);澳洲485工签口径明确(本科/授课硕2年,雅思6.5单项5.5,1年内成绩);澳洲2027学年111门课程学费+3.6%;多大/UBC/滑铁卢/阿尔伯塔/卡尔顿2027官方口径复核与现表一致(不采纳中介'文理2/2材料2/16'口径);9专业方向GPA/雅思门槛零变动",
+          "status": "modified",
+          "additions": 72,
+          "deletions": 5
+        },
+        {
+          "sha": "c046b99",
+          "date": "2026-09-13T11:03:54Z",
+          "message": "data: 2026-09-13 日更 — IRCC 学签规则集中调整(前置课程学签90天/Co-op工签取消/PGWP收紧/LoA核验10天/续签合规调查) + UBC 2027夏季学期开放 + UQ 2027 S1时间线",
+          "status": "modified",
+          "additions": 67,
+          "deletions": 1
+        },
+        {
+          "sha": "ce2c46e",
+          "date": "2026-09-14T08:42:51Z",
+          "message": "data: 2026-09-14 日更 — UTM 自2027-09起新增 IFP 双录取通道(多大国际项目官网确认,覆盖Arts/Science/Business 180+专业,门槛待公布;UTM dual 由 no 改 yes);皇后2026Fall录取实况(64,400申请/+8%/均分92.3%);UNSW Standard Plus A$47,000 复核+国际大一2027取消5月批次(中介口径);约克Fall2027国际生截止3/24(待核实);新增中外合办/1+3/2+2/4+0 专章",
+          "status": "modified",
+          "additions": 122,
+          "deletions": 3
+        },
+        {
+          "sha": "c2b0910",
+          "date": "2026-09-15T03:24:35Z",
+          "message": "数据更新 2026-09-15：多大A&S截止口径冲突披露 + Pearson奖学金节点 + UTM官方节点 + 麦马复核",
+          "status": "modified",
+          "additions": 86,
+          "deletions": 2
+        },
+        {
+          "sha": "5254f7e",
+          "date": "2026-09-16T14:47:26Z",
+          "message": "data: 2026-09-16 日更 — 今日无院校录取门槛变化；IRCC 规则细节确认(校外工作24h/周官方口径+2026省份PAL配额明细) + 康考迪亚Grey Nuns/约克Winter11-18/UNSW国际大一取消5月批次 三项升级为多来源一致 + 中外合办按地区增补(深圳/广州/上海/江苏/宁波,南京理工2+2雅思5.0免笔试)",
+          "status": "modified",
+          "additions": 151,
+          "deletions": 3
+        },
+        {
+          "sha": "496e982",
+          "date": "2026-09-20T01:53:29Z",
+          "message": "data: 2026-09-20 日更 — 今日无院校录取GPA/雅思门槛变动；实质新增=英语「认可考试清单」政策变更(SFU新增LanguageCert/滑铁卢口径外新增SFU Duolingo永久认可+TOEFL新制4.5) + 卡尔顿认可考试口径补全 + 韦士敦Ivey AEO细节 + UBC DET口径复核 + IRCC 2026-09-04工签者免学签读≤6个月课程 + 中外合办新线(中国政法大学×渥太华大学4+0双学位,计划内需高考) + UTSG截止口径冲突结案",
+          "status": "modified",
+          "additions": 211,
+          "deletions": 7
+        }
+      ]
+    },
+    {
+      "file": "public/index.html",
+      "touches": 7,
+      "additions": 745,
+      "deletions": 174,
+      "churn": 919,
+      "net": 571,
+      "authors": [
+        "ody-cai"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-09-11T04:10:27Z",
+      "sequence": [
+        {
+          "sha": "6cc0b93",
+          "date": "2026-07-09T02:38:58Z",
+          "message": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+          "status": "added",
+          "additions": 508,
+          "deletions": 0
+        },
+        {
+          "sha": "fda81ef",
+          "date": "2026-07-09T03:40:51Z",
+          "message": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "status": "modified",
+          "additions": 52,
+          "deletions": 55
+        },
+        {
+          "sha": "95e3a03",
+          "date": "2026-07-09T04:00:09Z",
+          "message": "🐛 修复：登录弹窗不显示 + i18n 时序 + 导航不一致",
+          "status": "modified",
+          "additions": 35,
+          "deletions": 44
+        },
+        {
+          "sha": "71a88d0",
+          "date": "2026-07-09T04:38:21Z",
+          "message": "🐛 修复：登录弹窗硬编码到所有页面 + auth.js 注入保护",
+          "status": "modified",
+          "additions": 47,
+          "deletions": 0
+        },
+        {
+          "sha": "b3fe632",
+          "date": "2026-07-09T04:43:54Z",
+          "message": "🐛 修复：首页卡片不可见（IntersectionObserver 被误删）",
+          "status": "modified",
+          "additions": 6,
+          "deletions": 0
+        },
+        {
+          "sha": "ed18ec5",
+          "date": "2026-07-09T06:10:32Z",
+          "message": "fix zh.json JSON syntax error",
+          "status": "modified",
+          "additions": 20,
+          "deletions": 16
+        },
+        {
+          "sha": "0363698",
+          "date": "2026-09-11T04:10:27Z",
+          "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+          "status": "modified",
+          "additions": 77,
+          "deletions": 59
+        }
+      ]
+    },
+    {
+      "file": "public/pages/admission.html",
+      "touches": 14,
+      "additions": 692,
+      "deletions": 130,
+      "churn": 822,
+      "net": 562,
+      "authors": [
+        "ody-cai",
+        "Ody"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-09-20T01:53:29Z",
+      "sequence": [
+        {
+          "sha": "d2bc411",
+          "date": "2026-09-10T04:22:37Z",
+          "message": "每日更新 2026-09-10: 多大2027截止口径精化(网申统一1/15,推荐早申11/7);阿尔伯塔2027官方时间线(3/1截止)+Year One Foundation工程方向;滑铁卢2027截止公布(工程1/15/其余2/1);渥太华/卡尔加里/康考迪亚/维多利亚/OUAC季节截止;澳洲预科2027学费;约克2027入学奖与护理资格",
+          "status": "modified",
+          "additions": 1,
+          "deletions": 1
+        },
+        {
+          "sha": "0363698",
+          "date": "2026-09-11T04:10:27Z",
+          "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+          "status": "modified",
+          "additions": 23,
+          "deletions": 8
+        },
+        {
+          "sha": "7369b2a",
+          "date": "2026-09-12T14:11:53Z",
+          "message": "每日更新 2026-09-12: IRCC学签生活费证明门槛2026-09-01起上调至CAD 23,448(旧22,895);澳洲485工签口径明确(本科/授课硕2年,雅思6.5单项5.5,1年内成绩);澳洲2027学年111门课程学费+3.6%;多大/UBC/滑铁卢/阿尔伯塔/卡尔顿2027官方口径复核与现表一致(不采纳中介'文理2/2材料2/16'口径);9专业方向GPA/雅思门槛零变动",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "sha": "c046b99",
+          "date": "2026-09-13T11:03:54Z",
+          "message": "data: 2026-09-13 日更 — IRCC 学签规则集中调整(前置课程学签90天/Co-op工签取消/PGWP收紧/LoA核验10天/续签合规调查) + UBC 2027夏季学期开放 + UQ 2027 S1时间线",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "sha": "ce2c46e",
+          "date": "2026-09-14T08:42:51Z",
+          "message": "data: 2026-09-14 日更 — UTM 自2027-09起新增 IFP 双录取通道(多大国际项目官网确认,覆盖Arts/Science/Business 180+专业,门槛待公布;UTM dual 由 no 改 yes);皇后2026Fall录取实况(64,400申请/+8%/均分92.3%);UNSW Standard Plus A$47,000 复核+国际大一2027取消5月批次(中介口径);约克Fall2027国际生截止3/24(待核实);新增中外合办/1+3/2+2/4+0 专章",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "sha": "c2b0910",
+          "date": "2026-09-15T03:24:35Z",
+          "message": "数据更新 2026-09-15：多大A&S截止口径冲突披露 + Pearson奖学金节点 + UTM官方节点 + 麦马复核",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3
+        },
+        {
+          "sha": "5254f7e",
+          "date": "2026-09-16T14:47:26Z",
+          "message": "data: 2026-09-16 日更 — 今日无院校录取门槛变化；IRCC 规则细节确认(校外工作24h/周官方口径+2026省份PAL配额明细) + 康考迪亚Grey Nuns/约克Winter11-18/UNSW国际大一取消5月批次 三项升级为多来源一致 + 中外合办按地区增补(深圳/广州/上海/江苏/宁波,南京理工2+2雅思5.0免笔试)",
+          "status": "modified",
+          "additions": 2,
+          "deletions": 2
+        },
+        {
+          "sha": "496e982",
+          "date": "2026-09-20T01:53:29Z",
+          "message": "data: 2026-09-20 日更 — 今日无院校录取GPA/雅思门槛变动；实质新增=英语「认可考试清单」政策变更(SFU新增LanguageCert/滑铁卢口径外新增SFU Duolingo永久认可+TOEFL新制4.5) + 卡尔顿认可考试口径补全 + 韦士敦Ivey AEO细节 + UBC DET口径复核 + IRCC 2026-09-04工签者免学签读≤6个月课程 + 中外合办新线(中国政法大学×渥太华大学4+0双学位,计划内需高考) + UTSG截止口径冲突结案",
+          "status": "modified",
+          "additions": 3,
+          "deletions": 3
+        }
+      ]
+    },
+    {
+      "file": "public/pages/download.html",
+      "touches": 6,
+      "additions": 662,
+      "deletions": 127,
+      "churn": 789,
+      "net": 535,
+      "authors": [
+        "ody-cai"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-09-11T04:10:27Z",
+      "sequence": [
+        {
+          "sha": "6cc0b93",
+          "date": "2026-07-09T02:38:58Z",
+          "message": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+          "status": "added",
+          "additions": 274,
+          "deletions": 0
+        },
+        {
+          "sha": "fda81ef",
+          "date": "2026-07-09T03:40:51Z",
+          "message": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "status": "modified",
+          "additions": 242,
+          "deletions": 97
+        },
+        {
+          "sha": "95e3a03",
+          "date": "2026-07-09T04:00:09Z",
+          "message": "🐛 修复：登录弹窗不显示 + i18n 时序 + 导航不一致",
+          "status": "modified",
+          "additions": 15,
+          "deletions": 13
+        },
+        {
+          "sha": "71a88d0",
+          "date": "2026-07-09T04:38:21Z",
+          "message": "🐛 修复：登录弹窗硬编码到所有页面 + auth.js 注入保护",
+          "status": "modified",
+          "additions": 47,
+          "deletions": 0
+        },
+        {
+          "sha": "ed18ec5",
+          "date": "2026-07-09T06:10:32Z",
+          "message": "fix zh.json JSON syntax error",
+          "status": "modified",
+          "additions": 0,
+          "deletions": 1
+        },
+        {
+          "sha": "0363698",
+          "date": "2026-09-11T04:10:27Z",
+          "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+          "status": "modified",
+          "additions": 84,
+          "deletions": 16
+        }
+      ]
+    },
+    {
+      "file": "topfo-app-design.md",
+      "touches": 1,
+      "additions": 751,
+      "deletions": 0,
+      "churn": 751,
+      "net": 751,
+      "authors": [
+        "ody-cai"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-07-09T02:38:58Z",
+      "sequence": [
+        {
+          "sha": "6cc0b93",
+          "date": "2026-07-09T02:38:58Z",
+          "message": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+          "status": "added",
+          "additions": 751,
+          "deletions": 0
+        }
+      ]
+    },
+    {
+      "file": "public/js/data.js",
+      "touches": 10,
+      "additions": 578,
+      "deletions": 134,
+      "churn": 712,
+      "net": 444,
+      "authors": [
+        "ody-cai",
+        "Ody"
+      ],
+      "firstSeen": "2026-07-09T02:38:58Z",
+      "lastSeen": "2026-09-20T01:53:29Z",
+      "sequence": [
+        {
+          "sha": "d2bc411",
+          "date": "2026-09-10T04:22:37Z",
+          "message": "每日更新 2026-09-10: 多大2027截止口径精化(网申统一1/15,推荐早申11/7);阿尔伯塔2027官方时间线(3/1截止)+Year One Foundation工程方向;滑铁卢2027截止公布(工程1/15/其余2/1);渥太华/卡尔加里/康考迪亚/维多利亚/OUAC季节截止;澳洲预科2027学费;约克2027入学奖与护理资格",
+          "status": "modified",
+          "additions": 38,
+          "deletions": 30
+        },
+        {
+          "sha": "0363698",
+          "date": "2026-09-11T04:10:27Z",
+          "message": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截止字段补全;修正 admission/timeline 更新日期虚报",
+          "status": "modified",
+          "additions": 13,
+          "deletions": 5
+        },
+        {
+          "sha": "7369b2a",
+          "date": "2026-09-12T14:11:53Z",
+          "message": "每日更新 2026-09-12: IRCC学签生活费证明门槛2026-09-01起上调至CAD 23,448(旧22,895);澳洲485工签口径明确(本科/授课硕2年,雅思6.5单项5.5,1年内成绩);澳洲2027学年111门课程学费+3.6%;多大/UBC/滑铁卢/阿尔伯塔/卡尔顿2027官方口径复核与现表一致(不采纳中介'文理2/2材料2/16'口径);9专业方向GPA/雅思门槛零变动",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 2
+        },
+        {
+          "sha": "c046b99",
+          "date": "2026-09-13T11:03:54Z",
+          "message": "data: 2026-09-13 日更 — IRCC 学签规则集中调整(前置课程学签90天/Co-op工签取消/PGWP收紧/LoA核验10天/续签合规调查) + UBC 2027夏季学期开放 + UQ 2027 S1时间线",
+          "status": "modified",
+          "additions": 21,
+          "deletions": 3
+        },
+        {
+          "sha": "ce2c46e",
+          "date": "2026-09-14T08:42:51Z",
+          "message": "data: 2026-09-14 日更 — UTM 自2027-09起新增 IFP 双录取通道(多大国际项目官网确认,覆盖Arts/Science/Business 180+专业,门槛待公布;UTM dual 由 no 改 yes);皇后2026Fall录取实况(64,400申请/+8%/均分92.3%);UNSW Standard Plus A$47,000 复核+国际大一2027取消5月批次(中介口径);约克Fall2027国际生截止3/24(待核实);新增中外合办/1+3/2+2/4+0 专章",
+          "status": "modified",
+          "additions": 38,
+          "deletions": 21
+        },
+        {
+          "sha": "c2b0910",
+          "date": "2026-09-15T03:24:35Z",
+          "message": "数据更新 2026-09-15：多大A&S截止口径冲突披露 + Pearson奖学金节点 + UTM官方节点 + 麦马复核",
+          "status": "modified",
+          "additions": 31,
+          "deletions": 6
+        },
+        {
+          "sha": "5254f7e",
+          "date": "2026-09-16T14:47:26Z",
+          "message": "data: 2026-09-16 日更 — 今日无院校录取门槛变化；IRCC 规则细节确认(校外工作24h/周官方口径+2026省份PAL配额明细) + 康考迪亚Grey Nuns/约克Winter11-18/UNSW国际大一取消5月批次 三项升级为多来源一致 + 中外合办按地区增补(深圳/广州/上海/江苏/宁波,南京理工2+2雅思5.0免笔试)",
+          "status": "modified",
+          "additions": 35,
+          "deletions": 14
+        },
+        {
+          "sha": "496e982",
+          "date": "2026-09-20T01:53:29Z",
+          "message": "data: 2026-09-20 日更 — 今日无院校录取GPA/雅思门槛变动；实质新增=英语「认可考试清单」政策变更(SFU新增LanguageCert/滑铁卢口径外新增SFU Duolingo永久认可+TOEFL新制4.5) + 卡尔顿认可考试口径补全 + 韦士敦Ivey AEO细节 + UBC DET口径复核 + IRCC 2026-09-04工签者免学签读≤6个月课程 + 中外合办新线(中国政法大学×渥太华大学4+0双学位,计划内需高考) + UTSG截止口径冲突结案",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 11
+        }
+      ]
+    }
+  ],
+  "abandoned": [
+    {
+      "file": "public/functions/api/rankings.js",
+      "addSha": "6cc0b93",
+      "addDate": "2026-07-09T02:38:58Z",
+      "addMessage": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+      "addLines": 63,
+      "removeSha": "fda81ef",
+      "removeDate": "2026-07-09T03:40:51Z",
+      "removeMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+      "removeLines": 54,
+      "survivedDays": 0,
+      "overlapRate": 1,
+      "overlappedLines": 39,
+      "comparableLines": 39,
+      "verified": true,
+      "verifyNote": "内容核实通过（重合 100%）"
+    },
+    {
+      "file": "public/functions/api/schools.js",
+      "addSha": "6cc0b93",
+      "addDate": "2026-07-09T02:38:58Z",
+      "addMessage": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+      "addLines": 66,
+      "removeSha": "fda81ef",
+      "removeDate": "2026-07-09T03:40:51Z",
+      "removeMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+      "removeLines": 57,
+      "survivedDays": 0,
+      "overlapRate": 1,
+      "overlappedLines": 41,
+      "comparableLines": 41,
+      "verified": true,
+      "verifyNote": "内容核实通过（重合 100%）"
+    },
+    {
+      "file": "public/functions/api/ai/recommend.js",
+      "addSha": "fda81ef",
+      "addDate": "2026-07-09T03:40:51Z",
+      "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+      "addLines": 143,
+      "removeSha": "674486b",
+      "removeDate": "2026-07-09T04:47:00Z",
+      "removeMessage": "🤖 AI 选校接入真实 Cloudflare Workers AI（原为静态规则引擎）",
+      "removeLines": 105,
+      "survivedDays": 0,
+      "overlapRate": 1,
+      "overlappedLines": 92,
+      "comparableLines": 92,
+      "verified": true,
+      "verifyNote": "内容核实通过（重合 100%）"
+    },
+    {
+      "file": "public/functions/api/applications.js",
+      "addSha": "fda81ef",
+      "addDate": "2026-07-09T03:40:51Z",
+      "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+      "addLines": 107,
+      "removeSha": "ed18ec5",
+      "removeDate": "2026-07-09T06:10:32Z",
+      "removeMessage": "fix zh.json JSON syntax error",
+      "removeLines": 107,
+      "survivedDays": 0,
+      "overlapRate": 1,
+      "overlappedLines": 74,
+      "comparableLines": 74,
+      "verified": true,
+      "verifyNote": "内容核实通过（重合 100%）"
+    },
+    {
+      "file": "public/functions/api/applications/[id].js",
+      "addSha": "fda81ef",
+      "addDate": "2026-07-09T03:40:51Z",
+      "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+      "addLines": 76,
+      "removeSha": "ed18ec5",
+      "removeDate": "2026-07-09T06:10:32Z",
+      "removeMessage": "fix zh.json JSON syntax error",
+      "removeLines": 76,
+      "survivedDays": 0,
+      "overlapRate": 1,
+      "overlappedLines": 49,
+      "comparableLines": 49,
+      "verified": true,
+      "verifyNote": "内容核实通过（重合 100%）"
+    },
+    {
+      "file": "public/js/i18n/fr.json",
+      "addSha": "fda81ef",
+      "addDate": "2026-07-09T03:40:51Z",
+      "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+      "addLines": 95,
+      "removeSha": "ed18ec5",
+      "removeDate": "2026-07-09T06:10:32Z",
+      "removeMessage": "fix zh.json JSON syntax error",
+      "removeLines": 96,
+      "survivedDays": 0,
+      "overlapRate": 0.9893617021276596,
+      "overlappedLines": 93,
+      "comparableLines": 94,
+      "verified": true,
+      "verifyNote": "内容核实通过（重合 99%）"
+    },
+    {
+      "file": "public/pages/tracker.html",
+      "addSha": "fda81ef",
+      "addDate": "2026-07-09T03:40:51Z",
+      "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+      "addLines": 907,
+      "removeSha": "ed18ec5",
+      "removeDate": "2026-07-09T06:10:32Z",
+      "removeMessage": "fix zh.json JSON syntax error",
+      "removeLines": 957,
+      "survivedDays": 0,
+      "overlapRate": 0.9329962073324906,
+      "overlappedLines": 738,
+      "comparableLines": 791,
+      "verified": true,
+      "verifyNote": "内容核实通过（重合 93%）"
+    }
+  ],
+  "abandonedRejected": [],
+  "globalReverts": [],
+  "thrash": [
+    {
+      "file": "public/pages/tracker.html",
+      "touches": 4,
+      "churn": 1946,
+      "net": 0,
+      "spinRatio": 1946,
+      "authors": [
+        "ody-cai"
+      ],
+      "lastSeen": "2026-07-09T06:10:32Z"
+    },
+    {
+      "file": "topfo-app/app/src/main/java/com/topfo/app/MainActivity.kt",
+      "touches": 3,
+      "churn": 248,
+      "net": 0,
+      "spinRatio": 248,
+      "authors": [
+        "ody-cai"
+      ],
+      "lastSeen": "2026-09-11T04:10:27Z"
+    },
+    {
+      "file": "topfo-app/app/src/main/java/com/topfo/app/ui/admission/AdmissionScreen.kt",
+      "touches": 3,
+      "churn": 200,
+      "net": 0,
+      "spinRatio": 200,
+      "authors": [
+        "ody-cai"
+      ],
+      "lastSeen": "2026-09-11T04:10:27Z"
+    },
+    {
+      "file": "public/js/i18n/fr.json",
+      "touches": 3,
+      "churn": 194,
+      "net": 0,
+      "spinRatio": 194,
+      "authors": [
+        "ody-cai"
+      ],
+      "lastSeen": "2026-07-09T06:10:32Z"
+    },
+    {
+      "file": "topfo-app/app/src/main/java/com/topfo/app/ui/theme/GlassComponents.kt",
+      "touches": 3,
+      "churn": 192,
+      "net": 0,
+      "spinRatio": 192,
+      "authors": [
+        "ody-cai"
+      ],
+      "lastSeen": "2026-09-11T04:10:27Z"
+    },
+    {
+      "file": "topfo-app/app/src/main/java/com/topfo/app/ui/profile/ProfileScreen.kt",
+      "touches": 3,
+      "churn": 140,
+      "net": 0,
+      "spinRatio": 140,
+      "authors": [
+        "ody-cai"
+      ],
+      "lastSeen": "2026-09-11T04:10:27Z"
+    },
+    {
+      "file": "topfo-app/app/src/main/java/com/topfo/app/ui/home/HomeScreen.kt",
+      "touches": 3,
+      "churn": 110,
+      "net": 0,
+      "spinRatio": 110,
+      "authors": [
+        "ody-cai"
+      ],
+      "lastSeen": "2026-09-11T04:10:27Z"
+    },
+    {
+      "file": "topfo-app/app/src/main/java/com/topfo/app/ui/insights/InsightsScreen.kt",
+      "touches": 3,
+      "churn": 110,
+      "net": 0,
+      "spinRatio": 110,
+      "authors": [
+        "ody-cai"
+      ],
+      "lastSeen": "2026-09-11T04:10:27Z"
+    },
+    {
+      "file": "topfo-app/app/src/main/java/com/topfo/app/ui/chat/ChatScreen.kt",
+      "touches": 3,
+      "churn": 72,
+      "net": 0,
+      "spinRatio": 72,
+      "authors": [
+        "ody-cai"
+      ],
+      "lastSeen": "2026-09-11T04:10:27Z"
+    }
+  ],
+  "soloOwned": [
+    {
+      "file": "topfo-app/app/src/main/res/raw/schools.json",
+      "owner": "ody-cai",
+      "touches": 2,
+      "churn": 6462
+    },
+    {
+      "file": "review_results.json",
+      "owner": "ody-cai",
+      "touches": 2,
+      "churn": 5766
+    },
+    {
+      "file": "public/pages/tracker.html",
+      "owner": "ody-cai",
+      "touches": 4,
+      "churn": 1946
+    },
+    {
+      "file": "public/js/auth.js",
+      "owner": "ody-cai",
+      "touches": 7,
+      "churn": 1216
+    },
+    {
+      "file": "public/pages/community.html",
+      "owner": "ody-cai",
+      "touches": 5,
+      "churn": 1137
+    },
+    {
+      "file": "public/index.html",
+      "owner": "ody-cai",
+      "touches": 7,
+      "churn": 919
+    },
+    {
+      "file": "public/pages/download.html",
+      "owner": "ody-cai",
+      "touches": 6,
+      "churn": 789
+    },
+    {
+      "file": "public/css/common.css",
+      "owner": "ody-cai",
+      "touches": 5,
+      "churn": 649
+    },
+    {
+      "file": "public/pages/insights.html",
+      "owner": "ody-cai",
+      "touches": 6,
+      "churn": 643
+    },
+    {
+      "file": "public/pages/recommend.html",
+      "owner": "ody-cai",
+      "touches": 6,
+      "churn": 628
+    }
+  ],
+  "authors": [
+    {
+      "author": "ody-cai",
+      "commits": 22,
+      "churn": 44534,
+      "fileCount": 167
+    },
+    {
+      "author": "Ody",
+      "commits": 1,
+      "churn": 502,
+      "fileCount": 5
+    }
+  ],
+  "hygiene": {
+    "total": 23,
+    "nonMerge": 23,
+    "merges": 0,
+    "vagueCount": 0,
+    "vagueRate": 0,
+    "revertCount": 0,
+    "avgMsgLen": 85,
+    "vagueSamples": [],
+    "reverts": []
+  },
+  "rhythm": {
+    "weeks": [
+      {
+        "week": "2026-07-06",
+        "commits": 13,
+        "churn": 30418
+      },
+      {
+        "week": "2026-09-07",
+        "commits": 6,
+        "churn": 12721
+      },
+      {
+        "week": "2026-09-14",
+        "commits": 4,
+        "churn": 1897
+      }
+    ],
+    "longestGap": {
+      "days": 62,
+      "from": "2026-07-09T06:11:32Z",
+      "to": "2026-09-09T01:23:43Z"
+    },
+    "afterGapCommit": {
+      "sha": "21a0e31",
+      "message": "每日更新 2026-09-09: 多大2027官方截止日期入表(工程/音乐1/15,其余2/1,早申11/7);UTSG/UTSC/UTM deadline字段刷新;麦吉尔/UBC 2027节点确认无变化;IRCC 2027学签配额规划15万(待确认)",
+      "date": "2026-09-09T01:23:43Z"
+    },
+    "activeDays": 10,
+    "spanDays": 73
+  },
+  "risk": {
+    "score": 53,
+    "level": "中",
+    "factors": [
+      {
+        "key": "vague",
+        "label": "提交信息质量",
+        "raw": "0 / 23 条无信息量",
+        "detail": "含糊的提交信息让后来者无法还原改动意图",
+        "score": 0,
+        "weight": 25
+      },
+      {
+        "key": "thrash",
+        "label": "原地打转的文件",
+        "raw": "9 个文件反复推翻",
+        "detail": "改动总量很大但净变化很小，说明方案被反复推翻",
+        "score": 25,
+        "weight": 25
+      },
+      {
+        "key": "abandoned",
+        "label": "被放弃的尝试",
+        "raw": "7 处已核实（另否定 0 处）",
+        "detail": "短期加入又短期拆除，且拆除内容与当初新增内容重合 —— 确属方向摇摆",
+        "score": 20,
+        "weight": 20
+      },
+      {
+        "key": "revert",
+        "label": "显式回滚",
+        "raw": "0 次回滚提交",
+        "detail": "明确的回滚是决策失败的直接证据",
+        "score": 0,
+        "weight": 15
+      },
+      {
+        "key": "gap",
+        "label": "最长沉寂期",
+        "raw": "62 天无人提交",
+        "detail": "长期停摆后重启，往往伴随架构转向",
+        "score": 8,
+        "weight": 15
+      }
+    ]
+  },
+  "cost": {
+    "apiCalls": 25,
+    "rateRemaining": 4825,
+    "token": true,
+    "fetchedAt": "2026-09-20T02:22:36.723Z"
+  },
+  "digSite": {
+    "repo": "ody-cai/topfo · HTML · 2 stars · 创建于 2026-07-09",
+    "signalNote": "共分析 23 次提交，其中 0 次来自机器人（0%），仅 23 次包含人类决策痕迹",
+    "window": "2026-07-09 → 2026-09-20，有效人类提交 23 次",
+    "topFiles": [
+      {
+        "file": "topfo-app/app/src/main/res/raw/schools.json",
+        "touches": 2,
+        "churn": 6462,
+        "changes": [
+          {
+            "sha": "6cc0b93",
+            "date": "2026-07-09",
+            "msg": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+            "add": 3231,
+            "del": 0,
+            "status": "added"
+          },
+          {
+            "sha": "0363698",
+            "date": "2026-09-11",
+            "msg": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截",
+            "add": 0,
+            "del": 3231,
+            "status": "removed"
+          }
+        ]
+      },
+      {
+        "file": "review_results.json",
+        "touches": 2,
+        "churn": 5766,
+        "changes": [
+          {
+            "sha": "6cc0b93",
+            "date": "2026-07-09",
+            "msg": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+            "add": 3892,
+            "del": 0,
+            "status": "added"
+          },
+          {
+            "sha": "ed18ec5",
+            "date": "2026-07-09",
+            "msg": "fix zh.json JSON syntax error",
+            "add": 1331,
+            "del": 543,
+            "status": "modified"
+          }
+        ]
+      },
+      {
+        "file": "public/pages/tracker.html",
+        "touches": 4,
+        "churn": 1946,
+        "changes": [
+          {
+            "sha": "fda81ef",
+            "date": "2026-07-09",
+            "msg": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+            "add": 907,
+            "del": 0,
+            "status": "added"
+          },
+          {
+            "sha": "95e3a03",
+            "date": "2026-07-09",
+            "msg": "🐛 修复：登录弹窗不显示 + i18n 时序 + 导航不一致",
+            "add": 19,
+            "del": 16,
+            "status": "modified"
+          },
+          {
+            "sha": "71a88d0",
+            "date": "2026-07-09",
+            "msg": "🐛 修复：登录弹窗硬编码到所有页面 + auth.js 注入保护",
+            "add": 47,
+            "del": 0,
+            "status": "modified"
+          },
+          {
+            "sha": "ed18ec5",
+            "date": "2026-07-09",
+            "msg": "fix zh.json JSON syntax error",
+            "add": 0,
+            "del": 957,
+            "status": "removed"
+          }
+        ]
+      },
+      {
+        "file": "加拿大大学录取要求对照表_2026.html",
+        "touches": 10,
+        "churn": 1560,
+        "changes": [
+          {
+            "sha": "6cc0b93",
+            "date": "2026-07-09",
+            "msg": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+            "add": 899,
+            "del": 0,
+            "status": "added"
+          },
+          {
+            "sha": "21a0e31",
+            "date": "2026-09-09",
+            "msg": "每日更新 2026-09-09: 多大2027官方截止日期入表(工程/音乐1/15,其余2/1,早申11/7);UTSG/UTSC/UTM deadline字段刷新;麦吉尔/UBC 2027节点确认无变化;IRCC 20",
+            "add": 46,
+            "del": 46,
+            "status": "modified"
+          },
+          {
+            "sha": "d2bc411",
+            "date": "2026-09-10",
+            "msg": "每日更新 2026-09-10: 多大2027截止口径精化(网申统一1/15,推荐早申11/7);阿尔伯塔2027官方时间线(3/1截止)+Year One Foundation工程方向;滑铁卢2027截止公布(工程1/",
+            "add": 30,
+            "del": 30,
+            "status": "modified"
+          },
+          {
+            "sha": "0363698",
+            "date": "2026-09-11",
+            "msg": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截",
+            "add": 264,
+            "del": 143,
+            "status": "modified"
+          },
+          {
+            "sha": "7369b2a",
+            "date": "2026-09-12",
+            "msg": "每日更新 2026-09-12: IRCC学签生活费证明门槛2026-09-01起上调至CAD 23,448(旧22,895);澳洲485工签口径明确(本科/授课硕2年,雅思6.5单项5.5,1年内成绩);澳洲2027学",
+            "add": 1,
+            "del": 1,
+            "status": "modified"
+          },
+          {
+            "sha": "c046b99",
+            "date": "2026-09-13",
+            "msg": "data: 2026-09-13 日更 — IRCC 学签规则集中调整(前置课程学签90天/Co-op工签取消/PGWP收紧/LoA核验10天/续签合规调查) + UBC 2027夏季学期开放 + UQ 2027 S1时",
+            "add": 2,
+            "del": 2,
+            "status": "modified"
+          },
+          {
+            "sha": "ce2c46e",
+            "date": "2026-09-14",
+            "msg": "data: 2026-09-14 日更 — UTM 自2027-09起新增 IFP 双录取通道(多大国际项目官网确认,覆盖Arts/Science/Business 180+专业,门槛待公布;UTM dual 由 no ",
+            "add": 21,
+            "del": 21,
+            "status": "modified"
+          },
+          {
+            "sha": "c2b0910",
+            "date": "2026-09-15",
+            "msg": "数据更新 2026-09-15：多大A&S截止口径冲突披露 + Pearson奖学金节点 + UTM官方节点 + 麦马复核",
+            "add": 4,
+            "del": 4,
+            "status": "modified"
+          },
+          {
+            "sha": "5254f7e",
+            "date": "2026-09-16",
+            "msg": "data: 2026-09-16 日更 — 今日无院校录取门槛变化；IRCC 规则细节确认(校外工作24h/周官方口径+2026省份PAL配额明细) + 康考迪亚Grey Nuns/约克Winter11-18/UNSW国",
+            "add": 13,
+            "del": 13,
+            "status": "modified"
+          },
+          {
+            "sha": "496e982",
+            "date": "2026-09-20",
+            "msg": "data: 2026-09-20 日更 — 今日无院校录取GPA/雅思门槛变动；实质新增=英语「认可考试清单」政策变更(SFU新增LanguageCert/滑铁卢口径外新增SFU Duolingo永久认可+TOEFL新制",
+            "add": 10,
+            "del": 10,
+            "status": "modified"
+          }
+        ]
+      },
+      {
+        "file": "public/js/auth.js",
+        "touches": 7,
+        "churn": 1216,
+        "changes": [
+          {
+            "sha": "6cc0b93",
+            "date": "2026-07-09",
+            "msg": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+            "add": 683,
+            "del": 0,
+            "status": "added"
+          },
+          {
+            "sha": "f95dfa6",
+            "date": "2026-07-09",
+            "msg": "🔐 新增独立demo体验账号 + 分离个人信息",
+            "add": 35,
+            "del": 15,
+            "status": "modified"
+          },
+          {
+            "sha": "fda81ef",
+            "date": "2026-07-09",
+            "msg": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+            "add": 320,
+            "del": 8,
+            "status": "modified"
+          },
+          {
+            "sha": "dcc9a88",
+            "date": "2026-07-09",
+            "msg": "🐛 紧急修复：登录回退 + i18n 刷新 + me/data.js SQL 修正",
+            "add": 27,
+            "del": 23,
+            "status": "modified"
+          },
+          {
+            "sha": "71a88d0",
+            "date": "2026-07-09",
+            "msg": "🐛 修复：登录弹窗硬编码到所有页面 + auth.js 注入保护",
+            "add": 6,
+            "del": 0,
+            "status": "modified"
+          },
+          {
+            "sha": "ed18ec5",
+            "date": "2026-07-09",
+            "msg": "fix zh.json JSON syntax error",
+            "add": 9,
+            "del": 3,
+            "status": "modified"
+          },
+          {
+            "sha": "0363698",
+            "date": "2026-09-11",
+            "msg": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截",
+            "add": 67,
+            "del": 20,
+            "status": "modified"
+          }
+        ]
+      },
+      {
+        "file": "public/pages/community.html",
+        "touches": 5,
+        "churn": 1137,
+        "changes": [
+          {
+            "sha": "fda81ef",
+            "date": "2026-07-09",
+            "msg": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+            "add": 986,
+            "del": 0,
+            "status": "added"
+          },
+          {
+            "sha": "95e3a03",
+            "date": "2026-07-09",
+            "msg": "🐛 修复：登录弹窗不显示 + i18n 时序 + 导航不一致",
+            "add": 19,
+            "del": 16,
+            "status": "modified"
+          },
+          {
+            "sha": "71a88d0",
+            "date": "2026-07-09",
+            "msg": "🐛 修复：登录弹窗硬编码到所有页面 + auth.js 注入保护",
+            "add": 47,
+            "del": 0,
+            "status": "modified"
+          },
+          {
+            "sha": "ed18ec5",
+            "date": "2026-07-09",
+            "msg": "fix zh.json JSON syntax error",
+            "add": 61,
+            "del": 6,
+            "status": "modified"
+          },
+          {
+            "sha": "0363698",
+            "date": "2026-09-11",
+            "msg": "每日更新 2026-09-11: 三项待核实升级为已确认(多大BCS学位/麦马工程Discovery+Direct双路径与核工程/滑铁卢工程视频面试+重修不扣分+建筑门槛78%);UTSC新增AI与机器学习方向;UBC截",
+            "add": 2,
+            "del": 0,
+            "status": "modified"
+          }
+        ]
+      }
+    ],
+    "thrash": [
+      {
+        "file": "public/pages/tracker.html",
+        "touches": 4,
+        "totalChurn": 1946,
+        "netChange": 0,
+        "spinRatio": 1946
+      },
+      {
+        "file": "topfo-app/app/src/main/java/com/topfo/app/MainActivity.kt",
+        "touches": 3,
+        "totalChurn": 248,
+        "netChange": 0,
+        "spinRatio": 248
+      },
+      {
+        "file": "topfo-app/app/src/main/java/com/topfo/app/ui/admission/AdmissionScreen.kt",
+        "touches": 3,
+        "totalChurn": 200,
+        "netChange": 0,
+        "spinRatio": 200
+      },
+      {
+        "file": "public/js/i18n/fr.json",
+        "touches": 3,
+        "totalChurn": 194,
+        "netChange": 0,
+        "spinRatio": 194
+      },
+      {
+        "file": "topfo-app/app/src/main/java/com/topfo/app/ui/theme/GlassComponents.kt",
+        "touches": 3,
+        "totalChurn": 192,
+        "netChange": 0,
+        "spinRatio": 192
+      }
+    ],
+    "abandoned": [
+      {
+        "file": "public/functions/api/rankings.js",
+        "added": {
+          "sha": "6cc0b93",
+          "date": "2026-07-09",
+          "lines": 63,
+          "msg": "🎉 初始化: topfo 加拿大大学升学规划数据平台"
+        },
+        "removed": {
+          "sha": "fda81ef",
+          "date": "2026-07-09",
+          "lines": 54,
+          "msg": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台"
+        },
+        "survivedDays": 0
+      },
+      {
+        "file": "public/functions/api/schools.js",
+        "added": {
+          "sha": "6cc0b93",
+          "date": "2026-07-09",
+          "lines": 66,
+          "msg": "🎉 初始化: topfo 加拿大大学升学规划数据平台"
+        },
+        "removed": {
+          "sha": "fda81ef",
+          "date": "2026-07-09",
+          "lines": 57,
+          "msg": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台"
+        },
+        "survivedDays": 0
+      },
+      {
+        "file": "public/functions/api/ai/recommend.js",
+        "added": {
+          "sha": "fda81ef",
+          "date": "2026-07-09",
+          "lines": 143,
+          "msg": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台"
+        },
+        "removed": {
+          "sha": "674486b",
+          "date": "2026-07-09",
+          "lines": 105,
+          "msg": "🤖 AI 选校接入真实 Cloudflare Workers AI（原为静态规则引擎）"
+        },
+        "survivedDays": 0
+      },
+      {
+        "file": "public/functions/api/applications.js",
+        "added": {
+          "sha": "fda81ef",
+          "date": "2026-07-09",
+          "lines": 107,
+          "msg": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台"
+        },
+        "removed": {
+          "sha": "ed18ec5",
+          "date": "2026-07-09",
+          "lines": 107,
+          "msg": "fix zh.json JSON syntax error"
+        },
+        "survivedDays": 0
+      },
+      {
+        "file": "public/functions/api/applications/[id].js",
+        "added": {
+          "sha": "fda81ef",
+          "date": "2026-07-09",
+          "lines": 76,
+          "msg": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台"
+        },
+        "removed": {
+          "sha": "ed18ec5",
+          "date": "2026-07-09",
+          "lines": 76,
+          "msg": "fix zh.json JSON syntax error"
+        },
+        "survivedDays": 0
+      },
+      {
+        "file": "public/js/i18n/fr.json",
+        "added": {
+          "sha": "fda81ef",
+          "date": "2026-07-09",
+          "lines": 95,
+          "msg": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台"
+        },
+        "removed": {
+          "sha": "ed18ec5",
+          "date": "2026-07-09",
+          "lines": 96,
+          "msg": "fix zh.json JSON syntax error"
+        },
+        "survivedDays": 0
+      }
+    ],
+    "vagueSamples": [],
+    "reverts": [],
+    "longestGap": {
+      "days": 62,
+      "from": "2026-07-09T06:11:32Z",
+      "to": "2026-09-09T01:23:43Z"
+    },
+    "afterGap": {
+      "sha": "21a0e31",
+      "message": "每日更新 2026-09-09: 多大2027官方截止日期入表(工程/音乐1/15,其余2/1,早申11/7);UTSG/UTSC/UTM deadline字段刷新;麦吉尔/UBC 2027节点确认无变化;IRCC 2027学签配额规划15万(待确认)",
+      "date": "2026-09-09T01:23:43Z"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+  <Box style={{ height: 96, justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', lineHeight: 1.22, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>有一类信息，读代码永远看不到</Text>
+        <Text style={{ fontSize: 14.5, color: '#8892A0', marginTop: 7, letterSpacing: 0.3 }}>Some information never shows up in the code itself</Text>
+      </Box>
+      
+    </Box>
+  </Box>
+    <Box style={{ height: 500 }}>
+      <Box style={{ height: 76, padding: '11px 18px', background: '#1D242E', borderLeft: '3px solid #E3A33E', borderRadius: 10, justifyContent: 'center' }}>
+        
+    <Text style={{ fontSize: 13, lineHeight: 1.5, color: '#EDF1F5' }}>技术尽调评估复杂度、覆盖率与维护成本，却几乎不评估更致命的一项：这个代码库的知识还能不能被交接。下面三条全部来自本次两个仓库的现场实测。</Text>
+    <Text style={{ fontSize: 10.5, lineHeight: 1.45, color: '#8892A0', marginTop: 5 }}>Due diligence measures complexity, coverage and maintenance cost — almost never the more fatal question: can this codebase's knowledge still be handed over? All three findings below are live measurements from the two repositories tested.</Text>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 344, marginTop: 14 }}>
+
+        <Box style={{ flex: 1, padding: '16px 18px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 30, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>01</Text>
+          <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#EDF1F5', marginTop: 8 }}>节奏被压扁</Text>
+          <Text style={{ fontSize: 11, color: '#8892A0', marginTop: 3, letterSpacing: 0.3 }}>Velocity is invisible in the final state</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 10 }}>openclaw/openclaw 的 60 次提交全部落在 <span style={{ color: '#E3A33E', fontWeight: 'bold' }}>2h 15m 47s</span> 之内，约合每小时 26.5 次、平均每 2.3 分钟一次，活跃天数 1 天。读 main 分支的终态看不到这种速度，也无法判断哪些改动是被时限逼出来的。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 5 }}>All 60 commits fall inside a single 2h16m window — about 26.5 commits per hour. The final state of main tells you nothing about this tempo.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 10, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 11, lineHeight: 1.4, color: '#4CB8A6' }}>实测 openclaw：60 次提交 / 2h 15m 47s / 26.5 次·小时</Text>
+          </Box>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '16px 18px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 30, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>02</Text>
+          <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#EDF1F5', marginTop: 8 }}>知识集中在一个人头上</Text>
+          <Text style={{ fontSize: 11, color: '#8892A0', marginTop: 3, letterSpacing: 0.3 }}>Single point of knowledge</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 10 }}>openclaw 有 8 位作者，但 <span style={{ color: '#E3A33E', fontWeight: 'bold' }}>80%</span> 的提交来自 Peter Steinberger 一人（47 次提交、19,278 行改动、294 个文件）。ody-cai/topfo 更极端：<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>96%</span> 的提交来自 ody-cai。代码里没有任何一行标注「这些文件只有一个人懂」。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 5 }}>openclaw has 8 authors, yet 80% of commits come from one person. topfo is starker: 96% from a single author. No line of code records this.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 10, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 11, lineHeight: 1.4, color: '#4CB8A6' }}>实测 openclaw：47/59 次（80%）／topfo：22/23 次（96%）</Text>
+          </Box>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '16px 18px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 30, fontWeight: 'bold', lineHeight: 1, color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>03</Text>
+          <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#EDF1F5', marginTop: 8 }}>先进后出，代码里零痕迹</Text>
+          <Text style={{ fontSize: 11, color: '#8892A0', marginTop: 3, letterSpacing: 0.3 }}>Added then removed — zero trace</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 10 }}>ody-cai/topfo 有 <span style={{ color: '#E3A33E', fontWeight: 'bold' }}>7 处</span>改动在数小时内被整体拆除，拆除内容与当初新增内容重合 <span style={{ color: '#E3A33E', fontWeight: 'bold' }}>93%–100%</span>，存活时间最短 1 小时 2 分、最长 2 小时 30 分。这些功能在今天的代码库里查不到任何痕迹 —— 没有 TODO、没有注释、没有残留分支，只能从提交历史里挖出来。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 5 }}>Seven changes in topfo were added and then wholly removed within hours, with 93–100% content overlap. Today the code contains no trace of them.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 10, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 11, lineHeight: 1.4, color: '#4CB8A6' }}>实测 topfo：7 处已核实 · 重合 93%–100% · 存活 1 小时 2 分–2 小时 30 分</Text>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box style={{ height: 48, marginTop: 14, padding: '0 18px', background: 'rgba(227,163,62,0.10)', border: '1px solid rgba(227,163,62,0.35)', borderRadius: 10, justifyContent: 'center', flexDirection: 'row', alignItems: 'center', gap: 14 }}>
+        <Text style={{ fontSize: 14, color: '#E3A33E', fontWeight: 'bold' }}>于是问题不是「这个项目好不好」，而是「它还能不能被交接」。</Text>
+        <Text style={{ fontSize: 10.5, color: '#8892A0' }}>The real question is not whether the project is good — but whether it can still be handed over.</Text>
+      </Box>
+    </Box>
+
+  <Box style={{ height: 32, justifyContent: 'center' }}>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>第三方仓库来源 / Third-party source：openclaw/openclaw（TypeScript · 390,102 stars）· GitHub REST API v3 · 采集窗口 2026-09-20T00:07:32Z → 2026-09-20T02:23:19Z（UTC） ｜ 第三方仓库来源 / Third-party source：ody-cai/topfo（HTML · 2 stars）· GitHub REST API v3 · 采集窗口 2026-07-09T02:38:58Z → 2026-09-20T01:53:29Z（UTC）</Text>
+  </Box>
+  <Box style={{ height: 36, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>代码考古学 / Code Archaeology · BAYTECH 2026 · AI 应用与工程赛道</Text>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>03 / 12</Text>
+  </Box>
+</Slide>

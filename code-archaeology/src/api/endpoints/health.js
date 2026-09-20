@@ -18,6 +18,10 @@ export default {
         configured: model.configured,
         provider: model.provider,
         models: model.models,
+        // 前端徽标要用这两个字段显示「多模型分工 / N 个模型」——
+        // 之前只返回 models，徽标会把 mode 渲染成 undefined。
+        mode: model.mode,
+        distinctModels: model.distinctModels,
       },
       capabilities: {
         mining: true, // 纯计算层，永远可用

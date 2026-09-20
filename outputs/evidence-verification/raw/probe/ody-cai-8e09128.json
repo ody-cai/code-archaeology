@@ -1,0 +1,97 @@
+{
+  "sha": "8e09128ab64047c1c2927941f398b08bf9321f39",
+  "node_id": "C_kwDOSrfmNNoAKDhlMDkxMjhhYjY0MDQ3YzFjMjkyNzk0MWYzOThiMDhiZjkzMjFmMzk",
+  "commit": {
+    "author": {
+      "name": "OA System",
+      "email": "oa-system@example.com",
+      "date": "2026-05-29T16:15:56Z"
+    },
+    "committer": {
+      "name": "OA System",
+      "email": "oa-system@example.com",
+      "date": "2026-05-29T16:15:56Z"
+    },
+    "message": "feat: 公告撤回功能\n\n- 数据库：announcements 表新增 status 和 withdrawn_at 字段\n- API：新增撤回接口 PATCH /api/announcements/{id}/withdraw\n- API：公告查询支持 userRole 参数，管理员可查看已撤回公告\n- 前端：公告管理页面增加撤回按钮和状态筛选\n- 前端：仪表盘公告展示逻辑优化，普通用户只看有效公告\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23388547927810",
+    "tree": {
+      "sha": "71d50553ddf5a4b92c0e632716213a2308b84e37",
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/71d50553ddf5a4b92c0e632716213a2308b84e37"
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/8e09128ab64047c1c2927941f398b08bf9321f39",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8e09128ab64047c1c2927941f398b08bf9321f39",
+  "html_url": "https://github.com/ody-cai/oa-system/commit/8e09128ab64047c1c2927941f398b08bf9321f39",
+  "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/8e09128ab64047c1c2927941f398b08bf9321f39/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "8cfb6cfd62391e49a5f17449286e862118e007ec",
+      "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8cfb6cfd62391e49a5f17449286e862118e007ec",
+      "html_url": "https://github.com/ody-cai/oa-system/commit/8cfb6cfd62391e49a5f17449286e862118e007ec"
+    }
+  ],
+  "stats": {
+    "total": 275,
+    "additions": 248,
+    "deletions": 27
+  },
+  "files": [
+    {
+      "sha": "38e831887be212c0ff6765e07f3537da2aab4c61",
+      "filename": "src/app/api/announcements/[id]/withdraw/route.ts",
+      "status": "added",
+      "additions": 70,
+      "deletions": 0,
+      "changes": 70,
+      "blob_url": "https://github.com/ody-cai/oa-system/blob/8e09128ab64047c1c2927941f398b08bf9321f39/src%2Fapp%2Fapi%2Fannouncements%2F%5Bid%5D%2Fwithdraw%2Froute.ts",
+      "raw_url": "https://github.com/ody-cai/oa-system/raw/8e09128ab64047c1c2927941f398b08bf9321f39/src%2Fapp%2Fapi%2Fannouncements%2F%5Bid%5D%2Fwithdraw%2Froute.ts",
+      "contents_url": "https://api.github.com/repos/ody-cai/oa-system/contents/src%2Fapp%2Fapi%2Fannouncements%2F%5Bid%5D%2Fwithdraw%2Froute.ts?ref=8e09128ab64047c1c2927941f398b08bf9321f39",
+      "patch": "@@ -0,0 +1,70 @@\n+import { NextRequest, NextResponse } from 'next/server';\n+import { getSupabaseClient } from '@/storage/database/supabase-client';\n+\n+export async function PATCH(\n+  request: NextRequest,\n+  { params }: { params: Promise<{ id: string }> }\n+) {\n+  try {\n+    const { id } = await params;\n+    const body = await request.json();\n+    const { userRole } = body;\n+\n+    // 验证权限：只有管理员可以撤回公告\n+    if (userRole !== 'admin') {\n+      return NextResponse.json(\n+        { error: '权限不足，只有管理员可以撤回公告' },\n+        { status: 403 }\n+      );\n+    }\n+\n+    const client = getSupabaseClient();\n+\n+    // 检查公告是否存在\n+    const { data: existingAnnouncement, error: fetchError } = await client\n+      .from('announcements')\n+      .select('id, status')\n+      .eq('id', id)\n+      .single();\n+\n+    if (fetchError || !existingAnnouncement) {\n+      return NextResponse.json(\n+        { error: '公告不存在' },\n+        { status: 404 }\n+      );\n+    }\n+\n+    if (existingAnnouncement.status === 'withdrawn') {\n+      return NextResponse.json(\n+        { error: '该公告已被撤回' },\n+        { status: 400 }\n+      );\n+    }\n+\n+    // 更新公告状态为已撤回\n+    const { data: announcement, error } = await client\n+      .from('announcements')\n+      .update({\n+        status: 'withdrawn',\n+        withdrawn_at: new Date().toISOString(),\n+      })\n+      .eq('id', id)\n+      .select()\n+      .single();\n+\n+    if (error) {\n+      throw new Error(`撤回公告失败: ${error.message}`);\n+    }\n+\n+    return NextResponse.json({\n+      announcement,\n+      message: '公告已撤回',\n+    });\n+  } catch (error) {\n+    console.error('撤回公告失败:', error);\n+    return NextResponse.json(\n+      { error: '撤回公告失败' },\n+      { status: 500 }\n+    );\n+  }\n+}"
+    },
+    {
+      "sha": "3347b70e47ce6418a77b3427811b77cbd00d64cb",
+      "filename": "src/app/api/announcements/route.ts",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 2,
+      "changes": 13,
+      "blob_url": "https://github.com/ody-cai/oa-system/blob/8e09128ab64047c1c2927941f398b08bf9321f39/src%2Fapp%2Fapi%2Fannouncements%2Froute.ts",
+      "raw_url": "https://github.com/ody-cai/oa-system/raw/8e09128ab64047c1c2927941f398b08bf9321f39/src%2Fapp%2Fapi%2Fannouncements%2Froute.ts",
+      "contents_url": "https://api.github.com/repos/ody-cai/oa-system/contents/src%2Fapp%2Fapi%2Fannouncements%2Froute.ts?ref=8e09128ab64047c1c2927941f398b08bf9321f39",
+      "patch": "@@ -5,17 +5,26 @@ export async function GET(request: NextRequest) {\n   try {\n     const searchParams = request.nextUrl.searchParams;\n     const limit = parseInt(searchParams.get('limit') || '10');\n+    const userRole = searchParams.get('userRole') || 'employee';\n \n     const client = getSupabaseClient();\n     \n-    // 查询公告，置顶的在前，然后按创建时间倒序\n-    const { data: announcements, error } = await client\n+    // 构建查询\n+    let query = client\n       .from('announcements')\n       .select('*')\n       .order('is_pinned', { ascending: false })\n       .order('created_at', { ascending: false })\n       .limit(limit);\n \n+    // 普通用户只能看到 active 状态的公告\n+    if (userRole !== 'admin') {\n+      query = query.eq('status', 'active');\n+    }\n+    // 管理员可以看到所有公告（包括已撤回的）\n+\n+    const { data: announcements, error } = await query;\n+\n     if (error) {\n       throw new Error(`查询公告失败: ${error.message}`);\n     }"
+    },
+    {
+      "sha": "3bc2c18f557791ec0e7a6b45654c941e0cd10362",
+      "filename": "src/app/dashboard/announcements/page.tsx",
+      "status": "modified",
+      "additions": 145,
+      "deletions": 24,
+      "changes": 169,
+      "blob_url": "https://github.com/ody-cai/oa-system/blob/8e09128ab64047c1c2927941f398b08bf9321f39/src%2Fapp%2Fdashboard%2Fannouncements%2Fpage.tsx",
+      "raw_url": "https://github.com/ody-cai/oa-system/raw/8e09128ab64047c1c2927941f398b08bf9321f39/src%2Fapp%2Fdashboard%2Fannouncements%2Fpage.tsx",
+      "contents_url": "https://api.github.com/repos/ody-cai/oa-system/contents/src%2Fapp%2Fdashboard%2Fannouncements%2Fpage.tsx?ref=8e09128ab64047c1c2927941f398b08bf9321f39",
+      "patch": "@@ -12,7 +12,7 @@ import {\n   DialogTitle,\n   DialogTrigger,\n } from '@/components/ui/dialog';\n-import { Bell, Plus, Pin, Calendar } from 'lucide-react';\n+import { Bell, Plus, Pin, Calendar, RotateCcw } from 'lucide-react';\n \n interface Announcement {\n   id: string;\n@@ -21,6 +21,15 @@ interface Announcement {\n   author_id: string;\n   is_pinned: boolean;\n   created_at: string;\n+  status: string;\n+  withdrawn_at: string | null;\n+}\n+\n+interface User {\n+  id: string;\n+  email: string;\n+  name: string;\n+  role: string;\n }\n \n export default function AnnouncementsPage() {\n@@ -31,18 +40,48 @@ export default function AnnouncementsPage() {\n   const [newContent, setNewContent] = useState('');\n   const [isPinned, setIsPinned] = useState(false);\n   const [submitting, setSubmitting] = useState(false);\n+  const [user, setUser] = useState<User | null>(null);\n+  const [statusFilter, setStatusFilter] = useState<'all' | 'active' | 'withdrawn'>('all');\n \n   useEffect(() => {\n+    // 获取用户信息\n+    const userData = localStorage.getItem('user');\n+    if (userData) {\n+      setUser(JSON.parse(userData));\n+    }\n+    \n     fetchAnnouncements();\n   }, []);\n \n+  // 当筛选条件改变时重新获取公告\n+  useEffect(() => {\n+    if (user) {\n+      fetchAnnouncements();\n+    }\n+  }, [statusFilter, user]);\n+\n   const fetchAnnouncements = async () => {\n     try {\n       setLoading(true);\n-      const response = await fetch('/api/announcements');\n+      // 管理员传递 userRole 参数，可以看到所有公告\n+      const params = new URLSearchParams();\n+      if (user?.role === 'admin') {\n+        params.append('userRole', 'admin');\n+      }\n+      \n+      const response = await fetch(`/api/announcements?${params.toString()}`);\n       if (response.ok) {\n         const data = await response.json();\n-        setAnnouncements(data.announcements || []);\n+        let fetchedAnnouncements = data.announcements || [];\n+        \n+        // 客户端筛选（如果管理员选择了特定状态）\n+        if (user?.role === 'admin' && statusFilter !== 'all') {\n+          fetchedAnnouncements = fetchedAnnouncements.filter(\n+            (a: Announcement) => a.status === statusFilter\n+          );\n+        }\n+        \n+        setAnnouncements(fetchedAnnouncements);\n       }\n     } catch (error) {\n       console.error('获取公告失败:', error);\n@@ -59,10 +98,6 @@ export default function AnnouncementsPage() {\n       return;\n     }\n \n-    // 从 localStorage 获取用户信息\n-    const userData = localStorage.getItem('user');\n-    const user = userData ? JSON.parse(userData) : null;\n-\n     setSubmitting(true);\n     try {\n       const response = await fetch('/api/announcements', {\n@@ -93,6 +128,33 @@ export default function AnnouncementsPage() {\n     }\n   };\n \n+  const handleWithdraw = async (announcementId: string) => {\n+    if (!confirm('确定要撤回这条公告吗？撤回后普通用户将无法看到。')) {\n+      return;\n+    }\n+\n+    try {\n+      const response = await fetch(`/api/announcements/${announcementId}/withdraw`, {\n+        method: 'PATCH',\n+        headers: { 'Content-Type': 'application/json' },\n+        body: JSON.stringify({\n+          userRole: user?.role,\n+        }),\n+      });\n+\n+      if (!response.ok) {\n+        const errorData = await response.json();\n+        throw new Error(errorData.error || '撤回失败');\n+      }\n+\n+      await fetchAnnouncements();\n+      alert('公告已撤回');\n+    } catch (error) {\n+      console.error('撤回公告失败:', error);\n+      alert(error instanceof Error ? error.message : '撤回失败，请重试');\n+    }\n+  };\n+\n   const formatDate = (dateString: string) => {\n     return new Date(dateString).toLocaleDateString('zh-CN', {\n       year: 'numeric',\n@@ -114,13 +176,44 @@ export default function AnnouncementsPage() {\n           </p>\n         </div>\n         \n-        <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>\n-          <DialogTrigger asChild>\n-            <Button className=\"bg-[#ED8936] hover:bg-[#DD7730] w-full sm:w-auto\">\n-              <Plus className=\"h-4 w-4 mr-2\" />\n-              发布公告\n-            </Button>\n-          </DialogTrigger>\n+        <div className=\"flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto\">\n+          {/* 状态筛选（仅管理员可见） */}\n+          {user?.role === 'admin' && (\n+            <div className=\"flex gap-2\">\n+              <Button\n+                variant={statusFilter === 'all' ? 'default' : 'outline'}\n+                size=\"sm\"\n+                onClick={() => setStatusFilter('all')}\n+                className={statusFilter === 'all' ? 'bg-[#ED8936] hover:bg-[#DD7730]' : ''}\n+              >\n+                全部\n+              </Button>\n+              <Button\n+                variant={statusFilter === 'active' ? 'default' : 'outline'}\n+                size=\"sm\"\n+                onClick={() => setStatusFilter('active')}\n+                className={statusFilter === 'active' ? 'bg-[#ED8936] hover:bg-[#DD7730]' : ''}\n+              >\n+                正常\n+              </Button>\n+              <Button\n+                variant={statusFilter === 'withdrawn' ? 'default' : 'outline'}\n+                size=\"sm\"\n+                onClick={() => setStatusFilter('withdrawn')}\n+                className={statusFilter === 'withdrawn' ? 'bg-[#ED8936] hover:bg-[#DD7730]' : ''}\n+              >\n+                已撤回\n+              </Button>\n+            </div>\n+          )}\n+          \n+          <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>\n+            <DialogTrigger asChild>\n+              <Button className=\"bg-[#ED8936] hover:bg-[#DD7730] w-full sm:w-auto\">\n+                <Plus className=\"h-4 w-4 mr-2\" />\n+                发布公告\n+              </Button>\n+            </DialogTrigger>\n           <DialogContent className=\"sm:max-w-lg w-[95vw] max-h-[90vh] overflow-y-auto\">\n             <DialogHeader>\n               <DialogTitle className=\"text-lg sm:text-xl\">发布新公告</DialogTitle>\n@@ -182,6 +275,7 @@ export default function AnnouncementsPage() {\n             </form>\n           </DialogContent>\n         </Dialog>\n+        </div>\n       </div>\n \n       {/* 公告列表 */}\n@@ -210,7 +304,7 @@ export default function AnnouncementsPage() {\n               key={announcement.id}\n               className={`border-0 shadow-sm hover:shadow-md transition-shadow ${\n                 announcement.is_pinned ? 'border-l-4 border-l-[#ED8936]' : ''\n-              }`}\n+              } ${announcement.status === 'withdrawn' ? 'opacity-60' : ''}`}\n             >\n               <CardContent className=\"p-4 sm:p-6\">\n                 <div className=\"flex items-start gap-3 sm:gap-4\">\n@@ -222,20 +316,47 @@ export default function AnnouncementsPage() {\n                       <h3 className=\"text-base sm:text-lg font-semibold text-[#2D3748]\">\n                         {announcement.title}\n                       </h3>\n-                      {announcement.is_pinned && (\n-                        <span className=\"px-2 py-1 text-xs font-medium bg-[#ED8936] text-white rounded self-start flex-shrink-0\">\n-                          置顶\n-                        </span>\n-                      )}\n+                      <div className=\"flex items-center gap-2 flex-shrink-0\">\n+                        {announcement.status === 'withdrawn' && (\n+                          <span className=\"px-2 py-1 text-xs font-medium bg-gray-400 text-white rounded self-start\">\n+                            已撤回\n+                          </span>\n+                        )}\n+                        {announcement.is_pinned && (\n+                          <span className=\"px-2 py-1 text-xs font-medium bg-[#ED8936] text-white rounded self-start\">\n+                            置顶\n+                          </span>\n+                        )}\n+                      </div>\n                     </div>\n                     <p className=\"text-xs sm:text-sm sm:text-base text-gray-600 mt-2 whitespace-pre-wrap\">\n                       {announcement.content}\n                     </p>\n-                    <div className=\"flex items-center gap-2 sm:gap-4 mt-3 sm:mt-4 text-xs sm:text-sm text-gray-500\">\n-                      <div className=\"flex items-center gap-1\">\n-                        <Calendar className=\"h-3 w-3 sm:h-4 sm:w-4\" />\n-                        {formatDate(announcement.created_at)}\n+                    <div className=\"flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mt-3 sm:mt-4\">\n+                      <div className=\"flex items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-500\">\n+                        <div className=\"flex items-center gap-1\">\n+                          <Calendar className=\"h-3 w-3 sm:h-4 sm:w-4\" />\n+                          {formatDate(announcement.created_at)}\n+                        </div>\n+                        {announcement.status === 'withdrawn' && announcement.withdrawn_at && (\n+                          <div className=\"text-gray-400\">\n+                            撤回于 {formatDate(announcement.withdrawn_at)}\n+                          </div>\n+                        )}\n                       </div>\n+                      \n+                      {/* 撤回按钮（仅管理员可看到，且只能撤回正常状态的公告） */}\n+                      {user?.role === 'admin' && announcement.status === 'active' && (\n+                        <Button\n+                          variant=\"outline\"\n+                          size=\"sm\"\n+                          onClick={() => handleWithdraw(announcement.id)}\n+                          className=\"text-gray-600 hover:text-gray-800\"\n+                        >\n+                          <RotateCcw className=\"h-3 w-3 mr-1\" />\n+                          撤回\n+                        </Button>\n+                      )}\n                     </div>\n                   </div>\n                 </div>"
+    },
+    {
+      "sha": "c9874d1cfb779c936ddf0b838eb586f1f949dbc9",
+      "filename": "src/app/dashboard/page.tsx",
+      "status": "modified",
+      "additions": 22,
+      "deletions": 1,
+      "changes": 23,
+      "blob_url": "https://github.com/ody-cai/oa-system/blob/8e09128ab64047c1c2927941f398b08bf9321f39/src%2Fapp%2Fdashboard%2Fpage.tsx",
+      "raw_url": "https://github.com/ody-cai/oa-system/raw/8e09128ab64047c1c2927941f398b08bf9321f39/src%2Fapp%2Fdashboard%2Fpage.tsx",
+      "contents_url": "https://api.github.com/repos/ody-cai/oa-system/contents/src%2Fapp%2Fdashboard%2Fpage.tsx?ref=8e09128ab64047c1c2927941f398b08bf9321f39",
+      "patch": "@@ -19,19 +19,34 @@ interface Announcement {\n   author_id: string;\n   is_pinned: boolean;\n   created_at: string;\n+  status: string;\n }\n \n interface FileStat {\n   total_files: number;\n   total_size: number;\n }\n \n+interface User {\n+  id: string;\n+  email: string;\n+  name: string;\n+  role: string;\n+}\n+\n export default function DashboardPage() {\n   const [announcements, setAnnouncements] = useState<Announcement[]>([]);\n   const [fileStat, setFileStat] = useState<FileStat>({ total_files: 0, total_size: 0 });\n   const [loading, setLoading] = useState(true);\n+  const [user, setUser] = useState<User | null>(null);\n \n   useEffect(() => {\n+    // 获取用户信息\n+    const userData = localStorage.getItem('user');\n+    if (userData) {\n+      setUser(JSON.parse(userData));\n+    }\n+    \n     Promise.all([\n       fetchDashboardData(),\n       fetchAnnouncements(),\n@@ -52,7 +67,13 @@ export default function DashboardPage() {\n \n   const fetchAnnouncements = async () => {\n     try {\n-      const response = await fetch('/api/announcements?limit=5');\n+      // 根据用户角色获取公告\n+      const params = new URLSearchParams({ limit: '5' });\n+      if (user?.role) {\n+        params.append('userRole', user.role);\n+      }\n+      \n+      const response = await fetch(`/api/announcements?${params.toString()}`);\n       if (response.ok) {\n         const data = await response.json();\n         setAnnouncements(data.announcements || []);"
+    }
+  ]
+}

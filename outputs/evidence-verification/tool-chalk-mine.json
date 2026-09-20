@@ -1,0 +1,32 @@
+
+[1mchalk/chalk[0m[2m  JavaScript · 23317 stars[0m
+[2m2023-06-29 → 2026-09-18 · 32 次 API 调用[0m
+
+[36m信噪比[0m
+  [32m█████████████████████████████[0m[2m░░░░░[0m
+  人类决策 [1m26[0m / 30 次  机器人 0 次（0%）
+
+[36m风险因子[0m  总分 [33m55/100[0m [33m(中)[0m
+  25/25  提交信息质量　　　　　　　　 [2m9 / 26 条无信息量[0m
+  15/25  原地打转的文件　　　　　　　 [2m3 个文件反复推翻[0m
+   0/20  被放弃的尝试　　　　　　　　 [2m0 处已核实（另否定 2 处）[0m
+   0/15  显式回滚　　　　　　　　　　 [2m0 次回滚提交[0m
+  15/15  最长沉寂期　　　　　　　　　 [2m225 天无人提交[0m
+
+[36m文件热度 Top 6[0m
+     200 churn   2x  source/index.test-d.ts
+     182 churn   6x  source/index.js
+     175 churn   4x  test/chalk.js
+     145 churn   5x  source/index.d.ts
+     132 churn  12x  readme.md
+      89 churn  12x  package.json
+
+[36m复核未通过[0m[2m（行数达标，但拆除内容与新增内容无关 —— 判为重写而非放弃）[0m
+  [2msource/index.js  重合 14%  4c304dd → 5729845[0m
+  [2mtest/chalk.js  重合 31%  ff549c5 → 8a94e0e[0m
+
+[36m原地打转[0m[2m（改动量大但净变化小）[0m
+   22x  12 次  净变化      6  readme.md
+    8x  12 次  净变化     11  package.json
+    5x   6 次  净变化     36  source/index.js
+

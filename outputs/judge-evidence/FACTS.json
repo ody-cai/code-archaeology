@@ -1,0 +1,901 @@
+{
+  "generatedAt": "2026-09-20T02:54:04.233Z",
+  "tool": {
+    "name": "代码考古学 / Code Archaeology",
+    "version": "0.1.0",
+    "liveUrl": "https://code-archaeology.odycai.workers.dev",
+    "latestWorkerVersion": "ad70fdf1-12d3-4b63-af33-e00d78f04a78",
+    "latestDeployAt": "2026-09-19T08:00:15Z",
+    "selfTest": {
+      "tests": {
+        "total": 181,
+        "pass": 181,
+        "fail": 0,
+        "durationMs": 604.748542
+      },
+      "code": {
+        "srcLines": 2737,
+        "srcFiles": 26,
+        "publicLines": 2459,
+        "publicFiles": 5,
+        "testsLines": 2820,
+        "testsFiles": 13,
+        "binLines": 709,
+        "binFiles": 2,
+        "scriptsLines": 670,
+        "scriptsFiles": 5,
+        "totalLines": 9395,
+        "totalFiles": 51
+      },
+      "apiEndpoints": 8,
+      "measuredAt": "2026-09-20T02:28:13Z"
+    }
+  },
+  "scopeStatement": {
+    "zh": "本次实测的测试范围严格限定为两个公开仓库：openclaw/openclaw 与 ody-cai/topfo。未对任何第三个仓库运行测试。",
+    "en": "Test scope is strictly limited to two public repositories: openclaw/openclaw and ody-cai/topfo. No third repository was tested."
+  },
+  "openclaw": {
+    "repo": {
+      "full": "openclaw/openclaw",
+      "language": "TypeScript",
+      "stars": 390102,
+      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 "
+    },
+    "capture": {
+      "limit": 60,
+      "windowFromRaw": "2026-09-20T00:07:32Z",
+      "windowToRaw": "2026-09-20T02:23:19Z",
+      "windowFrom": "2026-09-20T00:07:32Z",
+      "windowTo": "2026-09-20T02:23:19Z",
+      "windowSpanText": "2h 15m 47s",
+      "windowSpanMinutes": 136,
+      "apiCalls": 62,
+      "tokenUsed": true,
+      "rateRemaining": 4550,
+      "fetchedAt": "2026-09-20T02:27:10.762Z",
+      "excavateApiCalls": 62,
+      "excavateFetchedAt": "2026-09-20T02:25:57.831Z"
+    },
+    "wallClock": {
+      "mineSec": 6.95,
+      "excavateSec": 13.19
+    },
+    "signal": {
+      "analyzed": 60,
+      "botCommits": 1,
+      "botRate": 2,
+      "signalCommits": 59,
+      "signalRate": 98,
+      "botAuthors": [
+        {
+          "author": "clawsweeper[bot]",
+          "commits": 1
+        }
+      ],
+      "commitsPerHour": 26.5,
+      "minutesPerCommit": 2.3
+    },
+    "hygiene": {
+      "total": 59,
+      "vagueCount": 0,
+      "vagueRate": 0,
+      "revertCount": 0,
+      "avgMsgLen": 66
+    },
+    "concentration": {
+      "topAuthor": "Peter Steinberger",
+      "topAuthorCommits": 47,
+      "topAuthorChurn": 19278,
+      "topAuthorFiles": 294,
+      "topAuthorSharePct": 80,
+      "authorCount": 8,
+      "authors": [
+        {
+          "author": "Peter Steinberger",
+          "commits": 47,
+          "churn": 19278,
+          "files": 294
+        },
+        {
+          "author": "RoboClaw",
+          "commits": 4,
+          "churn": 3782,
+          "files": 109
+        },
+        {
+          "author": "Kimi Yu",
+          "commits": 3,
+          "churn": 6160,
+          "files": 108
+        },
+        {
+          "author": "David",
+          "commits": 1,
+          "churn": 3754,
+          "files": 20
+        },
+        {
+          "author": "Goutam Adwant",
+          "commits": 1,
+          "churn": 7,
+          "files": 2
+        },
+        {
+          "author": "Yuval Dinodia",
+          "commits": 1,
+          "churn": 181,
+          "files": 2
+        },
+        {
+          "author": "Jialong(Bruce) Li",
+          "commits": 1,
+          "churn": 70,
+          "files": 3
+        },
+        {
+          "author": "Dallin Romney",
+          "commits": 1,
+          "churn": 65,
+          "files": 4
+        }
+      ]
+    },
+    "rhythm": {
+      "weeks": [
+        {
+          "week": "2026-09-14",
+          "commits": 59,
+          "churn": 33297
+        }
+      ],
+      "activeDays": 1,
+      "spanDays": 0,
+      "avgDaysPerCommit": 0,
+      "longestGapDays": 0,
+      "longestGapFrom": null,
+      "longestGapTo": null,
+      "afterGapSha": null,
+      "afterGapDate": null
+    },
+    "risk": {
+      "score": 0,
+      "level": "低",
+      "factors": [
+        {
+          "key": "vague",
+          "label": "提交信息质量",
+          "raw": "0 / 59 条无信息量",
+          "score": 0,
+          "weight": 25
+        },
+        {
+          "key": "thrash",
+          "label": "原地打转的文件",
+          "raw": "0 个文件反复推翻",
+          "score": 0,
+          "weight": 25
+        },
+        {
+          "key": "abandoned",
+          "label": "被放弃的尝试",
+          "raw": "0 处已核实（另否定 1 处）",
+          "score": 0,
+          "weight": 20
+        },
+        {
+          "key": "revert",
+          "label": "显式回滚",
+          "raw": "0 次回滚提交",
+          "score": 0,
+          "weight": 15
+        },
+        {
+          "key": "gap",
+          "label": "最长沉寂期",
+          "raw": "0 天无人提交",
+          "score": 0,
+          "weight": 15
+        }
+      ]
+    },
+    "hotspots": [
+      {
+        "file": "src/agents/subagents/registry/subagent-registry-restart-recovery.test.ts",
+        "churn": 909,
+        "touches": 1,
+        "net": -787,
+        "authors": [
+          "Peter Steinberger"
+        ],
+        "lastSha": "18f1c11"
+      },
+      {
+        "file": "src/commands/doctor/shared/missing-configured-plugin-install.dependency-health.test.ts",
+        "churn": 871,
+        "touches": 1,
+        "net": 871,
+        "authors": [
+          "David"
+        ],
+        "lastSha": "c6bb12b"
+      },
+      {
+        "file": "src/agents/subagents/registry/subagent-orphan-recovery.restart-integration.test.ts",
+        "churn": 664,
+        "touches": 1,
+        "net": -300,
+        "authors": [
+          "Peter Steinberger"
+        ],
+        "lastSha": "18f1c11"
+      },
+      {
+        "file": "src/agents/subagents/registry/subagent-control.recovery.test.ts",
+        "churn": 583,
+        "touches": 1,
+        "net": -575,
+        "authors": [
+          "Peter Steinberger"
+        ],
+        "lastSha": "18f1c11"
+      },
+      {
+        "file": "src/agents/subagents/registry/subagent-registry-restart-recovery.ts",
+        "churn": 580,
+        "touches": 1,
+        "net": -356,
+        "authors": [
+          "Peter Steinberger"
+        ],
+        "lastSha": "18f1c11"
+      },
+      {
+        "file": "src/commands/doctor/shared/missing-configured-plugin-install.suite.test-support.ts",
+        "churn": 540,
+        "touches": 1,
+        "net": 540,
+        "authors": [
+          "David"
+        ],
+        "lastSha": "c6bb12b"
+      },
+      {
+        "file": "src/commands/doctor/shared/missing-configured-plugin-install.test.ts",
+        "churn": 532,
+        "touches": 1,
+        "net": -482,
+        "authors": [
+          "David"
+        ],
+        "lastSha": "c6bb12b"
+      },
+      {
+        "file": "src/state/openclaw-agent-execution.registration.test.ts",
+        "churn": 500,
+        "touches": 1,
+        "net": 500,
+        "authors": [
+          "Peter Steinberger"
+        ],
+        "lastSha": "d22782a"
+      }
+    ],
+    "abandoned": {
+      "verifiedCount": 0,
+      "rejectedCount": 1,
+      "globalRevertCount": 0,
+      "verified": [],
+      "overlapRange": null,
+      "rejected": [
+        {
+          "file": "src/agents/main-session-recovery/main-session-restart-recovery.test.ts",
+          "addSha": "18f1c11",
+          "removeSha": "9e7a575",
+          "addLines": 57,
+          "removeLines": 40,
+          "overlapPct": 0,
+          "comparableLines": 31,
+          "verifyNote": "内容核实未通过（重合 0% < 50%），判定为重写而非放弃"
+        }
+      ]
+    },
+    "thrash": {
+      "count": 0,
+      "top": []
+    },
+    "soloOwned": {
+      "count": 8,
+      "top": [
+        {
+          "file": "src/agents/main-session-recovery/main-session-restart-recovery.test.ts",
+          "owner": "Peter Steinberger",
+          "touches": 2,
+          "churn": 188
+        },
+        {
+          "file": "src/agents/workspace-access.ts",
+          "owner": "Kimi Yu",
+          "touches": 2,
+          "churn": 180
+        },
+        {
+          "file": "src/state/openclaw-agent-execution-cleanup.test.ts",
+          "owner": "Peter Steinberger",
+          "touches": 2,
+          "churn": 126
+        }
+      ]
+    },
+    "analysis": {
+      "available": true,
+      "mode": "多模型分工",
+      "distinctModels": 3,
+      "models": {
+        "narrator": "gpt-4o",
+        "hypothesizer": "deepseek-v4-pro",
+        "appraiser": "gemini-2.5-flash"
+      },
+      "narrativeHeadline": "修复任务恢复与插件依赖问题的集中改动",
+      "narrativeText": "2026 年 9 月 20 日，这段代码经历了两次主要的功能修复和改进。首先，提交 `18f1c11` 对多个文件进行了大规模修改，目标是修复网关重启后未完成任务的恢复问题。随后，提交 `c6bb12b` 添加了新的测试文件和逻辑，旨在解决插件安装和依赖修复的相关问题。这些改动集中在同一天完成，表明开发团队可能在处理一组紧急问题。",
+      "turningPoints": [
+        {
+          "sha": "18f1c11",
+          "date": "2026-09-20",
+          "title": "修复网关重启后任务恢复问题",
+          "what": "对多个文件进行了大规模修改，删除了大量代码并新增了部分逻辑，涉及任务恢复的功能。",
+          "why": "提交信息表明这是为了修复网关重启后未完成任务无法恢复的问题。",
+          "status": "grounded"
+        },
+        {
+          "sha": "c6bb12b",
+          "date": "2026-09-20",
+          "title": "修复插件安装和依赖问题",
+          "what": "新增了两个测试文件，分别验证插件安装和依赖修复的逻辑。",
+          "why": "提交信息表明这是为了拒绝不完整的插件安装并修复缺失的依赖。",
+          "status": "grounded"
+        }
+      ],
+      "hypothesesSkipped": true,
+      "skipReason": "no_abandoned_attempts",
+      "hypothesisCount": 0,
+      "overallPattern": "在本次分析的窗口内，没有检出「先进后出」的改动模式。",
+      "verdict": "这份代码的历史非常清晰且高度规范，没有回滚、打转或含糊提交，属于一次目标明确的高效集中修复。",
+      "riskLevel": "低",
+      "advice": [
+        "直接基于当前的测试文件验证网关任务恢复与插件依赖逻辑，无需担心历史分支冲突。",
+        "重点阅读提交 18f1c11 的代码变更，理解网关重启后任务恢复的重构细节。",
+        "参考 c6bb12b 新增的测试用例，在后续开发中保持高测试覆盖率。"
+      ],
+      "doubts": [
+        {
+          "claim": "这些改动可能是为了应对生产环境中的紧急问题",
+          "concern": "客观指标和提交信息仅能证明是集中修复，叙事者无权凭空推断是否属于“生产环境中的紧急问题”"
+        }
+      ],
+      "interviewQuestions": [
+        "18f1c11 删除了大量代码并重构任务恢复逻辑时，是否伴随着架构设计的改变？",
+        "为什么选择在同一天集中处理网关任务恢复和插件依赖两个不同领域的问题？",
+        "c6bb12b 中新增的测试用例是否完全覆盖了此前生产环境遇到的边界条件？"
+      ],
+      "evidenceAudit": {
+        "narrative": {
+          "claims": 2,
+          "grounded": 2,
+          "ungrounded": 0,
+          "fabricated": 0,
+          "citations": 2,
+          "validCitations": 2,
+          "invalidCitations": 0,
+          "groundingRate": 100,
+          "offenders": []
+        },
+        "hypothesis": {
+          "claims": 0,
+          "grounded": 0,
+          "ungrounded": 0,
+          "fabricated": 0,
+          "citations": 0,
+          "validCitations": 0,
+          "invalidCitations": 0,
+          "groundingRate": 0,
+          "offenders": []
+        },
+        "overall": {
+          "claims": 2,
+          "fabricated": 0,
+          "invalidCitations": 0
+        }
+      },
+      "degradations": []
+    }
+  },
+  "topfo": {
+    "repo": {
+      "full": "ody-cai/topfo",
+      "language": "HTML",
+      "stars": 2,
+      "description": "加拿大大学升学规划数据平台 - 录取要求对照表、排名、策略分析"
+    },
+    "capture": {
+      "limit": 60,
+      "windowFromRaw": "2026-07-09T02:38:58Z",
+      "windowToRaw": "2026-09-20T01:53:29Z",
+      "windowFrom": "2026-07-09T02:38:58Z",
+      "windowTo": "2026-09-20T01:53:29Z",
+      "windowSpanText": "1751h 14m 31s",
+      "windowSpanMinutes": 105075,
+      "apiCalls": 25,
+      "tokenUsed": true,
+      "rateRemaining": 4527,
+      "fetchedAt": "2026-09-20T02:27:15.073Z",
+      "excavateApiCalls": 25,
+      "excavateFetchedAt": "2026-09-20T02:26:17.511Z"
+    },
+    "wallClock": {
+      "mineSec": 4.3,
+      "excavateSec": 38.35
+    },
+    "signal": {
+      "analyzed": 23,
+      "botCommits": 0,
+      "botRate": 0,
+      "signalCommits": 23,
+      "signalRate": 100,
+      "botAuthors": [],
+      "commitsPerHour": 0,
+      "minutesPerCommit": 4568.5
+    },
+    "hygiene": {
+      "total": 23,
+      "vagueCount": 0,
+      "vagueRate": 0,
+      "revertCount": 0,
+      "avgMsgLen": 85
+    },
+    "concentration": {
+      "topAuthor": "ody-cai",
+      "topAuthorCommits": 22,
+      "topAuthorChurn": 44534,
+      "topAuthorFiles": 167,
+      "topAuthorSharePct": 96,
+      "authorCount": 2,
+      "authors": [
+        {
+          "author": "ody-cai",
+          "commits": 22,
+          "churn": 44534,
+          "files": 167
+        },
+        {
+          "author": "Ody",
+          "commits": 1,
+          "churn": 502,
+          "files": 5
+        }
+      ]
+    },
+    "rhythm": {
+      "weeks": [
+        {
+          "week": "2026-07-06",
+          "commits": 13,
+          "churn": 30418
+        },
+        {
+          "week": "2026-09-07",
+          "commits": 6,
+          "churn": 12721
+        },
+        {
+          "week": "2026-09-14",
+          "commits": 4,
+          "churn": 1897
+        }
+      ],
+      "activeDays": 10,
+      "spanDays": 73,
+      "avgDaysPerCommit": 3.2,
+      "longestGapDays": 62,
+      "longestGapFrom": "2026-07-09T06:11:32Z",
+      "longestGapTo": "2026-09-09T01:23:43Z",
+      "afterGapSha": "21a0e31",
+      "afterGapDate": "2026-09-09T01:23:43Z"
+    },
+    "risk": {
+      "score": 53,
+      "level": "中",
+      "factors": [
+        {
+          "key": "vague",
+          "label": "提交信息质量",
+          "raw": "0 / 23 条无信息量",
+          "score": 0,
+          "weight": 25
+        },
+        {
+          "key": "thrash",
+          "label": "原地打转的文件",
+          "raw": "9 个文件反复推翻",
+          "score": 25,
+          "weight": 25
+        },
+        {
+          "key": "abandoned",
+          "label": "被放弃的尝试",
+          "raw": "7 处已核实（另否定 0 处）",
+          "score": 20,
+          "weight": 20
+        },
+        {
+          "key": "revert",
+          "label": "显式回滚",
+          "raw": "0 次回滚提交",
+          "score": 0,
+          "weight": 15
+        },
+        {
+          "key": "gap",
+          "label": "最长沉寂期",
+          "raw": "62 天无人提交",
+          "score": 8,
+          "weight": 15
+        }
+      ]
+    },
+    "hotspots": [
+      {
+        "file": "topfo-app/app/src/main/res/raw/schools.json",
+        "churn": 6462,
+        "touches": 2,
+        "net": 0,
+        "authors": [
+          "ody-cai"
+        ],
+        "lastSha": "0363698"
+      },
+      {
+        "file": "review_results.json",
+        "churn": 5766,
+        "touches": 2,
+        "net": 4680,
+        "authors": [
+          "ody-cai"
+        ],
+        "lastSha": "ed18ec5"
+      },
+      {
+        "file": "public/pages/tracker.html",
+        "churn": 1946,
+        "touches": 4,
+        "net": 0,
+        "authors": [
+          "ody-cai"
+        ],
+        "lastSha": "ed18ec5"
+      },
+      {
+        "file": "加拿大大学录取要求对照表_2026.html",
+        "churn": 1560,
+        "touches": 10,
+        "net": 1020,
+        "authors": [
+          "ody-cai",
+          "Ody"
+        ],
+        "lastSha": "496e982"
+      },
+      {
+        "file": "public/js/auth.js",
+        "churn": 1216,
+        "touches": 7,
+        "net": 1078,
+        "authors": [
+          "ody-cai"
+        ],
+        "lastSha": "0363698"
+      },
+      {
+        "file": "public/pages/community.html",
+        "churn": 1137,
+        "touches": 5,
+        "net": 1093,
+        "authors": [
+          "ody-cai"
+        ],
+        "lastSha": "0363698"
+      },
+      {
+        "file": "加拿大大学录取要求完整对照表_2026.md",
+        "churn": 1087,
+        "touches": 10,
+        "net": 1005,
+        "authors": [
+          "ody-cai",
+          "Ody"
+        ],
+        "lastSha": "496e982"
+      },
+      {
+        "file": "public/index.html",
+        "churn": 919,
+        "touches": 7,
+        "net": 571,
+        "authors": [
+          "ody-cai"
+        ],
+        "lastSha": "0363698"
+      }
+    ],
+    "abandoned": {
+      "verifiedCount": 7,
+      "rejectedCount": 0,
+      "globalRevertCount": 0,
+      "verified": [
+        {
+          "file": "public/functions/api/rankings.js",
+          "addSha": "6cc0b93",
+          "addDate": "2026-07-09T02:38:58Z",
+          "addLines": 63,
+          "addMessage": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+          "removeSha": "fda81ef",
+          "removeDate": "2026-07-09T03:40:51Z",
+          "removeLines": 54,
+          "removeMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "survivedMinutes": 62,
+          "survivedText": "1 小时 2 分",
+          "overlapPct": 100,
+          "overlappedLines": 39,
+          "comparableLines": 39,
+          "verifyNote": "内容核实通过（重合 100%）"
+        },
+        {
+          "file": "public/functions/api/schools.js",
+          "addSha": "6cc0b93",
+          "addDate": "2026-07-09T02:38:58Z",
+          "addLines": 66,
+          "addMessage": "🎉 初始化: topfo 加拿大大学升学规划数据平台",
+          "removeSha": "fda81ef",
+          "removeDate": "2026-07-09T03:40:51Z",
+          "removeLines": 57,
+          "removeMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "survivedMinutes": 62,
+          "survivedText": "1 小时 2 分",
+          "overlapPct": 100,
+          "overlappedLines": 41,
+          "comparableLines": 41,
+          "verifyNote": "内容核实通过（重合 100%）"
+        },
+        {
+          "file": "public/functions/api/ai/recommend.js",
+          "addSha": "fda81ef",
+          "addDate": "2026-07-09T03:40:51Z",
+          "addLines": 143,
+          "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "removeSha": "674486b",
+          "removeDate": "2026-07-09T04:47:00Z",
+          "removeLines": 105,
+          "removeMessage": "🤖 AI 选校接入真实 Cloudflare Workers AI（原为静态规则引擎）",
+          "survivedMinutes": 66,
+          "survivedText": "1 小时 6 分",
+          "overlapPct": 100,
+          "overlappedLines": 92,
+          "comparableLines": 92,
+          "verifyNote": "内容核实通过（重合 100%）"
+        },
+        {
+          "file": "public/functions/api/applications.js",
+          "addSha": "fda81ef",
+          "addDate": "2026-07-09T03:40:51Z",
+          "addLines": 107,
+          "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "removeSha": "ed18ec5",
+          "removeDate": "2026-07-09T06:10:32Z",
+          "removeLines": 107,
+          "removeMessage": "fix zh.json JSON syntax error",
+          "survivedMinutes": 150,
+          "survivedText": "2 小时 30 分",
+          "overlapPct": 100,
+          "overlappedLines": 74,
+          "comparableLines": 74,
+          "verifyNote": "内容核实通过（重合 100%）"
+        },
+        {
+          "file": "public/functions/api/applications/[id].js",
+          "addSha": "fda81ef",
+          "addDate": "2026-07-09T03:40:51Z",
+          "addLines": 76,
+          "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "removeSha": "ed18ec5",
+          "removeDate": "2026-07-09T06:10:32Z",
+          "removeLines": 76,
+          "removeMessage": "fix zh.json JSON syntax error",
+          "survivedMinutes": 150,
+          "survivedText": "2 小时 30 分",
+          "overlapPct": 100,
+          "overlappedLines": 49,
+          "comparableLines": 49,
+          "verifyNote": "内容核实通过（重合 100%）"
+        },
+        {
+          "file": "public/js/i18n/fr.json",
+          "addSha": "fda81ef",
+          "addDate": "2026-07-09T03:40:51Z",
+          "addLines": 95,
+          "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "removeSha": "ed18ec5",
+          "removeDate": "2026-07-09T06:10:32Z",
+          "removeLines": 96,
+          "removeMessage": "fix zh.json JSON syntax error",
+          "survivedMinutes": 150,
+          "survivedText": "2 小时 30 分",
+          "overlapPct": 99,
+          "overlappedLines": 93,
+          "comparableLines": 94,
+          "verifyNote": "内容核实通过（重合 99%）"
+        },
+        {
+          "file": "public/pages/tracker.html",
+          "addSha": "fda81ef",
+          "addDate": "2026-07-09T03:40:51Z",
+          "addLines": 907,
+          "addMessage": "🎯 TopFO 大型架构重构：从单用户静态站升级为多用户全栈平台",
+          "removeSha": "ed18ec5",
+          "removeDate": "2026-07-09T06:10:32Z",
+          "removeLines": 957,
+          "removeMessage": "fix zh.json JSON syntax error",
+          "survivedMinutes": 150,
+          "survivedText": "2 小时 30 分",
+          "overlapPct": 93,
+          "overlappedLines": 738,
+          "comparableLines": 791,
+          "verifyNote": "内容核实通过（重合 93%）"
+        }
+      ],
+      "overlapRange": {
+        "min": 93,
+        "max": 100
+      },
+      "rejected": []
+    },
+    "thrash": {
+      "count": 9,
+      "top": [
+        {
+          "file": "public/pages/tracker.html",
+          "touches": 4,
+          "churn": 1946,
+          "spinRatio": 1946
+        },
+        {
+          "file": "topfo-app/app/src/main/java/com/topfo/app/MainActivity.kt",
+          "touches": 3,
+          "churn": 248,
+          "spinRatio": 248
+        },
+        {
+          "file": "topfo-app/app/src/main/java/com/topfo/app/ui/admission/AdmissionScreen.kt",
+          "touches": 3,
+          "churn": 200,
+          "spinRatio": 200
+        },
+        {
+          "file": "public/js/i18n/fr.json",
+          "touches": 3,
+          "churn": 194,
+          "spinRatio": 194
+        }
+      ]
+    },
+    "soloOwned": {
+      "count": 10,
+      "top": [
+        {
+          "file": "topfo-app/app/src/main/res/raw/schools.json",
+          "owner": "ody-cai",
+          "touches": 2,
+          "churn": 6462
+        },
+        {
+          "file": "review_results.json",
+          "owner": "ody-cai",
+          "touches": 2,
+          "churn": 5766
+        },
+        {
+          "file": "public/pages/tracker.html",
+          "owner": "ody-cai",
+          "touches": 4,
+          "churn": 1946
+        }
+      ]
+    },
+    "analysis": {
+      "available": true,
+      "mode": "多模型分工",
+      "distinctModels": 3,
+      "models": {
+        "narrator": "gpt-4o",
+        "hypothesizer": "deepseek-v4-pro",
+        "appraiser": "gemini-2.5-flash"
+      },
+      "narrativeHeadline": "从初始构建到数据更新的快速迭代与调整",
+      "narrativeText": "这段代码的历史可以分为两个主要阶段：初始构建和后续数据更新。在 2026-07-09，项目进行了大规模的初始化和架构重构，奠定了基础功能和结构。在经历了一个较长的沉寂期后，从 2026-09-09 开始，项目进入了频繁的数据更新阶段，主要集中在加拿大大学录取要求的调整和优化。期间还出现了对部分文件的反复修改，表明开发团队在不断调整和完善功能。",
+      "turningPoints": [
+        {
+          "sha": "6cc0b93",
+          "date": "2026-07-09",
+          "title": "项目初始化与架构重构",
+          "what": "项目进行了初始提交，包含多个文件的新增和基础功能的实现，同时进行了从单用户静态站到多用户全栈平台的架构重构。",
+          "why": "提交信息明确指出这是项目的初始化阶段，目标是创建一个加拿大大学升学规划数据平台。",
+          "status": "grounded"
+        },
+        {
+          "sha": "21a0e31",
+          "date": "2026-09-09",
+          "title": "沉寂期后进入数据更新阶段",
+          "what": "在经历了 62 天的沉寂后，项目开始了频繁的每日数据更新，主要针对加拿大大学录取要求的调整和优化。",
+          "why": "提交信息显示更新内容与大学录取要求和相关政策的变化有关，表明项目进入了数据维护和扩展阶段。",
+          "status": "grounded"
+        }
+      ],
+      "hypothesesSkipped": false,
+      "skipReason": null,
+      "hypothesisCount": 6,
+      "overallPattern": "这批被放弃的改动呈现出典型的「架构升级阵痛」模式：项目在一天内从单用户静态站快速升级为多用户全栈平台，但新架构的API设计、AI方案、国际化策略和路由结构尚未稳定，导致大量代码在创建后数小时内就被回滚或替换。这反映了开发者在追求快速迭代时，架构设计先行但实现细节频繁调整的激进开发风格。",
+      "verdict": "代码历史整体清晰，虽然经历过架构升级带来的阵痛和62天沉寂，但提交质量极高且无含糊信息，属于目标明确的快速演进项目。",
+      "riskLevel": "中",
+      "advice": [
+        "直接基于最新的数据更新阶段开展工作，不必深究早期被废弃的静态站和规则引擎代码。",
+        "重点关注 9 个反复修改的文件，理清其背后的设计共识再做重构。",
+        "在修改 api 目录下的端点时，注意保持与当前 Cloudflare Workers 架构的一致性。",
+        "维护数据时参考近期高频提交的模式，确保加拿大大学录取要求的更新及时准确。"
+      ],
+      "doubts": [
+        {
+          "claim": "applications.js和applications/[id].js在重构中被删除是因为架构冲突或动态路由设计缺陷",
+          "concern": "提交信息仅提到修复JSON语法错误，缺乏直接证据证明删除是因为设计缺陷，过度推测了开发者的主观意图。"
+        },
+        {
+          "claim": "fr.json被删除是因为国际化方案整体调整或法语支持被推迟",
+          "concern": "同样仅凭同一次提交中伴随的zh.json语法修复就推断国际化策略未定，证据链条不够严密。"
+        }
+      ],
+      "interviewQuestions": [
+        "在 62 天的沉寂期之后，是什么推动了项目重新启动并转向高频的数据更新？",
+        "在项目初始化阶段，为什么 applications.js 和法语国际化文件（fr.json）在创建后不久就被快速移除？",
+        "那 9 个反复推翻修改的文件，最终采用的方案是否已经完全稳定？"
+      ],
+      "evidenceAudit": {
+        "narrative": {
+          "claims": 2,
+          "grounded": 2,
+          "ungrounded": 0,
+          "fabricated": 0,
+          "citations": 4,
+          "validCitations": 4,
+          "invalidCitations": 0,
+          "groundingRate": 100,
+          "offenders": []
+        },
+        "hypothesis": {
+          "claims": 6,
+          "grounded": 6,
+          "ungrounded": 0,
+          "fabricated": 0,
+          "citations": 12,
+          "validCitations": 12,
+          "invalidCitations": 0,
+          "groundingRate": 100,
+          "offenders": []
+        },
+        "overall": {
+          "claims": 8,
+          "fabricated": 0,
+          "invalidCitations": 0
+        }
+      },
+      "degradations": []
+    }
+  }
+}

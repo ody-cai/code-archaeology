@@ -1,0 +1,104 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+  <Box style={{ height: 96, justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', lineHeight: 1.22, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>测试方法与可复现性</Text>
+        <Text style={{ fontSize: 14.5, color: '#8892A0', marginTop: 7, letterSpacing: 0.3 }}>Method and reproducibility</Text>
+      </Box>
+      
+    </Box>
+  </Box>
+    <Box style={{ height: 500 }}>
+      <Box style={{ height: 62, padding: '10px 18px', background: 'rgba(76,184,166,0.10)', border: '1px solid rgba(76,184,166,0.40)', borderRadius: 10, justifyContent: 'center' }}>
+        <Text style={{ fontSize: 13.5, fontWeight: 'bold', color: '#4CB8A6' }}>
+          测试范围：严格限定为 openclaw/openclaw 与 ody-cai/topfo 两个公开仓库，仅此两个，未测试任何第三个仓库。
+        </Text>
+        <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 4 }}>
+          Scope: strictly openclaw/openclaw and ody-cai/topfo — these two public repositories only. No third repository was tested.
+        </Text>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 240, marginTop: 14 }}>
+        <Box style={{ flex: 1.05, padding: '13px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>复现命令 / Reproduce</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 3 }}>在本项目根目录依次执行，结果与本 PPT 一致。</Text>
+          <Box style={{ marginTop: 8 }}>
+            <Text style={{ fontSize: 11, lineHeight: 1.75, color: '#A8B2BE' }}># 纯计算层：信噪分离与硬指标</Text>
+            <Text style={{ fontSize: 11, lineHeight: 1.75, color: '#A8B2BE' }}>node bin/ca.mjs mine --repo=openclaw/openclaw --limit=60 --json</Text>
+            <Text style={{ fontSize: 11, lineHeight: 1.75, color: '#A8B2BE' }}>node bin/ca.mjs mine --repo=ody-cai/topfo     --limit=60 --json</Text>
+            <Text style={{ fontSize: 11, lineHeight: 1.75, color: '#E3A33E' }}># 完整三模型流水线 + 证据接地校验</Text>
+            <Text style={{ fontSize: 11, lineHeight: 1.75, color: '#A8B2BE' }}>node bin/ca.mjs excavate --repo=ody-cai/topfo --limit=60 --json</Text>
+            <Text style={{ fontSize: 11, lineHeight: 1.75, color: '#A8B2BE' }}>node --test tests/*.test.mjs   # 单元测试</Text>
+            <Text style={{ fontSize: 11, lineHeight: 1.75, color: '#A8B2BE' }}>node bin/ca.mjs capabilities   # 列出全部接口</Text>
+          </Box>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '13px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>采集口径 / Capture</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 3 }}>全部数字来自 GitHub REST API v3 现场拉取，无一条预置。</Text>
+          <Box style={{ marginTop: 9 }}>
+            <Box style={{ flexDirection: 'row', height: 22, borderBottom: '1px solid #2C3542' }}>
+              <Text style={{ width: 168, fontSize: 10, color: '#8892A0', textAlign: 'left' }}>仓库 / Repository</Text>
+              <Text style={{ width: 46, fontSize: 10, color: '#8892A0', textAlign: 'right' }}>提交数</Text>
+              <Text style={{ width: 58, fontSize: 10, color: '#8892A0', textAlign: 'right' }}>API 调用</Text>
+              <Text style={{ width: 52, fontSize: 10, color: '#8892A0', textAlign: 'right' }}>纯计算</Text>
+              <Text style={{ width: 52, fontSize: 10, color: '#8892A0', textAlign: 'right' }}>全流程</Text>
+            </Box>
+            <Box style={{ flexDirection: 'row', marginTop: 7 }}>
+              <Text style={{ width: 168, fontSize: 10.5, color: '#EDF1F5', textAlign: 'left' }}>openclaw/openclaw</Text>
+              <Text style={{ width: 46, fontSize: 10.5, color: '#EDF1F5', textAlign: 'right' }}>60</Text>
+              <Text style={{ width: 58, fontSize: 10.5, color: '#EDF1F5', textAlign: 'right' }}>62</Text>
+              <Text style={{ width: 52, fontSize: 10.5, color: '#4CB8A6', textAlign: 'right' }}>6.95s</Text>
+              <Text style={{ width: 52, fontSize: 10.5, color: '#4CB8A6', textAlign: 'right' }}>13.19s</Text>
+            </Box>
+            <Box style={{ flexDirection: 'row', marginTop: 6 }}>
+              <Text style={{ width: 168, fontSize: 10.5, color: '#EDF1F5', textAlign: 'left' }}>ody-cai/topfo</Text>
+              <Text style={{ width: 46, fontSize: 10.5, color: '#EDF1F5', textAlign: 'right' }}>23</Text>
+              <Text style={{ width: 58, fontSize: 10.5, color: '#EDF1F5', textAlign: 'right' }}>25</Text>
+              <Text style={{ width: 52, fontSize: 10.5, color: '#4CB8A6', textAlign: 'right' }}>4.3s</Text>
+              <Text style={{ width: 52, fontSize: 10.5, color: '#4CB8A6', textAlign: 'right' }}>38.35s</Text>
+            </Box>
+          </Box>
+          <Text style={{ fontSize: 10, lineHeight: 1.5, color: '#6B7684', marginTop: 10 }}>
+            窗口 openclaw：2026-09-20T00:07:32Z → 2026-09-20T02:23:19Z（2h 15m 47s）
+            <br />窗口 topfo：2026-07-09T02:38:58Z → 2026-09-20T01:53:29Z（73 天）
+            <br />耗时为本机 /usr/bin/time 实测墙钟；窗口会随时间滚动，重跑得到的窗口可能不同，方法与字段完全一致。
+          </Text>
+        </Box>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 170, marginTop: 14 }}>
+        <Box style={{ flex: 1, padding: '12px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 11.5, fontWeight: 'bold', color: '#4CB8A6' }}>多模型分工 / Model assignment</Text>
+          <Text style={{ fontSize: 11, lineHeight: 1.6, color: '#A8B2BE', marginTop: 6 }}>
+            叙事者 gpt-4o · 假设者 deepseek-v4-pro · 审稿人 gemini-2.5-flash
+            <br />3 个模型 · 多模型分工 · 统一走 OpenAI 兼容协议
+            <br />三者是<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>串行有依赖</span>而非并行投票：假设者读叙事者的输出，审稿人读前两者输出加程序给出的客观指标，因此它能说出「这条结论引用了不存在的提交」，而不是含糊地说「可能不准」。
+          </Text>
+          <Text style={{ fontSize: 9.5, lineHeight: 1.45, color: '#6B7684', marginTop: 5 }}>
+            Sequential dependency, not parallel voting — the appraiser sees the program's evidence check before judging.
+          </Text>
+        </Box>
+        <Box style={{ flex: 1, padding: '12px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 11.5, color: '#E3A33E', fontWeight: 'bold' }}>零预置数据 / No prefabricated data</Text>
+          <Text style={{ fontSize: 11, lineHeight: 1.6, color: '#A8B2BE', marginTop: 6 }}>
+            {/* 诚实声明：API 失败就降级，不填假数据 */}
+            无合成 fixture 出现在演示路径上。任一上游不可用时会显式降级并把降级原因写入输出（本次两仓库 0 次降级），而不是补一个看起来合理的数字。
+            <br />运行环境：Node.js ESM · macOS · GitHub API 已鉴权；两个仓库合计消耗 87 次 API 调用。
+          </Text>
+          <Text style={{ fontSize: 9.5, lineHeight: 1.45, color: '#6B7684', marginTop: 5 }}>
+            No synthetic fixtures on the demo path; degradations are reported instead of papered over. This run used 87 API calls in total.
+          </Text>
+        </Box>
+      </Box>
+    </Box>
+
+  <Box style={{ height: 32, justifyContent: 'center' }}>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>测试范围声明 / Scope：本次全部实测严格限定为 openclaw/openclaw 与 ody-cai/topfo 两个公开仓库，未对任何第三个仓库运行测试。</Text>
+  </Box>
+  <Box style={{ height: 36, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>代码考古学 / Code Archaeology · BAYTECH 2026 · AI 应用与工程赛道</Text>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>07 / 12</Text>
+  </Box>
+</Slide>

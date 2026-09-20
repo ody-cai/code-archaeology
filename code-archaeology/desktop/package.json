@@ -1,0 +1,59 @@
+{
+  "name": "code-archaeology-desktop",
+  "version": "0.1.0",
+  "description": "代码考古学跨平台桌面客户端：Windows / macOS 与网站共用同一入口和 API。",
+  "private": true,
+  "author": { "name": "Cai Qijun", "email": "cqjody@126.com" },
+  "type": "module",
+  "main": "src/main.mjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "test:desktop": "node --test tests/*.test.mjs",
+    "package:dir": "electron-builder --dir",
+    "package:mac": "electron-builder --mac dmg zip",
+    "package:win": "electron-builder --win nsis zip",
+    "package:all": "electron-builder --mac dmg zip --win nsis zip"
+  },
+  "build": {
+    "appId": "com.odycai.codearchaeology",
+    "productName": "代码考古学",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "src/main.mjs",
+      "src/desktop-policy.mjs",
+      "assets/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "afterSign": "./sign-mac.cjs",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "hardenedRuntime": true,
+      "identity": null
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ],
+      "artifactName": "Code-Archaeology-${version}-${os}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "devDependencies": {
+    "electron": "44.4.3",
+    "electron-builder": "^26.0.12"
+  }
+}

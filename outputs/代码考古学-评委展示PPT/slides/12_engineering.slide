@@ -1,0 +1,70 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+  <Box style={{ height: 96, justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', lineHeight: 1.22, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>工程完备性、一次自我证伪，与已知边界</Text>
+        <Text style={{ fontSize: 14.5, color: '#8892A0', marginTop: 7, letterSpacing: 0.3 }}>Engineering completeness, one self-falsification, and known boundaries</Text>
+      </Box>
+      
+    </Box>
+  </Box>
+    <Box style={{ height: 500 }}>
+      <Box style={{ flexDirection: 'row', gap: 16, height: 296 }}>
+
+        <Box style={{ flex: 1, padding: '14px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 13, fontWeight: 'bold', color: '#4CB8A6' }}>工程完备性 / Engineering</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 4 }}>Everything below was measured on this machine</Text>
+          <Text style={{ fontSize: 11.5, lineHeight: 1.62, color: '#A8B2BE', marginTop: 9 }}>· 单元测试 <span style={{ color: '#E3A33E', fontWeight: 'bold' }}>181 / 181</span> 通过、0 失败<br />· 自有代码 <span style={{ color: '#E3A33E', fontWeight: 'bold' }}>9,395</span> 行 / 51 个文件（src 2737 · public 2459 · tests 2820 · bin 709 · scripts 670）<br />· <span style={{ color: '#E3A33E', fontWeight: 'bold' }}>8</span> 个 API 端点，其中 4 个可脱离完整流程单独复用<br />· 零构建原生前端 + Cloudflare Workers 原生 fetch，无框架依赖<br />· 同一套路由层既跑云端也跑本地 Node —— 云端不可用时演示行为一致</Text>
+          <Text style={{ fontSize: 9.5, lineHeight: 1.45, color: '#6B7684', marginTop: 6 }}>Tests 181/181 passing; 9,395 lines of own code across 51 files; 8 endpoints; zero framework dependencies.</Text>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '14px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 13, fontWeight: 'bold', color: '#E3A33E' }}>一次自我证伪 / Self-falsification</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 4 }}>The check that rejected its own candidate</Text>
+          <Text style={{ fontSize: 11.5, lineHeight: 1.62, color: '#A8B2BE', marginTop: 9 }}>「被放弃的尝试」不看净删行数，而看<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>内容重合率</span>：拆除侧删除的行里，必须有 ≥ 50% 曾在新增侧出现过。阈值与判定过程都写在输出里，可被复核。<br />本次两个仓库共产生 <span style={{ color: '#E3A33E', fontWeight: 'bold' }}>8</span> 次候选判定：7 次通过（重合 93%–100%），<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>1 次被程序否定</span>（重合 0%，判为重写）。被否定的那一条既不进风险分，也不从报告里消失 —— 它留在 abandonedRejected 字段中，界面上一并展示。</Text>
+          <Text style={{ fontSize: 9.5, lineHeight: 1.45, color: '#6B7684', marginTop: 6 }}>The 50% content-overlap rule is printed in the output. 7 candidates passed, 1 was rejected by the program itself and is still shown.</Text>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '14px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 13, fontWeight: 'bold', color: '#4CB8A6' }}>已知边界与下一步 / Boundaries & next</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 4 }}>Stated here rather than left for the Q&A</Text>
+          <Text style={{ fontSize: 11.5, lineHeight: 1.62, color: '#A8B2BE', marginTop: 9 }}>· 当前依赖 GitHub REST API，因此读不到私有仓库的完整历史，单次窗口上限 100 次提交<br />· 刻意不读 PR 与 issue —— 24 小时内的取舍是优先保住「不幻觉」，而不是扩大证据面<br />· 报告的定位是「信息丢失审计」，不是「重建决策史」：它指认哪里已经没人能说清为什么，判断权交回给人<br />· 下一步：改用本地 git log，零 API 成本、完整历史、且不接触对方任何凭据</Text>
+          <Text style={{ fontSize: 9.5, lineHeight: 1.45, color: '#6B7684', marginTop: 6 }}>Public repos and a 100-commit window today; local git log is the next step because it costs no API quota and touches no credentials.</Text>
+        </Box>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 192, marginTop: 12 }}>
+
+        <Box style={{ flex: 1, padding: '10px 14px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 11, color: '#E3A33E', fontWeight: 'bold' }}>Q1 · 你怎么知道你猜的对？</Text>
+          <Text style={{ fontSize: 9, color: '#6B7684', marginTop: 2 }}>How do you know your inference is right?</Text>
+          <Text style={{ fontSize: 10.5, lineHeight: 1.5, color: '#A8B2BE', marginTop: 6 }}>我们不猜。系统只承诺可验证的量：信噪比、无痕迹的被放弃改动、知识集中度、沉寂断层。推断层必须标注置信度与依据，证据含糊时强制写明「提交信息未说明原因，以下为基于改动范围的推断」，且每条结论都过 SHA 集合校验。</Text>
+          <Text style={{ fontSize: 9, lineHeight: 1.45, color: '#6B7684', marginTop: 4 }}>We do not guess. Only verifiable quantities are promised; every inference must state its confidence and survive the SHA set check.</Text>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '10px 14px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 11, color: '#E3A33E', fontWeight: 'bold' }}>Q2 · 和 CodeScene / git-of-theseus 有什么区别？</Text>
+          <Text style={{ fontSize: 9, color: '#6B7684', marginTop: 2 }}>How is this different from existing code-analytics tools?</Text>
+          <Text style={{ fontSize: 10.5, lineHeight: 1.5, color: '#A8B2BE', marginTop: 6 }}>它们做行为码分析：热点、巴士因子、知识地图。本项目的差异化只有一条 —— 「被放弃的尝试」：代码中不存在、只能从历史里挖出的信息。这条护城河很窄，所以我们把它做扎实：内容级核实 + 唯一性自我证伪。</Text>
+          <Text style={{ fontSize: 9, lineHeight: 1.45, color: '#6B7684', marginTop: 4 }}>Existing tools analyse behaviour in the current code. Our one differentiator is abandoned attempts — information that exists only in history.</Text>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '10px 14px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 11, color: '#E3A33E', fontWeight: 'bold' }}>Q3 · 是不是套用了现成项目？</Text>
+          <Text style={{ fontSize: 9, color: '#6B7684', marginTop: 2 }}>Is this a repackaged open-source project?</Text>
+          <Text style={{ fontSize: 10.5, lineHeight: 1.5, color: '#A8B2BE', marginTop: 6 }}>零依赖框架：前端是零构建原生 JS，后端是 Cloudflare Workers 原生 fetch，核心模块（重合率核实、信噪分离、提交信息解析、证据接地校验）全部自研 —— 9,395 行自有代码、181 个自写测试。</Text>
+          <Text style={{ fontSize: 9, lineHeight: 1.45, color: '#6B7684', marginTop: 4 }}>No framework dependency: zero-build vanilla front-end, native Workers fetch, and every core module written here.</Text>
+        </Box>
+      </Box>
+    </Box>
+
+  <Box style={{ height: 32, justifyContent: 'center' }}>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>数据来源 / Sources：上述全部数字来自 openclaw/openclaw 与 ody-cai/topfo 两个公开仓库的 GitHub REST API v3 现场返回，经本地计算得出；未测试任何第三个仓库。</Text>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>联系方式 / Contact：蔡奇均 Cai Qijun · cqjody@126.com · 线上 https://code-archaeology.odycai.workers.dev</Text>
+  </Box>
+  <Box style={{ height: 36, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>代码考古学 / Code Archaeology · BAYTECH 2026 · AI 应用与工程赛道</Text>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>12 / 12</Text>
+  </Box>
+</Slide>

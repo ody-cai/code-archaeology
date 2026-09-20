@@ -1,0 +1,209 @@
+{
+  "sha": "5729845f33d357e0c21b29b2b16849b72fb8cec4",
+  "node_id": "C_kwDOALTlW9oAKDU3Mjk4NDVmMzNkMzU3ZTBjMjFiMjliMmIxNjg0OWI3MmZiOGNlYzQ",
+  "commit": {
+    "author": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "date": "2026-07-26T01:00:13Z"
+    },
+    "committer": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "date": "2026-07-26T11:39:27Z"
+    },
+    "message": "Improve performance",
+    "tree": {
+      "sha": "5dc3d6c80c65da6a8ed4bb93ff7d155e2f1a7e30",
+      "url": "https://api.github.com/repos/chalk/chalk/git/trees/5dc3d6c80c65da6a8ed4bb93ff7d155e2f1a7e30"
+    },
+    "url": "https://api.github.com/repos/chalk/chalk/git/commits/5729845f33d357e0c21b29b2b16849b72fb8cec4",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chalk/chalk/commits/5729845f33d357e0c21b29b2b16849b72fb8cec4",
+  "html_url": "https://github.com/chalk/chalk/commit/5729845f33d357e0c21b29b2b16849b72fb8cec4",
+  "comments_url": "https://api.github.com/repos/chalk/chalk/commits/5729845f33d357e0c21b29b2b16849b72fb8cec4/comments",
+  "author": {
+    "login": "sindresorhus",
+    "id": 170270,
+    "node_id": "MDQ6VXNlcjE3MDI3MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/170270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sindresorhus",
+    "html_url": "https://github.com/sindresorhus",
+    "followers_url": "https://api.github.com/users/sindresorhus/followers",
+    "following_url": "https://api.github.com/users/sindresorhus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sindresorhus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sindresorhus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sindresorhus/subscriptions",
+    "organizations_url": "https://api.github.com/users/sindresorhus/orgs",
+    "repos_url": "https://api.github.com/users/sindresorhus/repos",
+    "events_url": "https://api.github.com/users/sindresorhus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sindresorhus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sindresorhus",
+    "id": 170270,
+    "node_id": "MDQ6VXNlcjE3MDI3MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/170270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sindresorhus",
+    "html_url": "https://github.com/sindresorhus",
+    "followers_url": "https://api.github.com/users/sindresorhus/followers",
+    "following_url": "https://api.github.com/users/sindresorhus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sindresorhus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sindresorhus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sindresorhus/subscriptions",
+    "organizations_url": "https://api.github.com/users/sindresorhus/orgs",
+    "repos_url": "https://api.github.com/users/sindresorhus/repos",
+    "events_url": "https://api.github.com/users/sindresorhus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sindresorhus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4c304dd72cce5a036c02e5dd8af52996ae98501f",
+      "url": "https://api.github.com/repos/chalk/chalk/commits/4c304dd72cce5a036c02e5dd8af52996ae98501f",
+      "html_url": "https://github.com/chalk/chalk/commit/4c304dd72cce5a036c02e5dd8af52996ae98501f"
+    }
+  ],
+  "stats": {
+    "total": 245,
+    "additions": 177,
+    "deletions": 68
+  },
+  "files": [
+    {
+      "sha": "c1b7195c4ab47459d85a72c0c311933a46950768",
+      "filename": "readme.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/readme.md",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/readme.md",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/readme.md?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -140,6 +140,8 @@ const customChalk = new Chalk({level: 0});\n | `2` | 256 color support |\n | `3` | Truecolor support (16 million colors) |\n \n+Both the `level` option and the `level` property throw for anything that is not an integer from 0 to 3. Omit the option, or pass `undefined`, to have the level detected instead.\n+\n ### supportsColor\n \n Detect whether the terminal [supports color](https://github.com/chalk/supports-color). Used internally and handled for you, but exposed for convenience."
+    },
+    {
+      "sha": "21f52f486f54ebd9aad92956065a716d42cd16fc",
+      "filename": "source/index.d.ts",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1,
+      "changes": 8,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Findex.d.ts",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Findex.d.ts",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Findex.d.ts?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -20,8 +20,12 @@ export interface Options {\n \t- `1` - Basic 16 colors support.\n \t- `2` - ANSI 256 colors support.\n \t- `3` - Truecolor 16 million colors support.\n+\n+\tOmit this option, or pass `undefined`, to have the level detected instead.\n+\n+\t@throws If the value is neither `undefined` nor an integer from 0 to 3.\n \t*/\n-\treadonly level?: ColorSupportLevel;\n+\treadonly level?: ColorSupportLevel | undefined;\n }\n \n /**\n@@ -42,6 +46,8 @@ export interface ChalkInstance {\n \t- `1` - Basic 16 colors support.\n \t- `2` - ANSI 256 colors support.\n \t- `3` - Truecolor 16 million colors support.\n+\n+\t@throws If the assigned value is not an integer from 0 to 3.\n \t*/\n \tlevel: ColorSupportLevel;\n "
+    },
+    {
+      "sha": "229ea1ea4da6a87635ef3f1ca8987b7a8e938554",
+      "filename": "source/index.js",
+      "status": "modified",
+      "additions": 51,
+      "deletions": 35,
+      "changes": 86,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Findex.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Findex.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Findex.js?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -10,25 +10,36 @@ const {stdout: stdoutColor, stderr: stderrColor} = supportsColor;\n const GENERATOR = Symbol('GENERATOR');\n const STYLER = Symbol('STYLER');\n const IS_EMPTY = Symbol('IS_EMPTY');\n-\n-// `supportsColor.level` → `ansiStyles.color[name]` mapping\n-const levelMapping = [\n-\t'ansi',\n-\t'ansi',\n-\t'ansi256',\n-\t'ansi16m',\n-];\n+const LEVEL = Symbol('LEVEL');\n \n const styles = Object.create(null);\n \n+const assertValidLevel = level => {\n+\tif (!Number.isSafeInteger(level) || level < 0 || level > 3) {\n+\t\tthrow new Error('The `level` should be an integer from 0 to 3');\n+\t}\n+};\n+\n+// The level is stored under a symbol so the hot path can read it as a plain property, while `level` itself is an accessor that rejects values the rest of the code could not handle.\n+const levelDescriptor = {\n+\tenumerable: true,\n+\tget() {\n+\t\treturn this[LEVEL];\n+\t},\n+\tset(level) {\n+\t\tassertValidLevel(level);\n+\t\tthis[LEVEL] = level;\n+\t},\n+};\n+\n const applyOptions = (object, options = {}) => {\n-\tif (options.level && !(Number.isSafeInteger(options.level) && options.level >= 0 && options.level <= 3)) {\n-\t\tthrow new Error('The `level` option should be an integer from 0 to 3');\n+\tif (options.level !== undefined) {\n+\t\tassertValidLevel(options.level);\n \t}\n \n-\t// Detect level if not set manually\n+\t// Detect level if not set manually. Written under the symbol rather than through `level`, as the prototype carrying that accessor is not installed until after this runs.\n \tconst colorLevel = stdoutColor ? stdoutColor.level : 0;\n-\tobject.level = options.level === undefined ? colorLevel : options.level;\n+\tobject[LEVEL] = options.level === undefined ? colorLevel : options.level;\n };\n \n export class Chalk {\n@@ -72,28 +83,25 @@ styles.visible = {\n \t},\n };\n \n-const getModelAnsi = (model, level, type, ...arguments_) => {\n-\tif (model === 'rgb') {\n-\t\tif (level === 'ansi16m') {\n-\t\t\treturn ansiStyles[type].ansi16m(...arguments_);\n-\t\t}\n+// Resolve a color model to one converter per `level`, so that a call only has to look up the converter for the current level instead of re-deciding the model and level every time.\n+const createModelConverters = (model, type) => {\n+\tconst style = ansiStyles[type];\n \n-\t\tif (level === 'ansi256') {\n-\t\t\treturn ansiStyles[type].ansi256(ansiStyles.rgbToAnsi256(...arguments_));\n-\t\t}\n-\n-\t\treturn ansiStyles[type].ansi(ansiStyles.rgbToAnsi(...arguments_));\n+\tif (model === 'rgb') {\n+\t\tconst ansi = (red, green, blue) => style.ansi(ansiStyles.rgbToAnsi(red, green, blue));\n+\t\tconst ansi256 = (red, green, blue) => style.ansi256(ansiStyles.rgbToAnsi256(red, green, blue));\n+\t\treturn [ansi, ansi, ansi256, style.ansi16m];\n \t}\n \n \tif (model === 'hex') {\n-\t\treturn getModelAnsi('rgb', level, type, ...ansiStyles.hexToRgb(...arguments_));\n+\t\tconst ansi = hex => style.ansi(ansiStyles.hexToAnsi(hex));\n+\t\tconst ansi256 = hex => style.ansi256(ansiStyles.hexToAnsi256(hex));\n+\t\treturn [ansi, ansi, ansi256, hex => style.ansi16m(...ansiStyles.hexToRgb(hex))];\n \t}\n \n-\tif (model === 'ansi256' && level === 'ansi') {\n-\t\treturn ansiStyles[type].ansi(ansiStyles.ansi256ToAnsi(...arguments_));\n-\t}\n-\n-\treturn ansiStyles[type][model](...arguments_);\n+\t// `ansi256` is already the native form, so only the 16-color levels need converting.\n+\tconst ansi = code => style.ansi(ansiStyles.ansi256ToAnsi(code));\n+\treturn [ansi, ansi, style.ansi256, style.ansi256];\n };\n \n const usedModels = ['rgb', 'hex', 'ansi256'];\n@@ -107,13 +115,19 @@ for (const model of usedModels) {\n \t\t['underline' + capitalizedModel, 'underlineColor'],\n \t]) {\n \t\tconst {close} = ansiStyles[type];\n+\t\tconst converters = createModelConverters(model, type);\n+\n \t\tstyles[styleName] = {\n \t\t\tget() {\n-\t\t\t\tconst {level} = this;\n-\t\t\t\treturn function (...arguments_) {\n-\t\t\t\t\tconst styler = createStyler(getModelAnsi(model, levelMapping[level], type, ...arguments_), close, this[STYLER]);\n-\t\t\t\t\treturn createBuilder(this, styler, this[IS_EMPTY]);\n+\t\t\t\t// The level is read on call rather than captured here so the function can be cached on the instance instead of being reallocated on every property access.\n+\t\t\t\t// `rgb` is the widest model, so naming the three parameters avoids a rest array.\n+\t\t\t\tconst styleFunction = function (first, second, third) {\n+\t\t\t\t\tconst open = converters[this.level](first, second, third);\n+\t\t\t\t\treturn createBuilder(this, createStyler(open, close, this[STYLER]), this[IS_EMPTY]);\n \t\t\t\t};\n+\n+\t\t\t\tObject.defineProperty(this, styleName, {value: styleFunction});\n+\t\t\t\treturn styleFunction;\n \t\t\t},\n \t\t};\n \t}\n@@ -174,7 +188,8 @@ const createBuilder = (self, _styler, _isEmpty) => {\n \t// no way to create a function with a different prototype\n \tObject.setPrototypeOf(builder, proto);\n \n-\tbuilder[GENERATOR] = self;\n+\t// Point every builder at the root generator instead of its immediate parent, so reading the level costs one property load rather than walking a `level` getter per link of the chain.\n+\tbuilder[GENERATOR] = self[GENERATOR] ?? self;\n \tbuilder[STYLER] = _styler;\n \tbuilder[IS_EMPTY] = _isEmpty;\n \n@@ -183,7 +198,7 @@ const createBuilder = (self, _styler, _isEmpty) => {\n \n const applyStyle = (self, string) => {\n \t// Read the level directly off the generator to skip the `level` getter dispatch on this hot path\n-\tif (self[GENERATOR].level <= 0 || !string) {\n+\tif (self[GENERATOR][LEVEL] <= 0 || !string) {\n \t\t// eslint-disable-next-line unicorn/no-computed-property-existence-check -- Reads the boolean value, not a property existence check.\n \t\treturn self[IS_EMPTY] ? '' : string;\n \t}\n@@ -217,8 +232,9 @@ const applyStyle = (self, string) => {\n \treturn openAll + string + closeAll;\n };\n \n+// `level` lives on the prototype rather than on each instance, so it costs nothing to construct an instance and matches how builders already expose it. It is inherited rather than own, so it does not show up in `Object.keys()`, same as for a builder.\n // eslint-disable-next-line unicorn/no-top-level-side-effects -- The style getters must be installed at module load.\n-Object.defineProperties(createChalk.prototype, styles);\n+Object.defineProperties(createChalk.prototype, {...styles, level: levelDescriptor});\n \n const chalk = createChalk();\n export const chalkStderr = createChalk({level: stderrColor ? stderrColor.level : 0});"
+    },
+    {
+      "sha": "f205b267091dd9ebf978785cf5219500ed8ddf30",
+      "filename": "source/utilities.js",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Futilities.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Futilities.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Futilities.js?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -1,5 +1,5 @@\n-// TODO: When targeting Node.js 16, use `String.prototype.replaceAll`.\n-export function stringReplaceAll(string, substring, replacer) {\n+// Note: Each match is kept and `postfix` is inserted after it. `String#replaceAll(substring, substring + postfix)` does the same, but it has to scan the replacement for `$` patterns and it is several times slower on the no-match path that most calls take.\n+export function stringReplaceAll(string, substring, postfix) {\n \tlet index = string.indexOf(substring);\n \tif (index === -1) {\n \t\treturn string;\n@@ -9,7 +9,7 @@ export function stringReplaceAll(string, substring, replacer) {\n \tlet endIndex = 0;\n \tlet returnValue = '';\n \tdo {\n-\t\treturnValue += string.slice(endIndex, index) + substring + replacer;\n+\t\treturnValue += string.slice(endIndex, index) + substring + postfix;\n \t\tendIndex = index + substringLength;\n \t\tindex = string.indexOf(substring, endIndex);\n \t} while (index !== -1);"
+    },
+    {
+      "sha": "282604198ee2f091fdabadfbe4407d30caeffe48",
+      "filename": "source/vendor/ansi-styles/index.d.ts",
+      "status": "modified",
+      "additions": 14,
+      "deletions": 14,
+      "changes": 28,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Fvendor%2Fansi-styles%2Findex.d.ts",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Fvendor%2Fansi-styles%2Findex.d.ts",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Fvendor%2Fansi-styles%2Findex.d.ts?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -1,4 +1,4 @@\n-export interface CSPair { // eslint-disable-line @typescript-eslint/naming-convention\n+export type CSPair = { // eslint-disable-line @typescript-eslint/naming-convention\n \t/**\n \tThe ANSI terminal control sequence for starting this style.\n \t*/\n@@ -8,9 +8,9 @@ export interface CSPair { // eslint-disable-line @typescript-eslint/naming-conve\n \tThe ANSI terminal control sequence for ending this style.\n \t*/\n \treadonly close: string;\n-}\n+};\n \n-export interface ColorBase {\n+export type ColorBase = {\n \t/**\n \tThe ANSI terminal control sequence for ending this color.\n \t*/\n@@ -21,9 +21,9 @@ export interface ColorBase {\n \tansi256(code: number): string;\n \n \tansi16m(red: number, green: number, blue: number): string;\n-}\n+};\n \n-export interface Modifier {\n+export type Modifier = {\n \t/**\n \tResets the current color chain.\n \t*/\n@@ -90,9 +90,9 @@ export interface Modifier {\n \tPuts a horizontal line through the center of the text. (Not widely supported)\n \t*/\n \treadonly strikethrough: CSPair;\n-}\n+};\n \n-export interface ForegroundColor {\n+export type ForegroundColor = {\n \treadonly black: CSPair;\n \treadonly red: CSPair;\n \treadonly green: CSPair;\n@@ -120,9 +120,9 @@ export interface ForegroundColor {\n \treadonly cyanBright: CSPair;\n \treadonly magentaBright: CSPair;\n \treadonly whiteBright: CSPair;\n-}\n+};\n \n-export interface BackgroundColor {\n+export type BackgroundColor = {\n \treadonly bgBlack: CSPair;\n \treadonly bgRed: CSPair;\n \treadonly bgGreen: CSPair;\n@@ -150,9 +150,9 @@ export interface BackgroundColor {\n \treadonly bgCyanBright: CSPair;\n \treadonly bgMagentaBright: CSPair;\n \treadonly bgWhiteBright: CSPair;\n-}\n+};\n \n-export interface UnderlineColor {\n+export type UnderlineColor = {\n \treadonly underlineBlack: CSPair;\n \treadonly underlineRed: CSPair;\n \treadonly underlineGreen: CSPair;\n@@ -180,9 +180,9 @@ export interface UnderlineColor {\n \treadonly underlineCyanBright: CSPair;\n \treadonly underlineMagentaBright: CSPair;\n \treadonly underlineWhiteBright: CSPair;\n-}\n+};\n \n-export interface ConvertColor {\n+export type ConvertColor = {\n \t/**\n \tConvert from the RGB color space to the ANSI 256 color space.\n \n@@ -228,7 +228,7 @@ export interface ConvertColor {\n \t@param hex - A hexadecimal string containing RGB data.\n \t*/\n \thexToAnsi(hex: string): number;\n-}\n+};\n \n /**\n Basic modifier names."
+    },
+    {
+      "sha": "489f7a017da66c7a253459b72ffa4e1f8be08c3b",
+      "filename": "source/vendor/supports-color/browser.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Fvendor%2Fsupports-color%2Fbrowser.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Fvendor%2Fsupports-color%2Fbrowser.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Fvendor%2Fsupports-color%2Fbrowser.js?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -3,14 +3,14 @@ const level = (() => {\n \t\treturn 0;\n \t}\n \n-\tif (navigator.userAgentData) {\n-\t\tconst brand = navigator.userAgentData.brands.find(({brand}) => brand === 'Chromium');\n-\t\tif (brand && brand.version > 93) {\n+\tif (globalThis.navigator.userAgentData) {\n+\t\tconst brand = globalThis.navigator.userAgentData.brands.find(({brand}) => brand === 'Chromium');\n+\t\tif (brand?.version > 93) {\n \t\t\treturn 3;\n \t\t}\n \t}\n \n-\tif (/\\b(?:Chrome|Chromium)\\//.test(navigator.userAgent)) {\n+\tif (/\\b(?:Chrome|Chromium)\\//.test(globalThis.navigator.userAgent)) {\n \t\treturn 1;\n \t}\n "
+    },
+    {
+      "sha": "aad1efed874a1d61927da10cc59ad8edb91d640f",
+      "filename": "source/vendor/supports-color/index.js",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 11,
+      "changes": 21,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Fvendor%2Fsupports-color%2Findex.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/source%2Fvendor%2Fsupports-color%2Findex.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Fvendor%2Fsupports-color%2Findex.js?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -30,30 +30,29 @@ if (\n \tflagForceColor = 1;\n }\n \n+// Whether `FORCE_COLOR` names a level. Shared with the exact-level check below so that the two cannot disagree on what counts as numeric.\n+function hasNumericForceColor() {\n+\treturn /^\\d+$/.test(env.FORCE_COLOR);\n+}\n+\n function envForceColor() {\n \tif (!('FORCE_COLOR' in env)) {\n \t\treturn;\n \t}\n \n-\tif (env.FORCE_COLOR === 'true') {\n-\t\treturn 1;\n-\t}\n-\n \tif (env.FORCE_COLOR === 'false') {\n \t\treturn 0;\n \t}\n \n-\tif (env.FORCE_COLOR.length === 0) {\n+\tif (env.FORCE_COLOR === 'true' || env.FORCE_COLOR.length === 0) {\n \t\treturn 1;\n \t}\n \n-\tconst level = Math.min(Number.parseInt(env.FORCE_COLOR, 10), 3);\n-\n-\tif (![0, 1, 2, 3].includes(level)) {\n+\tif (!hasNumericForceColor()) {\n \t\treturn;\n \t}\n \n-\treturn level;\n+\treturn Math.min(Number.parseInt(env.FORCE_COLOR, 10), 3);\n }\n \n function translateLevel(level) {\n@@ -94,8 +93,8 @@ function _supportsColor(haveStream, {streamIsTTY, sniffFlags = true} = {}) {\n \t}\n \n \t// A numeric `FORCE_COLOR` requests an exact level, while `FORCE_COLOR=true` and `FORCE_COLOR=` only enable color and let the level be detected.\n-\tif (noFlagForceColor !== undefined && !Number.isNaN(Number.parseInt(env.FORCE_COLOR, 10))) {\n-\t\treturn noFlagForceColor;\n+\tif (forceColor !== undefined && hasNumericForceColor()) {\n+\t\treturn forceColor;\n \t}\n \n \t// Check for Azure DevOps pipelines."
+    },
+    {
+      "sha": "5d67344b981880322eaac3441e70717339232585",
+      "filename": "test/chalk.js",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/test%2Fchalk.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/test%2Fchalk.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/test%2Fchalk.js?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -102,11 +102,17 @@ test('line breaks should open and close colors with CRLF', t => {\n });\n \n test('properly convert RGB to 16 colors on basic color terminals', t => {\n+\tt.is(new Chalk({level: 1}).rgb(255, 0, 0)('hello'), '\\u{1B}[91mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 1}).bgRgb(255, 0, 0)('hello'), '\\u{1B}[101mhello\\u{1B}[49m');\n \tt.is(new Chalk({level: 1}).hex('#FF0000')('hello'), '\\u{1B}[91mhello\\u{1B}[39m');\n \tt.is(new Chalk({level: 1}).bgHex('#FF0000')('hello'), '\\u{1B}[101mhello\\u{1B}[49m');\n });\n \n test('properly convert RGB to 256 colors on basic color terminals', t => {\n+\tt.is(new Chalk({level: 2}).rgb(255, 0, 0)('hello'), '\\u{1B}[38;5;196mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 2}).bgRgb(255, 0, 0)('hello'), '\\u{1B}[48;5;196mhello\\u{1B}[49m');\n+\tt.is(new Chalk({level: 3}).rgb(255, 0, 0)('hello'), '\\u{1B}[38;2;255;0;0mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 3}).bgRgb(255, 0, 0)('hello'), '\\u{1B}[48;2;255;0;0mhello\\u{1B}[49m');\n \tt.is(new Chalk({level: 2}).hex('#FF0000')('hello'), '\\u{1B}[38;5;196mhello\\u{1B}[39m');\n \tt.is(new Chalk({level: 2}).bgHex('#FF0000')('hello'), '\\u{1B}[48;5;196mhello\\u{1B}[49m');\n \tt.is(new Chalk({level: 3}).bgHex('#FF0000')('hello'), '\\u{1B}[48;2;255;0;0mhello\\u{1B}[49m');"
+    },
+    {
+      "sha": "ab2d456e41879c69952ca99cce7c4790e5ecfcbd",
+      "filename": "test/force-color.js",
+      "status": "modified",
+      "additions": 13,
+      "deletions": 0,
+      "changes": 13,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/test%2Fforce-color.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/test%2Fforce-color.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/test%2Fforce-color.js?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -64,3 +64,16 @@ test('a non-numeric `FORCE_COLOR` is treated as unset, not as disabled', async t\n \tt.is(await detectLevel({FORCE_COLOR: 'unicorn', TF_BUILD: '1', AGENT_NAME: 'agent'}), '1');\n \tt.is(await detectLevel({FORCE_COLOR: '0', TF_BUILD: '1', AGENT_NAME: 'agent'}), '0');\n });\n+\n+test('a partly numeric `FORCE_COLOR` is treated as unset, not as a level', async t => {\n+\tfor (const forceColor of [' 2', '2 ', '2abc', '+2', '1e1', '0x2']) {\n+\t\t// eslint-disable-next-line no-await-in-loop\n+\t\tconst [piped, azure] = await Promise.all([\n+\t\t\tdetectLevel({FORCE_COLOR: forceColor, COLORTERM: 'truecolor'}),\n+\t\t\tdetectLevel({FORCE_COLOR: forceColor, TF_BUILD: '1', AGENT_NAME: 'agent'}),\n+\t\t]);\n+\n+\t\tt.is(piped, '0', `FORCE_COLOR=${forceColor}`);\n+\t\tt.is(azure, '1', `FORCE_COLOR=${forceColor}`);\n+\t}\n+});"
+    },
+    {
+      "sha": "a630d0b5766a3229ac6595ea3062cf73a0b3f6ab",
+      "filename": "test/instance.js",
+      "status": "modified",
+      "additions": 67,
+      "deletions": 0,
+      "changes": 67,
+      "blob_url": "https://github.com/chalk/chalk/blob/5729845f33d357e0c21b29b2b16849b72fb8cec4/test%2Finstance.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/5729845f33d357e0c21b29b2b16849b72fb8cec4/test%2Finstance.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/test%2Finstance.js?ref=5729845f33d357e0c21b29b2b16849b72fb8cec4",
+      "patch": "@@ -22,3 +22,70 @@ test('the `level` option should be a number from 0 to 3', t => {\n \t}, {message: /should be an integer from 0 to 3/v});\n \t/* eslint-enable no-new */\n });\n+\n+test('an omitted `level` option is detected rather than rejected', t => {\n+\tt.is(new Chalk({level: undefined}).level, new Chalk().level);\n+});\n+\n+test('assigning `level` is validated', t => {\n+\tconst instance = new Chalk({level: 1});\n+\n+\t// Unlike the option, `undefined` is not a way to ask for detection here\n+\tfor (const level of [10, -1, 1.5, ' 1', undefined]) {\n+\t\tt.throws(() => {\n+\t\t\tinstance.level = level;\n+\t\t}, {message: /should be an integer from 0 to 3/v}, `level: ${level}`);\n+\t}\n+\n+\t// A style in the chain writes through to the instance, so it is validated too\n+\tt.throws(() => {\n+\t\tinstance.red.level = 10;\n+\t}, {message: /should be an integer from 0 to 3/v});\n+\n+\tt.is(instance.level, 1);\n+\n+\tinstance.level = 0;\n+\tt.is(instance.level, 0);\n+\tt.is(instance.red('foo'), 'foo');\n+});\n+\n+test('a cached model style keeps following the level', t => {\n+\tconst instance = new Chalk({level: 3});\n+\n+\t// Reading it once installs the cached function on the instance\n+\tt.is(instance.rgb, instance.rgb);\n+\tt.is(instance.rgb(255, 0, 0)('foo'), '\\u{1B}[38;2;255;0;0mfoo\\u{1B}[39m');\n+\n+\tinstance.level = 1;\n+\tt.is(instance.rgb(255, 0, 0)('foo'), '\\u{1B}[91mfoo\\u{1B}[39m');\n+\n+\tinstance.level = 0;\n+\tt.is(instance.rgb(255, 0, 0)('foo'), 'foo');\n+});\n+\n+test('a model style cached on a style in the chain keeps following the level', t => {\n+\tconst instance = new Chalk({level: 3});\n+\tconst {bold} = instance;\n+\n+\t// The cache is installed on the builder here, not on the instance\n+\tt.is(bold.rgb, bold.rgb);\n+\tt.is(bold.rgb(255, 0, 0)('foo'), '\\u{1B}[1m\\u{1B}[38;2;255;0;0mfoo\\u{1B}[39m\\u{1B}[22m');\n+\n+\tinstance.level = 1;\n+\tt.is(bold.rgb(255, 0, 0)('foo'), '\\u{1B}[1m\\u{1B}[91mfoo\\u{1B}[39m\\u{1B}[22m');\n+});\n+\n+test('a deep chain reads the level from the instance it started on', t => {\n+\tconst instance = new Chalk({level: 1});\n+\tconst chain = instance.red.bold.underline;\n+\n+\tt.is(chain.level, 1);\n+\n+\tinstance.level = 0;\n+\tt.is(chain.level, 0);\n+\tt.is(chain('foo'), 'foo');\n+\n+\t// Writing through the chain reaches the instance, however deep\n+\tchain.level = 2;\n+\tt.is(instance.level, 2);\n+});"
+    }
+  ]
+}

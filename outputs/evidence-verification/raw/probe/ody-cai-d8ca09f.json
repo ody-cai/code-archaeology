@@ -1,0 +1,61 @@
+{
+  "sha": "d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+  "node_id": "C_kwDOSrfmNNoAKGQ4Y2EwOWY5YzViMmIzZGEwMjNlNWU4NDk0Y2JlNjRkYjdlNDVhY2U",
+  "commit": {
+    "author": {
+      "name": "OA System",
+      "email": "oa-system@example.com",
+      "date": "2026-05-29T15:46:46Z"
+    },
+    "committer": {
+      "name": "OA System",
+      "email": "oa-system@example.com",
+      "date": "2026-05-29T15:46:46Z"
+    },
+    "message": "docs: 添加 GitHub 同步规范到 AGENTS.md\n\n- 记录需要同步更新的场景\n- 列出需要更新的文件\n- 说明同步流程",
+    "tree": {
+      "sha": "05c3f6ff31b1bcc6bc777803e5db86ede3ebcece",
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/05c3f6ff31b1bcc6bc777803e5db86ede3ebcece"
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/ody-cai/oa-system/commits/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+  "html_url": "https://github.com/ody-cai/oa-system/commit/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+  "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "30b119350021c63c76c6f708c2a3906abdc391a7",
+      "url": "https://api.github.com/repos/ody-cai/oa-system/commits/30b119350021c63c76c6f708c2a3906abdc391a7",
+      "html_url": "https://github.com/ody-cai/oa-system/commit/30b119350021c63c76c6f708c2a3906abdc391a7"
+    }
+  ],
+  "stats": {
+    "total": 43,
+    "additions": 43,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "c563e0504fe176a0085d1dafdd1ce56ab15902e4",
+      "filename": "AGENTS.md",
+      "status": "modified",
+      "additions": 43,
+      "deletions": 0,
+      "changes": 43,
+      "blob_url": "https://github.com/ody-cai/oa-system/blob/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace/AGENTS.md",
+      "raw_url": "https://github.com/ody-cai/oa-system/raw/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace/AGENTS.md",
+      "contents_url": "https://api.github.com/repos/ody-cai/oa-system/contents/AGENTS.md?ref=d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+      "patch": "@@ -159,3 +159,46 @@ pnpm start\n 2. 所有文件下载使用预签名 URL，支持跨域\n 3. 用户密码当前为明文存储，生产环境需改用 bcrypt\n 4. RLS 策略暂未配置，后续实现登录功能时需补充\n+\n+## GitHub 同步规范 [重要]\n+\n+**仓库地址**: https://github.com/ody-cai/oa-system\n+\n+### 同步要求\n+\n+当网站内容发生以下更新时，**必须同步更新 GitHub 仓库**：\n+\n+1. **功能新增** - 新增 API 接口、页面、模块时\n+2. **功能变更** - 接口参数、返回值、业务逻辑变更时\n+3. **数据库变更** - 表结构、字段、索引变更时\n+4. **技术栈更新** - 依赖版本、框架版本变更时\n+5. **重要修复** - 安全漏洞、性能优化等\n+\n+### 需要更新的文件\n+\n+| 更新类型 | 需要更新的文件 |\n+|----------|----------------|\n+| 新增 API | `README.md` (API 文档章节) |\n+| 新增页面 | `README.md` (功能特性章节) |\n+| 数据库变更 | `README.md` (数据库初始化 SQL) |\n+| 功能变更 | `README.md` + `AGENTS.md` |\n+| 依赖更新 | `README.md` (技术栈章节) |\n+\n+### 同步流程\n+\n+```bash\n+# 1. 更新相关文档\n+# 2. 提交代码\n+git add .\n+git commit -m \"docs: 更新 xxx 功能文档\"\n+\n+# 3. 推送到 GitHub\n+git push origin main\n+```\n+\n+### README.md 结构\n+\n+README.md 为中英双语格式，更新时需同时更新中英文两个部分：\n+- 中文部分在上\n+- English 部分在下\n+- 顶部有语言切换导航"
+    }
+  ]
+}

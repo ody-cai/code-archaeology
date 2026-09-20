@@ -134,9 +134,11 @@ async function checkHealth() {
   try {
     const h = await api('/api/health');
     if (h.model.configured) {
-      const models = [...new Set(Object.values(h.model.models))];
+      const models = [...new Set(Object.values(h.model.models).filter(Boolean))];
+      // 老版本 /api/health 不返回 mode，这里兜底推导，避免徽标渲染出 undefined
+      const mode = h.model.mode || (models.length > 1 ? '多模型分工' : '单模型多功能');
       el.modelDot.className = 'badge-dot on';
-      el.modelInfo.textContent = `${h.model.mode}\n${models.length} 个模型 · ${h.model.provider}`;
+      el.modelInfo.textContent = `${mode}\n${models.length} 个模型 · ${h.model.provider}`;
     } else {
       el.modelDot.className = 'badge-dot off';
       el.modelInfo.textContent = '未配置 · 仅客观指标可用';

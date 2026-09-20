@@ -1,0 +1,94 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+    <Box style={{ position: 'absolute', top: -190, right: -150, width: 580, height: 580, borderRadius: 290, background: 'radial-gradient(circle, rgba(227,163,62,0.16) 0%, rgba(227,163,62,0) 70%)' }} />
+    <Box style={{ position: 'absolute', bottom: -220, left: -140, width: 540, height: 540, borderRadius: 270, background: 'radial-gradient(circle, rgba(76,184,166,0.12) 0%, rgba(76,184,166,0) 70%)' }} />
+
+    <Box style={{ flexDirection: 'row', width: '1160px', height: '596px', alignItems: 'center', gap: 44 }}>
+
+      <Box style={{ width: 668 }}>
+        <Text style={{ fontSize: 17, fontWeight: 'bold', letterSpacing: 5, color: '#E3A33E' }}>CODE ARCHAEOLOGY</Text>
+        <Text style={{ fontSize: 68, fontWeight: 'bold', lineHeight: 1.08, color: '#EDF1F5', letterSpacing: 4, marginTop: 14, fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>代码考古学</Text>
+        <Text style={{ fontSize: 15, color: '#8892A0', letterSpacing: 0.5, marginTop: 10 }}>An information-loss audit for codebases — built on commit history, not on guesses.</Text>
+
+        <Box style={{ width: 92, height: 3, background: '#E3A33E', marginTop: 22 }} />
+
+        <Text style={{ fontSize: 22, lineHeight: 1.5, color: '#EDF1F5', marginTop: 20 }}>
+          我们不告诉你「为什么」，<br />只告诉你<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>「哪里已经没人能说清为什么」</span>。
+        </Text>
+        <Text style={{ fontSize: 13, lineHeight: 1.5, color: '#8892A0', marginTop: 10 }}>
+          We don't tell you why — we tell you where nobody can explain why anymore.
+        </Text>
+
+        <Box style={{ flexDirection: 'row', gap: 12, alignItems: 'center', marginTop: 22 }}>
+          <Box style={{ width: 30, height: 2, background: '#4CB8A6' }} />
+          <Text style={{ fontSize: 14, color: '#EDF1F5' }}>BAYTECH 2026 国际湾区创科节 · AI 应用与工程赛道</Text>
+        </Box>
+        <Text style={{ fontSize: 12, color: '#8892A0', marginTop: 6 }}>蔡奇均 / Cai Qijun（ody-cai）· 深圳 · 联系邮箱 cqjody@126.com</Text>
+
+        <Box style={{ marginTop: 20, padding: '12px 16px', background: '#1D242E', borderLeft: '3px solid #4CB8A6', borderRadius: 8 }}>
+          <Text style={{ fontSize: 12, lineHeight: 1.5, color: '#EDF1F5' }}>
+            本 PPT 为<span style={{ color: '#4CB8A6', fontWeight: 'bold' }}>完全自解释材料</span>：不依赖现场讲解，评委会从头读到尾即可掌握项目全貌。全篇中英双语，全部数据来自两个公开仓库的现场实测并可本机复现。
+          </Text>
+          <Text style={{ fontSize: 10.5, lineHeight: 1.45, color: '#8892A0', marginTop: 5 }}>
+            This deck is fully self-contained: no live narration is required. Every figure is bilingual and was measured live on two public repositories, reproducible on any machine.
+          </Text>
+        </Box>
+      </Box>
+
+      <Box style={{ width: 448 }}>
+        <svg width={448} height={392} viewBox='0 0 448 392'>
+          <rect x='0' y='0' width='448' height='32' fill='#1D242E' />
+          <rect x='0' y='32' width='448' height='48' fill='#232C38' />
+          <rect x='0' y='80' width='448' height='30' fill='#1D242E' />
+          <rect x='0' y='110' width='448' height='58' fill='#E3A33E' />
+          <rect x='0' y='168' width='448' height='36' fill='#232C38' />
+          <rect x='0' y='204' width='448' height='52' fill='#1D242E' />
+          <rect x='0' y='256' width='448' height='30' fill='#232C38' />
+          <rect x='0' y='286' width='448' height='56' fill='#1D242E' />
+          <rect x='0' y='342' width='448' height='38' fill='#232C38' />
+          <line x1='0' y1='32' x2='448' y2='32' stroke='#10141A' strokeWidth='2' />
+          <line x1='0' y1='80' x2='448' y2='80' stroke='#10141A' strokeWidth='2' />
+          <line x1='0' y1='168' x2='448' y2='168' stroke='#10141A' strokeWidth='2' />
+          <line x1='0' y1='204' x2='448' y2='204' stroke='#10141A' strokeWidth='2' />
+          <line x1='0' y1='256' x2='448' y2='256' stroke='#10141A' strokeWidth='2' />
+          <line x1='0' y1='286' x2='448' y2='286' stroke='#10141A' strokeWidth='2' />
+          <line x1='0' y1='342' x2='448' y2='342' stroke='#10141A' strokeWidth='2' />
+          <rect x='60' y='14' width='52' height='4' fill='#3A4553' />
+          <rect x='204' y='50' width='88' height='5' fill='#3A4553' />
+          <rect x='96' y='92' width='40' height='4' fill='#3A4553' />
+          <rect x='312' y='182' width='64' height='4' fill='#3A4553' />
+          <rect x='72' y='224' width='96' height='5' fill='#3A4553' />
+          <rect x='258' y='268' width='52' height='4' fill='#3A4553' />
+          <rect x='114' y='308' width='74' height='5' fill='#3A4553' />
+          <rect x='298' y='358' width='58' height='4' fill='#3A4553' />
+          <rect x='56' y='126' width='34' height='7' fill='#10141A' opacity='0.55' />
+          <rect x='108' y='142' width='58' height='7' fill='#10141A' opacity='0.55' />
+          <rect x='184' y='126' width='44' height='7' fill='#10141A' opacity='0.55' />
+          <rect x='248' y='146' width='70' height='7' fill='#10141A' opacity='0.55' />
+          <rect x='336' y='128' width='48' height='7' fill='#10141A' opacity='0.55' />
+          <line x1='448' y1='139' x2='432' y2='139' stroke='#E3A33E' strokeWidth='3' />
+          <circle cx='432' cy='139' r='5' fill='#10141A' />
+        </svg>
+        <Box style={{ flexDirection: 'row', gap: 22, marginTop: 14, alignItems: 'center' }}>
+          <Box style={{ flexDirection: 'row', gap: 8, alignItems: 'center' }}>
+            <Box style={{ width: 20, height: 11, background: '#E3A33E', borderRadius: 2 }} />
+            <Text style={{ fontSize: 12, color: '#EDF1F5' }}>人类决策痕迹</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', gap: 8, alignItems: 'center' }}>
+            <Box style={{ width: 20, height: 11, background: '#232C38', border: '1px solid #3A4553', borderRadius: 2 }} />
+            <Text style={{ fontSize: 12, color: '#8892A0' }}>机器人沉积物</Text>
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#6B7684', marginTop: 8 }}>
+          地层隐喻：自动化提交掩埋人类决策，只有剥离沉积物才能读到意图 / Strata metaphor: automation buries human decisions.
+        </Text>
+      </Box>
+    </Box>
+
+    <Box style={{ height: 30, justifyContent: 'flex-end' }}>
+      <Text style={{ fontSize: 10.5, color: '#6B7684', textAlign: 'right' }}>数据来源 / Sources：openclaw/openclaw 与 ody-cai/topfo 均为第三方公开仓库，经 GitHub REST API v3 现场拉取；自检数据来自本机实测，复现命令见第 07 页。</Text>
+    </Box>
+    <Box style={{ height: 42, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 12, color: '#8892A0' }}>版本 v0.1.0 · 线上地址 https://code-archaeology.odycai.workers.dev</Text>
+      <Text style={{ fontSize: 12, color: '#8892A0' }}>01 / 12</Text>
+    </Box>
+</Slide>

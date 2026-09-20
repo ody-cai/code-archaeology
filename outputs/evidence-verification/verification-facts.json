@@ -1,0 +1,228 @@
+{
+  "generated_utc": "2026-09-19T10:53:59Z",
+  "cases": [
+    {
+      "case": "A-chalk/chalk",
+      "claim": "仓库 chalk/chalk 的基本元数据（星标 / 语言 / 默认分支 / 体积）",
+      "source_file": "chalk-repo.json",
+      "sha256_response": "13e45398624c7faab7fc7c1d7e82cc249fb35c8968f7417f75a3482ff009d480",
+      "response_bytes": 6794,
+      "evidence": {
+        "full_name": "chalk/chalk",
+        "html_url": "https://github.com/chalk/chalk",
+        "id": 11855195,
+        "stargazers_count": 23317,
+        "forks_count": 1295,
+        "language": "JavaScript",
+        "default_branch": "main",
+        "size_kb": 1074,
+        "open_issues_count": 0,
+        "created_at": "2013-08-03T00:20:12Z",
+        "pushed_at": "2026-09-18T19:03:27Z",
+        "license": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "case": "A-ody-cai/oa-system",
+      "claim": "仓库 ody-cai/oa-system 的基本元数据（星标 / 语言 / 默认分支 / 体积）",
+      "source_file": "oa-repo.json",
+      "sha256_response": "8c2d1c7a560550b1e15fce04c24180397428f4cf35a927b9f792e1b0e8a32b5c",
+      "response_bytes": 6599,
+      "evidence": {
+        "full_name": "ody-cai/oa-system",
+        "html_url": "https://github.com/ody-cai/oa-system",
+        "id": 1253566004,
+        "stargazers_count": 1,
+        "forks_count": 0,
+        "language": "TypeScript",
+        "default_branch": "main",
+        "size_kb": 642,
+        "open_issues_count": 0,
+        "created_at": "2026-05-29T15:40:19Z",
+        "pushed_at": "2026-09-16T15:08:04Z",
+        "license": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "case": "B-父子链",
+      "claim": "chalk 提交 5729845 的直接父提交是否就是 4c304dd（若是，则旧算法把「连续两次提交」误判为「被放弃的尝试」）",
+      "source_file": "chalk-commit-5729845.json + chalk-commit-4c304dd.json",
+      "sha256_response": [
+        "35aeba56b204ca713249e9bfbca1c831c6b6696b7a2e55ee3d2ded09607f6cc2",
+        "41d904de63b5d3d2018dec7d4e77ded0b483b9a16e46e512276c2b84bf92fc2d"
+      ],
+      "commit_4c304dd": {
+        "sha": "4c304dd72cce5a036c02e5dd8af52996ae98501f",
+        "message_head": "Add extended underline styles and underline colors (#689)",
+        "author_date": "2026-07-25T23:40:10Z",
+        "parents": [
+          "e91293130c7d642c7b91152c3c942743a3b910a7"
+        ],
+        "additions": 335,
+        "deletions": 34,
+        "files_changed": 6,
+        "files": [
+          "readme.md",
+          "source/index.d.ts",
+          "source/index.js",
+          "source/vendor/ansi-styles/index.d.ts",
+          "source/vendor/ansi-styles/index.js",
+          "test/chalk.js"
+        ]
+      },
+      "commit_5729845": {
+        "sha": "5729845f33d357e0c21b29b2b16849b72fb8cec4",
+        "message_head": "Improve performance",
+        "author_date": "2026-07-26T01:00:13Z",
+        "parents": [
+          "4c304dd72cce5a036c02e5dd8af52996ae98501f"
+        ],
+        "additions": 177,
+        "deletions": 68,
+        "files_changed": 10,
+        "files": [
+          "readme.md",
+          "source/index.d.ts",
+          "source/index.js",
+          "source/utilities.js",
+          "source/vendor/ansi-styles/index.d.ts",
+          "source/vendor/supports-color/browser.js",
+          "source/vendor/supports-color/index.js",
+          "test/chalk.js",
+          "test/force-color.js",
+          "test/instance.js"
+        ]
+      },
+      "computed": {
+        "5729845_parents": [
+          "4c304dd72cce5a036c02e5dd8af52996ae98501f"
+        ],
+        "4c304dd_full_sha": "4c304dd72cce5a036c02e5dd8af52996ae98501f",
+        "is_direct_child": true,
+        "gap_seconds": 4803
+      }
+    },
+    {
+      "case": "C-行级存在性",
+      "claim": "chalk main 分支 source/index.js 中是否仍然存在 underline+capitalizedModel 的实现（用于判定该补丁到底有没有被回滚）",
+      "source_file": "chalk-index-js.json",
+      "sha256_response": "2d149485c7a66a20777d8bbffe2dc0530671d360feef1913ba0326b870652852",
+      "computed": {
+        "content_sha_git_blob": "229ea1ea4da6a87635ef3f1ca8987b7a8e938554",
+        "file_size_bytes": 8183,
+        "total_lines": 262,
+        "sha256_decoded_file": "08e92f2330a34d232f8aa987da4d953893094be5b2aa8cc39ddb4313743f206e",
+        "matched_lines": [
+          [
+            110,
+            "const capitalizedModel = model[0].toUpperCase() + model.slice(1);"
+          ],
+          [
+            114,
+            "['bg' + capitalizedModel, 'bgColor'],"
+          ],
+          [
+            115,
+            "['underline' + capitalizedModel, 'underlineColor'],"
+          ],
+          [
+            246,
+            "underlineColorNames,"
+          ]
+        ],
+        "line_115": "['underline' + capitalizedModel, 'underlineColor'],"
+      }
+    },
+    {
+      "case": "D-提交史与信噪比",
+      "claim": "ody-cai/oa-system 最近提交的作者构成（用于交叉核对工具给出的信噪比）",
+      "source_file": "oa-commits.json",
+      "sha256_response": "80a2f2c57d59d9745baf6db016383ce061478d61005745a4399156bc3516b3f1",
+      "computed": {
+        "sample_size": 44,
+        "range": [
+          "2026-05-29T12:06:31Z",
+          "2026-09-12T12:42:33Z"
+        ],
+        "bot_like_count": 0,
+        "bot_ratio": 0.0,
+        "bot_commits_sample": [],
+        "head_commit": {
+          "sha": "35b469255922a6b2bcaea0d9deef3491061db25b",
+          "date": "2026-09-12T12:42:33Z",
+          "author": "ody-cai",
+          "message": "chore: add MIT License"
+        },
+        "distinct_authors": [
+          "OA System",
+          "Odycai",
+          "ody-cai"
+        ]
+      },
+      "first_10": [
+        {
+          "sha": "35b469255922a6b2bcaea0d9deef3491061db25b",
+          "date": "2026-09-12T12:42:33Z",
+          "author": "ody-cai",
+          "message": "chore: add MIT License"
+        },
+        {
+          "sha": "35711b867ae9524a87516b3e2a211dd10530179c",
+          "date": "2026-06-04T07:23:14Z",
+          "author": "OA System",
+          "message": "chore: 脱敏检查完成并同步 GitHub"
+        },
+        {
+          "sha": "6912102c64ec7059f8248801b67935d42df17fed",
+          "date": "2026-06-04T07:19:13Z",
+          "author": "OA System",
+          "message": "chore: 重新添加版本管理文件并同步 GitHub"
+        },
+        {
+          "sha": "915b5a728349226cc9a6fde297f8b9b6fa41bd9f",
+          "date": "2026-06-04T07:18:39Z",
+          "author": "OA System",
+          "message": "chore: 重新添加版本管理文件"
+        },
+        {
+          "sha": "7bfb30bc6f6b5e0483fe4535c4d94f372cbd6679",
+          "date": "2026-06-03T13:49:48Z",
+          "author": "OA System",
+          "message": "security: 脱敏处理完成，移除JWT默认密钥"
+        },
+        {
+          "sha": "a146793364a62039a2b53b0b62a994273cd6b64b",
+          "date": "2026-06-03T13:49:12Z",
+          "author": "OA System",
+          "message": "security: 移除JWT默认密钥，要求生产环境必须设置JWT_SECRET"
+        },
+        {
+          "sha": "413f41143db07ab2ca4098dfc2d71c688fc69dc5",
+          "date": "2026-06-03T13:46:19Z",
+          "author": "OA System",
+          "message": "chore: 完成版本差异对比分析"
+        },
+        {
+          "sha": "d61e42d8ea41ef17f6087a8def20ac405c687b97",
+          "date": "2026-06-02T03:46:57Z",
+          "author": "OA System",
+          "message": "fix: 修复认证系统硬伤，实现JWT认证和API保护"
+        },
+        {
+          "sha": "7bf6781d550e5d656e8e60f81cdf619125fa5732",
+          "date": "2026-05-30T17:26:24Z",
+          "author": "OA System",
+          "message": "fix: 修复仓库创建失败的问题"
+        },
+        {
+          "sha": "c04caed91805ae945565d074f7f00ad601d6f2a4",
+          "date": "2026-05-30T17:16:06Z",
+          "author": "OA System",
+          "message": "chore: 版本检查完成，本地领先远程5个提交"
+        }
+      ]
+    }
+  ]
+}

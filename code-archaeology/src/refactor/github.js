@@ -22,7 +22,7 @@ export function createGitHub({ token, fetchImpl = fetch, timeoutMs = DEFAULT_TIM
   if (typeof fetchImpl !== 'function') fail('bad_config', 'fetchImpl 必须为可调用函数。', 500);
   const effectiveTimeout = Number.isFinite(timeoutMs) && timeoutMs > 0 ? timeoutMs : DEFAULT_TIMEOUT_MS;
 
-  // ── 底层请求：固定 origin、redirect:error、静态错误、超时覆盖 ──
+  // ── 底层请求：固定 origin、manual + 显式拒绝 3xx、静态错误、超时覆盖 ──
   async function request(path, options = {}) {
     if (typeof path !== 'string' || !path.startsWith('/') || path.startsWith('//') ||
         /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(path)) {
@@ -38,7 +38,9 @@ export function createGitHub({ token, fetchImpl = fetch, timeoutMs = DEFAULT_TIM
       'User-Agent': 'code-archaeology/0.1',
     };
     if (token) headers.Authorization = `Bearer ${token}`;
-    const init = { method, headers, redirect: 'error' };
+    // Cloudflare Workers 仅支持 follow/manual；manual + 状态码检查等价于拒绝跳转，
+    // 同时避免将调用者 Token 带到未知目标地址。
+    const init = { method, headers, redirect: 'manual' };
     if (options.body !== undefined) {
       init.body = typeof options.body === 'string' ? options.body : JSON.stringify(options.body);
       headers['Content-Type'] = 'application/json';
@@ -59,7 +61,7 @@ export function createGitHub({ token, fetchImpl = fetch, timeoutMs = DEFAULT_TIM
   async function resolveBase(repo) {
     const r = safeRepo(repo);
     const data = await request(`/repos/${r}`);
-    // 校验规范名，避免跟随仓库更名跳转（rename 会被 redirect:error 拦截，这里双保险）。
+    // 校验规范名，避免跟随仓库更名跳转（manual 模式下 3xx 已被拒绝，这里双保险）。
     if (!data || typeof data.full_name !== 'string' || data.full_name.toLowerCase() !== r) {
       fail('repo_mismatch', '仓库规范名与请求不一致（可能为更名跳转），已拒绝。', 421);
     }
@@ -291,8 +293,9 @@ function translateFetchError(e) {
   if ((e && e.name === 'AbortError') || /abort/i.test(msg)) {
     return new RefactorError('upstream_timeout', 'GitHub 上游请求超时，未自动重试写入。', 504);
   }
-  if (/redirect/i.test(msg)) {
-    return new RefactorError('unsafe_redirect', 'GitHub 返回跳转，已拒绝跟随（可能为仓库更名）。', 421);
+  // manual 模式的真实跳转由 HTTP 状态码识别；fetch init 错误不能伪装成上游跳转。
+  if (/invalid redirect value|redirect.*(?:must be|not supported)/i.test(msg)) {
+    return new RefactorError('bad_config', '当前运行时不支持请求的重定向配置。', 500);
   }
   return new RefactorError('upstream_unreachable', '无法连接 GitHub 上游。', 502);
 }
@@ -305,7 +308,7 @@ function translateStatus(status) {
     case 404: return new RefactorError('not_found', 'GitHub 资源不存在或不可访问。', 404);
     case 409: return new RefactorError('conflict', 'GitHub 资源状态冲突，已停止写入。', 409);
     case 422: return new RefactorError('unprocessable', 'GitHub 拒绝请求数据。', 422);
-    case 301: case 302: case 307: case 308:
+    case 301: case 302: case 303: case 307: case 308:
       return new RefactorError('unsafe_redirect', 'GitHub 返回跳转，已拒绝跟随（可能为仓库更名）。', 421);
     default:
       return status >= 500

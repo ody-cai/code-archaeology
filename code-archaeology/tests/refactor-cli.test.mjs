@@ -472,7 +472,7 @@ test('REVIEW_TOKEN_RE 形状校验', () => {
 
 /* ═══ 网络层：180s 超时 + reject redirects ═══ */
 
-test('callApi 设置 redirect:error 与超时 signal', async () => {
+test('callApi 使用 manual 拒绝重定向并设置超时 signal', async () => {
   const mem = new MemFS();
   let captured;
   const f = async (url, opts) => {
@@ -480,9 +480,32 @@ test('callApi 设置 redirect:error 与超时 signal', async () => {
     return { ok: true, status: 200, json: async () => ({ ok: true, data: PATCH_DATA }) };
   };
   await runPatch({ api: API, repo: 'owner/repo', fs: mem, fetchImpl: f });
-  assert.strictEqual(captured.redirect, 'error');
+  assert.strictEqual(captured.redirect, 'manual');
   assert.ok(captured.signal, '应传入超时 signal');
 });
+
+for (const status of [301, 302, 303, 307, 308]) {
+  test(`callApi 拒绝 ${status}：不跟随、不读取响应体、不落盘`, async () => {
+    const mem = new MemFS();
+    let calls = 0;
+    let reads = 0;
+    const fetchImpl = async (_url, opts) => {
+      calls++;
+      assert.equal(opts.redirect, 'manual');
+      return {
+        ok: false, status,
+        json: async () => { reads++; throw new Error('ca_secret'); },
+      };
+    };
+    await assert.rejects(
+      () => runPatch({ api: API, repo: 'owner/repo', token: 'ca_secret', fs: mem, fetchImpl }),
+      (e) => /重定向/.test(e.message) && !e.message.includes('ca_secret')
+    );
+    assert.equal(calls, 1);
+    assert.equal(reads, 0);
+    assert.equal(mem.files.size, 0);
+  });
+}
 
 /* ═══ 错误响应不回显凭据 ═══ */
 

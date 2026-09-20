@@ -1,0 +1,40 @@
+
+[1mody-cai/oa-system[0m[2m  TypeScript · 1 stars[0m
+[2m2026-05-29 → 2026-09-12 · 32 次 API 调用[0m
+
+[36m信噪比[0m
+  [32m██████████████████████[0m[2m░░░░░░░░░░░░[0m
+  人类决策 [1m19[0m / 30 次  机器人 0 次（0%）
+
+[36m风险因子[0m  总分 [33m51/100[0m [33m(中)[0m
+  14/25  提交信息质量　　　　　　　　 [2m2 / 19 条无信息量[0m
+  25/25  原地打转的文件　　　　　　　 [2m6 个文件反复推翻[0m
+   0/20  被放弃的尝试　　　　　　　　 [2m0 处已核实（另否定 1 处）[0m
+   0/15  显式回滚　　　　　　　　　　 [2m0 次回滚提交[0m
+  13/15  最长沉寂期　　　　　　　　　 [2m100 天无人提交[0m
+
+[36m文件热度 Top 6[0m
+    1650 churn   5x  README.md
+     985 churn   3x  src/app/api/repositories/[id]/members/route.ts
+     814 churn   2x  src/app/dashboard/repositories/[id]/members/page.tsx
+     800 churn   2x  src/app/dashboard/repositories/page.tsx
+     746 churn   3x  src/app/api/repositories/[id]/route.ts
+     512 churn   3x  src/app/api/repositories/route.ts
+
+[36m复核未通过[0m[2m（行数达标，但拆除内容与新增内容无关 —— 判为重写而非放弃）[0m
+  [2msrc/app/dashboard/layout.tsx  重合 39%  1fbd843 → bc4e63c[0m
+
+[36m整仓回滚[0m[2m（全局操作 · 连带删除不计为放弃）[0m
+  [2m.env.example  62d1b8d → 109fd2c 「Restored to 'acd42d064de80515a359f70e681」[0m
+  [2mREADME.md  62d1b8d → 109fd2c 「Restored to 'acd42d064de80515a359f70e681」[0m
+  [2mAGENTS.md  d8ca09f → 109fd2c 「Restored to 'acd42d064de80515a359f70e681」[0m
+  [2msrc/app/api/announcements/[id]/withdraw/route.ts  8e09128 → 109fd2c 「Restored to 'acd42d064de80515a359f70e681」[0m
+  [2msrc/app/dashboard/announcements/page.tsx  8e09128 → 109fd2c 「Restored to 'acd42d064de80515a359f70e681」[0m
+
+[36m原地打转[0m[2m（改动量大但净变化小）[0m
+  1650x   5 次  净变化      0  README.md
+  132x   5 次  净变化      2  src/app/dashboard/layout.tsx
+   60x   3 次  净变化      3  src/app/api/files/route.ts
+   45x   3 次  净变化      3  src/app/api/files/upload/route.ts
+    8x   3 次  净变化     11  .env.example
+

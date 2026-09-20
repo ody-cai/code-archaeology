@@ -1,0 +1,115 @@
+openclaw/openclaw
+
+The AI that really does things. Any OS. Any Platform. The lobster way. 🦞
+
+TypeScript
+390,100 stars
+82,030 forks
+建库 1 年
+主分支 main
+许可 NOASSERTION
+0/100
+风险 低
+
+仅基于客观指标
+
+分析窗口 2026-09-20 → 2026-09-20
+GitHub 调用 62 次
+剩余配额 4,380
+已鉴权 5000/时
+信噪比
+SIGNAL TO NOISE
+报告的第一个数字
+人类决策 98%
+包含人类决策痕迹
+59
+次
+机器人提交
+1
+次
+仅改动生成物
+0
+次
+
+分析了 60 次提交，其中 1 次来自机器人（2%）。 剥离自动化噪音后，真正承载人类决策的只有 59 次。
+
+机器人来源：clawsweeper[bot] ×1
+
+提交演化时间轴
+COMMIT TIMELINE
+60 条提交 · 柱高＝改动量（平方根压缩）
+2026-09
+人类决策 59
+机器人 & 生成物 1
+回滚 0
+悬停任意柱子看提交信息
+风险因子拆解
+RISK FACTORS
+每项都可独立验证
+提交信息质量
+0 / 25
+
+0 / 59 条无信息量 · 含糊的提交信息让后来者无法还原改动意图
+
+原地打转的文件
+0 / 25
+
+0 个文件反复推翻 · 改动总量很大但净变化很小，说明方案被反复推翻
+
+被放弃的尝试
+0 / 20
+
+0 处已核实（另否定 0 处） · 短期加入又短期拆除，且拆除内容与当初新增内容重合 —— 确属方向摇摆
+
+显式回滚
+0 / 15
+
+0 次回滚提交 · 明确的回滚是决策失败的直接证据
+
+最长沉寂期
+0 / 15
+
+0 天无人提交 · 长期停摆后重启，往往伴随架构转向
+
+文件改动热度
+CHURN HOTSPOTS
+仅统计人类对源码的改动
+src/commands/doctor/shared/missing-configured-plugin-install.dependency-health.test.ts
+871·1×
+src/commands/doctor/shared/missing-configured-plugin-install.suite.test-support.ts
+540·1×
+src/commands/doctor/shared/missing-configured-plugin-install.test.ts
+532·1×
+src/plugins/status-dependencies-core.test.ts
+414·1×
+ui/src/pages/chat/components/chat-position-rail.ts
+411·1×
+src/infra/outbound/deliver.enqueue-worker.integration.test.ts
+397·1×
+src/agents/workspace-input-attachments.test.ts
+392·1×
+src/gateway/server-methods/doctor.test.ts
+385·1×
+src/gateway/server-methods/usage.cost-checkpoint-memo.integration.test.ts
+383·1×
+
+其中 7 个文件在窗口内只有一个人改过 —— 这些人一旦离开，该处即无人可问。改动量最大的单点归属： src/agents/workspace-access.test.ts → Kimi Yu
+
+地层里的证据
+EXCAVATED EVIDENCE
+纯计算 · 不涉及模型推断
+被放弃的尝试 短时间加入又拆除 · 已通过内容核实
+该窗口内没有检出「先进后出」的改动模式
+原地打转 改动量大但净变化小
+没有检出「原地打转」的文件
+安全重构入口
+SAFE REFACTOR · 只创建独立分支与草稿 PR
+
+模型会基于提交历史生成补丁「候选」，但历史只能证明「改了什么」，不能证明「改得对」。请人工审阅 diff，并确认只创建独立分支和草稿 PR。
+
+GITHUB TOKEN（仅本次会话内存，不保存）
+生成补丁
+已审阅本补丁，确认只创建独立分支和草稿 PR
+输入可选 Token 后点击「生成补丁」。
+下载 .diff
+创建草稿 PR

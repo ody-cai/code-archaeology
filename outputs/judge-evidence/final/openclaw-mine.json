@@ -1,0 +1,1693 @@
+{
+  "repo": {
+    "owner": "openclaw",
+    "name": "openclaw",
+    "full": "openclaw/openclaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+    "stars": 390102,
+    "forks": 82030,
+    "openIssues": 8131,
+    "language": "TypeScript",
+    "license": "NOASSERTION",
+    "createdAt": "2025-11-24T10:16:47Z",
+    "pushedAt": "2026-09-20T02:26:08Z",
+    "branch": "main",
+    "sizeKb": 5322250,
+    "archived": false
+  },
+  "scope": {
+    "path": null,
+    "limit": 60,
+    "windowFrom": "2026-09-20T00:07:32Z",
+    "windowTo": "2026-09-20T02:23:19Z",
+    "signalWindowFrom": "2026-09-20T00:07:32Z",
+    "signalWindowTo": "2026-09-20T02:23:19Z"
+  },
+  "signalQuality": {
+    "analyzed": 60,
+    "totalCommits": 60,
+    "botCommits": 1,
+    "botRate": 2,
+    "noiseOnlyCommits": 0,
+    "signalCommits": 59,
+    "signalRate": 98,
+    "botAuthors": [
+      {
+        "author": "clawsweeper[bot]",
+        "commits": 1
+      }
+    ],
+    "noisiestFiles": [
+      {
+        "file": "test/vitest/vitest.database-worker-core-paths.mjs",
+        "touches": 3,
+        "noise": false
+      },
+      {
+        "file": "src/state/openclaw-state-worker-runtime.ts",
+        "touches": 3,
+        "noise": false
+      },
+      {
+        "file": "docs/reference/database-schemas/storage-changes.md",
+        "touches": 3,
+        "noise": true
+      },
+      {
+        "file": "test/vitest/vitest.extension-database-workers-paths.mjs",
+        "touches": 3,
+        "noise": false
+      },
+      {
+        "file": "config/assertion-safety-baseline.txt",
+        "touches": 2,
+        "noise": false
+      },
+      {
+        "file": "docs/gateway/restart-recovery.md",
+        "touches": 2,
+        "noise": false
+      },
+      {
+        "file": "src/agents/main-session-recovery/main-session-restart-recovery.test.ts",
+        "touches": 2,
+        "noise": false
+      },
+      {
+        "file": "test/vitest/vitest.unit-fast-paths.mjs",
+        "touches": 2,
+        "noise": false
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "sha": "18f1c11",
+      "date": "2026-09-20T00:07:32Z",
+      "author": "Peter Steinberger",
+      "message": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1103,
+      "deletions": 4943,
+      "churn": 6046,
+      "files": 59,
+      "failed": null
+    },
+    {
+      "sha": "d22782a",
+      "date": "2026-09-20T00:08:16Z",
+      "author": "Peter Steinberger",
+      "message": "refactor(state): share the agent database worker lifecycle (#153150)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 4314,
+      "deletions": 436,
+      "churn": 4750,
+      "files": 56,
+      "failed": null
+    },
+    {
+      "sha": "e805aa8",
+      "date": "2026-09-20T00:09:48Z",
+      "author": "Peter Steinberger",
+      "message": "perf(agents): stop normalizing after a duplicate match (#153248)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 3,
+      "deletions": 1,
+      "churn": 4,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "3d936db",
+      "date": "2026-09-20T00:13:06Z",
+      "author": "Peter Steinberger",
+      "message": "perf(gateway): reuse subagent views during session presentation (#153220)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 5,
+      "deletions": 4,
+      "churn": 9,
+      "files": 3,
+      "failed": null
+    },
+    {
+      "sha": "4ba8024",
+      "date": "2026-09-20T00:15:33Z",
+      "author": "Peter Steinberger",
+      "message": "perf(test): avoid bundled discovery in ACP fixtures (#153234)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 6,
+      "deletions": 2,
+      "churn": 8,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "42d0dad",
+      "date": "2026-09-20T00:16:25Z",
+      "author": "Peter Steinberger",
+      "message": "fix(macos): recognize installed Chrome extensions in settings (#153266)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 410,
+      "deletions": 80,
+      "churn": 490,
+      "files": 17,
+      "failed": null
+    },
+    {
+      "sha": "abac28f",
+      "date": "2026-09-20T00:16:28Z",
+      "author": "Peter Steinberger",
+      "message": "perf(markdown): skip fence parsing for marker-free text (#152728)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 13,
+      "deletions": 5,
+      "churn": 18,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "084dfec",
+      "date": "2026-09-20T00:21:26Z",
+      "author": "Peter Steinberger",
+      "message": "improve(cron): move recovery proposal reads off the caller thread (#153158)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 716,
+      "deletions": 102,
+      "churn": 818,
+      "files": 17,
+      "failed": null
+    },
+    {
+      "sha": "9440a90",
+      "date": "2026-09-20T00:25:22Z",
+      "author": "Peter Steinberger",
+      "message": "fix(macos): hide Inspect Element unless debug is enabled (#153273)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 9,
+      "deletions": 5,
+      "churn": 14,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "2fc994b",
+      "date": "2026-09-20T00:25:55Z",
+      "author": "Peter Steinberger",
+      "message": "perf: reuse parsed Responses tool arguments (#152904)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 49,
+      "deletions": 13,
+      "churn": 62,
+      "files": 3,
+      "failed": null
+    },
+    {
+      "sha": "ad07e83",
+      "date": "2026-09-20T00:27:52Z",
+      "author": "Peter Steinberger",
+      "message": "test(ui): remove duplicate table copy coverage (#153256)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 0,
+      "deletions": 15,
+      "churn": 15,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "7d7e26a",
+      "date": "2026-09-20T00:31:00Z",
+      "author": "Kimi Yu",
+      "message": "fix(agents): return attachments from remote workspaces (#152633)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1295,
+      "deletions": 94,
+      "churn": 1389,
+      "files": 21,
+      "failed": null
+    },
+    {
+      "sha": "c4c50fd",
+      "date": "2026-09-20T00:32:50Z",
+      "author": "Peter Steinberger",
+      "message": "fix(usage): avoid Windows usage worker clone failures (#152962)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 95,
+      "deletions": 1,
+      "churn": 96,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "877c937",
+      "date": "2026-09-20T00:34:32Z",
+      "author": "Peter Steinberger",
+      "message": "fix: start Codex turns after slow registration reads (#153282)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 44,
+      "deletions": 1,
+      "churn": 45,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "a490bc6",
+      "date": "2026-09-20T00:39:56Z",
+      "author": "Peter Steinberger",
+      "message": "perf(test): seed Matrix registry in session reset fixtures (#153252)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 10,
+      "deletions": 13,
+      "churn": 23,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "ae9326d",
+      "date": "2026-09-20T00:43:29Z",
+      "author": "Peter Steinberger",
+      "message": "test(codex): keep grace clock fixed through settlement (#152966)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 5,
+      "deletions": 1,
+      "churn": 6,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "e0a092d",
+      "date": "2026-09-20T00:44:08Z",
+      "author": "Peter Steinberger",
+      "message": "fix(browser): recover page inspection without stale tab delays (#153283)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 107,
+      "deletions": 48,
+      "churn": 155,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "c6bb12b",
+      "date": "2026-09-20T00:51:06Z",
+      "author": "David",
+      "message": "fix(plugins): reject hollow installs and repair missing dependencies (#103398)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 3143,
+      "deletions": 611,
+      "churn": 3754,
+      "files": 20,
+      "failed": null
+    },
+    {
+      "sha": "3d591fd",
+      "date": "2026-09-20T00:52:16Z",
+      "author": "clawsweeper[bot]",
+      "message": "fix(gateway): return retryable chat send error during transcript rebuild (#119778)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": true,
+      "isSignal": false,
+      "additions": 250,
+      "deletions": 0,
+      "churn": 250,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "1083c3f",
+      "date": "2026-09-20T00:52:33Z",
+      "author": "Goutam Adwant",
+      "message": "fix(terminal): preserve portable upload names after truncation (#153023)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 6,
+      "deletions": 1,
+      "churn": 7,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "03328bc",
+      "date": "2026-09-20T00:54:20Z",
+      "author": "RoboClaw",
+      "message": "fix(ui): open subagent details in Tasks instead of Review (#153260)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1563,
+      "deletions": 819,
+      "churn": 2382,
+      "files": 40,
+      "failed": null
+    },
+    {
+      "sha": "d3f7ab7",
+      "date": "2026-09-20T00:55:55Z",
+      "author": "Peter Steinberger",
+      "message": "refactor: remove unused normalization array helpers (#153233)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1,
+      "deletions": 18,
+      "churn": 19,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "49dfd78",
+      "date": "2026-09-20T01:02:24Z",
+      "author": "Peter Steinberger",
+      "message": "perf: offload cached snapshot token operations (#153112)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 430,
+      "deletions": 21,
+      "churn": 451,
+      "files": 6,
+      "failed": null
+    },
+    {
+      "sha": "282b235",
+      "date": "2026-09-20T01:06:07Z",
+      "author": "Peter Steinberger",
+      "message": "refactor: reuse fs-safe for memory walks and artifact reads (#153196)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 176,
+      "deletions": 105,
+      "churn": 281,
+      "files": 6,
+      "failed": null
+    },
+    {
+      "sha": "8ebc8cd",
+      "date": "2026-09-20T01:07:55Z",
+      "author": "Peter Steinberger",
+      "message": "perf(audio): skip unusable Whisper model discovery (#152570)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 44,
+      "deletions": 3,
+      "churn": 47,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "044f78e",
+      "date": "2026-09-20T01:15:21Z",
+      "author": "Peter Steinberger",
+      "message": "test: isolate retired agent cleanup transport fixture (#153286)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1,
+      "deletions": 0,
+      "churn": 1,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "9001aed",
+      "date": "2026-09-20T01:19:21Z",
+      "author": "Peter Steinberger",
+      "message": "perf(twitch): reuse outbound account context (#128592)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 14,
+      "deletions": 24,
+      "churn": 38,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "7aaef70",
+      "date": "2026-09-20T01:19:47Z",
+      "author": "Peter Steinberger",
+      "message": "perf(mcp): defer probe materialization for registry commands (#152684)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 27,
+      "deletions": 23,
+      "churn": 50,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "faa4aad",
+      "date": "2026-09-20T01:22:25Z",
+      "author": "Peter Steinberger",
+      "message": "perf(telegram): reuse database workers in send tests (#153301)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 27,
+      "deletions": 20,
+      "churn": 47,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "a0ec9f5",
+      "date": "2026-09-20T01:24:49Z",
+      "author": "Peter Steinberger",
+      "message": "fix(memory): wait for recall persistence in citations test (#153305)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 17,
+      "deletions": 29,
+      "churn": 46,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "dcf3769",
+      "date": "2026-09-20T01:28:42Z",
+      "author": "Peter Steinberger",
+      "message": "refactor: keep warning filter internals private (#153255)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 31,
+      "deletions": 49,
+      "churn": 80,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "87fdeff",
+      "date": "2026-09-20T01:29:33Z",
+      "author": "RoboClaw",
+      "message": "docs(release): preserve handoff and recovery guidance (#153322)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 46,
+      "deletions": 13,
+      "churn": 59,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "c53eaf5",
+      "date": "2026-09-20T01:31:56Z",
+      "author": "Peter Steinberger",
+      "message": "improve(ui): load older chat history with less rendering work (#153245)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 843,
+      "deletions": 297,
+      "churn": 1140,
+      "files": 15,
+      "failed": null
+    },
+    {
+      "sha": "1b7c1de",
+      "date": "2026-09-20T01:33:35Z",
+      "author": "Peter Steinberger",
+      "message": "perf(read): keep image preparation in bytes (#152569)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 162,
+      "deletions": 44,
+      "churn": 206,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "b15a0a2",
+      "date": "2026-09-20T01:36:43Z",
+      "author": "Peter Steinberger",
+      "message": "fix(test): preserve compile-cache access in Bun worker fixtures (#152956)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1,
+      "deletions": 0,
+      "churn": 1,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "c0da084",
+      "date": "2026-09-20T01:44:04Z",
+      "author": "Peter Steinberger",
+      "message": "perf(parallel): select MCP envelopes without message arrays (#152685)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 179,
+      "deletions": 57,
+      "churn": 236,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "da5079d",
+      "date": "2026-09-20T01:51:10Z",
+      "author": "Peter Steinberger",
+      "message": "fix: keep stopped parent conversations cancelled after restart (#153271)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 386,
+      "deletions": 5,
+      "churn": 391,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "fd46f38",
+      "date": "2026-09-20T01:52:53Z",
+      "author": "Kimi Yu",
+      "message": "feat: transfer file bytes through the existing node channel (#152640)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1594,
+      "deletions": 232,
+      "churn": 1826,
+      "files": 32,
+      "failed": null
+    },
+    {
+      "sha": "14cf168",
+      "date": "2026-09-20T01:53:57Z",
+      "author": "Kimi Yu",
+      "message": "feat(memory): read and update files on remote workspaces (#153124)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 2404,
+      "deletions": 541,
+      "churn": 2945,
+      "files": 56,
+      "failed": null
+    },
+    {
+      "sha": "2db3e1f",
+      "date": "2026-09-20T01:54:51Z",
+      "author": "Peter Steinberger",
+      "message": "refactor(matrix): resolve direct-room encryption from account config (#152353)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 244,
+      "deletions": 7,
+      "churn": 251,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "0be25b2",
+      "date": "2026-09-20T01:56:42Z",
+      "author": "Yuval Dinodia",
+      "message": "fix(discord): stop /new and /reset from skipping guild guards (#152991)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 179,
+      "deletions": 2,
+      "churn": 181,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "90fccee",
+      "date": "2026-09-20T01:56:57Z",
+      "author": "Peter Steinberger",
+      "message": "fix: publish final task cancellation monotonically (#153226)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 243,
+      "deletions": 42,
+      "churn": 285,
+      "files": 7,
+      "failed": null
+    },
+    {
+      "sha": "1c4ee88",
+      "date": "2026-09-20T01:58:42Z",
+      "author": "Peter Steinberger",
+      "message": "fix(codex): bound catalog retries and plugin capture retention (#153038)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 314,
+      "deletions": 63,
+      "churn": 377,
+      "files": 10,
+      "failed": null
+    },
+    {
+      "sha": "165099e",
+      "date": "2026-09-20T01:59:03Z",
+      "author": "Jialong(Bruce) Li",
+      "message": "fix: fence claimless ackDelivery against a live platform-send claim (#153083)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 44,
+      "deletions": 26,
+      "churn": 70,
+      "files": 3,
+      "failed": null
+    },
+    {
+      "sha": "2fb02c2",
+      "date": "2026-09-20T01:59:41Z",
+      "author": "Peter Steinberger",
+      "message": "refactor(sqlite): pass prepared bindings without query copies (#152571)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 59,
+      "deletions": 9,
+      "churn": 68,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "26505c5",
+      "date": "2026-09-20T01:59:54Z",
+      "author": "Peter Steinberger",
+      "message": "fix: await transcript worker startup in producer tests (#153336)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 18,
+      "deletions": 14,
+      "churn": 32,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "3444c7d",
+      "date": "2026-09-20T02:04:34Z",
+      "author": "Dallin Romney",
+      "message": "fix(release): wait longer for npm publication readback (#151421)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 35,
+      "deletions": 30,
+      "churn": 65,
+      "files": 4,
+      "failed": null
+    },
+    {
+      "sha": "c48eedb",
+      "date": "2026-09-20T02:04:53Z",
+      "author": "Peter Steinberger",
+      "message": "fix: limit placement decoding during worktree cleanup (#153309)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 204,
+      "deletions": 24,
+      "churn": 228,
+      "files": 6,
+      "failed": null
+    },
+    {
+      "sha": "4df4507",
+      "date": "2026-09-20T02:07:30Z",
+      "author": "Peter Steinberger",
+      "message": "fix(tasks): exclude retry preparation from scan work budget (#153328)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 90,
+      "deletions": 1,
+      "churn": 91,
+      "files": 2,
+      "failed": null
+    },
+    {
+      "sha": "b1c062d",
+      "date": "2026-09-20T02:08:07Z",
+      "author": "Peter Steinberger",
+      "message": "fix(update): acknowledge older abandoned runs after repair (#153261)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 90,
+      "deletions": 12,
+      "churn": 102,
+      "files": 5,
+      "failed": null
+    },
+    {
+      "sha": "78d9675",
+      "date": "2026-09-20T02:10:56Z",
+      "author": "Peter Steinberger",
+      "message": "refactor(config): skip unused model policy validation setup (#152796)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 8,
+      "deletions": 12,
+      "churn": 20,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "576ba7e",
+      "date": "2026-09-20T02:11:23Z",
+      "author": "Peter Steinberger",
+      "message": "perf(gateway): reuse path identities during session source preparation (#153319)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 14,
+      "deletions": 1,
+      "churn": 15,
+      "files": 3,
+      "failed": null
+    },
+    {
+      "sha": "9e7a575",
+      "date": "2026-09-20T02:15:18Z",
+      "author": "Peter Steinberger",
+      "message": "fix: keep Gateway responsive while admitting outbound messages (#153076)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1141,
+      "deletions": 269,
+      "churn": 1410,
+      "files": 32,
+      "failed": null
+    },
+    {
+      "sha": "286487d",
+      "date": "2026-09-20T02:19:31Z",
+      "author": "RoboClaw",
+      "message": "fix(ui): keep attached context out of message text (#152539)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 1066,
+      "deletions": 266,
+      "churn": 1332,
+      "files": 65,
+      "failed": null
+    },
+    {
+      "sha": "f85870f",
+      "date": "2026-09-20T02:20:00Z",
+      "author": "Peter Steinberger",
+      "message": "test(gateway): virtualize workspace probe delays (#153247)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 101,
+      "deletions": 33,
+      "churn": 134,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "1a51b55",
+      "date": "2026-09-20T02:20:29Z",
+      "author": "Peter Steinberger",
+      "message": "test(codex): fix exec-server late-output flake (#153210)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 51,
+      "deletions": 9,
+      "churn": 60,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "750295a",
+      "date": "2026-09-20T02:20:46Z",
+      "author": "RoboClaw",
+      "message": "fix(e2e): isolate worktree upgrade proof from title repair (#153350)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 8,
+      "deletions": 1,
+      "churn": 9,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "d621e71",
+      "date": "2026-09-20T02:21:48Z",
+      "author": "Peter Steinberger",
+      "message": "perf(usage): memoize refresh rollup checkpoints (#153348)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 489,
+      "deletions": 8,
+      "churn": 497,
+      "files": 5,
+      "failed": null
+    },
+    {
+      "sha": "f0663f5",
+      "date": "2026-09-20T02:22:16Z",
+      "author": "Peter Steinberger",
+      "message": "perf(cli): reuse resolved model reference map (#152897)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 3,
+      "deletions": 6,
+      "churn": 9,
+      "files": 1,
+      "failed": null
+    },
+    {
+      "sha": "42dcea5",
+      "date": "2026-09-20T02:23:19Z",
+      "author": "Peter Steinberger",
+      "message": "fix(crabbox): reopen Linux cloud browsers after startup (#153169)",
+      "messageScore": 1,
+      "vague": false,
+      "isRevert": false,
+      "isMerge": false,
+      "isBot": false,
+      "isSignal": true,
+      "additions": 105,
+      "deletions": 1,
+      "churn": 106,
+      "files": 2,
+      "failed": null
+    }
+  ],
+  "hotspots": [
+    {
+      "file": "src/agents/subagents/registry/subagent-registry-restart-recovery.test.ts",
+      "touches": 1,
+      "additions": 61,
+      "deletions": 848,
+      "churn": 909,
+      "net": -787,
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "firstSeen": "2026-09-20T00:07:32Z",
+      "lastSeen": "2026-09-20T00:07:32Z",
+      "sequence": [
+        {
+          "sha": "18f1c11",
+          "date": "2026-09-20T00:07:32Z",
+          "message": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+          "status": "modified",
+          "additions": 61,
+          "deletions": 848
+        }
+      ]
+    },
+    {
+      "file": "src/commands/doctor/shared/missing-configured-plugin-install.dependency-health.test.ts",
+      "touches": 1,
+      "additions": 871,
+      "deletions": 0,
+      "churn": 871,
+      "net": 871,
+      "authors": [
+        "David"
+      ],
+      "firstSeen": "2026-09-20T00:51:06Z",
+      "lastSeen": "2026-09-20T00:51:06Z",
+      "sequence": [
+        {
+          "sha": "c6bb12b",
+          "date": "2026-09-20T00:51:06Z",
+          "message": "fix(plugins): reject hollow installs and repair missing dependencies (#103398)",
+          "status": "added",
+          "additions": 871,
+          "deletions": 0
+        }
+      ]
+    },
+    {
+      "file": "src/agents/subagents/registry/subagent-orphan-recovery.restart-integration.test.ts",
+      "touches": 1,
+      "additions": 182,
+      "deletions": 482,
+      "churn": 664,
+      "net": -300,
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "firstSeen": "2026-09-20T00:07:32Z",
+      "lastSeen": "2026-09-20T00:07:32Z",
+      "sequence": [
+        {
+          "sha": "18f1c11",
+          "date": "2026-09-20T00:07:32Z",
+          "message": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+          "status": "modified",
+          "additions": 182,
+          "deletions": 482
+        }
+      ]
+    },
+    {
+      "file": "src/agents/subagents/registry/subagent-control.recovery.test.ts",
+      "touches": 1,
+      "additions": 4,
+      "deletions": 579,
+      "churn": 583,
+      "net": -575,
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "firstSeen": "2026-09-20T00:07:32Z",
+      "lastSeen": "2026-09-20T00:07:32Z",
+      "sequence": [
+        {
+          "sha": "18f1c11",
+          "date": "2026-09-20T00:07:32Z",
+          "message": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+          "status": "modified",
+          "additions": 4,
+          "deletions": 579
+        }
+      ]
+    },
+    {
+      "file": "src/agents/subagents/registry/subagent-registry-restart-recovery.ts",
+      "touches": 1,
+      "additions": 112,
+      "deletions": 468,
+      "churn": 580,
+      "net": -356,
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "firstSeen": "2026-09-20T00:07:32Z",
+      "lastSeen": "2026-09-20T00:07:32Z",
+      "sequence": [
+        {
+          "sha": "18f1c11",
+          "date": "2026-09-20T00:07:32Z",
+          "message": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+          "status": "modified",
+          "additions": 112,
+          "deletions": 468
+        }
+      ]
+    },
+    {
+      "file": "src/commands/doctor/shared/missing-configured-plugin-install.suite.test-support.ts",
+      "touches": 1,
+      "additions": 540,
+      "deletions": 0,
+      "churn": 540,
+      "net": 540,
+      "authors": [
+        "David"
+      ],
+      "firstSeen": "2026-09-20T00:51:06Z",
+      "lastSeen": "2026-09-20T00:51:06Z",
+      "sequence": [
+        {
+          "sha": "c6bb12b",
+          "date": "2026-09-20T00:51:06Z",
+          "message": "fix(plugins): reject hollow installs and repair missing dependencies (#103398)",
+          "status": "added",
+          "additions": 540,
+          "deletions": 0
+        }
+      ]
+    },
+    {
+      "file": "src/commands/doctor/shared/missing-configured-plugin-install.test.ts",
+      "touches": 1,
+      "additions": 25,
+      "deletions": 507,
+      "churn": 532,
+      "net": -482,
+      "authors": [
+        "David"
+      ],
+      "firstSeen": "2026-09-20T00:51:06Z",
+      "lastSeen": "2026-09-20T00:51:06Z",
+      "sequence": [
+        {
+          "sha": "c6bb12b",
+          "date": "2026-09-20T00:51:06Z",
+          "message": "fix(plugins): reject hollow installs and repair missing dependencies (#103398)",
+          "status": "modified",
+          "additions": 25,
+          "deletions": 507
+        }
+      ]
+    },
+    {
+      "file": "src/state/openclaw-agent-execution.registration.test.ts",
+      "touches": 1,
+      "additions": 500,
+      "deletions": 0,
+      "churn": 500,
+      "net": 500,
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "firstSeen": "2026-09-20T00:08:16Z",
+      "lastSeen": "2026-09-20T00:08:16Z",
+      "sequence": [
+        {
+          "sha": "d22782a",
+          "date": "2026-09-20T00:08:16Z",
+          "message": "refactor(state): share the agent database worker lifecycle (#153150)",
+          "status": "added",
+          "additions": 500,
+          "deletions": 0
+        }
+      ]
+    },
+    {
+      "file": "src/plugins/status-dependencies-core.test.ts",
+      "touches": 1,
+      "additions": 414,
+      "deletions": 0,
+      "churn": 414,
+      "net": 414,
+      "authors": [
+        "David"
+      ],
+      "firstSeen": "2026-09-20T00:51:06Z",
+      "lastSeen": "2026-09-20T00:51:06Z",
+      "sequence": [
+        {
+          "sha": "c6bb12b",
+          "date": "2026-09-20T00:51:06Z",
+          "message": "fix(plugins): reject hollow installs and repair missing dependencies (#103398)",
+          "status": "added",
+          "additions": 414,
+          "deletions": 0
+        }
+      ]
+    },
+    {
+      "file": "ui/src/pages/chat/components/chat-position-rail.ts",
+      "touches": 1,
+      "additions": 226,
+      "deletions": 185,
+      "churn": 411,
+      "net": 41,
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "firstSeen": "2026-09-20T01:31:56Z",
+      "lastSeen": "2026-09-20T01:31:56Z",
+      "sequence": [
+        {
+          "sha": "c53eaf5",
+          "date": "2026-09-20T01:31:56Z",
+          "message": "improve(ui): load older chat history with less rendering work (#153245)",
+          "status": "modified",
+          "additions": 226,
+          "deletions": 185
+        }
+      ]
+    },
+    {
+      "file": "src/state/openclaw-agent-execution.ts",
+      "touches": 1,
+      "additions": 407,
+      "deletions": 0,
+      "churn": 407,
+      "net": 407,
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "firstSeen": "2026-09-20T00:08:16Z",
+      "lastSeen": "2026-09-20T00:08:16Z",
+      "sequence": [
+        {
+          "sha": "d22782a",
+          "date": "2026-09-20T00:08:16Z",
+          "message": "refactor(state): share the agent database worker lifecycle (#153150)",
+          "status": "added",
+          "additions": 407,
+          "deletions": 0
+        }
+      ]
+    },
+    {
+      "file": "src/agents/subagents/registry/subagent-registry-run-recovery.ts",
+      "touches": 1,
+      "additions": 5,
+      "deletions": 397,
+      "churn": 402,
+      "net": -392,
+      "authors": [
+        "Peter Steinberger"
+      ],
+      "firstSeen": "2026-09-20T00:07:32Z",
+      "lastSeen": "2026-09-20T00:07:32Z",
+      "sequence": [
+        {
+          "sha": "18f1c11",
+          "date": "2026-09-20T00:07:32Z",
+          "message": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+          "status": "modified",
+          "additions": 5,
+          "deletions": 397
+        }
+      ]
+    }
+  ],
+  "abandoned": [],
+  "abandonedRejected": [
+    {
+      "file": "src/agents/main-session-recovery/main-session-restart-recovery.test.ts",
+      "addSha": "18f1c11",
+      "addDate": "2026-09-20T00:07:32Z",
+      "addMessage": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+      "addLines": 57,
+      "removeSha": "9e7a575",
+      "removeDate": "2026-09-20T02:15:18Z",
+      "removeMessage": "fix: keep Gateway responsive while admitting outbound messages (#153076)",
+      "removeLines": 40,
+      "survivedDays": 0,
+      "overlapRate": 0,
+      "overlappedLines": 0,
+      "comparableLines": 31,
+      "verified": true,
+      "verifyNote": "内容核实未通过（重合 0% < 50%），判定为重写而非放弃"
+    }
+  ],
+  "globalReverts": [],
+  "thrash": [],
+  "soloOwned": [
+    {
+      "file": "src/agents/main-session-recovery/main-session-restart-recovery.test.ts",
+      "owner": "Peter Steinberger",
+      "touches": 2,
+      "churn": 188
+    },
+    {
+      "file": "src/agents/workspace-access.ts",
+      "owner": "Kimi Yu",
+      "touches": 2,
+      "churn": 180
+    },
+    {
+      "file": "src/state/openclaw-agent-execution-cleanup.test.ts",
+      "owner": "Peter Steinberger",
+      "touches": 2,
+      "churn": 126
+    },
+    {
+      "file": "docs/gateway/restart-recovery.md",
+      "owner": "Peter Steinberger",
+      "touches": 2,
+      "churn": 44
+    },
+    {
+      "file": "src/state/openclaw-state-worker-runtime.ts",
+      "owner": "Peter Steinberger",
+      "touches": 3,
+      "churn": 21
+    },
+    {
+      "file": "src/state/openclaw-state-worker-contract.ts",
+      "owner": "Peter Steinberger",
+      "touches": 2,
+      "churn": 18
+    },
+    {
+      "file": "apps/macos/Sources/OpenClaw/DashboardDeviceSettingsMessageHandler.swift",
+      "owner": "Peter Steinberger",
+      "touches": 2,
+      "churn": 12
+    },
+    {
+      "file": "test/vitest/vitest.unit-fast-paths.mjs",
+      "owner": "Peter Steinberger",
+      "touches": 2,
+      "churn": 4
+    }
+  ],
+  "authors": [
+    {
+      "author": "Peter Steinberger",
+      "commits": 47,
+      "churn": 19278,
+      "fileCount": 294
+    },
+    {
+      "author": "RoboClaw",
+      "commits": 4,
+      "churn": 3782,
+      "fileCount": 109
+    },
+    {
+      "author": "Kimi Yu",
+      "commits": 3,
+      "churn": 6160,
+      "fileCount": 108
+    },
+    {
+      "author": "David",
+      "commits": 1,
+      "churn": 3754,
+      "fileCount": 20
+    },
+    {
+      "author": "Goutam Adwant",
+      "commits": 1,
+      "churn": 7,
+      "fileCount": 2
+    },
+    {
+      "author": "Yuval Dinodia",
+      "commits": 1,
+      "churn": 181,
+      "fileCount": 2
+    },
+    {
+      "author": "Jialong(Bruce) Li",
+      "commits": 1,
+      "churn": 70,
+      "fileCount": 3
+    },
+    {
+      "author": "Dallin Romney",
+      "commits": 1,
+      "churn": 65,
+      "fileCount": 4
+    }
+  ],
+  "hygiene": {
+    "total": 59,
+    "nonMerge": 59,
+    "merges": 0,
+    "vagueCount": 0,
+    "vagueRate": 0,
+    "revertCount": 0,
+    "avgMsgLen": 66,
+    "vagueSamples": [],
+    "reverts": []
+  },
+  "rhythm": {
+    "weeks": [
+      {
+        "week": "2026-09-14",
+        "commits": 59,
+        "churn": 33297
+      }
+    ],
+    "longestGap": {
+      "days": 0,
+      "from": "",
+      "to": ""
+    },
+    "afterGapCommit": null,
+    "activeDays": 1,
+    "spanDays": 0
+  },
+  "risk": {
+    "score": 0,
+    "level": "低",
+    "factors": [
+      {
+        "key": "vague",
+        "label": "提交信息质量",
+        "raw": "0 / 59 条无信息量",
+        "detail": "含糊的提交信息让后来者无法还原改动意图",
+        "score": 0,
+        "weight": 25
+      },
+      {
+        "key": "thrash",
+        "label": "原地打转的文件",
+        "raw": "0 个文件反复推翻",
+        "detail": "改动总量很大但净变化很小，说明方案被反复推翻",
+        "score": 0,
+        "weight": 25
+      },
+      {
+        "key": "abandoned",
+        "label": "被放弃的尝试",
+        "raw": "0 处已核实（另否定 1 处）",
+        "detail": "短期加入又短期拆除，且拆除内容与当初新增内容重合 —— 确属方向摇摆",
+        "score": 0,
+        "weight": 20
+      },
+      {
+        "key": "revert",
+        "label": "显式回滚",
+        "raw": "0 次回滚提交",
+        "detail": "明确的回滚是决策失败的直接证据",
+        "score": 0,
+        "weight": 15
+      },
+      {
+        "key": "gap",
+        "label": "最长沉寂期",
+        "raw": "0 天无人提交",
+        "detail": "长期停摆后重启，往往伴随架构转向",
+        "score": 0,
+        "weight": 15
+      }
+    ]
+  },
+  "cost": {
+    "apiCalls": 62,
+    "rateRemaining": 4550,
+    "token": true,
+    "fetchedAt": "2026-09-20T02:27:10.762Z"
+  },
+  "digSite": {
+    "repo": "openclaw/openclaw · TypeScript · 390102 stars · 创建于 2025-11-24",
+    "signalNote": "共分析 60 次提交，其中 1 次来自机器人（2%），仅 59 次包含人类决策痕迹",
+    "window": "2026-09-20 → 2026-09-20，有效人类提交 59 次",
+    "topFiles": [
+      {
+        "file": "src/agents/subagents/registry/subagent-registry-restart-recovery.test.ts",
+        "touches": 1,
+        "churn": 909,
+        "changes": [
+          {
+            "sha": "18f1c11",
+            "date": "2026-09-20",
+            "msg": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+            "add": 61,
+            "del": 848,
+            "status": "modified"
+          }
+        ]
+      },
+      {
+        "file": "src/commands/doctor/shared/missing-configured-plugin-install.dependency-health.test.ts",
+        "touches": 1,
+        "churn": 871,
+        "changes": [
+          {
+            "sha": "c6bb12b",
+            "date": "2026-09-20",
+            "msg": "fix(plugins): reject hollow installs and repair missing dependencies (#103398)",
+            "add": 871,
+            "del": 0,
+            "status": "added"
+          }
+        ]
+      },
+      {
+        "file": "src/agents/subagents/registry/subagent-orphan-recovery.restart-integration.test.ts",
+        "touches": 1,
+        "churn": 664,
+        "changes": [
+          {
+            "sha": "18f1c11",
+            "date": "2026-09-20",
+            "msg": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+            "add": 182,
+            "del": 482,
+            "status": "modified"
+          }
+        ]
+      },
+      {
+        "file": "src/agents/subagents/registry/subagent-control.recovery.test.ts",
+        "touches": 1,
+        "churn": 583,
+        "changes": [
+          {
+            "sha": "18f1c11",
+            "date": "2026-09-20",
+            "msg": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+            "add": 4,
+            "del": 579,
+            "status": "modified"
+          }
+        ]
+      },
+      {
+        "file": "src/agents/subagents/registry/subagent-registry-restart-recovery.ts",
+        "touches": 1,
+        "churn": 580,
+        "changes": [
+          {
+            "sha": "18f1c11",
+            "date": "2026-09-20",
+            "msg": "fix: resume unfinished tasks after Gateway restarts (#153243)",
+            "add": 112,
+            "del": 468,
+            "status": "modified"
+          }
+        ]
+      },
+      {
+        "file": "src/commands/doctor/shared/missing-configured-plugin-install.suite.test-support.ts",
+        "touches": 1,
+        "churn": 540,
+        "changes": [
+          {
+            "sha": "c6bb12b",
+            "date": "2026-09-20",
+            "msg": "fix(plugins): reject hollow installs and repair missing dependencies (#103398)",
+            "add": 540,
+            "del": 0,
+            "status": "added"
+          }
+        ]
+      }
+    ],
+    "thrash": [],
+    "abandoned": [],
+    "vagueSamples": [],
+    "reverts": [],
+    "longestGap": {
+      "days": 0,
+      "from": "",
+      "to": ""
+    },
+    "afterGap": null
+  }
+}

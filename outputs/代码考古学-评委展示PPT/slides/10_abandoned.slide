@@ -1,0 +1,116 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+  <Box style={{ height: 96, justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', lineHeight: 1.22, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>「被放弃的尝试」逐条清单</Text>
+        <Text style={{ fontSize: 14.5, color: '#8892A0', marginTop: 7, letterSpacing: 0.3 }}>Abandoned attempts, item by item</Text>
+      </Box>
+      
+    </Box>
+  </Box>
+    <Box style={{ height: 500 }}>
+      <Box style={{ flexDirection: 'row', gap: 16 }}>
+        <Box style={{ flex: 1, padding: '12px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>ody-cai/topfo · 7 处已核实 / verified</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 3 }}>判定规则：拆除侧删除的行中，有 ≥ 50% 曾在新增侧出现过，才计为「被放弃」；否则判为重写。</Text>
+
+          <Box style={{ flexDirection: 'row', height: 24, marginTop: 10, borderBottom: '1px solid #2C3542', alignItems: 'center' }}>
+            <Text style={{ width: 16, fontSize: 9.5, color: '#8892A0', textAlign: 'left' }}>#</Text><Text style={{ width: 262, fontSize: 9.5, color: '#8892A0', textAlign: 'left' }}>文件 / File</Text><Text style={{ width: 92, fontSize: 9.5, color: '#8892A0', textAlign: 'left' }}>加入 / Added</Text><Text style={{ width: 92, fontSize: 9.5, color: '#8892A0', textAlign: 'left' }}>拆除 / Removed</Text><Text style={{ width: 74, fontSize: 9.5, color: '#8892A0', textAlign: 'left' }}>存活 / Lived</Text><Text style={{ width: 48, fontSize: 9.5, color: '#8892A0', textAlign: 'right' }}>重合 / Overlap</Text><Text style={{ width: 76, fontSize: 9.5, color: '#8892A0', textAlign: 'right' }}>判定 / Verdict</Text>
+          </Box>
+
+          <Box style={{ flexDirection: 'row', alignItems: 'center', height: 41, borderBottom: '1px solid #232C38' }}>
+            <Text style={{ width: 16, fontSize: 9.5, color: '#6B7684', textAlign: 'left' }}>1</Text>
+            <Text style={{ width: 262, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>public/functions/api/rankings.js</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#4CB8A6', textAlign: 'left' }}>+63  6cc0b93</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#E3A33E', textAlign: 'left' }}>−54  fda81ef</Text>
+            <Text style={{ width: 74, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>1 小时 02 分</Text>
+            <Text style={{ width: 48, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>100%</Text>
+            <Text style={{ width: 76, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>已核实 ✓</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', height: 41, borderBottom: '1px solid #232C38' }}>
+            <Text style={{ width: 16, fontSize: 9.5, color: '#6B7684', textAlign: 'left' }}>2</Text>
+            <Text style={{ width: 262, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>public/functions/api/schools.js</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#4CB8A6', textAlign: 'left' }}>+66  6cc0b93</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#E3A33E', textAlign: 'left' }}>−57  fda81ef</Text>
+            <Text style={{ width: 74, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>1 小时 02 分</Text>
+            <Text style={{ width: 48, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>100%</Text>
+            <Text style={{ width: 76, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>已核实 ✓</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', height: 41, borderBottom: '1px solid #232C38' }}>
+            <Text style={{ width: 16, fontSize: 9.5, color: '#6B7684', textAlign: 'left' }}>3</Text>
+            <Text style={{ width: 262, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>public/functions/api/ai/recommend.js</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#4CB8A6', textAlign: 'left' }}>+143  fda81ef</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#E3A33E', textAlign: 'left' }}>−105  674486b</Text>
+            <Text style={{ width: 74, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>1 小时 06 分</Text>
+            <Text style={{ width: 48, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>100%</Text>
+            <Text style={{ width: 76, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>已核实 ✓</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', height: 41, borderBottom: '1px solid #232C38' }}>
+            <Text style={{ width: 16, fontSize: 9.5, color: '#6B7684', textAlign: 'left' }}>4</Text>
+            <Text style={{ width: 262, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>public/functions/api/applications.js</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#4CB8A6', textAlign: 'left' }}>+107  fda81ef</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#E3A33E', textAlign: 'left' }}>−107  ed18ec5</Text>
+            <Text style={{ width: 74, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>2 小时 30 分</Text>
+            <Text style={{ width: 48, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>100%</Text>
+            <Text style={{ width: 76, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>已核实 ✓</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', height: 41, borderBottom: '1px solid #232C38' }}>
+            <Text style={{ width: 16, fontSize: 9.5, color: '#6B7684', textAlign: 'left' }}>5</Text>
+            <Text style={{ width: 262, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>public/functions/api/applications/[id].js</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#4CB8A6', textAlign: 'left' }}>+76  fda81ef</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#E3A33E', textAlign: 'left' }}>−76  ed18ec5</Text>
+            <Text style={{ width: 74, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>2 小时 30 分</Text>
+            <Text style={{ width: 48, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>100%</Text>
+            <Text style={{ width: 76, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>已核实 ✓</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', height: 41, borderBottom: '1px solid #232C38' }}>
+            <Text style={{ width: 16, fontSize: 9.5, color: '#6B7684', textAlign: 'left' }}>6</Text>
+            <Text style={{ width: 262, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>public/js/i18n/fr.json</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#4CB8A6', textAlign: 'left' }}>+95  fda81ef</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#E3A33E', textAlign: 'left' }}>−96  ed18ec5</Text>
+            <Text style={{ width: 74, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>2 小时 30 分</Text>
+            <Text style={{ width: 48, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>99%</Text>
+            <Text style={{ width: 76, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>已核实 ✓</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', height: 41, borderBottom: '1px solid #232C38' }}>
+            <Text style={{ width: 16, fontSize: 9.5, color: '#6B7684', textAlign: 'left' }}>7</Text>
+            <Text style={{ width: 262, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>public/pages/tracker.html</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#4CB8A6', textAlign: 'left' }}>+907  fda81ef</Text>
+            <Text style={{ width: 92, fontSize: 9.5, color: '#E3A33E', textAlign: 'left' }}>−957  ed18ec5</Text>
+            <Text style={{ width: 74, fontSize: 9.5, color: '#EDF1F5', textAlign: 'left' }}>2 小时 30 分</Text>
+            <Text style={{ width: 48, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>93%</Text>
+            <Text style={{ width: 76, fontSize: 9.5, color: '#4CB8A6', textAlign: 'right' }}>已核实 ✓</Text>
+          </Box>
+
+          <Box style={{ marginTop: 10, padding: '9px 12px', background: 'rgba(227,163,62,0.10)', border: '1px solid rgba(227,163,62,0.35)', borderRadius: 8 }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.5, color: '#E3A33E', fontWeight: 'bold' }}>
+              同一次运行里，openclaw/openclaw 有 1 处候选被程序否定 —— 这是「不编结论」的证据，而不是把假阳性藏起来。
+            </Text>
+            <Text style={{ fontSize: 10, lineHeight: 1.5, color: '#A8B2BE', marginTop: 4 }}>
+              src/agents/main-session-recovery/main-session-restart-recovery.test.ts<br />
+              18f1c11 加入 +57 行 → 9e7a575 拆除 −40 行；可比 31 行中重合 0%，低于阈值 50% → 判定「重写而非放弃」，不计入风险分。
+            </Text>
+          </Box>
+        </Box>
+
+        <Box style={{ width: 424 }}>
+          <Box style={{ padding: 8, background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+            <Image src="/Users/odycai/WorkBuddy/BAYTECH26黑客松/outputs/代码考古学-评委展示PPT/assets/topfo-evidence.png" style={{ width: 408, height: 363 }} />
+          </Box>
+          <Text style={{ fontSize: 9.5, lineHeight: 1.45, color: '#6B7684', marginTop: 8 }}>
+            上图为产品界面中「地层里的证据」区块的真实截图：每一处都写明加入 / 拆除的 commit SHA、行数、存活时长与内容重合率，可逐条回 GitHub 核对。
+            <br />Live product screenshot: every entry carries its SHAs, line counts, lifespan and content overlap — verifiable one by one on GitHub.
+          </Text>
+        </Box>
+      </Box>
+    </Box>
+
+  <Box style={{ height: 32, justifyContent: 'center' }}>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>第三方仓库来源 / Third-party source：ody-cai/topfo（HTML · 2 stars）· GitHub REST API v3 · 采集窗口 2026-07-09T02:38:58Z → 2026-09-20T01:53:29Z（UTC）</Text>
+  </Box>
+  <Box style={{ height: 36, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>代码考古学 / Code Archaeology · BAYTECH 2026 · AI 应用与工程赛道</Text>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>10 / 12</Text>
+  </Box>
+</Slide>

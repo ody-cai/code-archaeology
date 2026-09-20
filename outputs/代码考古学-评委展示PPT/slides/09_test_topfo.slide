@@ -1,0 +1,135 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+  <Box style={{ height: 96, justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', lineHeight: 1.22, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>实测 B · ody-cai/topfo</Text>
+        <Text style={{ fontSize: 14.5, color: '#8892A0', marginTop: 7, letterSpacing: 0.3 }}>Measured B · ody-cai/topfo</Text>
+      </Box>
+      <Text style={{ fontSize: 10.5, color: '#8892A0', textAlign: 'right' }}>HTML · 2 stars · 73 天跨度 · GitHub REST API v3</Text>
+    </Box>
+  </Box>
+    <Box style={{ height: 500 }}>
+      <Box style={{ flexDirection: 'row', gap: 16, height: 268, alignItems: 'flex-start' }}>
+        <Box style={{ width: 468, padding: 8, background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Image src="/Users/odycai/WorkBuddy/BAYTECH26黑客松/outputs/代码考古学-评委展示PPT/assets/topfo-top.png" style={{ width: 452, height: 223 }} />
+        </Box>
+        <Box style={{ flex: 1, padding: '14px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>本次实测关键数字 / Key measurements</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 3 }}>窗口 2026-07-09T02:38:58Z → 2026-09-20T01:53:29Z（UTC，共 73 天；活跃 10 天）</Text>
+          <Box style={{ flexDirection: 'row', marginTop: 12 }}>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>23</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>次提交已分析</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>commits analysed</Text>
+        </Box>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>53/100</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>风险分（中）</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>risk score</Text>
+        </Box>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>7</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>处被放弃的尝试</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>abandoned attempts</Text>
+        </Box>
+          </Box>
+          <Box style={{ flexDirection: 'row', marginTop: 14 }}>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#4CB8A6', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>0</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>条含糊提交</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>vague messages</Text>
+        </Box>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>9</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>个文件原地打转</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>thrashing files</Text>
+        </Box>
+            
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#E3A33E', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>62 天</Text>
+          <Text style={{ fontSize: 10.5, color: '#EDF1F5', marginTop: 3 }}>最长沉寂期</Text>
+          <Text style={{ fontSize: 9.5, color: '#8892A0', marginTop: 1 }}>longest dormant gap</Text>
+        </Box>
+          </Box>
+          <Text style={{ fontSize: 10, lineHeight: 1.5, color: '#6B7684', marginTop: 'auto' }}>
+            机器人提交 0 次（0%）；平均每 3.2 天一次提交；沉寂期 2026-07-09T06:11:32Z → 2026-09-09T01:23:43Z。
+          </Text>
+        </Box>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 218, marginTop: 14 }}>
+        <Box style={{ flex: 1, padding: '13px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>风险因子拆解 / Risk factors</Text>
+          <Text style={{ fontSize: 10, color: '#8892A0', marginTop: 3 }}>总分 53 / 100 · 中</Text>
+          <Box style={{ marginTop: 12 }}>
+            
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>提交信息质量</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 2, height: 7, background: '#3A4553', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#3A4553', textAlign: 'right', letterSpacing: 0.5 }}>0/25</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>0 / 23 条无信息量</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>原地打转的文件</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 118, height: 7, background: '#E3A33E', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#E3A33E', textAlign: 'right', letterSpacing: 0.5 }}>25/25</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>9 个文件反复推翻</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>被放弃的尝试</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 118, height: 7, background: '#E3A33E', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#E3A33E', textAlign: 'right', letterSpacing: 0.5 }}>20/20</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>7 处已核实（另否定 0 处）</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>显式回滚</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 2, height: 7, background: '#3A4553', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#3A4553', textAlign: 'right', letterSpacing: 0.5 }}>0/15</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>0 次回滚提交</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 21 }}>
+      <Text style={{ width: 132, fontSize: 11.5, color: '#A8B2BE' }}>最长沉寂期</Text>
+      <Box style={{ width: 118, height: 7, background: '#232C38', borderRadius: 4 }}>
+        <Box style={{ width: 63, height: 7, background: '#E3A33E', borderRadius: 4 }} />
+      </Box>
+      <Text style={{ width: 52, fontSize: 11, color: '#E3A33E', textAlign: 'right', letterSpacing: 0.5 }}>8/15</Text>
+      <Text style={{ flex: 1, fontSize: 10.5, color: '#6B7684', marginLeft: 12 }}>62 天无人提交</Text>
+    </Box>
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, padding: '13px 16px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38' }}>
+          <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#EDF1F5' }}>其他可核查指标 / Other verifiable metrics</Text>
+          <Text style={{ fontSize: 11, lineHeight: 1.75, color: '#A8B2BE', marginTop: 8 }}>
+            · 提交信息卫生：23 条提交中 0 条无信息量（含糊率 0%），平均信息长度 85 字符<br />
+            · 显式回滚提交：0 次<br />
+            · 改动热度前三：topfo-app/app/src/main/res/raw/schools.json（churn 6,462）、<br />
+            　　review_results.json（churn 5,766）、public/pages/tracker.html（churn 1,946，4 次改动）<br />
+            · 单点归属文件：10 个<br />
+            · 知识集中度：ody-cai 一人 22 次提交（96%）、44,534 行改动、167 个文件
+          </Text>
+        </Box>
+      </Box>
+    </Box>
+
+  <Box style={{ height: 32, justifyContent: 'center' }}>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>第三方仓库来源 / Third-party source：ody-cai/topfo（HTML · 2 stars）· GitHub REST API v3 · 采集窗口 2026-07-09T02:38:58Z → 2026-09-20T01:53:29Z（UTC）</Text>
+  </Box>
+  <Box style={{ height: 36, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>代码考古学 / Code Archaeology · BAYTECH 2026 · AI 应用与工程赛道</Text>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>09 / 12</Text>
+  </Box>
+</Slide>

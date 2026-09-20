@@ -8,7 +8,7 @@
 //   · pr 必须先 --confirm（strict true / --confirm / --confirm=true），并校验「磁盘 diff 摘要 == review.json digest == --reviewed-digest」，
 //     且必须有 CA_GITHUB_TOKEN、review.prEligible 为 true、reviewToken 形状有效，三者一致才放行；
 //   · 显式输出说明：reviewToken / 确认不代表自动授权本轮创建 PR，本轮仍需显式 --confirm 且 digest 一致；
-//   · 网络：180s 超时、reject redirects（redirect: 'error'）、错误响应绝不回显凭据。
+//   · 网络：180s 超时、reject redirects（manual + 显式拒绝 3xx）、错误响应绝不回显凭据。
 //
 // 本模块所有网络与文件操作都可注入（fetchImpl / fs），因此测试可完全离线、无副作用。
 
@@ -113,8 +113,12 @@ async function callApi({ api, body, token, fetchImpl, signal }) {
     headers,
     body: JSON.stringify(body),
     signal: signal ?? AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-    redirect: 'error', // 拒绝任何重定向，避免跳转到不可信地址
+    // manual 禁止自动跟随；下面先拒绝 3xx，不读取其响应体或 Location。
+    redirect: 'manual',
   });
+  if (res.status >= 300 && res.status < 400) {
+    throw new Error('服务返回重定向，已拒绝跟随以保护调用者凭据。');
+  }
 
   let payload;
   try {

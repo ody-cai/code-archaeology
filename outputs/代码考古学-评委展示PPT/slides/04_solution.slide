@@ -1,0 +1,78 @@
+<Slide style={{ width: '1280px', height: '720px', padding: '20px 60px', background: '#10141A', fontFamily: "'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif", flexDirection: 'column' }}>
+
+  <Box style={{ height: 96, justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 32, fontWeight: 'bold', lineHeight: 1.22, color: '#EDF1F5', fontFamily: "'Source Han Serif SC','Noto Serif SC','Songti SC',serif" }}>先筛地层，再挖文物，最后自己查自己</Text>
+        <Text style={{ fontSize: 14.5, color: '#8892A0', marginTop: 7, letterSpacing: 0.3 }}>Sift the strata, excavate the artifacts, then audit ourselves</Text>
+      </Box>
+      
+    </Box>
+  </Box>
+    <Box style={{ height: 500 }}>
+      <svg width={1160} height={132} viewBox='0 0 1160 132'>
+        <rect x='0' y='24' width='356' height='86' rx='8' fill='#1D242E' stroke='#2C3542' />
+        <rect x='392' y='24' width='356' height='86' rx='8' fill='#1D242E' stroke='#2C3542' />
+        <rect x='784' y='24' width='376' height='86' rx='8' fill='#1D242E' stroke='#4CB8A6' />
+        <text x='24' y='48' fill='#4CB8A6' fontFamily='Helvetica Neue, sans-serif' fontSize='11' fontWeight='bold'>STAGE 01 · PURE COMPUTATION</text>
+        <text x='24' y='72' fill='#EDF1F5' fontFamily='PingFang SC, sans-serif' fontSize='14'>信噪分离 · 纯计算</text>
+        <text x='24' y='92' fill='#8892A0' fontFamily='Helvetica Neue, sans-serif' fontSize='10.5'>Signal / noise separation</text>
+        <text x='416' y='48' fill='#E3A33E' fontFamily='Helvetica Neue, sans-serif' fontSize='11' fontWeight='bold'>STAGE 02 · 3 VENDORS</text>
+        <text x='416' y='72' fill='#EDF1F5' fontFamily='PingFang SC, sans-serif' fontSize='14'>多模型分工 · 3 家供应商</text>
+        <text x='416' y='92' fill='#8892A0' fontFamily='Helvetica Neue, sans-serif' fontSize='10.5'>Three models, sequential roles</text>
+        <text x='808' y='48' fill='#4CB8A6' fontFamily='Helvetica Neue, sans-serif' fontSize='11' fontWeight='bold'>STAGE 03 · SET ARITHMETIC</text>
+        <text x='808' y='72' fill='#EDF1F5' fontFamily='PingFang SC, sans-serif' fontSize='14'>证据接地校验 · SHA 集合运算</text>
+        <text x='808' y='92' fill='#8892A0' fontFamily='Helvetica Neue, sans-serif' fontSize='10.5'>Evidence grounding check</text>
+        <path d='M358 67 L388 67' stroke='#E3A33E' strokeWidth='2' />
+        <path d='M382 62 L390 67 L382 72 Z' fill='#E3A33E' />
+        <path d='M750 67 L780 67' stroke='#4CB8A6' strokeWidth='2' />
+        <path d='M774 62 L782 67 L774 72 Z' fill='#4CB8A6' />
+        <text x='0' y='12' fill='#6B7684' fontFamily='PingFang SC, sans-serif' fontSize='10.5'>输入 owner/name（公开仓库）→ 输出：客观指标 + 决策史 + 证据接地报告 ｜ Input: owner/name of a public repo. Output: hard metrics, decision history, grounding report.</text>
+        <text x='0' y='126' fill='#4CB8A6' fontFamily='PingFang SC, sans-serif' fontSize='10.5'>STAGE 01 不调用任何模型，STAGE 03 不出现在任何模型的输出里 —— 两者都由程序独立完成。 ｜ Neither stage 01 nor stage 03 involves any model.</text>
+      </svg>
+
+      <Box style={{ flexDirection: 'row', gap: 16, height: 356, marginTop: 6 }}>
+
+        <Box style={{ flex: 1, padding: '15px 17px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 10.5, fontWeight: 'bold', color: '#4CB8A6', letterSpacing: 1.5 }}>STAGE 01</Text>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>信噪分离</Text>
+          <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 3 }}>Signal / noise separation — pure computation</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 9 }}>先用机器规则把自动化提交（机器人、生成物）与人类决策分开，再逐文件解析改动。这一层不调用任何模型，输出全部是可验证的客观统计：信噪比、改动热度、原地打转、被放弃的尝试、提交信息卫生、沉寂期。报告的第一个数字是信噪比，而不是结论。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 4 }}>Robotic and generated commits are separated before any analysis. No model is involved; every output is a verifiable statistic.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 9, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#4CB8A6' }}>实测：openclaw 62 次 API 调用 / 6.95 秒；topfo 25 次 / 4.3 秒</Text>
+          </Box>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '15px 17px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 10.5, fontWeight: 'bold', color: '#E3A33E', letterSpacing: 1.5 }}>STAGE 02</Text>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>多模型真分工</Text>
+          <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 3 }}>Three models from three vendors, working in sequence</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 9 }}>叙事者 gpt-4o 把提交序列还原成决策史；假设者推断「先进后出」的改动当年想做什么、为何被放弃；审稿人拿到客观指标后复核前两者，并给出裁决、给接手者的建议、以及该去问原作者的问题清单。三者来自三家不同供应商，是<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>串行有依赖</span>，不是并行投票。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 4 }}>Narrator reconstructs the decision history; hypothesizer infers abandoned intent; appraiser reviews both and issues a verdict plus interview questions.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 9, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#E3A33E' }}>实测：3 个模型 · 多模型分工 · openclaw 全流程 13.19 秒 / topfo 38.35 秒</Text>
+          </Box>
+        </Box>
+
+        <Box style={{ flex: 1, padding: '15px 17px', background: '#1D242E', borderRadius: 10, border: '1px solid #232C38', flexDirection: 'column' }}>
+          <Text style={{ fontSize: 10.5, fontWeight: 'bold', color: '#4CB8A6', letterSpacing: 1.5 }}>STAGE 03</Text>
+          <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#EDF1F5', marginTop: 6 }}>证据接地校验</Text>
+          <Text style={{ fontSize: 10.5, color: '#8892A0', marginTop: 3 }}>Evidence grounding — set arithmetic, not model self-review</Text>
+          <Text style={{ fontSize: 12.5, lineHeight: 1.55, color: '#A8B2BE', marginTop: 9 }}>常见做法是让另一个模型检查前一个有没有胡说 —— 但判官自己也会幻觉，而且无法查证。我们的做法：模型产出的每条结论必须引用具体的 commit SHA，而这些 SHA 是程序从 GitHub 真实拉回来的，于是「引用了一个不存在的提交」可以被<span style={{ color: '#E3A33E', fontWeight: 'bold' }}>一次集合运算</span>直接判定：这是可证明的编造，不是主观判断。</Text>
+          <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', marginTop: 4 }}>Every claim must cite a commit SHA pulled from GitHub. A cited-but-nonexistent commit is provable fabrication — decided by set arithmetic, never by a model.</Text>
+          <Box style={{ marginTop: 'auto', paddingTop: 9, borderTop: '1px solid #2C3542' }}>
+            <Text style={{ fontSize: 10.5, lineHeight: 1.4, color: '#4CB8A6' }}>实测：两仓库共 10 条推断 · 编造 0 条 · 无效引用 0 条</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+
+  <Box style={{ height: 32, justifyContent: 'center' }}>
+    <Text style={{ fontSize: 10, lineHeight: 1.4, color: '#6B7684', textAlign: 'right' }}>本页为方案说明，不引用第三方数据；时序与调用次数为本次两仓库实测量。 / Method page: no third-party data cited; timings and call counts are measured on the two repositories tested.</Text>
+  </Box>
+  <Box style={{ height: 36, marginTop: 6, paddingTop: 8, borderTop: '1px solid #232C38', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>代码考古学 / Code Archaeology · BAYTECH 2026 · AI 应用与工程赛道</Text>
+    <Text style={{ fontSize: 12, color: '#8892A0' }}>04 / 12</Text>
+  </Box>
+</Slide>

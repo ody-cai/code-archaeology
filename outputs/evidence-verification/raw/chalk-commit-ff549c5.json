@@ -1,0 +1,137 @@
+{
+  "sha": "ff549c534c413a9225322c1ff4e5fc0d97ae5610",
+  "node_id": "C_kwDOALTlW9oAKGZmNTQ5YzUzNGM0MTNhOTIyNTMyMmMxZmY0ZTVmYzBkOTdhZTU2MTA",
+  "commit": {
+    "author": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "date": "2026-07-25T11:27:29Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-07-25T11:27:29Z"
+    },
+    "message": "Fix: Downsample `ansi256()` and `bgAnsi256()` to 16 colors at level 1 (#687)",
+    "tree": {
+      "sha": "5fcf587fbeb9c6972d5cee74bb526c74a73a984d",
+      "url": "https://api.github.com/repos/chalk/chalk/git/trees/5fcf587fbeb9c6972d5cee74bb526c74a73a984d"
+    },
+    "url": "https://api.github.com/repos/chalk/chalk/git/commits/ff549c534c413a9225322c1ff4e5fc0d97ae5610",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqZJ2hCRC1aQ7uu5UhlAAArmwQAKxmgUkJCc0B0xvtasbvZ8f/\n5EWDSFHj1hMGQyPC1clIRvwmC1ZfPsBXwm9zazuvjpMy4hy9d1qD7/eWz7t/Skl6\nQrY3QIDboy9XJxaLmAA0gxElDMDlqobZAlSTFK8p3MDFbBePMQWKugJeSnafuf61\n/gG1e86pOTkuVRuQh5rrVsvTJq9D2LF/ncp1BXFsvVvVREqnxZf0YCVhizd66yYn\nmF6dmRWpDAxNY7evxTA4IxmmLNwibGQdnzbi00gxf9cu6iV2zM8Rrti3o4nzn6bd\nzi/Ho5lNbAgC7NVHlV0VkG5ew29su0hs9c/Ziy+pgJ3PGFVrvJjosLQvfret6zXh\n1s9Qn7Gmj7Oa59NE8fYIsvPzuQAcFSZ0ga0h0Evy2EbkmQDCT85n7h7wgHstPLP3\nE1WZJj+NFFfp9ASly3MZQ15VUkx41Lp5y9C7A2pnbgQKHbYWDaZDRfM+bQt854qP\nqz/UzVELCT+oPLhZzB7k4UiVTDIBIMqmO4PaAi7GNjsdSWuejUNU9ObJDyuV9Jv5\nEwanphQh1l4syWtoSheYWJt6mWI16YFCR+RDqz22ooLWYD5zTqv+iBLzXCRJQ37K\nEH5jynj7+H5I0eKnrK+lk6ovRKxHdmr1VA0ywoNiZ9LduxJVCFXdTICGBkhXqul3\ncoS/hBzjTCDsFlaqU2af\n=ihKk\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 5fcf587fbeb9c6972d5cee74bb526c74a73a984d\nparent 678e5505458d0cf40134e205aed4454e0eeac45c\nauthor Sindre Sorhus <sindresorhus@gmail.com> 1784978849 +0200\ncommitter GitHub <noreply@github.com> 1784978849 +0200\n\nFix: Downsample `ansi256()` and `bgAnsi256()` to 16 colors at level 1 (#687)",
+      "verified_at": "2026-07-25T11:27:29Z"
+    }
+  },
+  "url": "https://api.github.com/repos/chalk/chalk/commits/ff549c534c413a9225322c1ff4e5fc0d97ae5610",
+  "html_url": "https://github.com/chalk/chalk/commit/ff549c534c413a9225322c1ff4e5fc0d97ae5610",
+  "comments_url": "https://api.github.com/repos/chalk/chalk/commits/ff549c534c413a9225322c1ff4e5fc0d97ae5610/comments",
+  "author": {
+    "login": "sindresorhus",
+    "id": 170270,
+    "node_id": "MDQ6VXNlcjE3MDI3MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/170270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sindresorhus",
+    "html_url": "https://github.com/sindresorhus",
+    "followers_url": "https://api.github.com/users/sindresorhus/followers",
+    "following_url": "https://api.github.com/users/sindresorhus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sindresorhus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sindresorhus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sindresorhus/subscriptions",
+    "organizations_url": "https://api.github.com/users/sindresorhus/orgs",
+    "repos_url": "https://api.github.com/users/sindresorhus/repos",
+    "events_url": "https://api.github.com/users/sindresorhus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sindresorhus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "678e5505458d0cf40134e205aed4454e0eeac45c",
+      "url": "https://api.github.com/repos/chalk/chalk/commits/678e5505458d0cf40134e205aed4454e0eeac45c",
+      "html_url": "https://github.com/chalk/chalk/commit/678e5505458d0cf40134e205aed4454e0eeac45c"
+    }
+  ],
+  "stats": {
+    "total": 31,
+    "additions": 29,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "0dd2c42bf0a11fcaf41cad3bad568a6cbb6eafa9",
+      "filename": "readme.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chalk/chalk/blob/ff549c534c413a9225322c1ff4e5fc0d97ae5610/readme.md",
+      "raw_url": "https://github.com/chalk/chalk/raw/ff549c534c413a9225322c1ff4e5fc0d97ae5610/readme.md",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/readme.md?ref=ff549c534c413a9225322c1ff4e5fc0d97ae5610",
+      "patch": "@@ -225,7 +225,7 @@ console.log(foregroundColorNames.includes('pink'));\n \n Chalk supports 256 colors and [Truecolor](https://github.com/termstandard/colors) (16 million colors) on supported terminal apps.\n \n-Colors are downsampled from 16 million RGB values to an ANSI color format that is supported by the terminal emulator (or by specifying `{level: n}` as a Chalk option). For example, Chalk configured to run at level 1 (basic color support) will downsample an RGB value of #FF0000 (red) to 91 (ANSI escape for bright red).\n+Colors are downsampled from 16 million RGB values to an ANSI color format that is supported by the terminal emulator (or by specifying `{level: n}` as a Chalk option). For example, Chalk configured to run at level 1 (basic color support) will downsample an RGB value of #FF0000 (red) to 91 (ANSI escape for bright red). The same applies to `ansi256` values, so `chalk.ansi256(196)` also becomes 91 at level 1.\n \n Examples:\n "
+    },
+    {
+      "sha": "0b4d35d5387066cc81b5200e626e940a3e4cd85e",
+      "filename": "source/index.d.ts",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/chalk/chalk/blob/ff549c534c413a9225322c1ff4e5fc0d97ae5610/source%2Findex.d.ts",
+      "raw_url": "https://github.com/chalk/chalk/raw/ff549c534c413a9225322c1ff4e5fc0d97ae5610/source%2Findex.d.ts",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Findex.d.ts?ref=ff549c534c413a9225322c1ff4e5fc0d97ae5610",
+      "patch": "@@ -74,6 +74,8 @@ export interface ChalkInstance {\n \t/**\n \tUse an [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.\n \n+\tThe value is downsampled to the 16-color palette on terminals that only support basic colors (level 1), so `chalk.ansi256(196)` becomes 91 (ANSI escape for bright red).\n+\n \t@example\n \t```\n \timport chalk from 'chalk';\n@@ -112,6 +114,8 @@ export interface ChalkInstance {\n \t/**\n \tUse an [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.\n \n+\tThe value is downsampled to the 16-color palette on terminals that only support basic colors (level 1), so `chalk.bgAnsi256(196)` becomes 101 (ANSI escape for bright red background).\n+\n \t@example\n \t```\n \timport chalk from 'chalk';"
+    },
+    {
+      "sha": "a9a5b7cff0797ddec6c61bb20d966c766a51b121",
+      "filename": "source/index.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "blob_url": "https://github.com/chalk/chalk/blob/ff549c534c413a9225322c1ff4e5fc0d97ae5610/source%2Findex.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/ff549c534c413a9225322c1ff4e5fc0d97ae5610/source%2Findex.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Findex.js?ref=ff549c534c413a9225322c1ff4e5fc0d97ae5610",
+      "patch": "@@ -88,6 +88,10 @@ const getModelAnsi = (model, level, type, ...arguments_) => {\n \t\treturn getModelAnsi('rgb', level, type, ...ansiStyles.hexToRgb(...arguments_));\n \t}\n \n+\tif (model === 'ansi256' && level === 'ansi') {\n+\t\treturn ansiStyles[type].ansi(ansiStyles.ansi256ToAnsi(...arguments_));\n+\t}\n+\n \treturn ansiStyles[type][model](...arguments_);\n };\n "
+    },
+    {
+      "sha": "1ae7a256b1c2c27b8101cc19dfa1dc52ea411044",
+      "filename": "test/chalk.js",
+      "status": "modified",
+      "additions": 20,
+      "deletions": 1,
+      "changes": 21,
+      "blob_url": "https://github.com/chalk/chalk/blob/ff549c534c413a9225322c1ff4e5fc0d97ae5610/test%2Fchalk.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/ff549c534c413a9225322c1ff4e5fc0d97ae5610/test%2Fchalk.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/test%2Fchalk.js?ref=ff549c534c413a9225322c1ff4e5fc0d97ae5610",
+      "patch": "@@ -105,9 +105,28 @@ test('properly convert RGB to 256 colors on basic color terminals', t => {\n \tt.is(new Chalk({level: 3}).bgHex('#FF0000')('hello'), '\\u001B[48;2;255;0;0mhello\\u001B[49m');\n });\n \n-test('don\\'t emit RGB codes if level is 0', t => {\n+test('properly convert ANSI 256 to 16 colors on basic color terminals', t => {\n+\tt.is(new Chalk({level: 1}).ansi256(196)('hello'), '\\u001B[91mhello\\u001B[39m');\n+\tt.is(new Chalk({level: 1}).bgAnsi256(196)('hello'), '\\u001B[101mhello\\u001B[49m');\n+\tt.is(new Chalk({level: 1}).ansi256(2)('hello'), '\\u001B[32mhello\\u001B[39m');\n+\tt.is(new Chalk({level: 1}).bgAnsi256(2)('hello'), '\\u001B[42mhello\\u001B[49m');\n+\tt.is(new Chalk({level: 1}).ansi256(8)('hello'), '\\u001B[90mhello\\u001B[39m');\n+\tt.is(new Chalk({level: 1}).ansi256(232)('hello'), '\\u001B[30mhello\\u001B[39m');\n+\tt.is(new Chalk({level: 1}).ansi256(255)('hello'), '\\u001B[37mhello\\u001B[39m');\n+});\n+\n+test('keep ANSI 256 colors on 256 color and Truecolor terminals', t => {\n+\tt.is(new Chalk({level: 2}).ansi256(196)('hello'), '\\u001B[38;5;196mhello\\u001B[39m');\n+\tt.is(new Chalk({level: 2}).bgAnsi256(196)('hello'), '\\u001B[48;5;196mhello\\u001B[49m');\n+\tt.is(new Chalk({level: 3}).ansi256(196)('hello'), '\\u001B[38;5;196mhello\\u001B[39m');\n+\tt.is(new Chalk({level: 3}).bgAnsi256(196)('hello'), '\\u001B[48;5;196mhello\\u001B[49m');\n+});\n+\n+test('don\\'t emit color codes if level is 0', t => {\n \tt.is(new Chalk({level: 0}).hex('#FF0000')('hello'), 'hello');\n \tt.is(new Chalk({level: 0}).bgHex('#FF0000')('hello'), 'hello');\n+\tt.is(new Chalk({level: 0}).ansi256(196)('hello'), 'hello');\n+\tt.is(new Chalk({level: 0}).bgAnsi256(196)('hello'), 'hello');\n });\n \n test('supports blackBright color', t => {"
+    }
+  ]
+}

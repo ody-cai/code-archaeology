@@ -456,3 +456,48 @@ test('validatePatch：空改动（无差异）被拒', () => {
 test('validatePatch：路径不匹配被拒', () => {
   assert.throws(() => validatePatch({ diff: PATCH_DIFF, source: FAKE_SOURCE, file: 'src/other.js' }), (e) => e.code === 'unsafe_patch_path');
 });
+
+/* ═══ 空 diff 契约 / 严格格式提示 ═════════════════════════ */
+
+test('模型返回空 diff（依据不足安全出口）：no_safe_change，且不签票、不写入', async () => {
+  const github = makeFakeGithub();
+  await assert.rejects(
+    () => refactor({ params: { repo: 'owner/repo', mode: 'patch' }, env: { REFACTOR_SIGNING_KEY: SIGNING_KEY }, token: 'ghp_caller', github, chat: makeFakeChat({ diff: '' }), mineImpl: makeFakeMine(), now: NOW }),
+    (e) => e.code === 'no_safe_change' && e.status === 422
+  );
+  // 失败在签票（signReview）与写库之前抛出：无 reviewToken 产出、未创建草稿。
+  assert.equal(github.state.createDraftCalls, 0);
+});
+
+test('缺失 a/ b/ 前缀的非空 diff 仍被 validatePatch 拒（unsafe_patch_path，未放宽校验）', async () => {
+  const noPrefixDiff =
+    '--- src/hot.js\n' +
+    '+++ src/hot.js\n' +
+    '@@ -1,3 +1,3 @@\n' +
+    ' function compute(x) {\n' +
+    '-  return x + 1;\n' +
+    '+  return x + 2;\n' +
+    ' }\n';
+  const chat = makeFakeChat({ diff: noPrefixDiff });
+  await assert.rejects(
+    () => refactor({ params: { repo: 'owner/repo', mode: 'patch' }, env: { REFACTOR_SIGNING_KEY: SIGNING_KEY }, token: 'ghp_caller', github: makeFakeGithub(), chat, mineImpl: makeFakeMine(), now: NOW }),
+    (e) => e.code === 'unsafe_patch_path'
+  );
+});
+
+test('系统提示含 a/b 头与区块头格式规则，且不强迫生成变更', async () => {
+  let captured;
+  await refactor({
+    params: { repo: 'owner/repo', mode: 'patch' },
+    env: { REFACTOR_SIGNING_KEY: SIGNING_KEY },
+    token: 'ghp_caller',
+    github: makeFakeGithub(),
+    chat: makeFakeChat({ capture: (c) => { captured = c; } }),
+    mineImpl: makeFakeMine(),
+    now: NOW,
+  });
+  assert.match(captured.system, /--- a\//);
+  assert.match(captured.system, /\+\+\+ b\//);
+  assert.match(captured.system, /@@ -start,count \+start,count @@/);
+  assert.match(captured.system, /不要强迫生成/);
+});

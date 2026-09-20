@@ -1,0 +1,32 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+access-control-allow-origin: *
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+cache-control: private, max-age=60, s-maxage=60
+content-length: 12101
+content-security-policy: default-src 'none'
+content-type: application/json; charset=utf-8
+date: Sat, 19 Sep 2026 10:52:49 GMT
+etag: "229ea1ea4da6a87635ef3f1ca8987b7a8e938554"
+last-modified: Fri, 18 Sep 2026 19:03:25 GMT
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+vary: Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With
+x-accepted-oauth-scopes: repo
+x-content-type-options: nosniff
+x-frame-options: deny
+x-github-api-version-selected: 2022-11-28
+x-github-media-type: github.v3; format=json
+x-oauth-client-id: 01ab8ac9400c4e429b23
+x-oauth-scopes: read:user, repo, user:email, workflow
+x-xss-protection: 0
+server: github.com
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4912
+x-ratelimit-reset: 1789815396
+x-ratelimit-used: 88
+x-ratelimit-resource: core
+x-github-request-id: 67CB:9BD42:262BCB:2828F2:6AAE6980
+x-github-edge-region: southeastasia
+

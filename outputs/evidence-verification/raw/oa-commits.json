@@ -1,0 +1,1846 @@
+[
+  {
+    "sha": "35b469255922a6b2bcaea0d9deef3491061db25b",
+    "node_id": "C_kwDOSrfmNNoAKDM1YjQ2OTI1NTkyMmE2YjJiY2FlYTBkOWRlZWYzNDkxMDYxZGIyNWI",
+    "commit": {
+      "author": {
+        "name": "ody-cai",
+        "email": "cqjody@126.com",
+        "date": "2026-09-12T12:42:33Z"
+      },
+      "committer": {
+        "name": "ody-cai",
+        "email": "cqjody@126.com",
+        "date": "2026-09-12T12:42:33Z"
+      },
+      "message": "chore: add MIT License",
+      "tree": {
+        "sha": "5b0ee2205b5c1debb540a1ef25124ab14ac5c6f6",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/5b0ee2205b5c1debb540a1ef25124ab14ac5c6f6"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/35b469255922a6b2bcaea0d9deef3491061db25b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/35b469255922a6b2bcaea0d9deef3491061db25b",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/35b469255922a6b2bcaea0d9deef3491061db25b",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/35b469255922a6b2bcaea0d9deef3491061db25b/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "35711b867ae9524a87516b3e2a211dd10530179c",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/35711b867ae9524a87516b3e2a211dd10530179c",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/35711b867ae9524a87516b3e2a211dd10530179c"
+      }
+    ]
+  },
+  {
+    "sha": "35711b867ae9524a87516b3e2a211dd10530179c",
+    "node_id": "C_kwDOSrfmNNoAKDM1NzExYjg2N2FlOTUyNGE4NzUxNmIzZTJhMjExZGQxMDUzMDE3OWM",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-04T07:23:14Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-04T07:23:14Z"
+      },
+      "message": "chore: 脱敏检查完成并同步 GitHub\n\n- 确认 .env 已被 .gitignore 忽略\n- 确认无硬编码密钥/密码\n- 确认 JWT 使用环境变量\n- 推送最新代码到 GitHub\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23423096064514",
+      "tree": {
+        "sha": "dd1a99de58cd6e27ce4db4275c3bbf48fe127561",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/dd1a99de58cd6e27ce4db4275c3bbf48fe127561"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/35711b867ae9524a87516b3e2a211dd10530179c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/35711b867ae9524a87516b3e2a211dd10530179c",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/35711b867ae9524a87516b3e2a211dd10530179c",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/35711b867ae9524a87516b3e2a211dd10530179c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "6912102c64ec7059f8248801b67935d42df17fed",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/6912102c64ec7059f8248801b67935d42df17fed",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/6912102c64ec7059f8248801b67935d42df17fed"
+      }
+    ]
+  },
+  {
+    "sha": "6912102c64ec7059f8248801b67935d42df17fed",
+    "node_id": "C_kwDOSrfmNNoAKDY5MTIxMDJjNjRlYzcwNTlmODI0ODgwMWI2NzkzNWQ0MmRmMTdmZWQ",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-04T07:19:13Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-04T07:19:13Z"
+      },
+      "message": "chore: 重新添加版本管理文件并同步 GitHub\n\n- 更新 package.json (name: oa-system, version: 1.0.0)\n- 创建 CHANGELOG.md 更新日志\n- 推送到 GitHub main 分支\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23423096064514",
+      "tree": {
+        "sha": "dd1a99de58cd6e27ce4db4275c3bbf48fe127561",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/dd1a99de58cd6e27ce4db4275c3bbf48fe127561"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/6912102c64ec7059f8248801b67935d42df17fed",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/6912102c64ec7059f8248801b67935d42df17fed",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/6912102c64ec7059f8248801b67935d42df17fed",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/6912102c64ec7059f8248801b67935d42df17fed/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "915b5a728349226cc9a6fde297f8b9b6fa41bd9f",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/915b5a728349226cc9a6fde297f8b9b6fa41bd9f",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/915b5a728349226cc9a6fde297f8b9b6fa41bd9f"
+      }
+    ]
+  },
+  {
+    "sha": "915b5a728349226cc9a6fde297f8b9b6fa41bd9f",
+    "node_id": "C_kwDOSrfmNNoAKDkxNWI1YTcyODM0OTIyNmNjOWE2ZmRlMjk3ZjhiOWI2ZmE0MWJkOWY",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-04T07:18:39Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-04T07:18:39Z"
+      },
+      "message": "chore: 重新添加版本管理文件\n\n- 更新 package.json name 和 version\n- 创建 CHANGELOG.md 更新日志",
+      "tree": {
+        "sha": "dd1a99de58cd6e27ce4db4275c3bbf48fe127561",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/dd1a99de58cd6e27ce4db4275c3bbf48fe127561"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/915b5a728349226cc9a6fde297f8b9b6fa41bd9f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/915b5a728349226cc9a6fde297f8b9b6fa41bd9f",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/915b5a728349226cc9a6fde297f8b9b6fa41bd9f",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/915b5a728349226cc9a6fde297f8b9b6fa41bd9f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7bfb30bc6f6b5e0483fe4535c4d94f372cbd6679",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7bfb30bc6f6b5e0483fe4535c4d94f372cbd6679",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/7bfb30bc6f6b5e0483fe4535c4d94f372cbd6679"
+      }
+    ]
+  },
+  {
+    "sha": "7bfb30bc6f6b5e0483fe4535c4d94f372cbd6679",
+    "node_id": "C_kwDOSrfmNNoAKDdiZmIzMGJjNmY2YjVlMDQ4M2ZlNDUzNWM0ZDk0ZjM3MmNiZDY2Nzk",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-03T13:49:48Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-03T13:49:48Z"
+      },
+      "message": "security: 脱敏处理完成，移除JWT默认密钥\n\n- 移除不安全的默认JWT密钥\n- 添加.env.example配置示例\n- 本地10个提交待推送到GitHub（需手动认证）\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "559c8db3245ff0ce4c6a77c94d50055e32a91ec7",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/559c8db3245ff0ce4c6a77c94d50055e32a91ec7"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/7bfb30bc6f6b5e0483fe4535c4d94f372cbd6679",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7bfb30bc6f6b5e0483fe4535c4d94f372cbd6679",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/7bfb30bc6f6b5e0483fe4535c4d94f372cbd6679",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/7bfb30bc6f6b5e0483fe4535c4d94f372cbd6679/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "a146793364a62039a2b53b0b62a994273cd6b64b",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/a146793364a62039a2b53b0b62a994273cd6b64b",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/a146793364a62039a2b53b0b62a994273cd6b64b"
+      }
+    ]
+  },
+  {
+    "sha": "a146793364a62039a2b53b0b62a994273cd6b64b",
+    "node_id": "C_kwDOSrfmNNoAKGExNDY3OTMzNjRhNjIwMzlhMmI1M2IwYjYyYTk5NDI3M2NkNmI2NGI",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-03T13:49:12Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-03T13:49:12Z"
+      },
+      "message": "security: 移除JWT默认密钥，要求生产环境必须设置JWT_SECRET\n\n- 移除不安全的默认JWT密钥\n- 添加.env.example作为配置示例\n- 未设置JWT_SECRET时会抛出明确错误",
+      "tree": {
+        "sha": "559c8db3245ff0ce4c6a77c94d50055e32a91ec7",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/559c8db3245ff0ce4c6a77c94d50055e32a91ec7"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/a146793364a62039a2b53b0b62a994273cd6b64b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/a146793364a62039a2b53b0b62a994273cd6b64b",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/a146793364a62039a2b53b0b62a994273cd6b64b",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/a146793364a62039a2b53b0b62a994273cd6b64b/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "413f41143db07ab2ca4098dfc2d71c688fc69dc5",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/413f41143db07ab2ca4098dfc2d71c688fc69dc5",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/413f41143db07ab2ca4098dfc2d71c688fc69dc5"
+      }
+    ]
+  },
+  {
+    "sha": "413f41143db07ab2ca4098dfc2d71c688fc69dc5",
+    "node_id": "C_kwDOSrfmNNoAKDQxM2Y0MTE0M2RiMDdhYjJjYTQwOThkZmMyZDcxYzY4OGZjNjlkYzU",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-03T13:46:19Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-03T13:46:19Z"
+      },
+      "message": "chore: 完成版本差异对比分析\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "6a0cefa5779d6f1996f6a8e04c6659ca662936d5",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/6a0cefa5779d6f1996f6a8e04c6659ca662936d5"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/413f41143db07ab2ca4098dfc2d71c688fc69dc5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/413f41143db07ab2ca4098dfc2d71c688fc69dc5",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/413f41143db07ab2ca4098dfc2d71c688fc69dc5",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/413f41143db07ab2ca4098dfc2d71c688fc69dc5/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d61e42d8ea41ef17f6087a8def20ac405c687b97",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/d61e42d8ea41ef17f6087a8def20ac405c687b97",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/d61e42d8ea41ef17f6087a8def20ac405c687b97"
+      }
+    ]
+  },
+  {
+    "sha": "d61e42d8ea41ef17f6087a8def20ac405c687b97",
+    "node_id": "C_kwDOSrfmNNoAKGQ2MWU0MmQ4ZWE0MWVmMTdmNjA4N2E4ZGVmMjBhYzQwNWM2ODdiOTc",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-02T03:46:57Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-06-02T03:46:57Z"
+      },
+      "message": "fix: 修复认证系统硬伤，实现JWT认证和API保护\n\n- 实现完整的JWT认证系统（jose库）\n- 登录API返回JWT token，有效期24小时\n- 新增Token验证API /api/auth/verify\n- 密码使用bcrypt哈希存储\n- 添加认证中间件保护所有API路由\n- 用户管理API仅限管理员访问\n- 更新元数据为OA系统相关内容\n- 更新AGENTS.md文档\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 33979665392386",
+      "tree": {
+        "sha": "6a0cefa5779d6f1996f6a8e04c6659ca662936d5",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/6a0cefa5779d6f1996f6a8e04c6659ca662936d5"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/d61e42d8ea41ef17f6087a8def20ac405c687b97",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/d61e42d8ea41ef17f6087a8def20ac405c687b97",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/d61e42d8ea41ef17f6087a8def20ac405c687b97",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/d61e42d8ea41ef17f6087a8def20ac405c687b97/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7bf6781d550e5d656e8e60f81cdf619125fa5732",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7bf6781d550e5d656e8e60f81cdf619125fa5732",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/7bf6781d550e5d656e8e60f81cdf619125fa5732"
+      }
+    ]
+  },
+  {
+    "sha": "7bf6781d550e5d656e8e60f81cdf619125fa5732",
+    "node_id": "C_kwDOSrfmNNoAKDdiZjY3ODFkNTUwZTVkNjU2ZThlNjBmODFjZGY2MTkxMjVmYTU3MzI",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-30T17:26:24Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-30T17:26:24Z"
+      },
+      "message": "fix: 修复仓库创建失败的问题\n\n- 补充完整的 API 路由文件\n- 添加数据库外键约束\n- 实现完整的仓库管理功能\n- 实现成员管理功能\n- 所有接口测试通过\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23493145308930",
+      "tree": {
+        "sha": "d4b6569a4b18689641be06fdc11eefea4818c576",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/d4b6569a4b18689641be06fdc11eefea4818c576"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/7bf6781d550e5d656e8e60f81cdf619125fa5732",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7bf6781d550e5d656e8e60f81cdf619125fa5732",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/7bf6781d550e5d656e8e60f81cdf619125fa5732",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/7bf6781d550e5d656e8e60f81cdf619125fa5732/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "c04caed91805ae945565d074f7f00ad601d6f2a4",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/c04caed91805ae945565d074f7f00ad601d6f2a4",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/c04caed91805ae945565d074f7f00ad601d6f2a4"
+      }
+    ]
+  },
+  {
+    "sha": "c04caed91805ae945565d074f7f00ad601d6f2a4",
+    "node_id": "C_kwDOSrfmNNoAKGMwNGNhZWQ5MTgwNWFlOTQ1NTY1ZDA3NGY3ZjAwYWQ2MDFkNmYyYTQ",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-30T17:16:06Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-30T17:16:06Z"
+      },
+      "message": "chore: 版本检查完成，本地领先远程5个提交\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "50d362069942db9a8704302b550c7c7cd3c11e81",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/50d362069942db9a8704302b550c7c7cd3c11e81"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/c04caed91805ae945565d074f7f00ad601d6f2a4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/c04caed91805ae945565d074f7f00ad601d6f2a4",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/c04caed91805ae945565d074f7f00ad601d6f2a4",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/c04caed91805ae945565d074f7f00ad601d6f2a4/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb"
+      }
+    ]
+  },
+  {
+    "sha": "109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb",
+    "node_id": "C_kwDOSrfmNNoAKDEwOWZkMmNhMmMxOWUzMThlNjA2MGY1MWVmNmRjOGYxNTk0Y2NkY2I",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-30T17:15:36Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-30T17:15:36Z"
+      },
+      "message": "Restored to 'acd42d064de80515a359f70e6816d9b346c474ce'\n\nCoze-Restored-To: 'acd42d064de80515a359f70e6816d9b346c474ce'\nCoze-Commit-Type: restore\nCoze-User-ID: 1558447625615444",
+      "tree": {
+        "sha": "50d362069942db9a8704302b550c7c7cd3c11e81",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/50d362069942db9a8704302b550c7c7cd3c11e81"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "4cb13d24412c9dd71b775a4f8b43adff1f510ab6",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/4cb13d24412c9dd71b775a4f8b43adff1f510ab6",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/4cb13d24412c9dd71b775a4f8b43adff1f510ab6"
+      }
+    ]
+  },
+  {
+    "sha": "4cb13d24412c9dd71b775a4f8b43adff1f510ab6",
+    "node_id": "C_kwDOSrfmNNoAKDRjYjEzZDI0NDEyYzlkZDcxYjc3NWE0ZjhiNDNhZGZmMWY1MTBhYjY",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-30T17:14:33Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-30T17:14:33Z"
+      },
+      "message": "sync: 本地有3个commit待推送到GitHub\n\n- feat: 新增云存储仓库分类功能\n- feat: 公告撤回功能\n- docs: 添加版本管理和更新日志\n\nGitHub认证失败，需要配置Token或SSH\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "58817d2b889e182cc7740f5c44cb52bf9998fb35",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/58817d2b889e182cc7740f5c44cb52bf9998fb35"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/4cb13d24412c9dd71b775a4f8b43adff1f510ab6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/4cb13d24412c9dd71b775a4f8b43adff1f510ab6",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/4cb13d24412c9dd71b775a4f8b43adff1f510ab6",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/4cb13d24412c9dd71b775a4f8b43adff1f510ab6/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "cabbfffeac947be9da10db0197eeb6be5412e41e",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/cabbfffeac947be9da10db0197eeb6be5412e41e",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/cabbfffeac947be9da10db0197eeb6be5412e41e"
+      }
+    ]
+  },
+  {
+    "sha": "cabbfffeac947be9da10db0197eeb6be5412e41e",
+    "node_id": "C_kwDOSrfmNNoAKGNhYmJmZmZlYWM5NDdiZTlkYTEwZGIwMTk3ZWViNmJlNTQxMmU0MWU",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T16:35:47Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T16:35:47Z"
+      },
+      "message": "feat: 新增云存储仓库分类功能（公共/私人/群组仓库）\n\n- 新增仓库管理 API 接口（创建、查询、更新、删除）\n- 新增群组仓库成员管理功能（邀请、移除、角色管理）\n- 新增仓库列表页面和成员管理页面\n- 更新文件管理页面支持仓库过滤\n- 新增数据库表：repositories、repository_members、repository_invitations\n- files 表新增 repository_id 字段\n- 更新文档：README.md、CHANGELOG.md、AGENTS.md\n- 版本更新：1.0.0 -> 1.1.0\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23493145308930",
+      "tree": {
+        "sha": "58817d2b889e182cc7740f5c44cb52bf9998fb35",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/58817d2b889e182cc7740f5c44cb52bf9998fb35"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/cabbfffeac947be9da10db0197eeb6be5412e41e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/cabbfffeac947be9da10db0197eeb6be5412e41e",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/cabbfffeac947be9da10db0197eeb6be5412e41e",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/cabbfffeac947be9da10db0197eeb6be5412e41e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8e09128ab64047c1c2927941f398b08bf9321f39",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8e09128ab64047c1c2927941f398b08bf9321f39",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/8e09128ab64047c1c2927941f398b08bf9321f39"
+      }
+    ]
+  },
+  {
+    "sha": "8e09128ab64047c1c2927941f398b08bf9321f39",
+    "node_id": "C_kwDOSrfmNNoAKDhlMDkxMjhhYjY0MDQ3YzFjMjkyNzk0MWYzOThiMDhiZjkzMjFmMzk",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T16:15:56Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T16:15:56Z"
+      },
+      "message": "feat: 公告撤回功能\n\n- 数据库：announcements 表新增 status 和 withdrawn_at 字段\n- API：新增撤回接口 PATCH /api/announcements/{id}/withdraw\n- API：公告查询支持 userRole 参数，管理员可查看已撤回公告\n- 前端：公告管理页面增加撤回按钮和状态筛选\n- 前端：仪表盘公告展示逻辑优化，普通用户只看有效公告\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23388547927810",
+      "tree": {
+        "sha": "71d50553ddf5a4b92c0e632716213a2308b84e37",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/71d50553ddf5a4b92c0e632716213a2308b84e37"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/8e09128ab64047c1c2927941f398b08bf9321f39",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8e09128ab64047c1c2927941f398b08bf9321f39",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/8e09128ab64047c1c2927941f398b08bf9321f39",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/8e09128ab64047c1c2927941f398b08bf9321f39/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8cfb6cfd62391e49a5f17449286e862118e007ec",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8cfb6cfd62391e49a5f17449286e862118e007ec",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/8cfb6cfd62391e49a5f17449286e862118e007ec"
+      }
+    ]
+  },
+  {
+    "sha": "8cfb6cfd62391e49a5f17449286e862118e007ec",
+    "node_id": "C_kwDOSrfmNNoAKDhjZmI2Y2ZkNjIzOTFlNDlhNWYxNzQ0OTI4NmU4NjIxMThlMDA3ZWM",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:58:33Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:58:33Z"
+      },
+      "message": "docs: 添加版本管理和更新日志\n\n- 更新 package.json 版本号为 1.0.0\n- 创建 CHANGELOG.md 记录更新历史\n- 更新 AGENTS.md 添加版本管理规范\n- 更新 GitHub 同步文件清单\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23423096064514",
+      "tree": {
+        "sha": "a301c1875988bca745bf2672f7d10f57d41dd50b",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/a301c1875988bca745bf2672f7d10f57d41dd50b"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/8cfb6cfd62391e49a5f17449286e862118e007ec",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8cfb6cfd62391e49a5f17449286e862118e007ec",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/8cfb6cfd62391e49a5f17449286e862118e007ec",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/8cfb6cfd62391e49a5f17449286e862118e007ec/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7b4f5333fd24242f9af2d1397a8b543493d0770f",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7b4f5333fd24242f9af2d1397a8b543493d0770f",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/7b4f5333fd24242f9af2d1397a8b543493d0770f"
+      }
+    ]
+  },
+  {
+    "sha": "7b4f5333fd24242f9af2d1397a8b543493d0770f",
+    "node_id": "C_kwDOSrfmNNoAKDdiNGY1MzMzZmQyNDI0MmY5YWYyZDEzOTdhOGI1NDM0OTNkMDc3MGY",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:58:19Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:58:19Z"
+      },
+      "message": "docs: 添加版本管理和更新日志\n\n- 更新 package.json 版本号为 1.0.0\n- 创建 CHANGELOG.md 记录更新历史\n- 更新 AGENTS.md 添加版本管理规范\n- 更新 GitHub 同步文件清单",
+      "tree": {
+        "sha": "a301c1875988bca745bf2672f7d10f57d41dd50b",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/a301c1875988bca745bf2672f7d10f57d41dd50b"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/7b4f5333fd24242f9af2d1397a8b543493d0770f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7b4f5333fd24242f9af2d1397a8b543493d0770f",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/7b4f5333fd24242f9af2d1397a8b543493d0770f",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/7b4f5333fd24242f9af2d1397a8b543493d0770f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d591dc315b16d8d0303d2fcb88fa5f56917c7db1",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/d591dc315b16d8d0303d2fcb88fa5f56917c7db1",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/d591dc315b16d8d0303d2fcb88fa5f56917c7db1"
+      }
+    ]
+  },
+  {
+    "sha": "d591dc315b16d8d0303d2fcb88fa5f56917c7db1",
+    "node_id": "C_kwDOSrfmNNoAKGQ1OTFkYzMxNWIxNmQ4ZDAzMDNkMmZjYjg4ZmE1ZjU2OTE3YzdkYjE",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:51:54Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:51:54Z"
+      },
+      "message": "feat: 实现用户密码 bcrypt 加密存储\n\n- 安装 bcrypt 依赖包\n- 新增密码加密工具函数 (hashPassword, verifyPassword)\n- 更新登录接口使用加密验证\n- 更新用户创建接口自动加密密码\n- 更新数据库测试账号密码\n- 更新 AGENTS.md 和 README.md 文档\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23423102818306",
+      "tree": {
+        "sha": "52068d595956bbbeebefe4928539910961cdc9a1",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/52068d595956bbbeebefe4928539910961cdc9a1"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/d591dc315b16d8d0303d2fcb88fa5f56917c7db1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/d591dc315b16d8d0303d2fcb88fa5f56917c7db1",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/d591dc315b16d8d0303d2fcb88fa5f56917c7db1",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/d591dc315b16d8d0303d2fcb88fa5f56917c7db1/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d259dd13913a4776425cf0f9c0bce516d7064669",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/d259dd13913a4776425cf0f9c0bce516d7064669",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/d259dd13913a4776425cf0f9c0bce516d7064669"
+      }
+    ]
+  },
+  {
+    "sha": "d259dd13913a4776425cf0f9c0bce516d7064669",
+    "node_id": "C_kwDOSrfmNNoAKGQyNTlkZDEzOTEzYTQ3NzY0MjVjZjBmOWMwYmNlNTE2ZDcwNjQ2Njk",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:47:01Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:47:01Z"
+      },
+      "message": "docs: 添加 GitHub 同步规范到 AGENTS.md\n\n- 记录需要同步更新的场景\n- 列出需要更新的文件清单\n- 说明同步流程和 README 结构\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23423096064514",
+      "tree": {
+        "sha": "05c3f6ff31b1bcc6bc777803e5db86ede3ebcece",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/05c3f6ff31b1bcc6bc777803e5db86ede3ebcece"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/d259dd13913a4776425cf0f9c0bce516d7064669",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/d259dd13913a4776425cf0f9c0bce516d7064669",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/d259dd13913a4776425cf0f9c0bce516d7064669",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/d259dd13913a4776425cf0f9c0bce516d7064669/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace"
+      }
+    ]
+  },
+  {
+    "sha": "d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+    "node_id": "C_kwDOSrfmNNoAKGQ4Y2EwOWY5YzViMmIzZGEwMjNlNWU4NDk0Y2JlNjRkYjdlNDVhY2U",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:46:46Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:46:46Z"
+      },
+      "message": "docs: 添加 GitHub 同步规范到 AGENTS.md\n\n- 记录需要同步更新的场景\n- 列出需要更新的文件\n- 说明同步流程",
+      "tree": {
+        "sha": "05c3f6ff31b1bcc6bc777803e5db86ede3ebcece",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/05c3f6ff31b1bcc6bc777803e5db86ede3ebcece"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "30b119350021c63c76c6f708c2a3906abdc391a7",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/30b119350021c63c76c6f708c2a3906abdc391a7",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/30b119350021c63c76c6f708c2a3906abdc391a7"
+      }
+    ]
+  },
+  {
+    "sha": "30b119350021c63c76c6f708c2a3906abdc391a7",
+    "node_id": "C_kwDOSrfmNNoAKDMwYjExOTM1MDAyMWM2M2M3NmM2ZjcwOGMyYTM5MDZhYmRjMzkxYTc",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:43:59Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:43:59Z"
+      },
+      "message": "docs: 更新 README 为中英双语版本\n\n- 添加完整的英文文档\n- 保留原有中文文档\n- 添加语言切换导航\n- 推送到 GitHub 仓库\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23423096064514",
+      "tree": {
+        "sha": "5676380a13935347ab3b76dcffdda42582f8c279",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/5676380a13935347ab3b76dcffdda42582f8c279"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/30b119350021c63c76c6f708c2a3906abdc391a7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/30b119350021c63c76c6f708c2a3906abdc391a7",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/30b119350021c63c76c6f708c2a3906abdc391a7",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/30b119350021c63c76c6f708c2a3906abdc391a7/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "16af0cfe0b9bb5ae0d88e98c3f4cb4188c76fb43",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/16af0cfe0b9bb5ae0d88e98c3f4cb4188c76fb43",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/16af0cfe0b9bb5ae0d88e98c3f4cb4188c76fb43"
+      }
+    ]
+  },
+  {
+    "sha": "16af0cfe0b9bb5ae0d88e98c3f4cb4188c76fb43",
+    "node_id": "C_kwDOSrfmNNoAKDE2YWYwY2ZlMGI5YmI1YWUwZDg4ZTk4YzNmNGNiNDE4OGM3NmZiNDM",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:43:44Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:43:44Z"
+      },
+      "message": "docs: 更新 README 为中英双语版本",
+      "tree": {
+        "sha": "5676380a13935347ab3b76dcffdda42582f8c279",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/5676380a13935347ab3b76dcffdda42582f8c279"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/16af0cfe0b9bb5ae0d88e98c3f4cb4188c76fb43",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/16af0cfe0b9bb5ae0d88e98c3f4cb4188c76fb43",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/16af0cfe0b9bb5ae0d88e98c3f4cb4188c76fb43",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/16af0cfe0b9bb5ae0d88e98c3f4cb4188c76fb43/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e8c79b67adf983ec7ed0d12300ed3ca9f2469cfa",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/e8c79b67adf983ec7ed0d12300ed3ca9f2469cfa",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/e8c79b67adf983ec7ed0d12300ed3ca9f2469cfa"
+      }
+    ]
+  },
+  {
+    "sha": "e8c79b67adf983ec7ed0d12300ed3ca9f2469cfa",
+    "node_id": "C_kwDOSrfmNNoAKGU4Yzc5YjY3YWRmOTgzZWM3ZWQwZDEyMzAwZWQzY2E5ZjI0NjljZmE",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:40:48Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:40:48Z"
+      },
+      "message": "docs: 创建 GitHub 仓库并推送 OA 办公系统代码\n\n- 添加 .env.example 环境变量模板（脱敏处理）\n- 编写详细的 README.md 说明文档\n- 更新 .gitignore 确保敏感信息不被提交\n- 创建 GitHub 仓库并推送代码\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 23423096064514",
+      "tree": {
+        "sha": "8daec92ed0d53cbaccbb03ed9fc335f47d15b79d",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/8daec92ed0d53cbaccbb03ed9fc335f47d15b79d"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/e8c79b67adf983ec7ed0d12300ed3ca9f2469cfa",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/e8c79b67adf983ec7ed0d12300ed3ca9f2469cfa",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/e8c79b67adf983ec7ed0d12300ed3ca9f2469cfa",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/e8c79b67adf983ec7ed0d12300ed3ca9f2469cfa/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "62d1b8dbee3fb14932a0520727105f8b67d70f14",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/62d1b8dbee3fb14932a0520727105f8b67d70f14",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/62d1b8dbee3fb14932a0520727105f8b67d70f14"
+      }
+    ]
+  },
+  {
+    "sha": "62d1b8dbee3fb14932a0520727105f8b67d70f14",
+    "node_id": "C_kwDOSrfmNNoAKDYyZDFiOGRiZWUzZmIxNDkzMmEwNTIwNzI3MTA1ZjhiNjdkNzBmMTQ",
+    "commit": {
+      "author": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:36:35Z"
+      },
+      "committer": {
+        "name": "OA System",
+        "email": "oa-system@example.com",
+        "date": "2026-05-29T15:36:35Z"
+      },
+      "message": "docs: 添加 README 和 .env.example，准备开源\n\n- 添加详细的 README.md 项目说明文档\n- 添加 .env.example 环境变量模板\n- 更新 .gitignore 确保敏感信息不被提交",
+      "tree": {
+        "sha": "8daec92ed0d53cbaccbb03ed9fc335f47d15b79d",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/8daec92ed0d53cbaccbb03ed9fc335f47d15b79d"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/62d1b8dbee3fb14932a0520727105f8b67d70f14",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/62d1b8dbee3fb14932a0520727105f8b67d70f14",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/62d1b8dbee3fb14932a0520727105f8b67d70f14",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/62d1b8dbee3fb14932a0520727105f8b67d70f14/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "bc4e63c2eb44b593004007372aff0ddea7920b7f",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/bc4e63c2eb44b593004007372aff0ddea7920b7f",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/bc4e63c2eb44b593004007372aff0ddea7920b7f"
+      }
+    ]
+  },
+  {
+    "sha": "bc4e63c2eb44b593004007372aff0ddea7920b7f",
+    "node_id": "C_kwDOSrfmNNoAKGJjNGU2M2MyZWI0NGI1OTMwMDQwMDczNzJhZmYwZGRlYTc5MjBiN2Y",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:50:47Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:50:47Z"
+      },
+      "message": "fix: 移除侧边栏折叠功能\n\n移除导致页面崩溃的折叠按钮，侧边栏现在固定宽度 256px\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "50d362069942db9a8704302b550c7c7cd3c11e81",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/50d362069942db9a8704302b550c7c7cd3c11e81"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/bc4e63c2eb44b593004007372aff0ddea7920b7f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/bc4e63c2eb44b593004007372aff0ddea7920b7f",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/bc4e63c2eb44b593004007372aff0ddea7920b7f",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/bc4e63c2eb44b593004007372aff0ddea7920b7f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "091fd814272376f712bd7bcd00e5ba8df23a9704",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/091fd814272376f712bd7bcd00e5ba8df23a9704",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/091fd814272376f712bd7bcd00e5ba8df23a9704"
+      }
+    ]
+  },
+  {
+    "sha": "091fd814272376f712bd7bcd00e5ba8df23a9704",
+    "node_id": "C_kwDOSrfmNNoAKDA5MWZkODE0MjcyMzc2ZjcxMmJkN2JjZDAwZTViYThkZjIzYTk3MDQ",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:44:01Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:44:01Z"
+      },
+      "message": "fix: 添加数据库缺失的 last_active_at 列\n\n修复因缺少数据库列导致心跳 API 500 错误，进而导致页面崩溃的问题\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "2c3b03f1a9ebac9d2c05bb4e0ec66a23d5ce8ede",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/2c3b03f1a9ebac9d2c05bb4e0ec66a23d5ce8ede"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/091fd814272376f712bd7bcd00e5ba8df23a9704",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/091fd814272376f712bd7bcd00e5ba8df23a9704",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/091fd814272376f712bd7bcd00e5ba8df23a9704",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/091fd814272376f712bd7bcd00e5ba8df23a9704/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ad582619e9aed7a50460099d3ea391c05bed3cd7",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/ad582619e9aed7a50460099d3ea391c05bed3cd7",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/ad582619e9aed7a50460099d3ea391c05bed3cd7"
+      }
+    ]
+  },
+  {
+    "sha": "ad582619e9aed7a50460099d3ea391c05bed3cd7",
+    "node_id": "C_kwDOSrfmNNoAKGFkNTgyNjE5ZTlhZWQ3YTUwNDYwMDk5ZDNlYTM5MWMwNWJlZDNjZDc",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:39:14Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:39:14Z"
+      },
+      "message": "fix: 修复侧边栏折叠按钮导致崩溃的问题\n\n- 删除重复的用户数据获取 useEffect\n- 添加 SSR 安全检查（typeof window === 'undefined'）\n- 修复菜单项相对定位问题\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "2c3b03f1a9ebac9d2c05bb4e0ec66a23d5ce8ede",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/2c3b03f1a9ebac9d2c05bb4e0ec66a23d5ce8ede"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/ad582619e9aed7a50460099d3ea391c05bed3cd7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/ad582619e9aed7a50460099d3ea391c05bed3cd7",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/ad582619e9aed7a50460099d3ea391c05bed3cd7",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/ad582619e9aed7a50460099d3ea391c05bed3cd7/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1fbd84372297f4ffcd85fa3a2e953a71602d73a1",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/1fbd84372297f4ffcd85fa3a2e953a71602d73a1",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/1fbd84372297f4ffcd85fa3a2e953a71602d73a1"
+      }
+    ]
+  },
+  {
+    "sha": "1fbd84372297f4ffcd85fa3a2e953a71602d73a1",
+    "node_id": "C_kwDOSrfmNNoAKDFmYmQ4NDM3MjI5N2Y0ZmZjZDg1ZmEzYTJlOTUzYTcxNjAyZDczYTE",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:30:07Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:30:07Z"
+      },
+      "message": "feat: 添加用户在线状态和深色模式\n\n主要功能：\n1. 用户在线状态\n   - 数据库添加 last_online_at 字段\n   - API: POST /api/users/heartbeat - 更新在线时间\n   - API: GET /api/users/online-status - 批量查询在线状态\n   - 前端每30秒发送心跳请求\n   - 用户头像显示在线/离线状态（绿点/灰点）\n\n2. 删除返回键\n   - 移除退出登录按钮上方的返回键\n\n3. 深色模式\n   - 使用 next-themes 实现主题切换\n   - 侧边栏添加主题切换按钮\n   - 支持亮色/深色/跟随系统三种模式\n   - 深色模式配色优化\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "67fcfda0aa112b95aeb03ae3f4cf0eacc770de01",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/67fcfda0aa112b95aeb03ae3f4cf0eacc770de01"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/1fbd84372297f4ffcd85fa3a2e953a71602d73a1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/1fbd84372297f4ffcd85fa3a2e953a71602d73a1",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/1fbd84372297f4ffcd85fa3a2e953a71602d73a1",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/1fbd84372297f4ffcd85fa3a2e953a71602d73a1/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "4ff06d8472f14d7f18e831e6421c306b048c71d0",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/4ff06d8472f14d7f18e831e6421c306b048c71d0",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/4ff06d8472f14d7f18e831e6421c306b048c71d0"
+      }
+    ]
+  },
+  {
+    "sha": "4ff06d8472f14d7f18e831e6421c306b048c71d0",
+    "node_id": "C_kwDOSrfmNNoAKDRmZjA2ZDg0NzJmMTRkN2YxOGU4MzFlNjQyMWMzMDZiMDQ4YzcxZDA",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:12:09Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:12:09Z"
+      },
+      "message": "fix: 修复构建时环境变量缺失问题\n\n问题原因：\n- API路由文件在模块顶层调用 getSupabaseClient()\n- Next.js 构建时会预初始化这些模块\n- 导致环境变量 COZE_SUPABASE_URL 在构建时被检查\n- 环境变量只在运行时存在，构建时缺失导致失败\n\n修复方案：\n- 将 supabase 客户端获取移到 API handler 函数内部\n- 这样环境变量只在运行时被检查，而不是构建时\n- 修改了 /api/messages 相关的三个路由文件\n\n修改的文件：\n- src/app/api/messages/route.ts\n- src/app/api/messages/read/route.ts\n- src/app/api/messages/unread/route.ts\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "d23f36a1e165ccf513266173b4bba1264a9ea5e0",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/d23f36a1e165ccf513266173b4bba1264a9ea5e0"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/4ff06d8472f14d7f18e831e6421c306b048c71d0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/4ff06d8472f14d7f18e831e6421c306b048c71d0",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/4ff06d8472f14d7f18e831e6421c306b048c71d0",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/4ff06d8472f14d7f18e831e6421c306b048c71d0/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "6bb701f29c9f55b8714c69ac0bb5efd9a0d65708",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/6bb701f29c9f55b8714c69ac0bb5efd9a0d65708",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/6bb701f29c9f55b8714c69ac0bb5efd9a0d65708"
+      }
+    ]
+  },
+  {
+    "sha": "6bb701f29c9f55b8714c69ac0bb5efd9a0d65708",
+    "node_id": "C_kwDOSrfmNNoAKDZiYjcwMWYyOWM5ZjU1Yjg3MTRjNjlhYzBiYjVlZmQ5YTBkNjU3MDg",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:01:23Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T14:01:23Z"
+      },
+      "message": "fix: 移除开发依赖并清理部署配置\n\n主要修复：\n1. 移除 react-dev-inspector 相关依赖\n   - pnpm remove react-dev-inspector @react-dev-inspector/babel-plugin\n\n2. 清理 layout.tsx 中的开发工具代码\n   - 移除 React-dev-inspector 组件导入和使用\n\n3. 添加 .cozeignore 文件\n   - 排除不必要的文件从部署包中\n\n4. 清理 Turbopack 缓存\n   - 解决缓存损坏导致的服务启动问题\n\n这些修改应该解决生产环境部署卡住的问题\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "e5a46e69f74f1357aac93de422429c4e4f718e22",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/e5a46e69f74f1357aac93de422429c4e4f718e22"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/6bb701f29c9f55b8714c69ac0bb5efd9a0d65708",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/6bb701f29c9f55b8714c69ac0bb5efd9a0d65708",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/6bb701f29c9f55b8714c69ac0bb5efd9a0d65708",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/6bb701f29c9f55b8714c69ac0bb5efd9a0d65708/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "eec5301766a24b186e8f06bb69f0f9cd1f4c61e4",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/eec5301766a24b186e8f06bb69f0f9cd1f4c61e4",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/eec5301766a24b186e8f06bb69f0f9cd1f4c61e4"
+      }
+    ]
+  },
+  {
+    "sha": "eec5301766a24b186e8f06bb69f0f9cd1f4c61e4",
+    "node_id": "C_kwDOSrfmNNoAKGVlYzUzMDE3NjZhMjRiMTg2ZThmMDZiYjY5ZjBmOWNkMWY0YzYxZTQ",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:51:37Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:51:37Z"
+      },
+      "message": "fix: 移除 .babelrc 中的开发工具配置\n\n问题原因：\n- .babelrc 包含 @react-dev-inspector/babel-plugin 开发插件\n- preset-react 设置了 development: true\n- 这些配置可能导致生产环境构建问题\n\n修复内容：\n- 移除 @react-dev-inspector/babel-plugin 插件\n- 移除 preset-react development 配置\n- 使用简洁的 next/babel preset\n\n这应该解决生产环境部署卡住的问题\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "f4b5dc11deef7b354788a9eaf9786b6da8d98071",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/f4b5dc11deef7b354788a9eaf9786b6da8d98071"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/eec5301766a24b186e8f06bb69f0f9cd1f4c61e4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/eec5301766a24b186e8f06bb69f0f9cd1f4c61e4",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/eec5301766a24b186e8f06bb69f0f9cd1f4c61e4",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/eec5301766a24b186e8f06bb69f0f9cd1f4c61e4/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "63951bca6fe766b888279d9d79594baabdbaeb1e",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/63951bca6fe766b888279d9d79594baabdbaeb1e",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/63951bca6fe766b888279d9d79594baabdbaeb1e"
+      }
+    ]
+  },
+  {
+    "sha": "63951bca6fe766b888279d9d79594baabdbaeb1e",
+    "node_id": "C_kwDOSrfmNNoAKDYzOTUxYmNhNmZlNzY2Yjg4ODI3OWQ5ZDc5NTk0YmFhYmRiYWViMWU",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:48:07Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:48:07Z"
+      },
+      "message": "fix: 修复生产环境部署问题\n\n主要修复：\n1. server.ts - 修改 hostname 从 'localhost' 改为 '0.0.0.0'\n   - 解决生产环境无法接受外部请求的问题\n\n2. server.ts - 端口读取优先使用 DEPLOY_RUN_PORT 环境变量\n   - 确保使用正确的部署端口\n\n3. next.config.ts - 添加 turbopack.root 配置\n   - 解决多 lockfile 警告\n   - 优化构建性能\n\n这些修复确保应用在生产环境中能够：\n- 正确监听所有网络接口 (0.0.0.0)\n- 使用部署平台指定的端口\n- 构建时无警告信息\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "8c82627440f903c730520dd57f4381e67bf7430e",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/8c82627440f903c730520dd57f4381e67bf7430e"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/63951bca6fe766b888279d9d79594baabdbaeb1e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/63951bca6fe766b888279d9d79594baabdbaeb1e",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/63951bca6fe766b888279d9d79594baabdbaeb1e",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/63951bca6fe766b888279d9d79594baabdbaeb1e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7c78ec09f3a7ff94857368a8da525b91eec114b5",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7c78ec09f3a7ff94857368a8da525b91eec114b5",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/7c78ec09f3a7ff94857368a8da525b91eec114b5"
+      }
+    ]
+  },
+  {
+    "sha": "7c78ec09f3a7ff94857368a8da525b91eec114b5",
+    "node_id": "C_kwDOSrfmNNoAKDdjNzhlYzA5ZjNhN2ZmOTQ4NTczNjhhOGRhNTI1YjkxZWVjMTE0YjU",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:43:24Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:43:24Z"
+      },
+      "message": "fix: 清理不需要的邮件相关代码和依赖\n\n移除内容：\n1. 删除 resend 邮件SDK依赖\n2. 删除 /api/email/send 路由\n\n原因：\n- 邮件功能已替换为站内即时通讯系统\n- 减少部署时的依赖安装时间\n- 避免潜在的构建问题\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "aad914e774d5ac4fa4f6dcca37c304fe1ea13298",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/aad914e774d5ac4fa4f6dcca37c304fe1ea13298"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/7c78ec09f3a7ff94857368a8da525b91eec114b5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7c78ec09f3a7ff94857368a8da525b91eec114b5",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/7c78ec09f3a7ff94857368a8da525b91eec114b5",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/7c78ec09f3a7ff94857368a8da525b91eec114b5/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8c23f4d39cd85796a980b168fe784f89b803ac45",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8c23f4d39cd85796a980b168fe784f89b803ac45",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/8c23f4d39cd85796a980b168fe784f89b803ac45"
+      }
+    ]
+  },
+  {
+    "sha": "8c23f4d39cd85796a980b168fe784f89b803ac45",
+    "node_id": "C_kwDOSrfmNNoAKDhjMjNmNGQzOWNkODU3OTZhOTgwYjE2OGZlNzg0Zjg5YjgwM2FjNDU",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:39:29Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:39:29Z"
+      },
+      "message": "feat: 添加文件预览功能\n\n主要功能：\n1. 文件预览API\n   - GET /api/files/preview?fileId=xxx\n   - 返回预签名URL和文件信息\n   - URL有效期1小时\n\n2. 文件预览组件\n   - 支持多种文件类型预览\n   - 图片：直接显示\n   - 视频：video标签播放\n   - 音频：audio标签播放\n   - PDF：iframe预览\n   - Office文档：Office Online预览服务\n   - 其他文件：显示下载按钮\n\n3. 集成到文件管理页面\n   - 网格视图添加预览按钮\n   - 列表视图添加预览按钮\n   - 点击预览按钮打开预览对话框\n\n技术实现：\n- 使用generatePresignedUrl生成临时访问URL\n- 根据文件类型自动选择预览方式\n- 响应式对话框适配不同屏幕\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "08a9a192163d2ac8a6a1fcdb3eae2446cbc7ad4f",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/08a9a192163d2ac8a6a1fcdb3eae2446cbc7ad4f"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/8c23f4d39cd85796a980b168fe784f89b803ac45",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8c23f4d39cd85796a980b168fe784f89b803ac45",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/8c23f4d39cd85796a980b168fe784f89b803ac45",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/8c23f4d39cd85796a980b168fe784f89b803ac45/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "79a6352c183b414fcc65a229e6b250f5daadd0a3",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/79a6352c183b414fcc65a229e6b250f5daadd0a3",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/79a6352c183b414fcc65a229e6b250f5daadd0a3"
+      }
+    ]
+  },
+  {
+    "sha": "79a6352c183b414fcc65a229e6b250f5daadd0a3",
+    "node_id": "C_kwDOSrfmNNoAKDc5YTYzNTJjMTgzYjQxNGZjYzY1YTIyOWU2YjI1MGY1ZGFhZGQwYTM",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:19:11Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:19:11Z"
+      },
+      "message": "feat: 优化平板横竖屏响应式布局\n\n主要优化：\n1. 侧边栏响应式\n   - 小屏幕自动折叠为图标模式\n   - 点击可展开/收起\n   - 汉堡菜单控制\n\n2. 聊天窗口响应式\n   - 小屏幕全屏显示\n   - 大屏幕居中显示\n   - 消息列表自适应滚动\n\n3. 各页面响应式优化\n   - 仪表盘：统计卡片2列/4列自适应\n   - 文件管理：工具栏自适应布局\n   - 公告中心：内容自适应\n   - 消息中心：列表自适应\n\n4. 统一的间距和字号\n   - 小屏幕使用更紧凑的间距\n   - 字号根据屏幕大小调整\n   - 按钮和表单元素触控友好\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "632998ba73831bf21213f31c42b11649c6780766",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/632998ba73831bf21213f31c42b11649c6780766"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/79a6352c183b414fcc65a229e6b250f5daadd0a3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/79a6352c183b414fcc65a229e6b250f5daadd0a3",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/79a6352c183b414fcc65a229e6b250f5daadd0a3",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/79a6352c183b414fcc65a229e6b250f5daadd0a3/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8813f17ac2d08318005fd79e9da4a1ad848eee7d",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8813f17ac2d08318005fd79e9da4a1ad848eee7d",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/8813f17ac2d08318005fd79e9da4a1ad848eee7d"
+      }
+    ]
+  },
+  {
+    "sha": "8813f17ac2d08318005fd79e9da4a1ad848eee7d",
+    "node_id": "C_kwDOSrfmNNoAKDg4MTNmMTdhYzJkMDgzMTgwMDVmZDc5ZTlkYTRhMWFkODQ4ZWVlN2Q",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:02:23Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T13:02:23Z"
+      },
+      "message": "feat: 实现站内即时通讯系统\n\n主要功能：\n1. 数据库设计\n   - 添加messages表存储消息\n   - 字段：sender_id, receiver_id, content, is_read, created_at\n\n2. API接口\n   - POST /api/messages - 发送消息\n   - GET /api/messages - 获取会话列表/对话消息\n   - POST /api/messages/read - 标记消息已读\n   - GET /api/messages/unread - 获取未读消息数\n\n3. 前端组件\n   - ChatDialog - 聊天对话框组件\n   - ContactAdminDialog - 访客联系管理员组件\n   - 消息中心页面 /dashboard/messages\n\n4. 功能集成\n   - 登录页面：联系管理员改为站内消息\n   - 用户管理：发消息按钮\n   - 侧边栏：消息中心入口+未读消息提示\n\n5. 已读回执\n   - 单勾：已发送未读\n   - 双勾：已读\n\n移除了之前的邮件发送功能，改为站内即时通讯\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "625c4a87bae568c65d1db748f7ea605a202d0efa",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/625c4a87bae568c65d1db748f7ea605a202d0efa"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/8813f17ac2d08318005fd79e9da4a1ad848eee7d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/8813f17ac2d08318005fd79e9da4a1ad848eee7d",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/8813f17ac2d08318005fd79e9da4a1ad848eee7d",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/8813f17ac2d08318005fd79e9da4a1ad848eee7d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b86cce05ff350dc6ea86ec175626f1c8b2f76bb0",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/b86cce05ff350dc6ea86ec175626f1c8b2f76bb0",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/b86cce05ff350dc6ea86ec175626f1c8b2f76bb0"
+      }
+    ]
+  },
+  {
+    "sha": "b86cce05ff350dc6ea86ec175626f1c8b2f76bb0",
+    "node_id": "C_kwDOSrfmNNoAKGI4NmNjZTA1ZmYzNTBkYzZlYTg2ZWMxNzU2MjZmMWM4YjJmNzZiYjA",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:51:37Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:51:37Z"
+      },
+      "message": "feat: 集成邮件发送功能（Resend）\n\n添加内容：\n1. 安装 Resend 邮件 SDK\n2. 创建邮件发送 API 接口 (/api/email/send)\n3. 在用户管理页面添加\"发邮件\"按钮和邮件编辑对话框\n4. 支持发送邮件给指定用户\n\n配置说明：\n- 需要设置环境变量 RESEND_API_KEY\n- 免费额度：每天100封，每月3000封\n- 发件人地址：onboarding@resend.dev\n\n获取API密钥步骤：\n1. 访问 https://resend.com 注册账号\n2. 在Dashboard中创建API Key\n3. 将API Key设置为环境变量 RESEND_API_KEY\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "c040649d015e50550a47d3043ad14962237a752f",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/c040649d015e50550a47d3043ad14962237a752f"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/b86cce05ff350dc6ea86ec175626f1c8b2f76bb0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/b86cce05ff350dc6ea86ec175626f1c8b2f76bb0",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/b86cce05ff350dc6ea86ec175626f1c8b2f76bb0",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/b86cce05ff350dc6ea86ec175626f1c8b2f76bb0/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7c2ea7cd1f56d51c89f080843c194b5a1597e8bd",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7c2ea7cd1f56d51c89f080843c194b5a1597e8bd",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/7c2ea7cd1f56d51c89f080843c194b5a1597e8bd"
+      }
+    ]
+  },
+  {
+    "sha": "7c2ea7cd1f56d51c89f080843c194b5a1597e8bd",
+    "node_id": "C_kwDOSrfmNNoAKDdjMmVhN2NkMWY1NmQ1MWM4OWYwODA4NDNjMTk0YjVhMTU5N2U4YmQ",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:46:10Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:46:10Z"
+      },
+      "message": "feat: 在用户管理页面添加邮件功能\n\n添加内容：\n- 为每个用户添加\"邮件\"按钮\n- 点击后自动复制用户的邮箱地址到剪贴板\n- 显示\"已复制\"反馈，2秒后恢复\n- 方便管理员在自己的邮件客户端中发送邮件\n\n说明：当前环境暂无邮件发送服务，采用复制邮箱方式实现\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "c831337120dff1e1c4649531b952aa16c8f56f1b",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/c831337120dff1e1c4649531b952aa16c8f56f1b"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/7c2ea7cd1f56d51c89f080843c194b5a1597e8bd",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/7c2ea7cd1f56d51c89f080843c194b5a1597e8bd",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/7c2ea7cd1f56d51c89f080843c194b5a1597e8bd",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/7c2ea7cd1f56d51c89f080843c194b5a1597e8bd/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "5456fc17219be7a0c02f41d9e957ea757498a241",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/5456fc17219be7a0c02f41d9e957ea757498a241",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/5456fc17219be7a0c02f41d9e957ea757498a241"
+      }
+    ]
+  },
+  {
+    "sha": "5456fc17219be7a0c02f41d9e957ea757498a241",
+    "node_id": "C_kwDOSrfmNNoAKDU0NTZmYzE3MjE5YmU3YTBjMDJmNDFkOWU5NTdlYTc1NzQ5OGEyNDE",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:43:28Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:43:28Z"
+      },
+      "message": "fix: 优化登录页面的联系管理员功能\n\n修改内容：\n- 添加邮箱复制功能，点击\"复制\"按钮可将管理员邮箱复制到剪贴板\n- 优化弹窗UI，使用代码块样式展示邮箱地址\n- 复制成功后按钮显示\"已复制\"，2秒后恢复\n- 用户可在自己的邮件客户端中粘贴发送\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "c66957be791e88bb3a82ab1e4fa312253d3ce4d5",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/c66957be791e88bb3a82ab1e4fa312253d3ce4d5"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/5456fc17219be7a0c02f41d9e957ea757498a241",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/5456fc17219be7a0c02f41d9e957ea757498a241",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/5456fc17219be7a0c02f41d9e957ea757498a241",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/5456fc17219be7a0c02f41d9e957ea757498a241/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1da4442aab50b973dbb69a79952d20e773289977",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/1da4442aab50b973dbb69a79952d20e773289977",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/1da4442aab50b973dbb69a79952d20e773289977"
+      }
+    ]
+  },
+  {
+    "sha": "1da4442aab50b973dbb69a79952d20e773289977",
+    "node_id": "C_kwDOSrfmNNoAKDFkYTQ0NDJhYWI1MGI5NzNkYmI2OWE3OTk1MmQyMGU3NzMyODk5Nzc",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:39:53Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:39:53Z"
+      },
+      "message": "feat: 完善OA系统功能\n\n1. 修复登录页面链接\n   - 忘记密码：点击后显示弹窗，提供管理员联系方式\n   - 联系管理员：点击后显示弹窗，说明如何开通账户\n\n2. 实现存储配额管理\n   - 添加用户存储配额字段（storage_quota）\n   - 默认配额：普通员工10GB，管理员无限制\n   - 文件上传时自动检查配额，超出拒绝上传\n   - 管理员可调整任何用户的存储配额\n\n3. 优化用户管理页面\n   - 显示每个用户的存储使用情况\n   - 支持调整存储配额（5GB/10GB/20GB/50GB/100GB/无限制）\n   - 管理员专用功能\n\n数据库变更：\n- ALTER TABLE users ADD COLUMN storage_quota BIGINT DEFAULT 10737418240\n- 管理员账户配额设为-1（无限制）\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "8b45d219c11a4702dd4e3b05a61fcaf70cff6124",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/8b45d219c11a4702dd4e3b05a61fcaf70cff6124"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/1da4442aab50b973dbb69a79952d20e773289977",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/1da4442aab50b973dbb69a79952d20e773289977",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/1da4442aab50b973dbb69a79952d20e773289977",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/1da4442aab50b973dbb69a79952d20e773289977/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b2323bb21ebf1e12b47e1e63cdb43f9eaf22b287",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/b2323bb21ebf1e12b47e1e63cdb43f9eaf22b287",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/b2323bb21ebf1e12b47e1e63cdb43f9eaf22b287"
+      }
+    ]
+  },
+  {
+    "sha": "b2323bb21ebf1e12b47e1e63cdb43f9eaf22b287",
+    "node_id": "C_kwDOSrfmNNoAKGIyMzIzYmIyMWViZjFlMTJiNDdlMWU2M2NkYjQzZjllYWYyMmIyODc",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:27:01Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:27:01Z"
+      },
+      "message": "feat: 添加用户管理功能（管理员专用）\n\n新增功能：\n- 用户管理页面 /dashboard/users（仅管理员可见）\n- 用户列表查看和搜索\n- 添加新用户（邮箱、姓名、密码、角色）\n- 启用/禁用用户账户\n- 删除用户\n\nAPI接口：\n- GET /api/users - 获取用户列表\n- POST /api/users - 创建新用户\n- PATCH /api/users/{id} - 更新用户状态\n- DELETE /api/users/{id} - 删除用户\n\n侧边栏更新：\n- 添加用户管理菜单项（仅管理员可见）\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "22bc463e86daaf9746d0253c7a9ce0830c6809ff",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/22bc463e86daaf9746d0253c7a9ce0830c6809ff"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/b2323bb21ebf1e12b47e1e63cdb43f9eaf22b287",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/b2323bb21ebf1e12b47e1e63cdb43f9eaf22b287",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/b2323bb21ebf1e12b47e1e63cdb43f9eaf22b287",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/b2323bb21ebf1e12b47e1e63cdb43f9eaf22b287/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "82c9f9b8dd033b7dc421a1b9bb2b5396aaa81f9a",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/82c9f9b8dd033b7dc421a1b9bb2b5396aaa81f9a",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/82c9f9b8dd033b7dc421a1b9bb2b5396aaa81f9a"
+      }
+    ]
+  },
+  {
+    "sha": "82c9f9b8dd033b7dc421a1b9bb2b5396aaa81f9a",
+    "node_id": "C_kwDOSrfmNNoAKDgyYzlmOWI4ZGQwMzNiN2RjNDIxYTFiOWJiMmI1Mzk2YWFhODFmOWE",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:21:46Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:21:46Z"
+      },
+      "message": "fix: 添加系统设置页面\n\n创建 /dashboard/settings/page.tsx，包含：\n- 个人信息设置\n- 通知偏好设置\n- 安全设置（修改密码）\n- 外观设置（预留深色模式）\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "6871303df25d104fa68b2c1ea9a45d4dacbd6206",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/6871303df25d104fa68b2c1ea9a45d4dacbd6206"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/82c9f9b8dd033b7dc421a1b9bb2b5396aaa81f9a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/82c9f9b8dd033b7dc421a1b9bb2b5396aaa81f9a",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/82c9f9b8dd033b7dc421a1b9bb2b5396aaa81f9a",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/82c9f9b8dd033b7dc421a1b9bb2b5396aaa81f9a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2b461b00e726965c29a005f991be2b3d5972e5d9",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/2b461b00e726965c29a005f991be2b3d5972e5d9",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/2b461b00e726965c29a005f991be2b3d5972e5d9"
+      }
+    ]
+  },
+  {
+    "sha": "2b461b00e726965c29a005f991be2b3d5972e5d9",
+    "node_id": "C_kwDOSrfmNNoAKDJiNDYxYjAwZTcyNjk2NWMyOWEwMDVmOTkxYmUyYjNkNTk3MmU1ZDk",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:15:18Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:15:18Z"
+      },
+      "message": "feat: 实现OA办公自动化系统并集成云存储功能\n\n主要功能：\n- 用户认证：登录系统，用户信息管理\n- 文件管理：文件上传、下载、删除，支持云存储\n- 公告中心：公告发布、查看、置顶\n- 仪表盘：数据统计、快捷操作\n\n技术栈：\n- Next.js 16 (App Router) + React 19\n- TypeScript + Tailwind CSS 4\n- shadcn/ui 组件库\n- Supabase 数据库\n- S3 兼容对象存储\n\n数据库表：\n- users: 用户信息表\n- files: 文件元数据表\n- announcements: 公告表\n\nAPI接口：\n- POST /api/auth/login: 用户登录\n- GET/POST /api/files: 文件管理\n- GET/POST /api/announcements: 公告管理\n\nCoze-Commit-Type: user\nCoze-User-ID: 1558447625615444\nCoze-Conversation-ID: 5318301",
+      "tree": {
+        "sha": "a93f872fec411b434ca7818eba4a4b9b6fe5dac9",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/a93f872fec411b434ca7818eba4a4b9b6fe5dac9"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/2b461b00e726965c29a005f991be2b3d5972e5d9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/2b461b00e726965c29a005f991be2b3d5972e5d9",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/2b461b00e726965c29a005f991be2b3d5972e5d9",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/2b461b00e726965c29a005f991be2b3d5972e5d9/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "5f8ee26fc10223545251792d3e155ddcb58f204e",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/5f8ee26fc10223545251792d3e155ddcb58f204e",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/5f8ee26fc10223545251792d3e155ddcb58f204e"
+      }
+    ]
+  },
+  {
+    "sha": "5f8ee26fc10223545251792d3e155ddcb58f204e",
+    "node_id": "C_kwDOSrfmNNoAKDVmOGVlMjZmYzEwMjIzNTQ1MjUxNzkyZDNlMTU1ZGRjYjU4ZjIwNGU",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:07:14Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:07:14Z"
+      },
+      "message": "chore: init env",
+      "tree": {
+        "sha": "9b564b150de9bfad9de808304ce2504255e4a9b7",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/9b564b150de9bfad9de808304ce2504255e4a9b7"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/5f8ee26fc10223545251792d3e155ddcb58f204e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/5f8ee26fc10223545251792d3e155ddcb58f204e",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/5f8ee26fc10223545251792d3e155ddcb58f204e",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/5f8ee26fc10223545251792d3e155ddcb58f204e/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "76090090514348ccf13ddf71ce5a09447f4dc91b",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/commits/76090090514348ccf13ddf71ce5a09447f4dc91b",
+        "html_url": "https://github.com/ody-cai/oa-system/commit/76090090514348ccf13ddf71ce5a09447f4dc91b"
+      }
+    ]
+  },
+  {
+    "sha": "76090090514348ccf13ddf71ce5a09447f4dc91b",
+    "node_id": "C_kwDOSrfmNNoAKDc2MDkwMDkwNTE0MzQ4Y2NmMTNkZGY3MWNlNWEwOTQ0N2Y0ZGM5MWI",
+    "commit": {
+      "author": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:06:31Z"
+      },
+      "committer": {
+        "name": "Odycai",
+        "email": "1558447625615444-Odycai@noreply.coze.cn",
+        "date": "2026-05-29T12:06:31Z"
+      },
+      "message": "Initial commit",
+      "tree": {
+        "sha": "f85138efb633e9c32d9446e05a53778318b712e7",
+        "url": "https://api.github.com/repos/ody-cai/oa-system/git/trees/f85138efb633e9c32d9446e05a53778318b712e7"
+      },
+      "url": "https://api.github.com/repos/ody-cai/oa-system/git/commits/76090090514348ccf13ddf71ce5a09447f4dc91b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/ody-cai/oa-system/commits/76090090514348ccf13ddf71ce5a09447f4dc91b",
+    "html_url": "https://github.com/ody-cai/oa-system/commit/76090090514348ccf13ddf71ce5a09447f4dc91b",
+    "comments_url": "https://api.github.com/repos/ody-cai/oa-system/commits/76090090514348ccf13ddf71ce5a09447f4dc91b/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+
+    ]
+  }
+]

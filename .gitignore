@@ -15,3 +15,13 @@
 # Local OS/editor files
 *.log
 *.tmp
+outputs/desktop-release/
+outputs/*.dmg
+outputs/*.exe
+outputs/*.zip
+outputs/desktop-acceptance.json
+outputs/desktop-acceptance.png
+outputs/desktop-checksums.txt
+outputs/smoke-profile/
+**/.cache/
+**/.slidep/

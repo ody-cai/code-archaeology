@@ -1,0 +1,11 @@
+repo	short_sha	http	full_sha	prefix_match	verdict
+chalk/chalk	4c304dd	200	4c304dd72cce5a036c02e5dd8af52996ae98501f	yes	GROUNDED
+chalk/chalk	5729845	200	5729845f33d357e0c21b29b2b16849b72fb8cec4	yes	GROUNDED
+chalk/chalk	ff549c5	200	ff549c534c413a9225322c1ff4e5fc0d97ae5610	yes	GROUNDED
+chalk/chalk	8a94e0e	200	8a94e0ebfc495dda27f7090fb1a012790b15a76d	yes	GROUNDED
+ody-cai/oa-system	1fbd843	200	1fbd84372297f4ffcd85fa3a2e953a71602d73a1	yes	GROUNDED
+ody-cai/oa-system	bc4e63c	200	bc4e63c2eb44b593004007372aff0ddea7920b7f	yes	GROUNDED
+ody-cai/oa-system	62d1b8d	200	62d1b8dbee3fb14932a0520727105f8b67d70f14	yes	GROUNDED
+ody-cai/oa-system	109fd2c	200	109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb	yes	GROUNDED
+ody-cai/oa-system	d8ca09f	200	d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace	yes	GROUNDED
+ody-cai/oa-system	8e09128	200	8e09128ab64047c1c2927941f398b08bf9321f39	yes	GROUNDED

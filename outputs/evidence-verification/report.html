@@ -1,0 +1,310 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>GitHub 数据真实性验证报告 · 代码考古学</title><style>
+@page { size: A4; margin: 16mm 14mm 18mm; }
+* { box-sizing: border-box; }
+body { font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:#1a1d21; line-height:1.62; font-size:10.2pt; margin:0; }
+header.cover { border-bottom:2.5px solid #1a1d21; padding-bottom:14px; margin-bottom:20px; }
+.kicker { font-size:8.6pt; letter-spacing:.18em; color:#5d6672; text-transform:uppercase; }
+h1 { font-size:20pt; margin:8px 0 6px; letter-spacing:-.01em; }
+.sub { color:#4a5460; font-size:10pt; }
+.meta { margin-top:10px; font-size:8.8pt; color:#5d6672; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+h2 { font-size:12.4pt; margin:26px 0 8px; padding-left:9px; border-left:4px solid #2f6df6; }
+h3 { font-size:10.6pt; margin:16px 0 6px; color:#2b3038; }
+p { margin:6px 0; }
+table { width:100%; border-collapse:collapse; margin:8px 0 4px; font-size:8.5pt; }
+th { background:#eef1f5; text-align:left; padding:5px 6px; border:1px solid #ccd2da; font-weight:600; }
+td { padding:4px 6px; border:1px solid #dde2e8; vertical-align:top; }
+tbody tr:nth-child(even) { background:#fafbfc; }
+.mono { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:8pt; }
+.url { word-break:break-all; }
+.sha { font-size:7pt; word-break:break-all; color:#3c4450; }
+.tiny { font-size:7.6pt; }
+.c { text-align:center; }
+pre { background:#f5f7fa; border:1px solid #dde2e8; border-left:3px solid #2f6df6;
+  padding:9px 11px; font-size:7.9pt; line-height:1.5; overflow-wrap:anywhere; white-space:pre-wrap;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace; margin:6px 0; }
+.box { border:1px solid #d5dbe3; background:#f8fafc; padding:10px 13px; margin:10px 0; }
+.box.warn { border-left:4px solid #d9821b; background:#fffaf2; }
+.box.good { border-left:4px solid #1f9d55; background:#f4fbf7; }
+.tag { display:inline-block; padding:1px 7px; border-radius:3px; font-size:7.6pt; font-weight:600; }
+.tag.ok { background:#dff3e6; color:#14683a; }
+.tag.bad { background:#fbe2e2; color:#8f1d1d; }
+.tag.neu { background:#e8ecf2; color:#3c4450; }
+.grid { display:flex; gap:10px; margin:12px 0; }
+.card { flex:1; border:1px solid #d5dbe3; padding:10px 12px; }
+.card .n { font-size:19pt; font-weight:700; letter-spacing:-.02em; }
+.card .l { font-size:8.2pt; color:#5d6672; }
+ol, ul { margin:6px 0 6px 18px; padding:0; }
+li { margin:3px 0; }
+hr { border:none; border-top:1px solid #e3e7ec; margin:18px 0; }
+footer { margin-top:22px; border-top:1px solid #e3e7ec; padding-top:8px; font-size:8pt; color:#6b7280; }
+.note { font-size:8.6pt; color:#5d6672; }
+.code-inline { font-family:ui-monospace,Menlo,monospace; background:#eef1f5; padding:1px 4px; font-size:8.6pt; }
+</style></head><body>
+
+<header class="cover">
+  <div class="kicker">Verification Report · Evidence Grounding</div>
+  <h1>GitHub 仓库信息真实性验证报告</h1>
+  <div class="sub">对象工具：<b>代码考古学 / Code Archaeology</b>（BAYTECH26 黑客松参赛项目）　
+  验证对象：<b>chalk/chalk</b> 与 <b>ody-cai/oa-system</b> 两个公开仓库的分析结论</div>
+  <div class="meta">
+    生成时间（UTC）：2026-09-19T10:53:59Z　·　签发人：蔡奇均 / Ody　·　联系：cqjody@126.com<br>
+    验证方式：绕过项目自身接口，直接用 GitHub REST API v2022-11-28 独立取证，与工具输出逐条比对
+  </div>
+</header>
+
+<h2>一、结论先行</h2>
+<div class="grid">
+  <div class="card"><div class="n">11/11</div><div class="l">API 取证请求全部返回 HTTP 200</div></div>
+  <div class="card"><div class="n">10/10</div><div class="l">工具引用的提交 SHA 全部接地（0 编造）</div></div>
+  <div class="card"><div class="n">10/10</div><div class="l">工具展示的元数据与 GitHub 原始值一致</div></div>
+  <div class="card"><div class="n">1 处</div><div class="l">发现展示层歧义（非数据错误，见第五节）</div></div>
+</div>
+
+<p><b>总体判定：工具关于 GitHub 仓库的展示数据是真实有效的。</b>所有被引用的提交对象都在 GitHub 上真实存在，
+星标、语言、分支、时间窗口等元数据与官方接口返回值逐项吻合，没有发现虚构、编造或张冠李戴的情况。</p>
+
+<div class="box good">
+<b>最重要的一条证据（可直接肉眼复核）</b><br>
+工具曾把 chalk 的「<span class="code-inline">4c304dd</span> 新增扩展下划线 → <span class="code-inline">5729845</span>」判为「被放弃的尝试」。
+本次独立取证证明这是<b>误判</b>：<span class="code-inline">5729845</span> 的直接父提交就是 <span class="code-inline">4c304dd</span>（真实 git 父子关系），
+两者相隔仅 4803 秒（1 小时 20 分 3 秒）；并且直到本次取证时刻，<span class="code-inline">source/index.js</span> 第 115 行仍完整保留该特性代码。
+<b>工具当前版本已自行纠正为「0 处已核实 / 另否定 2 处」—— 与独立取证结论完全一致。</b>
+</div>
+
+<h2>二、验证方法</h2>
+<p>为避免「用自己的接口验证自己的数据」这类自证循环，本次验证完全绕开项目的 API 与分析链路，采取三步独立取证：</p>
+<ol>
+  <li><b>原始层取证</b>：直接用 curl 调 <span class="code-inline">api.github.com</span>，把未经处理的 JSON 响应体逐份落盘，
+      同时记录 HTTP 状态码、响应体 SHA-256、字节数与 UTC 时间戳。</li>
+  <li><b>SHA 回归层</b>：把工具输出文本中出现的<b>每一个</b>短 SHA 单独回查 GitHub，以「HTTP 200 且返回完整 SHA 前缀匹配」为接地判定标准。</li>
+  <li><b>内容层核验</b>：对涉及"代码是否真被删除"这类可证伪结论，直接拉取文件内容做行级比对，而非采信任何中间层的描述。</li>
+</ol>
+<p class="note">所用凭据为调用者本机 Keychain 中的 OAuth token，全程只读（未创建分支、未提交 PR、未写入任何远端），
+token 未回显、未落盘于任何产物。</p>
+
+<h2>三、取证清单（可在第三方机器上完全复现）</h2>
+<table>
+<thead><tr><th>编号</th><th>端点（省略 https://api.github.com）</th><th>状态</th><th>字节</th><th>响应体 SHA-256 前 32 位</th><th>采集时间(UTC)</th></tr></thead>
+<tbody><tr><td class='mono'>E1</td><td class='mono url'>/repos/chalk/chalk</td><td class='c'>200</td><td class='c'>6794</td><td class='mono sha'>13e45398624c7faab7fc7c1d7e82cc24…</td><td class='mono'>2026-09-19T10:52:45Z</td></tr>
+<tr><td class='mono'>E2</td><td class='mono url'>/repos/chalk/chalk/commits/5729845</td><td class='c'>200</td><td class='c'>27805</td><td class='mono sha'>35aeba56b204ca713249e9bfbca1c831…</td><td class='mono'>2026-09-19T10:52:46Z</td></tr>
+<tr><td class='mono'>E3</td><td class='mono url'>/repos/chalk/chalk/commits/4c304dd</td><td class='c'>200</td><td class='c'>29989</td><td class='mono sha'>41d904de63b5d3d2018dec7d4e77ded0…</td><td class='mono'>2026-09-19T10:52:48Z</td></tr>
+<tr><td class='mono'>E4</td><td class='mono url'>/repos/chalk/chalk/contents/source/index.js?ref=main</td><td class='c'>200</td><td class='c'>12101</td><td class='mono sha'>2d149485c7a66a20777d8bbffe2dc053…</td><td class='mono'>2026-09-19T10:52:49Z</td></tr>
+<tr><td class='mono'>E5</td><td class='mono url'>/repos/ody-cai/oa-system</td><td class='c'>200</td><td class='c'>6599</td><td class='mono sha'>8c2d1c7a560550b1e15fce04c2418039…</td><td class='mono'>2026-09-19T10:52:50Z</td></tr>
+<tr><td class='mono'>E6</td><td class='mono url'>/repos/ody-cai/oa-system/commits?per_page=100</td><td class='c'>200</td><td class='c'>91391</td><td class='mono sha'>80a2f2c57d59d9745baf6db016383ce0…</td><td class='mono'>2026-09-19T10:52:51Z</td></tr>
+<tr><td class='mono'>E7</td><td class='mono url'>/rate_limit</td><td class='c'>200</td><td class='c'>1917</td><td class='mono sha'>4a296002f0123081a6e8abf89173589b…</td><td class='mono'>2026-09-19T10:52:52Z</td></tr>
+<tr><td class='mono'>E8</td><td class='mono url'>/repos/ody-cai/oa-system/commits/109fd2c</td><td class='c'>200</td><td class='c'>140662</td><td class='mono sha'>86d43f75f0d20f459f4c29ddeef5ca30…</td><td class='mono'>2026-09-19T10:56:44Z</td></tr>
+<tr><td class='mono'>E9</td><td class='mono url'>/repos/ody-cai/oa-system/commits/bc4e63c</td><td class='c'>200</td><td class='c'>12786</td><td class='mono sha'>2a207bcca2eeb3055d456558f7cf4d72…</td><td class='mono'>2026-09-19T10:56:45Z</td></tr>
+<tr><td class='mono'>E10</td><td class='mono url'>/repos/chalk/chalk/commits/8a94e0e</td><td class='c'>200</td><td class='c'>39727</td><td class='mono sha'>7becacf5a6a2faf940a9722b3cf21f7f…</td><td class='mono'>2026-09-19T10:56:47Z</td></tr>
+<tr><td class='mono'>E11</td><td class='mono url'>/repos/chalk/chalk/commits/ff549c5</td><td class='c'>200</td><td class='c'>11224</td><td class='mono sha'>a112b40c365b5d91b9b8f8ada601d260…</td><td class='mono'>2026-09-19T10:56:48Z</td></tr></tbody>
+</table>
+<p class="note">原始响应文件存于 <span class="code-inline">raw/</span>，每个 JSON 附有同名 <span class="code-inline">.headers.txt</span> 保留原始响应头。
+任何人可用下列命令重取并比对哈希：</p>
+<pre>curl -sS -H "Authorization: Bearer &lt;只读 PAT&gt;" \
+     -H "Accept: application/vnd.github+json" \
+     -H "X-GitHub-Api-Version: 2022-11-28" \
+     https://api.github.com/repos/chalk/chalk/commits/5729845 \
+  | shasum -a 256</pre>
+
+<h2>四、逐项核验结果</h2>
+
+<h3>4.1 提交 SHA 接地核验（幻觉检测的核心）</h3>
+<p>把工具输出文本中出现的全部 10 个提交引用逐一下去 GitHub 验证，不抽样、不挑选：</p>
+<table>
+<thead><tr><th>仓库</th><th>工具引用</th><th>HTTP</th><th>GitHub 返回的完整 SHA</th><th>前缀匹配</th><th>判定</th></tr></thead>
+<tbody><tr><td class='mono'>chalk/chalk</td><td class='mono'>4c304dd</td><td class='c'>200</td><td class='mono sha'>4c304dd72cce5a036c02e5dd8af52996ae98501f</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr>
+<tr><td class='mono'>chalk/chalk</td><td class='mono'>5729845</td><td class='c'>200</td><td class='mono sha'>5729845f33d357e0c21b29b2b16849b72fb8cec4</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr>
+<tr><td class='mono'>chalk/chalk</td><td class='mono'>ff549c5</td><td class='c'>200</td><td class='mono sha'>ff549c534c413a9225322c1ff4e5fc0d97ae5610</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr>
+<tr><td class='mono'>chalk/chalk</td><td class='mono'>8a94e0e</td><td class='c'>200</td><td class='mono sha'>8a94e0ebfc495dda27f7090fb1a012790b15a76d</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td class='mono'>1fbd843</td><td class='c'>200</td><td class='mono sha'>1fbd84372297f4ffcd85fa3a2e953a71602d73a1</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td class='mono'>bc4e63c</td><td class='c'>200</td><td class='mono sha'>bc4e63c2eb44b593004007372aff0ddea7920b7f</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td class='mono'>62d1b8d</td><td class='c'>200</td><td class='mono sha'>62d1b8dbee3fb14932a0520727105f8b67d70f14</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td class='mono'>109fd2c</td><td class='c'>200</td><td class='mono sha'>109fd2ca2c19e318e6060f51ef6dc8f1594ccdcb</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td class='mono'>d8ca09f</td><td class='c'>200</td><td class='mono sha'>d8ca09f9c5b2b3da023e5e8494cbe64db7e45ace</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td class='mono'>8e09128</td><td class='c'>200</td><td class='mono sha'>8e09128ab64047c1c2927941f398b08bf9321f39</td><td class='c'>✔</td><td class='c'><span class='tag ok'>GROUNDED</span></td></tr></tbody>
+</table>
+<p><b>接地率 10/10 = 100%，编造 0 个。</b>这直接支撑了项目「幻觉检测不靠模型自评、靠 SHA 集合运算」的设计主张 ——
+至少在数据引用层，它确实没有凭空造出一个不存在的提交。</p>
+
+<h3>4.2 仓库元数据比对（工具显示值 vs GitHub 原始值）</h3>
+<table>
+<thead><tr><th>仓库</th><th>字段</th><th>工具显示</th><th>GitHub 原始值</th><th>一致</th><th>取自</th></tr></thead>
+<tbody><tr><td class='mono'>chalk/chalk</td><td>星标数</td><td class='mono'>23,317</td><td class='mono'>23,317</td><td class='c'>✔</td><td class='mono tiny'>E1 stargazers_count</td></tr>
+<tr><td class='mono'>chalk/chalk</td><td>主语言</td><td class='mono'>JavaScript</td><td class='mono'>JavaScript</td><td class='c'>✔</td><td class='mono tiny'>E1 language</td></tr>
+<tr><td class='mono'>chalk/chalk</td><td>默认分支</td><td class='mono'>main</td><td class='mono'>main</td><td class='c'>✔</td><td class='mono tiny'>E1 default_branch</td></tr>
+<tr><td class='mono'>chalk/chalk</td><td>分析窗口末端</td><td class='mono'>2026-09-18</td><td class='mono'>2026-09-18</td><td class='c'>✔</td><td class='mono tiny'>E1 pushed_at</td></tr>
+<tr><td class='mono'>chalk/chalk</td><td>许可证</td><td class='mono'>MIT</td><td class='mono'>MIT</td><td class='c'>✔</td><td class='mono tiny'>E1 license</td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td>星标数</td><td class='mono'>1</td><td class='mono'>1</td><td class='c'>✔</td><td class='mono tiny'>E5 stargazers_count</td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td>主语言</td><td class='mono'>TypeScript</td><td class='mono'>TypeScript</td><td class='c'>✔</td><td class='mono tiny'>E5 language</td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td>分析窗口起点</td><td class='mono'>2026-05-29</td><td class='mono'>2026-05-29</td><td class='c'>✔</td><td class='mono tiny'>E5 created_at</td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td>分析窗口末端</td><td class='mono'>2026-09-12</td><td class='mono'>2026-09-12</td><td class='c'>✔</td><td class='mono tiny'>E6 head commit author.date</td></tr>
+<tr><td class='mono'>ody-cai/oa-system</td><td>许可证</td><td class='mono'>MIT</td><td class='mono'>MIT</td><td class='c'>✔</td><td class='mono tiny'>E5 license</td></tr></tbody>
+</table>
+
+<h3>4.3 「父子链」核验 —— 一条能被独立推翻的强断言</h3>
+<p>这是本次验证中信息量最大的一项：如果 <span class="code-inline">5729845</span> 的父提交不是 <span class="code-inline">4c304dd</span>，
+那么工具的纠错就是自说自话。原始响应显示：</p>
+<pre>4c304dd  message : Add extended underline styles and underline colors (#689)
+         author  : 2026-07-25T23:40:10Z
+         +335 / -34
+
+5729845  message : Improve performance
+         author  : 2026-07-26T01:00:13Z
+         parents : [&#x27;4c304dd72cce5a036c02e5dd8af52996ae98501f&#x27;]
+         +177 / -68
+
+=> 5729845 的直接父提交 == 4c304dd ：True
+=> 两次提交相隔 ：4803 秒（1 小时 20 分 3 秒）</pre>
+<p><b>判定：真阳性 TIME-SERIES（父子成立）。</b>两个提交是同一次开发动作内的连续推进，
+把它判成「写完又放弃」是错的；工具现版本已将其归类为「复核未通过」，逻辑正确。</p>
+
+<h3>4.4 文件内容行级核验 —— 代码到底还在不在</h3>
+<p>光看提交不够，代码可能后来又被删掉。直接拉 <span class="code-inline">main</span> 分支当前文件内容：</p>
+<table>
+<thead><tr><th>行号</th><th>内容</th></tr></thead>
+<tbody><tr><td class='c mono'>110</td><td class='mono tiny'>const capitalizedModel = model[0].toUpperCase() + model.slice(1);</td></tr>
+<tr><td class='c mono'>114</td><td class='mono tiny'>[&#x27;bg&#x27; + capitalizedModel, &#x27;bgColor&#x27;],</td></tr>
+<tr><td class='c mono'>115</td><td class='mono tiny'>[&#x27;underline&#x27; + capitalizedModel, &#x27;underlineColor&#x27;],</td></tr>
+<tr><td class='c mono'>246</td><td class='mono tiny'>underlineColorNames,</td></tr></tbody>
+</table>
+<pre>文件        : source/index.js（chalk / main）
+git blob SHA: 229ea1ea4da6a87635ef3f1ca8987b7a8e938554
+文件大小    : 8183 字节 / 262 行
+解码后 SHA256: 08e92f2330a34d232f8aa987da4d953893094be5b2aa8cc39ddb4313743f206e</pre>
+<p><b>判定：第 115 行 <span class="code-inline">['underline' + capitalizedModel, 'underlineColor'],</span> 依然存在。</b>
+该特性从未被移除 —— 从代码内容层面二次证实了 4.3 的结论。</p>
+
+<h3>4.5 提交史与信噪比</h3>
+<p>独立拉取 <span class="code-inline">ody-cai/oa-system</span> 最近 44 次提交（时间跨度
+2026-05-29 → 2026-09-12）：</p>
+<pre>样本提交数   : 44
+作者集合     : OA System、Odycai、ody-cai
+机器人类别数 : 0（占比 0%）
+HEAD 提交    : 35b469255922a6b2bcaea0d9deef3491061db25b 「chore: add MIT License」</pre>
+<p>作者名单中<b>没有任何 bot / dependabot / github-actions</b>，与工具给出的「机器人 0 次（0%）」方向一致。</p>
+
+<h2>五、发现的一处展示层歧义（非数据错误）</h2>
+<div class="box warn">
+工具输出使用 <span class="code-inline">X → Y</span> 记号表示「某文件被连续改动」，但读取者极易理解成「Y 是 X 的子提交」。
+逐条回查后发现，<b>四条箭头里只有一条是真父子关系</b>：
+<table>
+<thead><tr><th>仓库</th><th>文件</th><th>箭头</th><th>Y 的真实父提交</th><th>关系</th><th>说明</th></tr></thead>
+<tbody><tr><td class='mono tiny'>chalk/chalk</td><td class='mono tiny'>source/index.js</td><td class='mono'>4c304dd → 5729845</td><td class='mono'>4c304dd</td><td class='c'>父子</td><td class='tiny'>是 —— Y 的直接父提交就是 X</td></tr>
+<tr><td class='mono tiny'>chalk/chalk</td><td class='mono tiny'>test/chalk.js</td><td class='mono'>ff549c5 → 8a94e0e</td><td class='mono'>fa5cff2</td><td class='c'>非父子</td><td class='tiny'>否 —— 箭头表示「该文件相邻两次改动」</td></tr>
+<tr><td class='mono tiny'>ody-cai/oa-system</td><td class='mono tiny'>src/app/dashboard/layout.tsx</td><td class='mono'>1fbd843 → bc4e63c</td><td class='mono'>091fd81</td><td class='c'>非父子</td><td class='tiny'>否 —— 箭头表示「该文件相邻两次改动」</td></tr>
+<tr><td class='mono tiny'>ody-cai/oa-system</td><td class='mono tiny'>README.md（整仓回滚落点）</td><td class='mono'>62d1b8d → 109fd2c</td><td class='mono'>4cb13d2</td><td class='c'>非父子</td><td class='tiny'>否 —— 箭头表示「该文件相邻两次改动」</td></tr></tbody>
+</table>
+<b>这不构成数据错误</b> —— 箭头所指的提交都真实存在、改动确有其事、删增方向也对。
+但它是一个<b>可被评委追问的措辞风险</b>：若路演时口头解释成「这个回滚紧接着那次提交」，
+在有 git 父子概念的人面前会站不住。建议改成像 <span class="code-inline">4c304dd → 5729845（相邻两次改动）</span> 这样自解释的写法，
+或在 UI 上点开箭头时显示真实 parent SHA。
+</div>
+
+<h2>六、如实说明：本次未能核实的部分</h2>
+<p>出于严谨，以下项目<b>没有</b>被本次取证覆盖，不应被解读为"已验证"：</p>
+<ul>
+  <li><b>信噪比中「人类决策 19/30」的其余 11 次</b>：工具判定"人类决策"的内部口径未在输出中公开，
+      无法从 API 原始数据复算。本次只独立证实了"bot 提交为 0"，未逐条复核另外 11 次的归类。</li>
+  <li><b>churn 数值与「原地打转」阈值</b>：属于工具自定义聚合口径（如 README.md 的 1650x churn），
+      GitHub 侧没有对应字段，无法交叉验证，只能确认它引用的文件真实存在。</li>
+  <li><b>风险分加权公式</b>（chalk 55 / oa-system 51）：这是产品自身的评分模型，属于设计选择而非可核验事实。</li>
+  <li><b>两次采样存在轻微抖动</b>：同一仓库在 limit=30 与默认 40 下，人类决策数分别为 26/30 与 33/40，
+      文件热度排序也有小幅变化，属窗口效应。「0 处已核实 / 否定 2 处」这一核心判定在两次采样下稳定。</li>
+  <li><b>时间基准</b>：文中时间为 GitHub 返回的 author 时间（UTC），可能与本地提交时间存在时区差异。</li>
+</ul>
+
+<h2>七、复现步骤</h2>
+<pre># 1. 采集原始证据（token 建议用细粒度只读 PAT）
+cd outputs/evidence-verification
+export GITHUB_TOKEN=&lt;只读 PAT&gt;
+zsh collect.sh &amp;&amp; zsh collect2.sh &amp;&amp; zsh probe_shas.sh
+
+# 2. 单条核对哈希（应与第三节表格完全一致）
+shasum -a 256 raw/chalk-commit-5729845.json
+
+# 3. 浏览器肉眼复核（无需任何凭据）
+open https://github.com/chalk/chalk/commit/5729845
+open https://github.com/chalk/chalk/blob/main/source/index.js</pre>
+<p class="note">第 3 步是给非技术评委的最低门槛验证路径：打开 commit 页即可看到 parent 行，
+打开源文件按 Ctrl+G 跳到第 115 行即可看到那段代码。</p>
+
+<hr>
+<h2>附录 A · 工具原始输出（未删改，供比对）</h2>
+<h3>A1 · chalk/chalk</h3>
+<pre>[1mchalk/chalk[0m[2m  JavaScript · 23317 stars[0m
+[2m2023-06-29 → 2026-09-18 · 32 次 API 调用[0m
+
+[36m信噪比[0m
+  [32m█████████████████████████████[0m[2m░░░░░[0m
+  人类决策 [1m26[0m / 30 次  机器人 0 次（0%）
+
+[36m风险因子[0m  总分 [33m55/100[0m [33m(中)[0m
+  25/25  提交信息质量　　　　　　　　 [2m9 / 26 条无信息量[0m
+  15/25  原地打转的文件　　　　　　　 [2m3 个文件反复推翻[0m
+   0/20  被放弃的尝试　　　　　　　　 [2m0 处已核实（另否定 2 处）[0m
+   0/15  显式回滚　　　　　　　　　　 [2m0 次回滚提交[0m
+  15/15  最长沉寂期　　　　　　　　　 [2m225 天无人提交[0m
+
+[36m文件热度 Top 6[0m
+     200 churn   2x  source/index.test-d.ts
+     182 churn   6x  source/index.js
+     175 churn   4x  test/chalk.js
+     145 churn   5x  source/index.d.ts
+     132 churn  12x  readme.md
+      89 churn  12x  package.json
+
+[36m复核未通过[0m[2m（行数达标，但拆除内容与新增内容无关 —— 判为重写而非放弃）[0m
+  [2msource/index.js  重合 14%  4c304dd → 5729845[0m
+  [2mtest/chalk.js  重合 31%  ff549c5 → 8a94e0e[0m
+
+[36m原地打转[0m[2m（改动量大但净变化小）[0m
+   22x  12 次  净变化      6  readme.md
+    8x  12 次  净变化     11  package.json
+    5x   6 次  净变化     36  source/index.js</pre>
+<h3>A2 · ody-cai/oa-system</h3>
+<pre>[1mody-cai/oa-system[0m[2m  TypeScript · 1 stars[0m
+[2m2026-05-29 → 2026-09-12 · 32 次 API 调用[0m
+
+[36m信噪比[0m
+  [32m██████████████████████[0m[2m░░░░░░░░░░░░[0m
+  人类决策 [1m19[0m / 30 次  机器人 0 次（0%）
+
+[36m风险因子[0m  总分 [33m51/100[0m [33m(中)[0m
+  14/25  提交信息质量　　　　　　　　 [2m2 / 19 条无信息量[0m
+  25/25  原地打转的文件　　　　　　　 [2m6 个文件反复推翻[0m
+   0/20  被放弃的尝试　　　　　　　　 [2m0 处已核实（另否定 1 处）[0m
+   0/15  显式回滚　　　　　　　　　　 [2m0 次回滚提交[0m
+  13/15  最长沉寂期　　　　　　　　　 [2m100 天无人提交[0m
+
+[36m文件热度 Top 6[0m
+    1650 churn   5x  README.md
+     985 churn   3x  src/app/api/repositories/[id]/members/route.ts
+     814 churn   2x  src/app/dashboard/repositories/[id]/members/page.tsx
+     800 churn   2x  src/app/dashboard/repositories/page.tsx
+     746 churn   3x  src/app/api/repositories/[id]/route.ts
+     512 churn   3x  src/app/api/repositories/route.ts
+
+[36m复核未通过[0m[2m（行数达标，但拆除内容与新增内容无关 —— 判为重写而非放弃）[0m
+  [2msrc/app/dashboard/layout.tsx  重合 39%  1fbd843 → bc4e63c[0m
+
+[36m整仓回滚[0m[2m（全局操作 · 连带删除不计为放弃）[0m
+  [2m.env.example  62d1b8d → 109fd2c 「Restored to &#x27;acd42d064de80515a359f70e681」[0m
+  [2mREADME.md  62d1b8d → 109fd2c 「Restored to &#x27;acd42d064de80515a359f70e681」[0m
+  [2mAGENTS.md  d8ca09f → 109fd2c 「Restored to &#x27;acd42d064de80515a359f70e681」[0m
+  [2msrc/app/api/announcements/[id]/withdraw/route.ts  8e09128 → 109fd2c 「Restored to &#x27;acd42d064de80515a359f70e681」[0m
+  [2msrc/app/dashboard/announcements/page.tsx  8e09128 → 109fd2c 「Restored to &#x27;acd42d064de80515a359f70e681」[0m
+
+[36m原地打转[0m[2m（改动量大但净变化小）[0m
+  1650x   5 次  净变化      0  README.md
+  132x   5 次  净变化      2  src/app/dashboard/layout.tsx
+   60x   3 次  净变化      3  src/app/api/files/route.ts
+   45x   3 次  净变化      3  src/app/api/files/upload/route.ts
+    8x   3 次  净变化     11  .env.example</pre>
+
+<footer>
+本报告所有数据均来自 GitHub 官方 REST API 的实时响应，未使用任何模型生成内容填充。
+报告本身可被第三方完整复现：按第七节命令重取数据，比对 SHA-256 即可。
+</footer>
+
+</body></html>

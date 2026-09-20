@@ -1,0 +1,257 @@
+{
+  "sha": "8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+  "node_id": "C_kwDOALTlW9oAKDhhOTRlMGViZmM0OTVkZGEyN2Y3MDkwZmIxYTAxMjc5MGIxNWE3NmQ",
+  "commit": {
+    "author": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "date": "2026-07-25T12:53:34Z"
+    },
+    "committer": {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "date": "2026-07-25T13:12:27Z"
+    },
+    "message": "Require Node.js 22",
+    "tree": {
+      "sha": "d931f5a3908ed5e1c55b1dc9b3797fc6702c3546",
+      "url": "https://api.github.com/repos/chalk/chalk/git/trees/d931f5a3908ed5e1c55b1dc9b3797fc6702c3546"
+    },
+    "url": "https://api.github.com/repos/chalk/chalk/git/commits/8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/chalk/chalk/commits/8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+  "html_url": "https://github.com/chalk/chalk/commit/8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+  "comments_url": "https://api.github.com/repos/chalk/chalk/commits/8a94e0ebfc495dda27f7090fb1a012790b15a76d/comments",
+  "author": {
+    "login": "sindresorhus",
+    "id": 170270,
+    "node_id": "MDQ6VXNlcjE3MDI3MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/170270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sindresorhus",
+    "html_url": "https://github.com/sindresorhus",
+    "followers_url": "https://api.github.com/users/sindresorhus/followers",
+    "following_url": "https://api.github.com/users/sindresorhus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sindresorhus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sindresorhus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sindresorhus/subscriptions",
+    "organizations_url": "https://api.github.com/users/sindresorhus/orgs",
+    "repos_url": "https://api.github.com/users/sindresorhus/repos",
+    "events_url": "https://api.github.com/users/sindresorhus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sindresorhus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sindresorhus",
+    "id": 170270,
+    "node_id": "MDQ6VXNlcjE3MDI3MA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/170270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sindresorhus",
+    "html_url": "https://github.com/sindresorhus",
+    "followers_url": "https://api.github.com/users/sindresorhus/followers",
+    "following_url": "https://api.github.com/users/sindresorhus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sindresorhus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sindresorhus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sindresorhus/subscriptions",
+    "organizations_url": "https://api.github.com/users/sindresorhus/orgs",
+    "repos_url": "https://api.github.com/users/sindresorhus/repos",
+    "events_url": "https://api.github.com/users/sindresorhus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sindresorhus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "fa5cff280e821c928dab716a03beff06529ffaf3",
+      "url": "https://api.github.com/repos/chalk/chalk/commits/fa5cff280e821c928dab716a03beff06529ffaf3",
+      "html_url": "https://github.com/chalk/chalk/commit/fa5cff280e821c928dab716a03beff06529ffaf3"
+    }
+  ],
+  "stats": {
+    "total": 396,
+    "additions": 113,
+    "deletions": 283
+  },
+  "files": [
+    {
+      "sha": "d9c8b6bfe88ee704c5f9595339b8de12b7a4053f",
+      "filename": ".github/workflows/main.yml",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/.github%2Fworkflows%2Fmain.yml",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/.github%2Fworkflows%2Fmain.yml",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/.github%2Fworkflows%2Fmain.yml?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -11,7 +11,7 @@ jobs:\n       matrix:\n         node-version:\n           - 26\n-          - 14\n+          - 22\n     steps:\n       - uses: actions/checkout@v7\n       - uses: actions/setup-node@v6"
+    },
+    {
+      "sha": "4ae746b5b769e141ceef4acbc0e0077f6283a619",
+      "filename": "examples/rainbow.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/examples%2Frainbow.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/examples%2Frainbow.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/examples%2Frainbow.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -3,7 +3,7 @@ import convertColor from 'color-convert';\n import updateLog from 'log-update';\n import chalk from '../source/index.js';\n \n-const ignoreCharacters = /[^\\u{0021}-\\u{007E}]/gu;\n+const ignoreCharacters = /[^\\u{0021}-\\u{007E}]/gv;\n \n function rainbow(string, offset) {\n \tif (!string || string.length === 0) {"
+    },
+    {
+      "sha": "7b381738b13775f08364584e8abdeb0ea91a58d1",
+      "filename": "examples/screenshot.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/examples%2Fscreenshot.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/examples%2Fscreenshot.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/examples%2Fscreenshot.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -19,7 +19,7 @@ for (const key of Object.keys(styles)) {\n \t\tcontinue;\n \t}\n \n-\tif (/^bg[^B]/.test(key)) {\n+\tif (/^bg[^B]/v.test(key)) {\n \t\treturnValue = chalk.black(returnValue);\n \t}\n "
+    },
+    {
+      "sha": "5ad2154be7e863ef88594ddaff1255b29dc7da3d",
+      "filename": "package.json",
+      "status": "modified",
+      "additions": 31,
+      "deletions": 27,
+      "changes": 58,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/package.json",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/package.json",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/package.json?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -6,27 +6,27 @@\n \t\"repository\": \"chalk/chalk\",\n \t\"funding\": \"https://github.com/chalk/chalk?sponsor=1\",\n \t\"type\": \"module\",\n-\t\"main\": \"./source/index.js\",\n-\t\"exports\": \"./source/index.js\",\n+\t\"exports\": {\n+\t\t\"types\": \"./source/index.d.ts\",\n+\t\t\"default\": \"./source/index.js\"\n+\t},\n \t\"imports\": {\n \t\t\"#ansi-styles\": \"./source/vendor/ansi-styles/index.js\",\n \t\t\"#supports-color\": {\n \t\t\t\"node\": \"./source/vendor/supports-color/index.js\",\n \t\t\t\"default\": \"./source/vendor/supports-color/browser.js\"\n \t\t}\n \t},\n-\t\"types\": \"./source/index.d.ts\",\n \t\"sideEffects\": false,\n \t\"engines\": {\n-\t\t\"node\": \"^12.17.0 || ^14.13 || >=16.0.0\"\n+\t\t\"node\": \">=22\"\n \t},\n \t\"scripts\": {\n-\t\t\"test\": \"xo && c8 ava && tsd\",\n+\t\t\"test\": \"xo && c8 ava && tsc --noEmit --types node source/index.d.ts\",\n \t\t\"bench\": \"matcha benchmark.js\"\n \t},\n \t\"files\": [\n-\t\t\"source\",\n-\t\t\"!source/index.test-d.ts\"\n+\t\t\"source\"\n \t],\n \t\"keywords\": [\n \t\t\"color\",\n@@ -51,31 +51,35 @@\n \t\t\"text\"\n \t],\n \t\"devDependencies\": {\n-\t\t\"@types/node\": \"^16.11.10\",\n+\t\t\"@types/node\": \"^26.1.1\",\n \t\t\"ansi-styles\": \"^6.2.3\",\n-\t\t\"ava\": \"^3.15.0\",\n-\t\t\"c8\": \"^7.10.0\",\n-\t\t\"color-convert\": \"^2.0.1\",\n-\t\t\"execa\": \"^6.0.0\",\n-\t\t\"log-update\": \"^5.0.0\",\n+\t\t\"ava\": \"^8.0.1\",\n+\t\t\"c8\": \"^12.0.0\",\n+\t\t\"color-convert\": \"^3.1.3\",\n+\t\t\"execa\": \"^10.0.0\",\n+\t\t\"log-update\": \"^8.0.0\",\n \t\t\"matcha\": \"^0.7.0\",\n-\t\t\"tsd\": \"^0.19.0\",\n-\t\t\"xo\": \"^0.54.2\",\n+\t\t\"typescript\": \"^6.0.3\",\n+\t\t\"xo\": \"^4.0.0\",\n \t\t\"yoctodelay\": \"^2.0.0\"\n \t},\n-\t\"xo\": {\n-\t\t\"ignores\": [\n-\t\t\t\"source/vendor\"\n-\t\t],\n-\t\t\"rules\": {\n-\t\t\t\"unicorn/prefer-string-slice\": \"off\",\n-\t\t\t\"@typescript-eslint/consistent-type-imports\": \"off\",\n-\t\t\t\"@typescript-eslint/consistent-type-exports\": \"off\",\n-\t\t\t\"@typescript-eslint/consistent-type-definitions\": \"off\",\n-\t\t\t\"unicorn/expiring-todo-comments\": \"off\",\n-\t\t\t\"no-warning-comments\": \"off\"\n+\t\"xo\": [\n+\t\t{\n+\t\t\t\"ignores\": [\n+\t\t\t\t\"source/vendor\"\n+\t\t\t]\n+\t\t},\n+\t\t{\n+\t\t\t\"rules\": {\n+\t\t\t\t\"unicorn/prefer-string-slice\": \"off\",\n+\t\t\t\t\"@typescript-eslint/consistent-type-imports\": \"off\",\n+\t\t\t\t\"@typescript-eslint/consistent-type-exports\": \"off\",\n+\t\t\t\t\"@typescript-eslint/consistent-type-definitions\": \"off\",\n+\t\t\t\t\"unicorn/expiring-todo-comments\": \"off\",\n+\t\t\t\t\"no-warning-comments\": \"off\"\n+\t\t\t}\n \t\t}\n-\t},\n+\t],\n \t\"c8\": {\n \t\t\"reporter\": [\n \t\t\t\"text\","
+    },
+    {
+      "sha": "083cf2a700921f021b3bdfff887c598e96e818e2",
+      "filename": "source/index.js",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 2,
+      "changes": 7,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Findex.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Findex.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Findex.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -22,7 +22,7 @@ const levelMapping = [\n const styles = Object.create(null);\n \n const applyOptions = (object, options = {}) => {\n-\tif (options.level && !(Number.isInteger(options.level) && options.level >= 0 && options.level <= 3)) {\n+\tif (options.level && !(Number.isSafeInteger(options.level) && options.level >= 0 && options.level <= 3)) {\n \t\tthrow new Error('The `level` option should be an integer from 0 to 3');\n \t}\n \n@@ -51,6 +51,7 @@ function createChalk(options) {\n \treturn chalkFactory(options);\n }\n \n+// eslint-disable-next-line unicorn/no-top-level-side-effects -- The prototype chain must be set up at module load.\n Object.setPrototypeOf(createChalk.prototype, Function.prototype);\n \n for (const [styleName, style] of Object.entries(ansiStyles)) {\n@@ -185,6 +186,7 @@ const createBuilder = (self, _styler, _isEmpty) => {\n const applyStyle = (self, string) => {\n \t// Read the level directly off the generator to skip the `level` getter dispatch on this hot path\n \tif (self[GENERATOR].level <= 0 || !string) {\n+\t\t// eslint-disable-next-line unicorn/no-computed-property-existence-check -- Reads the boolean value, not a property existence check.\n \t\treturn self[IS_EMPTY] ? '' : string;\n \t}\n \n@@ -195,7 +197,7 @@ const applyStyle = (self, string) => {\n \t}\n \n \tconst {openAll, closeAll} = styler;\n-\tif (string.includes('\\u001B')) {\n+\tif (string.includes('\\u{1B}')) {\n \t\twhile (styler !== undefined) {\n \t\t\t// Replace any instances already present with a re-opening code\n \t\t\t// otherwise only the part of the string until said closing code\n@@ -217,6 +219,7 @@ const applyStyle = (self, string) => {\n \treturn openAll + string + closeAll;\n };\n \n+// eslint-disable-next-line unicorn/no-top-level-side-effects -- The style getters must be installed at module load.\n Object.defineProperties(createChalk.prototype, styles);\n \n const chalk = createChalk();"
+    },
+    {
+      "sha": "92da39d055c7988878e2e39889986d7d022634e5",
+      "filename": "source/index.test-d.ts",
+      "status": "removed",
+      "additions": 0,
+      "deletions": 179,
+      "changes": 179,
+      "blob_url": "https://github.com/chalk/chalk/blob/fa5cff280e821c928dab716a03beff06529ffaf3/source%2Findex.test-d.ts",
+      "raw_url": "https://github.com/chalk/chalk/raw/fa5cff280e821c928dab716a03beff06529ffaf3/source%2Findex.test-d.ts",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Findex.test-d.ts?ref=fa5cff280e821c928dab716a03beff06529ffaf3",
+      "patch": "@@ -1,179 +0,0 @@\n-import {\n-\texpectType,\n-\texpectAssignable,\n-\texpectError,\n-\texpectDeprecated,\n-} from 'tsd';\n-import chalk, {\n-\tChalk,\n-\tChalkInstance,\n-\tColorInfo,\n-\tColorSupport,\n-\tColorSupportLevel,\n-\tchalkStderr,\n-\tsupportsColor,\n-\tsupportsColorStderr,\n-\tModifierName,\n-\tForegroundColorName,\n-\tBackgroundColorName,\n-\tColorName,\n-\tModifiers,\n-} from './index.js';\n-\n-// - supportsColor -\n-expectType<ColorInfo>(supportsColor);\n-if (supportsColor) {\n-\texpectType<ColorSupport>(supportsColor);\n-\texpectType<ColorSupportLevel>(supportsColor.level);\n-\texpectType<boolean>(supportsColor.hasBasic);\n-\texpectType<boolean>(supportsColor.has256);\n-\texpectType<boolean>(supportsColor.has16m);\n-}\n-\n-// - stderr -\n-expectAssignable<ChalkInstance>(chalkStderr);\n-expectType<ColorInfo>(supportsColorStderr);\n-if (supportsColorStderr) {\n-\texpectType<boolean>(supportsColorStderr.hasBasic);\n-\texpectType<boolean>(supportsColorStderr.has256);\n-\texpectType<boolean>(supportsColorStderr.has16m);\n-}\n-\n-// -- `supportsColorStderr` is not a member of the Chalk interface --\n-expectError(chalk.reset.supportsColorStderr);\n-\n-// -- `supportsColor` is not a member of the Chalk interface --\n-expectError(chalk.reset.supportsColor);\n-\n-// - Chalk -\n-// -- Instance --\n-expectType<ChalkInstance>(new Chalk({level: 1}));\n-\n-// -- Properties --\n-expectType<ColorSupportLevel>(chalk.level);\n-\n-// -- Color methods --\n-expectType<ChalkInstance>(chalk.rgb(0, 0, 0));\n-expectType<ChalkInstance>(chalk.hex('#DEADED'));\n-expectType<ChalkInstance>(chalk.ansi256(0));\n-expectType<ChalkInstance>(chalk.bgRgb(0, 0, 0));\n-expectType<ChalkInstance>(chalk.bgHex('#DEADED'));\n-expectType<ChalkInstance>(chalk.bgAnsi256(0));\n-\n-// -- Modifiers --\n-expectType<string>(chalk.reset('foo'));\n-expectType<string>(chalk.bold('foo'));\n-expectType<string>(chalk.dim('foo'));\n-expectType<string>(chalk.italic('foo'));\n-expectType<string>(chalk.underline('foo'));\n-expectType<string>(chalk.overline('foo'));\n-expectType<string>(chalk.inverse('foo'));\n-expectType<string>(chalk.hidden('foo'));\n-expectType<string>(chalk.strikethrough('foo'));\n-expectType<string>(chalk.visible('foo'));\n-expectType<string>(chalk.reset`foo`);\n-expectType<string>(chalk.bold`foo`);\n-expectType<string>(chalk.dim`foo`);\n-expectType<string>(chalk.italic`foo`);\n-expectType<string>(chalk.underline`foo`);\n-expectType<string>(chalk.inverse`foo`);\n-expectType<string>(chalk.hidden`foo`);\n-expectType<string>(chalk.strikethrough`foo`);\n-expectType<string>(chalk.visible`foo`);\n-\n-// -- Colors --\n-expectType<string>(chalk.black('foo'));\n-expectType<string>(chalk.red('foo'));\n-expectType<string>(chalk.green('foo'));\n-expectType<string>(chalk.yellow('foo'));\n-expectType<string>(chalk.blue('foo'));\n-expectType<string>(chalk.magenta('foo'));\n-expectType<string>(chalk.cyan('foo'));\n-expectType<string>(chalk.white('foo'));\n-expectType<string>(chalk.gray('foo'));\n-expectType<string>(chalk.grey('foo'));\n-expectType<string>(chalk.blackBright('foo'));\n-expectType<string>(chalk.redBright('foo'));\n-expectType<string>(chalk.greenBright('foo'));\n-expectType<string>(chalk.yellowBright('foo'));\n-expectType<string>(chalk.blueBright('foo'));\n-expectType<string>(chalk.magentaBright('foo'));\n-expectType<string>(chalk.cyanBright('foo'));\n-expectType<string>(chalk.whiteBright('foo'));\n-expectType<string>(chalk.bgBlack('foo'));\n-expectType<string>(chalk.bgRed('foo'));\n-expectType<string>(chalk.bgGreen('foo'));\n-expectType<string>(chalk.bgYellow('foo'));\n-expectType<string>(chalk.bgBlue('foo'));\n-expectType<string>(chalk.bgMagenta('foo'));\n-expectType<string>(chalk.bgCyan('foo'));\n-expectType<string>(chalk.bgWhite('foo'));\n-expectType<string>(chalk.bgBlackBright('foo'));\n-expectType<string>(chalk.bgRedBright('foo'));\n-expectType<string>(chalk.bgGreenBright('foo'));\n-expectType<string>(chalk.bgYellowBright('foo'));\n-expectType<string>(chalk.bgBlueBright('foo'));\n-expectType<string>(chalk.bgMagentaBright('foo'));\n-expectType<string>(chalk.bgCyanBright('foo'));\n-expectType<string>(chalk.bgWhiteBright('foo'));\n-expectType<string>(chalk.black`foo`);\n-expectType<string>(chalk.red`foo`);\n-expectType<string>(chalk.green`foo`);\n-expectType<string>(chalk.yellow`foo`);\n-expectType<string>(chalk.blue`foo`);\n-expectType<string>(chalk.magenta`foo`);\n-expectType<string>(chalk.cyan`foo`);\n-expectType<string>(chalk.white`foo`);\n-expectType<string>(chalk.gray`foo`);\n-expectType<string>(chalk.grey`foo`);\n-expectType<string>(chalk.blackBright`foo`);\n-expectType<string>(chalk.redBright`foo`);\n-expectType<string>(chalk.greenBright`foo`);\n-expectType<string>(chalk.yellowBright`foo`);\n-expectType<string>(chalk.blueBright`foo`);\n-expectType<string>(chalk.magentaBright`foo`);\n-expectType<string>(chalk.cyanBright`foo`);\n-expectType<string>(chalk.whiteBright`foo`);\n-expectType<string>(chalk.bgBlack`foo`);\n-expectType<string>(chalk.bgRed`foo`);\n-expectType<string>(chalk.bgGreen`foo`);\n-expectType<string>(chalk.bgYellow`foo`);\n-expectType<string>(chalk.bgBlue`foo`);\n-expectType<string>(chalk.bgMagenta`foo`);\n-expectType<string>(chalk.bgCyan`foo`);\n-expectType<string>(chalk.bgWhite`foo`);\n-expectType<string>(chalk.bgBlackBright`foo`);\n-expectType<string>(chalk.bgRedBright`foo`);\n-expectType<string>(chalk.bgGreenBright`foo`);\n-expectType<string>(chalk.bgYellowBright`foo`);\n-expectType<string>(chalk.bgBlueBright`foo`);\n-expectType<string>(chalk.bgMagentaBright`foo`);\n-expectType<string>(chalk.bgCyanBright`foo`);\n-expectType<string>(chalk.bgWhiteBright`foo`);\n-\n-// -- Complex --\n-expectType<string>(chalk.red.bgGreen.underline('foo'));\n-expectType<string>(chalk.underline.red.bgGreen('foo'));\n-\n-// -- Complex template literal --\n-expectType<string>(chalk.underline``);\n-expectType<string>(chalk.red.bgGreen.bold`Hello {italic.blue ${name}}`);\n-expectType<string>(chalk.strikethrough.cyanBright.bgBlack`Works with {reset {bold numbers}} {bold.red ${1}}`);\n-\n-// -- Modifiers types\n-expectAssignable<ModifierName>('strikethrough');\n-expectError<ModifierName>('delete');\n-\n-// -- Foreground types\n-expectAssignable<ForegroundColorName>('red');\n-expectError<ForegroundColorName>('pink');\n-\n-// -- Background types\n-expectAssignable<BackgroundColorName>('bgRed');\n-expectError<BackgroundColorName>('bgPink');\n-\n-// -- Color types --\n-expectAssignable<ColorName>('red');\n-expectAssignable<ColorName>('bgRed');\n-expectError<ColorName>('hotpink');\n-expectError<ColorName>('bgHotpink');"
+    },
+    {
+      "sha": "cf7f91d3975bd980bf59028ee675ec652d8cf997",
+      "filename": "source/utilities.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Futilities.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Futilities.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Futilities.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -22,8 +22,8 @@ export function stringEncaseCRLFWithFirstIndex(string, prefix, postfix, index) {\n \tlet endIndex = 0;\n \tlet returnValue = '';\n \tdo {\n-\t\tconst gotCR = string[index - 1] === '\\r';\n-\t\treturnValue += string.slice(endIndex, (gotCR ? index - 1 : index)) + prefix + (gotCR ? '\\r\\n' : '\\n') + postfix;\n+\t\tconst isGotCR = string[index - 1] === '\\r';\n+\t\treturnValue += string.slice(endIndex, (isGotCR ? index - 1 : index)) + prefix + (isGotCR ? '\\r\\n' : '\\n') + postfix;\n \t\tendIndex = index + 1;\n \t\tindex = string.indexOf('\\n', endIndex);\n \t} while (index !== -1);"
+    },
+    {
+      "sha": "c4770069e60162cb4bdd855dc90b1f81ded7aa9b",
+      "filename": "source/vendor/ansi-styles/index.js",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 7,
+      "changes": 14,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Fvendor%2Fansi-styles%2Findex.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Fvendor%2Fansi-styles%2Findex.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Fvendor%2Fansi-styles%2Findex.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -1,10 +1,10 @@\n const ANSI_BACKGROUND_OFFSET = 10;\n \n-const wrapAnsi16 = (offset = 0) => code => `\\u001B[${code + offset}m`;\n+const wrapAnsi16 = (offset = 0) => code => `\\u{1B}[${code + offset}m`;\n \n-const wrapAnsi256 = (offset = 0) => code => `\\u001B[${38 + offset};5;${code}m`;\n+const wrapAnsi256 = (offset = 0) => code => `\\u{1B}[${38 + offset};5;${code}m`;\n \n-const wrapAnsi16m = (offset = 0) => (red, green, blue) => `\\u001B[${38 + offset};2;${red};${green};${blue}m`;\n+const wrapAnsi16m = (offset = 0) => (red, green, blue) => `\\u{1B}[${38 + offset};2;${red};${green};${blue}m`;\n \n const styles = {\n \tmodifier: {\n@@ -76,8 +76,8 @@ function assembleStyles() {\n \tfor (const [groupName, group] of Object.entries(styles)) {\n \t\tfor (const [styleName, style] of Object.entries(group)) {\n \t\t\tstyles[styleName] = {\n-\t\t\t\topen: `\\u001B[${style[0]}m`,\n-\t\t\t\tclose: `\\u001B[${style[1]}m`,\n+\t\t\t\topen: `\\u{1B}[${style[0]}m`,\n+\t\t\t\tclose: `\\u{1B}[${style[1]}m`,\n \t\t\t};\n \n \t\t\tgroup[styleName] = styles[styleName];\n@@ -96,8 +96,8 @@ function assembleStyles() {\n \t\tenumerable: false,\n \t});\n \n-\tstyles.color.close = '\\u001B[39m';\n-\tstyles.bgColor.close = '\\u001B[49m';\n+\tstyles.color.close = '\\u{1B}[39m';\n+\tstyles.bgColor.close = '\\u{1B}[49m';\n \n \tstyles.color.ansi = wrapAnsi16();\n \tstyles.color.ansi256 = wrapAnsi256();"
+    },
+    {
+      "sha": "28b5a7b36005336787cfa032ec2172457c84c15f",
+      "filename": "source/vendor/supports-color/browser.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 3,
+      "changes": 5,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Fvendor%2Fsupports-color%2Fbrowser.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Fvendor%2Fsupports-color%2Fbrowser.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Fvendor%2Fsupports-color%2Fbrowser.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -3,15 +3,14 @@ const level = (() => {\n \t\treturn 0;\n \t}\n \n-\tif (globalThis.navigator.userAgentData) {\n-\t\t// eslint-disable-next-line no-undef\n+\tif (navigator.userAgentData) {\n \t\tconst brand = navigator.userAgentData.brands.find(({brand}) => brand === 'Chromium');\n \t\tif (brand && brand.version > 93) {\n \t\t\treturn 3;\n \t\t}\n \t}\n \n-\tif (/\\b(?:Chrome|Chromium)\\//.test(globalThis.navigator.userAgent)) {\n+\tif (/\\b(?:Chrome|Chromium)\\//.test(navigator.userAgent)) {\n \t\treturn 1;\n \t}\n "
+    },
+    {
+      "sha": "5e8451fab198e96d8ef87afe8989f597e8a35cef",
+      "filename": "source/vendor/supports-color/index.js",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 9,
+      "changes": 20,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Fvendor%2Fsupports-color%2Findex.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/source%2Fvendor%2Fsupports-color%2Findex.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/source%2Fvendor%2Fsupports-color%2Findex.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -31,17 +31,19 @@ if (\n }\n \n function envForceColor() {\n-\tif ('FORCE_COLOR' in env) {\n-\t\tif (env.FORCE_COLOR === 'true') {\n-\t\t\treturn 1;\n-\t\t}\n+\tif (!('FORCE_COLOR' in env)) {\n+\t\treturn;\n+\t}\n \n-\t\tif (env.FORCE_COLOR === 'false') {\n-\t\t\treturn 0;\n-\t\t}\n+\tif (env.FORCE_COLOR === 'true') {\n+\t\treturn 1;\n+\t}\n \n-\t\treturn env.FORCE_COLOR.length === 0 ? 1 : Math.min(Number.parseInt(env.FORCE_COLOR, 10), 3);\n+\tif (env.FORCE_COLOR === 'false') {\n+\t\treturn 0;\n \t}\n+\n+\treturn env.FORCE_COLOR.length === 0 ? 1 : Math.min(Number.parseInt(env.FORCE_COLOR, 10), 3);\n }\n \n function translateLevel(level) {\n@@ -144,7 +146,7 @@ function _supportsColor(haveStream, {streamIsTTY, sniffFlags = true} = {}) {\n \t}\n \n \tif ('TERM_PROGRAM' in env) {\n-\t\tconst version = Number.parseInt((env.TERM_PROGRAM_VERSION || '').split('.')[0], 10);\n+\t\tconst version = Number.parseInt((env.TERM_PROGRAM_VERSION || '').split('.', 1)[0], 10);\n \n \t\tswitch (env.TERM_PROGRAM) {\n \t\t\tcase 'iTerm.app': {"
+    },
+    {
+      "sha": "6a16db3899f67cf81eec99002010779e8cd26d23",
+      "filename": "test/chalk.js",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 36,
+      "changes": 73,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/test%2Fchalk.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/test%2Fchalk.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/test%2Fchalk.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -20,37 +20,38 @@ test('support automatic casting to string', t => {\n \tt.is(chalk(['hello', 'there']), 'hello,there');\n \tt.is(chalk(123), '123');\n \n-\tt.is(chalk.bold(['foo', 'bar']), '\\u001B[1mfoo,bar\\u001B[22m');\n-\tt.is(chalk.green(98_765), '\\u001B[32m98765\\u001B[39m');\n+\tt.is(chalk.bold(['foo', 'bar']), '\\u{1B}[1mfoo,bar\\u{1B}[22m');\n+\tt.is(chalk.green(98_765), '\\u{1B}[32m98765\\u{1B}[39m');\n });\n \n test('style string', t => {\n-\tt.is(chalk.underline('foo'), '\\u001B[4mfoo\\u001B[24m');\n-\tt.is(chalk.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n-\tt.is(chalk.bgRed('foo'), '\\u001B[41mfoo\\u001B[49m');\n+\tt.is(chalk.underline('foo'), '\\u{1B}[4mfoo\\u{1B}[24m');\n+\tt.is(chalk.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n+\tt.is(chalk.bgRed('foo'), '\\u{1B}[41mfoo\\u{1B}[49m');\n });\n \n test('support applying multiple styles at once', t => {\n-\tt.is(chalk.red.bgGreen.underline('foo'), '\\u001B[31m\\u001B[42m\\u001B[4mfoo\\u001B[24m\\u001B[49m\\u001B[39m');\n-\tt.is(chalk.underline.red.bgGreen('foo'), '\\u001B[4m\\u001B[31m\\u001B[42mfoo\\u001B[49m\\u001B[39m\\u001B[24m');\n+\tt.is(chalk.red.bgGreen.underline('foo'), '\\u{1B}[31m\\u{1B}[42m\\u{1B}[4mfoo\\u{1B}[24m\\u{1B}[49m\\u{1B}[39m');\n+\tt.is(chalk.underline.red.bgGreen('foo'), '\\u{1B}[4m\\u{1B}[31m\\u{1B}[42mfoo\\u{1B}[49m\\u{1B}[39m\\u{1B}[24m');\n });\n \n test('support nesting styles', t => {\n \tt.is(\n \t\tchalk.red('foo' + chalk.underline.bgBlue('bar') + '!'),\n-\t\t'\\u001B[31mfoo\\u001B[4m\\u001B[44mbar\\u001B[49m\\u001B[24m!\\u001B[39m',\n+\t\t'\\u{1B}[31mfoo\\u{1B}[4m\\u{1B}[44mbar\\u{1B}[49m\\u{1B}[24m!\\u{1B}[39m',\n \t);\n });\n \n test('support nesting styles of the same type (color, underline, bg)', t => {\n+\tconst nested = chalk.yellow('b' + chalk.green('c') + 'b');\n \tt.is(\n-\t\tchalk.red('a' + chalk.yellow('b' + chalk.green('c') + 'b') + 'c'),\n-\t\t'\\u001B[31ma\\u001B[33mb\\u001B[32mc\\u001B[39m\\u001B[31m\\u001B[33mb\\u001B[39m\\u001B[31mc\\u001B[39m',\n+\t\tchalk.red('a' + nested + 'c'),\n+\t\t'\\u{1B}[31ma\\u{1B}[33mb\\u{1B}[32mc\\u{1B}[39m\\u{1B}[31m\\u{1B}[33mb\\u{1B}[39m\\u{1B}[31mc\\u{1B}[39m',\n \t);\n });\n \n test('reset all styles with `.reset()`', t => {\n-\tt.is(chalk.reset(chalk.red.bgGreen.underline('foo') + 'foo'), '\\u001B[0m\\u001B[31m\\u001B[42m\\u001B[4mfoo\\u001B[24m\\u001B[49m\\u001B[39mfoo\\u001B[0m');\n+\tt.is(chalk.reset(chalk.red.bgGreen.underline('foo') + 'foo'), '\\u{1B}[0m\\u{1B}[31m\\u{1B}[42m\\u{1B}[4mfoo\\u{1B}[24m\\u{1B}[49m\\u{1B}[39mfoo\\u{1B}[0m');\n });\n \n test('support caching multiple styles', t => {\n@@ -64,15 +65,15 @@ test('support caching multiple styles', t => {\n });\n \n test('alias gray to grey', t => {\n-\tt.is(chalk.grey('foo'), '\\u001B[90mfoo\\u001B[39m');\n+\tt.is(chalk.grey('foo'), '\\u{1B}[90mfoo\\u{1B}[39m');\n });\n \n test('support variable number of arguments', t => {\n-\tt.is(chalk.red('foo', 'bar'), '\\u001B[31mfoo bar\\u001B[39m');\n+\tt.is(chalk.red('foo', 'bar'), '\\u{1B}[31mfoo bar\\u{1B}[39m');\n });\n \n test('support falsy values', t => {\n-\tt.is(chalk.red(0), '\\u001B[31m0\\u001B[39m');\n+\tt.is(chalk.red(0), '\\u{1B}[31m0\\u{1B}[39m');\n });\n \n test('don\\'t output escape codes if the input is empty', t => {\n@@ -81,45 +82,45 @@ test('don\\'t output escape codes if the input is empty', t => {\n });\n \n test('keep Function.prototype methods', t => {\n-\tt.is(Reflect.apply(chalk.grey, null, ['foo']), '\\u001B[90mfoo\\u001B[39m');\n-\tt.is(chalk.reset(chalk.red.bgGreen.underline.bind(null)('foo') + 'foo'), '\\u001B[0m\\u001B[31m\\u001B[42m\\u001B[4mfoo\\u001B[24m\\u001B[49m\\u001B[39mfoo\\u001B[0m');\n+\tt.is(Reflect.apply(chalk.grey, null, ['foo']), '\\u{1B}[90mfoo\\u{1B}[39m');\n+\tt.is(chalk.reset(chalk.red.bgGreen.underline.bind(null)('foo') + 'foo'), '\\u{1B}[0m\\u{1B}[31m\\u{1B}[42m\\u{1B}[4mfoo\\u{1B}[24m\\u{1B}[49m\\u{1B}[39mfoo\\u{1B}[0m');\n \tt.is(chalk.red.blue.black.call(null), '');\n });\n \n test('line breaks should open and close colors', t => {\n-\tt.is(chalk.grey('hello\\nworld'), '\\u001B[90mhello\\u001B[39m\\n\\u001B[90mworld\\u001B[39m');\n+\tt.is(chalk.grey('hello\\nworld'), '\\u{1B}[90mhello\\u{1B}[39m\\n\\u{1B}[90mworld\\u{1B}[39m');\n });\n \n test('line breaks should open and close colors with CRLF', t => {\n-\tt.is(chalk.grey('hello\\r\\nworld'), '\\u001B[90mhello\\u001B[39m\\r\\n\\u001B[90mworld\\u001B[39m');\n+\tt.is(chalk.grey('hello\\r\\nworld'), '\\u{1B}[90mhello\\u{1B}[39m\\r\\n\\u{1B}[90mworld\\u{1B}[39m');\n });\n \n test('properly convert RGB to 16 colors on basic color terminals', t => {\n-\tt.is(new Chalk({level: 1}).hex('#FF0000')('hello'), '\\u001B[91mhello\\u001B[39m');\n-\tt.is(new Chalk({level: 1}).bgHex('#FF0000')('hello'), '\\u001B[101mhello\\u001B[49m');\n+\tt.is(new Chalk({level: 1}).hex('#FF0000')('hello'), '\\u{1B}[91mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 1}).bgHex('#FF0000')('hello'), '\\u{1B}[101mhello\\u{1B}[49m');\n });\n \n test('properly convert RGB to 256 colors on basic color terminals', t => {\n-\tt.is(new Chalk({level: 2}).hex('#FF0000')('hello'), '\\u001B[38;5;196mhello\\u001B[39m');\n-\tt.is(new Chalk({level: 2}).bgHex('#FF0000')('hello'), '\\u001B[48;5;196mhello\\u001B[49m');\n-\tt.is(new Chalk({level: 3}).bgHex('#FF0000')('hello'), '\\u001B[48;2;255;0;0mhello\\u001B[49m');\n+\tt.is(new Chalk({level: 2}).hex('#FF0000')('hello'), '\\u{1B}[38;5;196mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 2}).bgHex('#FF0000')('hello'), '\\u{1B}[48;5;196mhello\\u{1B}[49m');\n+\tt.is(new Chalk({level: 3}).bgHex('#FF0000')('hello'), '\\u{1B}[48;2;255;0;0mhello\\u{1B}[49m');\n });\n \n test('properly convert ANSI 256 to 16 colors on basic color terminals', t => {\n-\tt.is(new Chalk({level: 1}).ansi256(196)('hello'), '\\u001B[91mhello\\u001B[39m');\n-\tt.is(new Chalk({level: 1}).bgAnsi256(196)('hello'), '\\u001B[101mhello\\u001B[49m');\n-\tt.is(new Chalk({level: 1}).ansi256(2)('hello'), '\\u001B[32mhello\\u001B[39m');\n-\tt.is(new Chalk({level: 1}).bgAnsi256(2)('hello'), '\\u001B[42mhello\\u001B[49m');\n-\tt.is(new Chalk({level: 1}).ansi256(8)('hello'), '\\u001B[90mhello\\u001B[39m');\n-\tt.is(new Chalk({level: 1}).ansi256(232)('hello'), '\\u001B[30mhello\\u001B[39m');\n-\tt.is(new Chalk({level: 1}).ansi256(255)('hello'), '\\u001B[37mhello\\u001B[39m');\n+\tt.is(new Chalk({level: 1}).ansi256(196)('hello'), '\\u{1B}[91mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 1}).bgAnsi256(196)('hello'), '\\u{1B}[101mhello\\u{1B}[49m');\n+\tt.is(new Chalk({level: 1}).ansi256(2)('hello'), '\\u{1B}[32mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 1}).bgAnsi256(2)('hello'), '\\u{1B}[42mhello\\u{1B}[49m');\n+\tt.is(new Chalk({level: 1}).ansi256(8)('hello'), '\\u{1B}[90mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 1}).ansi256(232)('hello'), '\\u{1B}[30mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 1}).ansi256(255)('hello'), '\\u{1B}[37mhello\\u{1B}[39m');\n });\n \n test('keep ANSI 256 colors on 256 color and Truecolor terminals', t => {\n-\tt.is(new Chalk({level: 2}).ansi256(196)('hello'), '\\u001B[38;5;196mhello\\u001B[39m');\n-\tt.is(new Chalk({level: 2}).bgAnsi256(196)('hello'), '\\u001B[48;5;196mhello\\u001B[49m');\n-\tt.is(new Chalk({level: 3}).ansi256(196)('hello'), '\\u001B[38;5;196mhello\\u001B[39m');\n-\tt.is(new Chalk({level: 3}).bgAnsi256(196)('hello'), '\\u001B[48;5;196mhello\\u001B[49m');\n+\tt.is(new Chalk({level: 2}).ansi256(196)('hello'), '\\u{1B}[38;5;196mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 2}).bgAnsi256(196)('hello'), '\\u{1B}[48;5;196mhello\\u{1B}[49m');\n+\tt.is(new Chalk({level: 3}).ansi256(196)('hello'), '\\u{1B}[38;5;196mhello\\u{1B}[39m');\n+\tt.is(new Chalk({level: 3}).bgAnsi256(196)('hello'), '\\u{1B}[48;5;196mhello\\u{1B}[49m');\n });\n \n test('don\\'t emit color codes if level is 0', t => {\n@@ -130,12 +131,12 @@ test('don\\'t emit color codes if level is 0', t => {\n });\n \n test('supports blackBright color', t => {\n-\tt.is(chalk.blackBright('foo'), '\\u001B[90mfoo\\u001B[39m');\n+\tt.is(chalk.blackBright('foo'), '\\u{1B}[90mfoo\\u{1B}[39m');\n });\n \n test('sets correct level for chalkStderr and respects it', t => {\n \tt.is(chalkStderr.level, 3);\n-\tt.is(chalkStderr.red.bold('foo'), '\\u001B[31m\\u001B[1mfoo\\u001B[22m\\u001B[39m');\n+\tt.is(chalkStderr.red.bold('foo'), '\\u{1B}[31m\\u{1B}[1mfoo\\u{1B}[22m\\u{1B}[39m');\n });\n \n test('keeps function prototype methods', t => {"
+    },
+    {
+      "sha": "41b035a04b34c713a3a99657f3ecd9a57035a861",
+      "filename": "test/instance.js",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/test%2Finstance.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/test%2Finstance.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/test%2Finstance.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -6,19 +6,19 @@ chalk.level = 1;\n test('create an isolated context where colors can be disabled (by level)', t => {\n \tconst instance = new Chalk({level: 0});\n \tt.is(instance.red('foo'), 'foo');\n-\tt.is(chalk.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n+\tt.is(chalk.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n \tinstance.level = 2;\n-\tt.is(instance.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n+\tt.is(instance.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n });\n \n test('the `level` option should be a number from 0 to 3', t => {\n \t/* eslint-disable no-new -- Ignore */\n \tt.throws(() => {\n \t\tnew Chalk({level: 10});\n-\t}, {message: /should be an integer from 0 to 3/});\n+\t}, {message: /should be an integer from 0 to 3/v});\n \n \tt.throws(() => {\n \t\tnew Chalk({level: -1});\n-\t}, {message: /should be an integer from 0 to 3/});\n+\t}, {message: /should be an integer from 0 to 3/v});\n \t/* eslint-enable no-new */\n });"
+    },
+    {
+      "sha": "2ce907c952c5543d25e68509551210af4ac725d3",
+      "filename": "test/no-color-support.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/test%2Fno-color-support.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/test%2Fno-color-support.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/test%2Fno-color-support.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -20,5 +20,5 @@ import chalk from '../source/index.js';\n \n test('colors can be forced by using chalk.level', t => {\n \tchalk.level = 1;\n-\tt.is(chalk.green('hello'), '\\u001B[32mhello\\u001B[39m');\n+\tt.is(chalk.green('hello'), '\\u{1B}[32mhello\\u{1B}[39m');\n });"
+    },
+    {
+      "sha": "a4ca3aadb67b7082e7e30a59dceee92ae9d9f7ff",
+      "filename": "test/visible.js",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 10,
+      "changes": 20,
+      "blob_url": "https://github.com/chalk/chalk/blob/8a94e0ebfc495dda27f7090fb1a012790b15a76d/test%2Fvisible.js",
+      "raw_url": "https://github.com/chalk/chalk/raw/8a94e0ebfc495dda27f7090fb1a012790b15a76d/test%2Fvisible.js",
+      "contents_url": "https://api.github.com/repos/chalk/chalk/contents/test%2Fvisible.js?ref=8a94e0ebfc495dda27f7090fb1a012790b15a76d",
+      "patch": "@@ -5,8 +5,8 @@ chalk.level = 1;\n \n test('visible: normal output when level > 0', t => {\n \tconst instance = new Chalk({level: 3});\n-\tt.is(instance.visible.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n-\tt.is(instance.red.visible('foo'), '\\u001B[31mfoo\\u001B[39m');\n+\tt.is(instance.visible.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n+\tt.is(instance.red.visible('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n });\n \n test('visible: no output when level is too low', t => {\n@@ -17,11 +17,11 @@ test('visible: no output when level is too low', t => {\n \n test('test switching back and forth between level == 0 and level > 0', t => {\n \tconst instance = new Chalk({level: 3});\n-\tt.is(instance.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n-\tt.is(instance.visible.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n-\tt.is(instance.red.visible('foo'), '\\u001B[31mfoo\\u001B[39m');\n+\tt.is(instance.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n+\tt.is(instance.visible.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n+\tt.is(instance.red.visible('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n \tt.is(instance.visible('foo'), 'foo');\n-\tt.is(instance.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n+\tt.is(instance.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n \n \tinstance.level = 0;\n \tt.is(instance.red('foo'), 'foo');\n@@ -31,9 +31,9 @@ test('test switching back and forth between level == 0 and level > 0', t => {\n \tt.is(instance.red('foo'), 'foo');\n \n \tinstance.level = 3;\n-\tt.is(instance.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n-\tt.is(instance.visible.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n-\tt.is(instance.red.visible('foo'), '\\u001B[31mfoo\\u001B[39m');\n+\tt.is(instance.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n+\tt.is(instance.visible.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n+\tt.is(instance.red.visible('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n \tt.is(instance.visible('foo'), 'foo');\n-\tt.is(instance.red('foo'), '\\u001B[31mfoo\\u001B[39m');\n+\tt.is(instance.red('foo'), '\\u{1B}[31mfoo\\u{1B}[39m');\n });"
+    }
+  ]
+}
